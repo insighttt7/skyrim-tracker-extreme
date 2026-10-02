@@ -1,0 +1,56 @@
+Skyrim Tracker Extreme
+Copyright (c) 2026 Alexey Insight. All rights reserved.
+
+This license covers Skyrim Tracker Extreme: the program, its tracker page and
+design, the quest, location and item tables, the save parsing logic written for
+this project, and all other files of this release that are not listed in
+THIRD_PARTY_NOTICES.txt.
+
+
+1. WHAT YOU MAY DO
+
+   - Download and use the program free of charge for your own personal,
+     non-commercial use.
+
+
+2. WHAT YOU MAY NOT DO WITHOUT THE AUTHOR'S WRITTEN PERMISSION
+
+   - Upload, mirror or redistribute the program or any part of it, on any
+     site or service.
+   - Sell it or use it, or any part of it, for commercial purposes.
+   - Publish modified versions of it.
+   - Use its code, tables, data, page or design in your own projects, mods,
+     tools or other published work.
+
+
+3. GETTING PERMISSION
+
+   If you want to build something on this work or share a modified version,
+   contact the author, Alexey Insight, on Nexus Mods - by private message or
+   in the comments on the Skyrim Tracker Extreme page - and explain what you
+   plan to do.
+   Permission, when given, requires that you credit the author and link to
+   the original project.
+
+
+4. THIRD-PARTY COMPONENTS
+
+   Parts of this release come from other authors (libraries, fonts and
+   save-format research). They remain under their own licenses, listed in
+   THIRD_PARTY_NOTICES.txt. This license does not restrict any rights those
+   licenses give you for those parts.
+
+
+5. NO AFFILIATION
+
+   Skyrim Tracker Extreme is an unofficial fan project. It is not made,
+   endorsed or supported by Bethesda Softworks or ZeniMax Media. The Elder
+   Scrolls, Skyrim and related names are trademarks of their respective
+   owners.
+
+
+6. NO WARRANTY
+
+   The program is provided "as is", without warranty of any kind. The author
+   is not liable for any damage or data loss arising from its use. The
+   program only reads save files and never changes them.

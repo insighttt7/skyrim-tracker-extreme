@@ -1,0 +1,82 @@
+Order;Block;Name;Tags;Plugin;LocalID;EditorID
+1;Animal Allegiance;Raan;;Skyrim.esm;060291;WordRaan
+2;Animal Allegiance;Mir;;Skyrim.esm;060292;WordMir
+3;Animal Allegiance;Tah;;Skyrim.esm;060293;WordTah
+4;Aura Whisper;Laas;;Skyrim.esm;060294;WordLaas
+5;Aura Whisper;Yah;;Skyrim.esm;060295;WordYah
+6;Aura Whisper;Nir;;Skyrim.esm;060296;WordNir
+7;Become Ethereal;Feim;;Skyrim.esm;032917;WordFeim
+8;Become Ethereal;Zii;;Skyrim.esm;032918;WordZii
+9;Become Ethereal;Gron;;Skyrim.esm;032919;WordGron
+10;Call Dragon;Od;;Skyrim.esm;046B89;WordOd
+11;Call Dragon;Ah;;Skyrim.esm;046B8A;WordAh
+12;Call Dragon;Viing;;Skyrim.esm;046B8B;WordViing
+13;Call of Valor;Hun;;Skyrim.esm;051960;WordHun
+14;Call of Valor;Kaal;;Skyrim.esm;051961;WordKaal
+15;Call of Valor;Zoor;;Skyrim.esm;051962;WordZoor
+16;Clear Skies;Lok;;Skyrim.esm;03CD31;WordLok
+17;Clear Skies;Vah;;Skyrim.esm;03CD32;WordVah
+18;Clear Skies;Koor;;Skyrim.esm;03CD33;WordKoor
+19;Disarm;Zun;;Skyrim.esm;05FB95;WordZun
+20;Disarm;Haal;;Skyrim.esm;05FB96;WordHaal
+21;Disarm;Viik;;Skyrim.esm;05FB97;WordViik
+22;Dismay;Faas;;Skyrim.esm;03291A;WordFaas
+23;Dismay;Ru;;Skyrim.esm;03291B;WordRu
+24;Dismay;Maar;;Skyrim.esm;03291C;WordMaar
+25;Dragonrend;Joor;;Skyrim.esm;044251;WordJoor
+26;Dragonrend;Zah;;Skyrim.esm;044252;WordZah
+27;Dragonrend;Frul;;Skyrim.esm;044253;WordFrul
+28;Elemental Fury;Su;;Skyrim.esm;03291D;WordSu
+29;Elemental Fury;Grah;;Skyrim.esm;03291E;WordGrah
+30;Elemental Fury;Dun;;Skyrim.esm;03291F;WordDun
+31;Fire Breath;Yol;;Skyrim.esm;020E17;WordYol
+32;Fire Breath;Toor;;Skyrim.esm;020E18;WordToor
+33;Fire Breath;Shul;;Skyrim.esm;020E19;WordShul
+34;Frost Breath;Fo;;Skyrim.esm;05D16C;WordFo
+35;Frost Breath;Krah;;Skyrim.esm;05D16D;WordKrah
+36;Frost Breath;Diin;;Skyrim.esm;05D16E;WordDiin
+37;Ice Form;Iiz;;Skyrim.esm;0602A3;WordIiz
+38;Ice Form;Slen;;Skyrim.esm;0602A4;WordSlen
+39;Ice Form;Nus;;Skyrim.esm;0602A5;WordNus
+40;Kyne's Peace;Kaan;;Skyrim.esm;06029D;WordKaan
+41;Kyne's Peace;Drem;;Skyrim.esm;06029E;WordDrem
+42;Kyne's Peace;Ov;;Skyrim.esm;06029F;WordOv
+43;Marked for Death;Krii;;Skyrim.esm;060297;WordKrii
+44;Marked for Death;Lun;;Skyrim.esm;060298;WordLun
+45;Marked for Death;Aus;;Skyrim.esm;060299;WordAus
+46;Slow Time;Tiid;;Skyrim.esm;048ACA;WordTiid
+47;Slow Time;Klo;;Skyrim.esm;048ACB;WordKlo
+48;Slow Time;Ul;;Skyrim.esm;048ACC;WordUl
+49;Storm Call;Strun;;Skyrim.esm;06029A;WordStrun
+50;Storm Call;Bah;;Skyrim.esm;06029B;WordBah
+51;Storm Call;Qo;;Skyrim.esm;06029C;WordQo
+52;Throw Voice;Zul;;Skyrim.esm;0602A0;WordZul
+53;Throw Voice;Mey;;Skyrim.esm;0602A1;WordMey
+54;Throw Voice;Gut;;Skyrim.esm;0602A2;WordGut
+55;Unrelenting Force;Fus;;Skyrim.esm;013E22;WordFus
+56;Unrelenting Force;Ro;;Skyrim.esm;013E23;WordRo
+57;Unrelenting Force;Dah;;Skyrim.esm;013E24;WordDah
+58;Whirlwind Sprint;Wuld;;Skyrim.esm;02F7BB;WordWuld
+59;Whirlwind Sprint;Nah;;Skyrim.esm;02F7BC;WordNah
+60;Whirlwind Sprint;Kest;;Skyrim.esm;02F7BD;WordKest
+61;Drain Vitality;Gaan;Dawnguard;Dawnguard.esm;008A65;DLC1DrainVitality1Gaan
+62;Drain Vitality;Lah;Dawnguard;Dawnguard.esm;008A64;DLC1DrainVitality2Lah
+63;Drain Vitality;Haas;Dawnguard;Dawnguard.esm;008A63;DLC1DrainVitality3Haas
+64;Soul Tear;Rii;Dawnguard;Dawnguard.esm;007CB7;DLC1SoulTearing1Rii
+65;Soul Tear;Vaaz;Dawnguard;Dawnguard.esm;007CB8;DLC1SoulTearing2Vaaz
+66;Soul Tear;Zol;Dawnguard;Dawnguard.esm;007CB9;DLC1SoulTearing3Zol
+67;Summon Durnehviir;Dur;Dawnguard;Dawnguard.esm;0030D4;DLC1DragonSummon1Dur
+68;Summon Durnehviir;Neh;Dawnguard;Dawnguard.esm;0030D6;DLC1DragonSummon2Neh
+69;Summon Durnehviir;Viir;Dawnguard;Dawnguard.esm;0030D7;DLC1DragonSummon3Viir
+70;Battle Fury;Mid;Dragonborn;Dragonborn.esm;0200E4;DLC2BattleFuryWord1
+71;Battle Fury;Vur;Dragonborn;Dragonborn.esm;0200E5;DLC2BattleFuryWord2
+72;Battle Fury;Shaan;Dragonborn;Dragonborn.esm;0200E6;DLC2BattleFuryWord3
+73;Bend Will;Gol;Dragonborn;Dragonborn.esm;0179D9;DLC2BendToWillWord1
+74;Bend Will;Hah;Dragonborn;Dragonborn.esm;0179DA;DLC2BendToWillWord2
+75;Bend Will;Dov;Dragonborn;Dragonborn.esm;0179DB;DLC2BendToWillWord3
+76;Cyclone;Ven;Dragonborn;Dragonborn.esm;0200C2;DLC2CycloneWord1
+77;Cyclone;Gaar;Dragonborn;Dragonborn.esm;0200C3;DLC2CycloneWord2
+78;Cyclone;Nos;Dragonborn;Dragonborn.esm;0200C4;DLC2CycloneWord3
+79;Dragon Aspect;Mul;Dragonborn;Dragonborn.esm;01DF93;DLC2DragonAspectWord1
+80;Dragon Aspect;Qah;Dragonborn;Dragonborn.esm;01DF94;DLC2DragonAspectWord2
+81;Dragon Aspect;Diiv;Dragonborn;Dragonborn.esm;01DF95;DLC2DragonAspectWord3

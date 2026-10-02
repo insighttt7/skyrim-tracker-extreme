@@ -1,0 +1,168 @@
+Order;Block;Name;Tags;Plugin;LocalID;EditorID
+1;Alteration;Ash Rune;Dragonborn;Dragonborn.esm;0177AF;DLC2AshRune
+2;Alteration;Ash Shell;Dragonborn;Dragonborn.esm;017731;DLC2AshShell
+3;Alteration;Candlelight;;Skyrim.esm;043324;Candlelight
+4;Alteration;Detect Dead;;Skyrim.esm;0211EF;DetectDead
+5;Alteration;Detect Life;;Skyrim.esm;0211EE;DetectLife
+6;Alteration;Dragonhide;;Skyrim.esm;0CDB70;Dragonhide
+7;Alteration;Ebonyflesh;;Skyrim.esm;05AD5E;Ebonyflesh
+8;Alteration;Equilibrium;;Skyrim.esm;0DA746;dunLabyrinthianSpellReward
+9;Alteration;Ironflesh;;Skyrim.esm;051B16;Ironflesh
+10;Alteration;Magelight;;Skyrim.esm;043323;Magelight
+11;Alteration;Mass Paralysis;;Skyrim.esm;0B62E6;MassParalysis
+12;Alteration;Master Transmute;AE;cckrtsse001_altar.esl;000CDF;ccKRTSSE001_TransmuteOreMineral
+13;Alteration;Oakflesh;;Skyrim.esm;05AD5C;Oakflesh
+14;Alteration;Paralysis Rune;AE;ccbgssse014-spellpack01.esl;000D64;ccBGSSSE014_ParalysisRune
+15;Alteration;Paralyze;;Skyrim.esm;05AD5F;Paralyze
+16;Alteration;Stoneflesh;;Skyrim.esm;05AD5D;Stoneflesh
+17;Alteration;Telekinesis;;Skyrim.esm;01A4CC;Telekinesis
+18;Alteration;Telekinesis Arrows;AE;ccbgssse002-exoticarrows.esl;000829;ccBGSSSE002_LesserPower_TelekinesisArrowLaunch
+19;Alteration;Teleport Pet: Arachnia;AE;ccvsvsse002-pets.esl;000921;ccVSVSSE002_SPELL_TeleportSpider
+20;Alteration;Teleport Pet: Bone Wolf;AE;ccbgssse036-petbwolf.esl;000806;ccBGSSE036_ConjureBoneWolfSpell
+21;Alteration;Teleport Pet: Demented Elytra Nymph;AE;ccbgssse025-advdsgs.esm;08BC17;ccBGSSSE025_TeleportElytraSpellDemented
+22;Alteration;Teleport Pet: Dwarven Mudcrab;AE;ccbgssse010-petdwarvenarmoredmudcrab.esl;000810;ccBGSSSE010_SummonMudcrabSpell
+23;Alteration;Teleport Pet: Hilda;AE;ccvsvsse002-pets.esl;00091F;ccVSVSSE002_SPELL_TeleportGoat
+24;Alteration;Teleport Pet: Manic Elytra Nymph;AE;ccbgssse025-advdsgs.esm;08BC16;ccBGSSSE025_TeleportElytraSpellManic
+25;Alteration;Teleport Pet: Nix-Hound;AE;ccbgssse035-petnhound.esl;000811;ccBGSSSE035_SummonPetSpell
+26;Alteration;Teleport Pet: Skritch;AE;ccvsvsse002-pets.esl;00091D;ccVSVSSE002_SPELL_TeleportSkeever
+27;Alteration;Teleport Pet: Sweet Roll;AE;ccvsvsse002-pets.esl;000920;ccVSVSSE002_SPELL_TeleportFox
+28;Alteration;Teleport Pet: Thistle;AE;ccvsvsse002-pets.esl;00091E;ccVSVSSE002_SPELL_TeleportRabbit
+29;Alteration;Transmute Mineral Ore;;Skyrim.esm;109111;TransmuteOreMineral
+30;Alteration;Waterbreathing;;Skyrim.esm;05D175;Waterbreathing
+31;Conjuration;Banish Daedra;;Skyrim.esm;06D22C;BanishDaedra
+32;Conjuration;Banish Undead;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;00086A;ccVSVSSE003_SPELL_BanishUndead
+33;Conjuration;Bound Battleaxe;;Skyrim.esm;0211EC;BoundBattleAxe
+34;Conjuration;Bound Bow;;Skyrim.esm;0211ED;BoundBow
+35;Conjuration;Bound Dagger;Dragonborn;Dragonborn.esm;01CE06;DLC2BoundDagger
+36;Conjuration;Bound Quiver;AE;ccbgssse002-exoticarrows.esl;00080C;ccBGSSSE002_BoundQuiver
+37;Conjuration;Bound Sword;;Skyrim.esm;0211EB;BoundSword
+38;Conjuration;Command Daedra;;Skyrim.esm;06F953;CommandDaedra
+39;Conjuration;Conjure Ancient Deathpriest;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;000852;ccVSVSSE003_SPELL_AncientLich
+40;Conjuration;Conjure Ash Guardian;Dragonborn;Dragonborn.esm;017782;DLC2AshGuardianRune
+41;Conjuration;Conjure Ash Spawn;Dragonborn;Dragonborn.esm;01CDF6;DLC2ConjureAshSpawn
+42;Conjuration;Conjure Ayleid Lich;AE;ccbgssse067-daedinv.esm;147D95;ccBGSSSE067_ConjureAyleidLichSpell
+43;Conjuration;Conjure Bone Colossus;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;000861;ccVSVSSE003_SPELL_BoneColossus
+44;Conjuration;Conjure Boneman;Dawnguard;Dawnguard.esm;0045BA;DLC1ConjureBoneman
+45;Conjuration;Conjure Cursed Spectre;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;000870;ccVSVSSE003_SPELL_Gloomwraith
+46;Conjuration;Conjure Dark Seducer Archer;AE;ccbgssse025-advdsgs.esm;000870;ccBGSSSE025_ConjureDarkSeducerArcher
+47;Conjuration;Conjure Dark Seducer Warrior;AE;ccbgssse025-advdsgs.esm;000A0B;ccBGSSSE025_ConjureDarkSeducerWarrior
+48;Conjuration;Conjure Dremora Lord;;Skyrim.esm;10DDEC;ConjureDremoraLord
+49;Conjuration;Conjure Familiar;;Skyrim.esm;0640B6;ConjureFamiliar
+50;Conjuration;Conjure Flame Atronach;;Skyrim.esm;0204C3;ConjureFlameAtronach
+51;Conjuration;Conjure Foul Zombie;AE;ccbgssse003-zombies.esl;000806;ccBGSSSE003ConjureZombie2
+52;Conjuration;Conjure Frost Atronach;;Skyrim.esm;0204C4;ConjureFrostAtronach
+53;Conjuration;Conjure Golden Saint Archer;AE;ccbgssse025-advdsgs.esm;00086F;ccBGSSSE025_ConjureGoldenSaintArcher
+54;Conjuration;Conjure Golden Saint Warrior;AE;ccbgssse025-advdsgs.esm;0008CB;ccBGSSSE025_ConjureGoldenSaintWarrior
+55;Conjuration;Conjure Haunting Spirit;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;000868;ccVSVSSE003_SPELL_HauntingSpirit
+56;Conjuration;Conjure Malignant Zombie;AE;ccbgssse003-zombies.esl;000807;ccBGSSSE003ConjureZombie4
+57;Conjuration;Conjure Mistman;Dawnguard;Dawnguard.esm;0045B8;DLC1ConjureMistman
+58;Conjuration;Conjure Putrid Zombie;AE;ccbgssse003-zombies.esl;000805;ccBGSSSE003ConjureZombie3
+59;Conjuration;Conjure Seeker;Dragonborn;Dragonborn.esm;033C66;DLC2ConjureSeeker
+60;Conjuration;Conjure Skeleton Champion;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;000877;ccVSVSSE003_SPELL_SkeletonChampion
+61;Conjuration;Conjure Skeleton Marksman;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;000856;ccVSVSSE003_SPELL_SkeletonMarksman
+62;Conjuration;Conjure Skeleton Minion;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;00085B;ccVSVSSE003_SPELL_SkeletonMinion
+63;Conjuration;Conjure Skeleton Warlock;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;00084E;ccVSVSSE003_SPELL_SkeletonWarlock
+64;Conjuration;Conjure Staada;Optional|AE;ccbgssse025-advdsgs.esm;19D3FA;ccBGSSSE025_ConjureStaada
+65;Conjuration;Conjure Storm Atronach;;Skyrim.esm;0204C5;ConjureStormAtronach
+66;Conjuration;Conjure Tomb Guardian;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;000854;ccVSVSSE003_SPELL_TombGuardian
+67;Conjuration;Conjure Undying Ghost;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;00085E;ccVSVSSE003_SPELL_UndyingGhost
+68;Conjuration;Conjure Wrathman;Dawnguard;Dawnguard.esm;0045B3;DLC1ConjureWrathman
+69;Conjuration;Conjure Zombie;AE;ccbgssse003-zombies.esl;000804;ccBGSSSE003ConjureZombie
+70;Conjuration;Dead Thrall;;Skyrim.esm;07E8DF;DeadThrall
+71;Conjuration;Dread Zombie;;Skyrim.esm;096D95;DreadZombie
+72;Conjuration;Expel Daedra;;Skyrim.esm;06F952;ExpelDaedra
+73;Conjuration;Flame Thrall;;Skyrim.esm;07E5D5;FlameThrall
+74;Conjuration;Flaming Familiar;;Skyrim.esm;09CE26;dunHighGateSummonFlamingThrall
+75;Conjuration;Frost Thrall;;Skyrim.esm;07E5D6;FrostThrall
+76;Conjuration;Necromancer's Ritual;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;000869;ccVSVSSE003_SPELL_NecroRitual
+77;Conjuration;Pride of Hirstaang;AE;ccbgssse014-spellpack01.esl;000853;ccBGSSSE014_Oblivion_PrideOfHirstaang
+78;Conjuration;Raise Zombie;;Skyrim.esm;07E8E1;RaiseZombie
+79;Conjuration;Reanimate Corpse;;Skyrim.esm;065BD7;ReanimateCorpse
+80;Conjuration;Revenant;;Skyrim.esm;096D94;Revenant
+81;Conjuration;Soul Split;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;000874;ccVSVSSE003_SPELL_SoulSplit
+82;Conjuration;Soul Trap;;Skyrim.esm;04DBA4;SoulTrap
+83;Conjuration;Storm Thrall;;Skyrim.esm;07E5D7;StormThrall
+84;Conjuration;Summon Arniel's Shade;;Skyrim.esm;06A153;MGRSummonArniel
+85;Conjuration;Summon Arvak;Dawnguard;Dawnguard.esm;00C600;DLC01SummonSoulHorse
+86;Conjuration;Summon Daedric Horse;AE;ccbgssse067-daedinv.esm;000B62;ccBGSSSE067_SummonDaedricHorse
+87;Conjuration;Summon Unbound Dremora;;Skyrim.esm;099F39;MGRSummonDremora
+88;Destruction;Arniel's Convection;;Skyrim.esm;06A104;MGRArnielSpell
+89;Destruction;Blizzard;;Skyrim.esm;07E8E4;Blizzard
+90;Destruction;Chain Lightning;;Skyrim.esm;045F9D;ChainLightning
+91;Destruction;Choking Grasp;AE;ccbgssse014-spellpack01.esl;00085A;ccBGSSSE014_Oblivion_Absorb01_ChokingGrasp
+92;Destruction;Elemental Blast;AE;ccbgssse014-spellpack01.esl;000856;ccBGSSSE014_Oblivion_Elemental04Blast
+93;Destruction;Elemental Bolt;AE;ccbgssse014-spellpack01.esl;00085F;ccBGSSSE014_Oblivion_Elemental02Bolt
+94;Destruction;Elemental Burst;AE;ccbgssse014-spellpack01.esl;00085B;ccBGSSSE014_Oblivion_Elemental03Burst
+95;Destruction;Elemental Flare;AE;ccbgssse014-spellpack01.esl;000850;ccBGSSSE014_Oblivion_Elemental01Flare
+96;Destruction;Fire Rune;;Skyrim.esm;05DB90;FireRune
+97;Destruction;Fire Storm;;Skyrim.esm;07A82B;FireStorm
+98;Destruction;Fireball;;Skyrim.esm;01C789;Fireball
+99;Destruction;Firebolt;;Skyrim.esm;012FD0;Firebolt
+100;Destruction;Flame Cloak;;Skyrim.esm;03AE9F;flameCloak
+101;Destruction;Flames;;Skyrim.esm;012FCD;Flames
+102;Destruction;Frost Cloak;;Skyrim.esm;03AEA2;FrostCloak
+103;Destruction;Frost Rune;;Skyrim.esm;06796F;FrostRune
+104;Destruction;Frostbite;;Skyrim.esm;02B96B;Frostbite
+105;Destruction;Hangman's Noose;AE;ccbgssse014-spellpack01.esl;000858;ccBGSSSE014_Oblivion_Absorb03_HangmansNoose
+106;Destruction;Ice Spike;;Skyrim.esm;02B96C;IceSpike
+107;Destruction;Ice Storm;;Skyrim.esm;045F9C;IceStorm
+108;Destruction;Icy Spear;;Skyrim.esm;10F7EC;IcySpear
+109;Destruction;Incinerate;;Skyrim.esm;10F7ED;Incinerate
+110;Destruction;Lightning Bolt;;Skyrim.esm;02DD29;LightningBolt
+111;Destruction;Lightning Cloak;;Skyrim.esm;03AEA3;LightningCloak
+112;Destruction;Lightning Rune;;Skyrim.esm;067970;ShockRune
+113;Destruction;Lightning Storm;;Skyrim.esm;07E8E5;LightningStorm
+114;Destruction;Mara's Wrath;AE;ccbgssse014-spellpack01.esl;000855;ccBGSSSE014_Oblivion_MarasWrath
+115;Destruction;Sparks;;Skyrim.esm;02DD2A;Sparks
+116;Destruction;Strangulation;AE;ccbgssse014-spellpack01.esl;000859;ccBGSSSE014_Oblivion_Absorb02_Strangulation
+117;Destruction;Thunderbolt;;Skyrim.esm;10F7EE;Thunderbolt
+118;Destruction;Touch of Death;AE;ccbgssse014-spellpack01.esl;000857;ccBGSSSE014_Oblivion_Absorb04_TouchOfDeath
+119;Destruction;Unbounded Flames;AE;ccbgssse014-spellpack01.esl;00080E;ccBGSSSE014_UnboundedFlames
+120;Destruction;Unbounded Freezing;AE;ccbgssse014-spellpack01.esl;00080D;ccBGSSSE014_UnboundedFreeze
+121;Destruction;Unbounded Storms;AE;ccbgssse014-spellpack01.esl;000808;ccBGSSSE014_UnboundedStorms
+122;Destruction;Wall of Flames;;Skyrim.esm;035D7F;WallOfFlames
+123;Destruction;Wall of Frost;;Skyrim.esm;035D80;WallOfFrost
+124;Destruction;Wall of Storms;;Skyrim.esm;035D81;WallOfStorms
+125;Destruction;Whirlwind Cloak;Dragonborn;Dragonborn.esm;01772D;DLC2WhirlwindCloak
+126;Illusion;Call to Arms;;Skyrim.esm;07E8DD;CallToArms
+127;Illusion;Calm;;Skyrim.esm;04DEE9;Calm
+128;Illusion;Clairvoyance;;Skyrim.esm;021143;Clairvoyance
+129;Illusion;Courage;;Skyrim.esm;04DEE8;Courage
+130;Illusion;Fear;;Skyrim.esm;04DEEA;Fear
+131;Illusion;Fenrik's Welcome;AE;ccbgssse014-spellpack01.esl;00084F;ccBGSSSE014_Oblivion_FenriksWelcome
+132;Illusion;Frenzy;;Skyrim.esm;04DEEE;Frenzy
+133;Illusion;Frenzy Rune;Dragonborn;Dragonborn.esm;0177B7;DLC2FrenzyRune
+134;Illusion;Fury;;Skyrim.esm;04DEEB;Fury
+135;Illusion;Harmony;;Skyrim.esm;07E8DB;Harmony
+136;Illusion;Hysteria;;Skyrim.esm;07E8DE;Hysteria
+137;Illusion;Invisibility;;Skyrim.esm;027EB6;Invisibility
+138;Illusion;Mayhem;;Skyrim.esm;07E8DA;Mayhem
+139;Illusion;Muffle;;Skyrim.esm;08F3EB;Muffle
+140;Illusion;Orum's Aquatic Escape;AE;ccbgssse014-spellpack01.esl;000851;ccBGSSSE014_Oblivion_OrumsAquaticEscape
+141;Illusion;Pacify;;Skyrim.esm;04DEED;Pacify
+142;Illusion;Rally;;Skyrim.esm;04DEEC;Rally
+143;Illusion;Rout;;Skyrim.esm;04DEEF;Rout
+144;Illusion;Vision of the Tenth Eye;;Skyrim.esm;0B323E;MGRitual02Spell
+145;Restoration;Bane of the Undead;;Skyrim.esm;08C1AB;BaneoftheUndead
+146;Restoration;Circle of Protection;;Skyrim.esm;05312D;CircleOfProtection
+147;Restoration;Close Wounds;;Skyrim.esm;0B62EF;CloseWounds
+148;Restoration;Fast Healing;;Skyrim.esm;02F3B8;FastHealing
+149;Restoration;Grand Healing;;Skyrim.esm;0B62EE;GrandHealing
+150;Restoration;Greater Ward;;Skyrim.esm;0211F0;WardGreater
+151;Restoration;Guardian Circle;;Skyrim.esm;0E0CCF;GuardianCircle
+152;Restoration;Heal Other;;Skyrim.esm;012FD2;HealOther
+153;Restoration;Healing;;Skyrim.esm;012FCC;Healing
+154;Restoration;Healing Hands;;Skyrim.esm;04D3F2;HealingHands
+155;Restoration;Lesser Ward;;Skyrim.esm;013018;WardLesser
+156;Restoration;Necromantic Healing;Dawnguard;Dawnguard.esm;00E8D2;DLC1NecromanticHealing
+157;Restoration;Poison Rune;Dragonborn;Dragonborn.esm;01D74B;DLC2PoisonRune
+158;Restoration;Repel Lesser Undead;;Skyrim.esm;04D3F8;RepelLesserUndead
+159;Restoration;Repel Undead;;Skyrim.esm;05DD60;RepelUndead
+160;Restoration;Steadfast Ward;;Skyrim.esm;0211F1;WardSteadfast
+161;Restoration;Stendarr's Aura;Dawnguard;Dawnguard.esm;0038B5;DLC1StendarrsAura
+162;Restoration;Sun Fire;Dawnguard;Dawnguard.esm;003F52;DLC1SunFire
+163;Restoration;Turn Greater Undead;;Skyrim.esm;05DD5E;TurnGreaterUndead
+164;Restoration;Turn Lesser Undead;;Skyrim.esm;04B146;TurnLesserUndead
+165;Restoration;Turn Undead;;Skyrim.esm;05DD5D;TurnUndead
+166;Restoration;Vampire's Bane;Dawnguard;Dawnguard.esm;0038B6;DLC1VampiresBane
+167;Restoration;Heal Undead;Optional|Dawnguard;Dawnguard.esm;00E8D4;DLC1HealUndead

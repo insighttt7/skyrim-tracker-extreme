@@ -1,0 +1,283 @@
+Order;Block;SubBlock;Name;Tags;Plugin;LocalID;EditorID;Source
+1;Warrior;Archery;Overdraw I;;Skyrim.esm;0BABED;Overdraw00;PERK
+2;Warrior;Archery;Overdraw II;;Skyrim.esm;07934A;Overdraw20;PERK
+3;Warrior;Archery;Overdraw III;;Skyrim.esm;07934B;Overdraw40;PERK
+4;Warrior;Archery;Overdraw IV;;Skyrim.esm;07934D;Overdraw60;PERK
+5;Warrior;Archery;Overdraw V;;Skyrim.esm;079354;Overdraw80;PERK
+6;Warrior;Archery;Critical Shot I;;Skyrim.esm;105F1C;CriticalShot30;PERK
+7;Warrior;Archery;Critical Shot II;;Skyrim.esm;105F1E;CriticalShot60;PERK
+8;Warrior;Archery;Critical Shot III;;Skyrim.esm;105F1F;CriticalShot90;PERK
+9;Warrior;Archery;Eagle Eye;;Skyrim.esm;058F61;EagleEye30;PERK
+10;Warrior;Archery;Steady Hand I;;Skyrim.esm;103ADA;SteadyHand40;PERK
+11;Warrior;Archery;Steady Hand II;;Skyrim.esm;103ADB;SteadyHand60;PERK
+12;Warrior;Archery;Power Shot;;Skyrim.esm;058F62;PowerShot;PERK
+13;Warrior;Archery;Hunter's Discipline;;Skyrim.esm;051B12;HuntersDiscipline;PERK
+14;Warrior;Archery;Ranger;;Skyrim.esm;058F63;Ranger;PERK
+15;Warrior;Archery;Quick Shot;;Skyrim.esm;105F19;QuickShot;PERK
+16;Warrior;Archery;Bullseye;;Skyrim.esm;058F64;Bullseye;PERK
+17;Warrior;Block;Shield Wall I;;Skyrim.esm;0BCCAE;ShieldWall00;PERK
+18;Warrior;Block;Shield Wall II;;Skyrim.esm;079355;ShieldWall20;PERK
+19;Warrior;Block;Shield Wall III;;Skyrim.esm;079356;ShieldWall40;PERK
+20;Warrior;Block;Shield Wall IV;;Skyrim.esm;079357;ShieldWall60;PERK
+21;Warrior;Block;Shield Wall V;;Skyrim.esm;079358;ShieldWall80;PERK
+22;Warrior;Block;Quick Reflexes;;Skyrim.esm;0D8C33;QuickReflexes;PERK
+23;Warrior;Block;Deflect Arrows;;Skyrim.esm;058F68;DeflectArrows;PERK
+24;Warrior;Block;Power Bash;;Skyrim.esm;058F67;PowerBashPerk;PERK
+25;Warrior;Block;Deadly Bash;;Skyrim.esm;05F594;DeadlyBash;PERK
+26;Warrior;Block;Elemental Protection;;Skyrim.esm;058F69;ElementalProtection;PERK
+27;Warrior;Block;Block Runner;;Skyrim.esm;106253;BlockRunner;PERK
+28;Warrior;Block;Disarming Bash;;Skyrim.esm;058F66;DisarmingBash;PERK
+29;Warrior;Block;Shield Charge;;Skyrim.esm;058F6A;ShieldCharge;PERK
+30;Warrior;Heavy Armor;Juggernaut I;;Skyrim.esm;0BCD2A;Juggernaut00;PERK
+31;Warrior;Heavy Armor;Juggernaut II;;Skyrim.esm;07935E;Juggernaut20;PERK
+32;Warrior;Heavy Armor;Juggernaut III;;Skyrim.esm;079361;Juggernaut40;PERK
+33;Warrior;Heavy Armor;Juggernaut IV;;Skyrim.esm;079362;Juggernaut60;PERK
+34;Warrior;Heavy Armor;Juggernaut V;;Skyrim.esm;079374;Juggernaut80;PERK
+35;Warrior;Heavy Armor;Fists of Steel;;Skyrim.esm;058F6E;FistsOfSteel;PERK
+36;Warrior;Heavy Armor;Well Fitted;;Skyrim.esm;058F6F;WellFitted;PERK
+37;Warrior;Heavy Armor;Cushioned;;Skyrim.esm;0BCD2B;Cushioned;PERK
+38;Warrior;Heavy Armor;Tower of Strength;;Skyrim.esm;058F6C;TowerOfStrength;PERK
+39;Warrior;Heavy Armor;Conditioning;;Skyrim.esm;058F6D;Conditioning;PERK
+40;Warrior;Heavy Armor;Matching Set;;Skyrim.esm;107832;MatchingSetHeavy;PERK
+41;Warrior;Heavy Armor;Reflect Blows;;Skyrim.esm;105F33;ReflectBlows;PERK
+42;Warrior;One-Handed;Armsman I;;Skyrim.esm;0BABE4;Armsman00;PERK
+43;Warrior;One-Handed;Armsman II;;Skyrim.esm;079343;Armsman20;PERK
+44;Warrior;One-Handed;Armsman III;;Skyrim.esm;079342;Armsman40;PERK
+45;Warrior;One-Handed;Armsman IV;;Skyrim.esm;079344;Armsman60;PERK
+46;Warrior;One-Handed;Armsman V;;Skyrim.esm;079345;Armsman80;PERK
+47;Warrior;One-Handed;Fighting Stance;;Skyrim.esm;052D50;FightingStance;PERK
+48;Warrior;One-Handed;Dual Flurry I;;Skyrim.esm;106256;DualFlurry30;PERK
+49;Warrior;One-Handed;Dual Flurry II;;Skyrim.esm;106257;DualFlurry50;PERK
+50;Warrior;One-Handed;Bladesman I;;Skyrim.esm;05F56F;Bladesman30;PERK
+51;Warrior;One-Handed;Bladesman II;;Skyrim.esm;0C1E90;Bladesman60;PERK
+52;Warrior;One-Handed;Bladesman III;;Skyrim.esm;0C1E91;Bladesman90;PERK
+53;Warrior;One-Handed;Hack and Slash I;;Skyrim.esm;03FFFA;HackAndSlash30;PERK
+54;Warrior;One-Handed;Hack and Slash II;;Skyrim.esm;0C3678;HackAndSlash60;PERK
+55;Warrior;One-Handed;Hack and Slash III;;Skyrim.esm;0C3679;HackAndSlash90;PERK
+56;Warrior;One-Handed;Bone Breaker I;;Skyrim.esm;05F592;BoneBreaker30;PERK
+57;Warrior;One-Handed;Bone Breaker II;;Skyrim.esm;0C1E92;BoneBreaker60;PERK
+58;Warrior;One-Handed;Bone Breaker III;;Skyrim.esm;0C1E93;BoneBreaker90;PERK
+59;Warrior;One-Handed;Savage Strike;;Skyrim.esm;03AF81;SavageStrike;PERK
+60;Warrior;One-Handed;Critical Charge;;Skyrim.esm;0CB406;CriticalCharge;PERK
+61;Warrior;One-Handed;Dual Savagery;;Skyrim.esm;106258;DualSavagery;PERK
+62;Warrior;One-Handed;Paralyzing Strike;;Skyrim.esm;03AFA6;ParalyzingStrike;PERK
+63;Warrior;Smithing;Steel Smithing;;Skyrim.esm;0CB40D;SteelSmithing;PERK
+64;Warrior;Smithing;Elven Smithing;;Skyrim.esm;0CB40F;ElvenSmithing;PERK
+65;Warrior;Smithing;Dwarven Smithing;;Skyrim.esm;0CB40E;DwarvenSmithing;PERK
+66;Warrior;Smithing;Orcish Smithing;;Skyrim.esm;0CB410;OrcishSmithing;PERK
+67;Warrior;Smithing;Advanced Armors;;Skyrim.esm;0CB414;AdvancedArmors;PERK
+68;Warrior;Smithing;Arcane Blacksmith;;Skyrim.esm;05218E;ArcaneBlacksmith;PERK
+69;Warrior;Smithing;Glass Smithing;;Skyrim.esm;0CB411;GlassSmithing;PERK
+70;Warrior;Smithing;Ebony Smithing;;Skyrim.esm;0CB412;EbonySmithing;PERK
+71;Warrior;Smithing;Daedric Smithing;;Skyrim.esm;0CB413;DaedricSmithing;PERK
+72;Warrior;Smithing;Dragon Armor;;Skyrim.esm;052190;DragonArmor;PERK
+73;Warrior;Two-Handed;Barbarian I;;Skyrim.esm;0BABE8;Barbarian00;PERK
+74;Warrior;Two-Handed;Barbarian II;;Skyrim.esm;079346;Barbarian20;PERK
+75;Warrior;Two-Handed;Barbarian III;;Skyrim.esm;079347;Barbarian40;PERK
+76;Warrior;Two-Handed;Barbarian IV;;Skyrim.esm;079348;Barbarian60;PERK
+77;Warrior;Two-Handed;Barbarian V;;Skyrim.esm;079349;Barbarian80;PERK
+78;Warrior;Two-Handed;Champion's Stance;;Skyrim.esm;052D51;ChampionsStance;PERK
+79;Warrior;Two-Handed;Limbsplitter I;;Skyrim.esm;0C5C05;Limbsplitter30;PERK
+80;Warrior;Two-Handed;Limbsplitter II;;Skyrim.esm;0C5C06;Limbsplitter60;PERK
+81;Warrior;Two-Handed;Limbsplitter III;;Skyrim.esm;0C5C07;Limbsplitter90;PERK
+82;Warrior;Two-Handed;Skullcrusher I;;Skyrim.esm;03AF84;Skullcrusher30;PERK
+83;Warrior;Two-Handed;Skullcrusher II;;Skyrim.esm;0C1E96;Skullcrusher60;PERK
+84;Warrior;Two-Handed;Skullcrusher III;;Skyrim.esm;0C1E97;Skullcrusher90;PERK
+85;Warrior;Two-Handed;Deep Wounds I;;Skyrim.esm;03AF83;DeepWounds30;PERK
+86;Warrior;Two-Handed;Deep Wounds II;;Skyrim.esm;0C1E94;DeepWounds60;PERK
+87;Warrior;Two-Handed;Deep Wounds III;;Skyrim.esm;0C1E95;DeepWounds90;PERK
+88;Warrior;Two-Handed;Devastating Blow;;Skyrim.esm;052D52;DevastatingBlow;PERK
+89;Warrior;Two-Handed;Great Critical Charge;;Skyrim.esm;0CB407;GreatCriticalCharge;PERK
+90;Warrior;Two-Handed;Sweep;;Skyrim.esm;03AF9E;Sweep;PERK
+91;Warrior;Two-Handed;Warmaster;;Skyrim.esm;03AFA7;Warmaster;PERK
+92;Thief;Alchemy;Alchemist I;;Skyrim.esm;0BE127;Alchemist00;PERK
+93;Thief;Alchemy;Alchemist II;;Skyrim.esm;0C07CA;Alchemist20;PERK
+94;Thief;Alchemy;Alchemist III;;Skyrim.esm;0C07CB;Alchemist40;PERK
+95;Thief;Alchemy;Alchemist IV;;Skyrim.esm;0C07CC;Alchemist60;PERK
+96;Thief;Alchemy;Alchemist V;;Skyrim.esm;0C07CD;Alchemist80;PERK
+97;Thief;Alchemy;Physician;;Skyrim.esm;058215;Physician;PERK
+98;Thief;Alchemy;Benefactor;;Skyrim.esm;058216;Benefactor;PERK
+99;Thief;Alchemy;Poisoner;;Skyrim.esm;058217;Poisoner;PERK
+100;Thief;Alchemy;Experimenter I;;Skyrim.esm;058218;Experimenter50;PERK
+101;Thief;Alchemy;Experimenter II;;Skyrim.esm;105F2A;Experimenter70;PERK
+102;Thief;Alchemy;Experimenter III;;Skyrim.esm;105F2B;Experimenter90;PERK
+103;Thief;Alchemy;Concentrated Poison;;Skyrim.esm;105F2F;ConcentratedPoison;PERK
+104;Thief;Alchemy;Green Thumb;;Skyrim.esm;105F2E;GreenThumb;PERK
+105;Thief;Alchemy;Snakeblood;;Skyrim.esm;105F2C;Snakeblood;PERK
+106;Thief;Alchemy;Purity;;Skyrim.esm;05821D;Purity;PERK
+107;Thief;Light Armor;Agile Defender I;;Skyrim.esm;0BE123;AgileDefender00;PERK
+108;Thief;Light Armor;Agile Defender II;;Skyrim.esm;079376;AgileDefender20;PERK
+109;Thief;Light Armor;Agile Defender III;;Skyrim.esm;079389;AgileDefender40;PERK
+110;Thief;Light Armor;Agile Defender IV;;Skyrim.esm;079391;AgileDefender60;PERK
+111;Thief;Light Armor;Agile Defender V;;Skyrim.esm;079392;AgileDefender80;PERK
+112;Thief;Light Armor;Custom Fit;;Skyrim.esm;051B1B;CustomFit;PERK
+113;Thief;Light Armor;Unhindered;;Skyrim.esm;051B1C;Unhindered;PERK
+114;Thief;Light Armor;Wind Walker;;Skyrim.esm;105F22;WindWalker;PERK
+115;Thief;Light Armor;Matching Set;;Skyrim.esm;051B17;MatchingSet;PERK
+116;Thief;Light Armor;Deft Movement;;Skyrim.esm;107831;DeftMovement;PERK
+117;Thief;Lockpicking;Novice;;Skyrim.esm;0F392A;NoviceLocks00;PERK
+118;Thief;Lockpicking;Apprentice;;Skyrim.esm;0BE125;ApprenticeLocks25;PERK
+119;Thief;Lockpicking;Quick Hands;;Skyrim.esm;106259;QuickHands;PERK
+120;Thief;Lockpicking;Wax Key;;Skyrim.esm;107830;WaxKey;PERK
+121;Thief;Lockpicking;Adept;;Skyrim.esm;0C3680;AdeptLocks50;PERK
+122;Thief;Lockpicking;Golden Touch;;Skyrim.esm;05820A;GoldenTouch;PERK
+123;Thief;Lockpicking;Treasure Hunter;;Skyrim.esm;105F26;TreasureHunter;PERK
+124;Thief;Lockpicking;Expert;;Skyrim.esm;0C3681;ExpertLocks75;PERK
+125;Thief;Lockpicking;Locksmith;;Skyrim.esm;058208;Locksmith;PERK
+126;Thief;Lockpicking;Unbreakable;;Skyrim.esm;058209;Unbreakable;PERK
+127;Thief;Lockpicking;Master;;Skyrim.esm;0C3682;MasterLocks100;PERK
+128;Thief;Pickpocket;Light Fingers I;;Skyrim.esm;0BE124;LightFingers00;PERK
+129;Thief;Pickpocket;Light Fingers II;;Skyrim.esm;018E6A;LightFingers20;PERK
+130;Thief;Pickpocket;Light Fingers III;;Skyrim.esm;018E6B;LightFingers40;PERK
+131;Thief;Pickpocket;Light Fingers IV;;Skyrim.esm;018E6C;LightFingers60;PERK
+132;Thief;Pickpocket;Light Fingers V;;Skyrim.esm;018E6D;LightFingers80;PERK
+133;Thief;Pickpocket;Night Thief;;Skyrim.esm;058202;NightThief;PERK
+134;Thief;Pickpocket;Poisoned;;Skyrim.esm;105F28;Poisoned;PERK
+135;Thief;Pickpocket;Cutpurse;;Skyrim.esm;058204;Cutpurse;PERK
+136;Thief;Pickpocket;Extra Pockets;;Skyrim.esm;096590;ExtraPockets;PERK
+137;Thief;Pickpocket;Keymaster;;Skyrim.esm;0D79A0;KeyMaster;PERK
+138;Thief;Pickpocket;Misdirection;;Skyrim.esm;058201;Misdirection;PERK
+139;Thief;Pickpocket;Perfect Touch;;Skyrim.esm;058205;PerfectTouch;PERK
+140;Thief;Sneak;Stealth I;;Skyrim.esm;0BE126;Stealth00;PERK
+141;Thief;Sneak;Stealth II;;Skyrim.esm;0C07C6;Stealth20;PERK
+142;Thief;Sneak;Stealth III;;Skyrim.esm;0C07C7;Stealth40;PERK
+143;Thief;Sneak;Stealth IV;;Skyrim.esm;0C07C8;Stealth60;PERK
+144;Thief;Sneak;Stealth V;;Skyrim.esm;0C07C9;Stealth80;PERK
+145;Thief;Sneak;Backstab;;Skyrim.esm;058210;Backstab;PERK
+146;Thief;Sneak;Muffled Movement;;Skyrim.esm;058213;MuffledMovement;PERK
+147;Thief;Sneak;Deadly Aim;;Skyrim.esm;1036F0;DeadlyAim;PERK
+148;Thief;Sneak;Light Foot;;Skyrim.esm;05820C;LightFoot;PERK
+149;Thief;Sneak;Assassin's Blade;;Skyrim.esm;058211;AssassinsBlade;PERK
+150;Thief;Sneak;Silent Roll;;Skyrim.esm;105F23;SilentRoll;PERK
+151;Thief;Sneak;Silence;;Skyrim.esm;105F24;Silence;PERK
+152;Thief;Sneak;Shadow Warrior;;Skyrim.esm;058214;ShadowWarrior;PERK
+153;Thief;Speech;Haggling I;;Skyrim.esm;0BE128;Haggling00;PERK
+154;Thief;Speech;Haggling II;;Skyrim.esm;0C07CE;Haggling20;PERK
+155;Thief;Speech;Haggling III;;Skyrim.esm;0C07CF;Haggling40;PERK
+156;Thief;Speech;Haggling IV;;Skyrim.esm;0C07D0;Haggling60;PERK
+157;Thief;Speech;Haggling V;;Skyrim.esm;0C07D1;Haggling80;PERK
+158;Thief;Speech;Allure;;Skyrim.esm;058F75;Allure;PERK
+159;Thief;Speech;Bribery;;Skyrim.esm;058F72;Bribery;PERK
+160;Thief;Speech;Merchant;;Skyrim.esm;058F7A;Merchant;PERK
+161;Thief;Speech;Persuasion;;Skyrim.esm;1090A2;Persuasion;PERK
+162;Thief;Speech;Investor;;Skyrim.esm;058F7B;Investor;PERK
+163;Thief;Speech;Intimidation;;Skyrim.esm;105F29;Intimidation;PERK
+164;Thief;Speech;Fence;;Skyrim.esm;058F79;fence;PERK
+165;Thief;Speech;Master Trader;;Skyrim.esm;1090A5;MasterTrader;PERK
+166;Mage;Alteration;Novice;;Skyrim.esm;0F2CA6;AlterationNovice00;PERK
+167;Mage;Alteration;Dual Casting;;Skyrim.esm;0153CD;AlterationDualCasting;PERK
+168;Mage;Alteration;Apprentice;;Skyrim.esm;0C44B7;AlterationApprentice25;PERK
+169;Mage;Alteration;Mage Armor I;;Skyrim.esm;0D7999;MageArmor30;PERK
+170;Mage;Alteration;Mage Armor II;;Skyrim.esm;0D799A;MageArmor50;PERK
+171;Mage;Alteration;Mage Armor III;;Skyrim.esm;0D799B;MageArmor70;PERK
+172;Mage;Alteration;Magic Resistance I;;Skyrim.esm;053128;MagicResistance30;PERK
+173;Mage;Alteration;Magic Resistance II;;Skyrim.esm;053129;MagicResistance50;PERK
+174;Mage;Alteration;Magic Resistance III;;Skyrim.esm;05312A;MagicResistance70;PERK
+175;Mage;Alteration;Adept;;Skyrim.esm;0C44B8;AlterationAdept50;PERK
+176;Mage;Alteration;Stability;;Skyrim.esm;0581FC;Stability;PERK
+177;Mage;Alteration;Expert;;Skyrim.esm;0C44B9;AlterationExpert75;PERK
+178;Mage;Alteration;Master;;Skyrim.esm;0C44BA;AlterationMaster100;PERK
+179;Mage;Alteration;Atronach;;Skyrim.esm;0581F7;atronach;PERK
+180;Mage;Conjuration;Novice;;Skyrim.esm;0F2CA7;ConjurationNovice00;PERK
+181;Mage;Conjuration;Dual Casting;;Skyrim.esm;0153CE;ConjurationDualCasting;PERK
+182;Mage;Conjuration;Mystic Binding;;Skyrim.esm;0640B3;MysticBinding;PERK
+183;Mage;Conjuration;Apprentice;;Skyrim.esm;0C44BB;ConjurationApprentice25;PERK
+184;Mage;Conjuration;Summoner I;;Skyrim.esm;105F30;Summoner30;PERK
+185;Mage;Conjuration;Summoner II;;Skyrim.esm;105F31;Summoner70;PERK
+186;Mage;Conjuration;Soul Stealer;;Skyrim.esm;0D799E;SoulStealer;PERK
+187;Mage;Conjuration;Atromancy;;Skyrim.esm;0CB419;Atromancy;PERK
+188;Mage;Conjuration;Necromancy;;Skyrim.esm;0581DD;Necromancy;PERK
+189;Mage;Conjuration;Adept;;Skyrim.esm;0C44BC;ConjurationAdept50;PERK
+190;Mage;Conjuration;Oblivion Binding;;Skyrim.esm;0D799C;OblivionBinding;PERK
+191;Mage;Conjuration;Dark Souls;;Skyrim.esm;0581DE;DarkSouls;PERK
+192;Mage;Conjuration;Expert;;Skyrim.esm;0C44BD;ConjurationExpert75;PERK
+193;Mage;Conjuration;Elemental Potency;;Skyrim.esm;0CB41A;ElementalPotency;PERK
+194;Mage;Conjuration;Master;;Skyrim.esm;0C44BE;ConjurationMaster100;PERK
+195;Mage;Conjuration;Twin Souls;;Skyrim.esm;0D5F1C;TwinSouls;PERK
+196;Mage;Destruction;Novice;;Skyrim.esm;0F2CA8;DestructionNovice00;PERK
+197;Mage;Destruction;Dual Casting;;Skyrim.esm;0153CF;DestructionDualCasting;PERK
+198;Mage;Destruction;Apprentice;;Skyrim.esm;0C44BF;DestructionApprentice25;PERK
+199;Mage;Destruction;Augmented Flames I;;Skyrim.esm;0581E7;AugmentedFlames;PERK
+200;Mage;Destruction;Augmented Flames II;;Skyrim.esm;10FCF8;AugmentedFlames60;PERK
+201;Mage;Destruction;Augmented Frost I;;Skyrim.esm;0581EA;AugmentedFrost;PERK
+202;Mage;Destruction;Augmented Frost II;;Skyrim.esm;10FCF9;AugmentedFrost60;PERK
+203;Mage;Destruction;Augmented Shock I;;Skyrim.esm;058200;AugmentedShock;PERK
+204;Mage;Destruction;Augmented Shock II;;Skyrim.esm;10FCFA;AugmentedShock60;PERK
+205;Mage;Destruction;Impact;;Skyrim.esm;0153D2;Impact;PERK
+206;Mage;Destruction;Rune Master;;Skyrim.esm;105F32;RuneMaster;PERK
+207;Mage;Destruction;Adept;;Skyrim.esm;0C44C0;DestructionAdept50;PERK
+208;Mage;Destruction;Intense Flames;;Skyrim.esm;0F392E;IntenseFlames;PERK
+209;Mage;Destruction;Deep Freeze;;Skyrim.esm;0F3933;DeepFreeze;PERK
+210;Mage;Destruction;Disintegrate;;Skyrim.esm;0F3F0E;Disintegrate;PERK
+211;Mage;Destruction;Expert;;Skyrim.esm;0C44C1;DestructionExpert75;PERK
+212;Mage;Destruction;Master;;Skyrim.esm;0C44C2;DestructionMaster100;PERK
+213;Mage;Enchanting;Enchanter I;;Skyrim.esm;0BEE97;Enchanter00;PERK
+214;Mage;Enchanting;Enchanter II;;Skyrim.esm;0C367C;Enchanter20;PERK
+215;Mage;Enchanting;Enchanter III;;Skyrim.esm;0C367D;Enchanter40;PERK
+216;Mage;Enchanting;Enchanter IV;;Skyrim.esm;0C367E;Enchanter60;PERK
+217;Mage;Enchanting;Enchanter V;;Skyrim.esm;0C367F;Enchanter80;PERK
+218;Mage;Enchanting;Soul Squeezer;;Skyrim.esm;058F7C;SoulSqueezer;PERK
+219;Mage;Enchanting;Fire Enchanter;;Skyrim.esm;058F80;FireEnchanter;PERK
+220;Mage;Enchanting;Soul Siphon;;Skyrim.esm;108A44;SoulSiphon;PERK
+221;Mage;Enchanting;Frost Enchanter;;Skyrim.esm;058F81;FrostEnchanter;PERK
+222;Mage;Enchanting;Storm Enchanter;;Skyrim.esm;058F82;StormEnchanter;PERK
+223;Mage;Enchanting;Insightful Enchanter;;Skyrim.esm;058F7E;InsightfulEnchanter;PERK
+224;Mage;Enchanting;Corpus Enchanter;;Skyrim.esm;058F7D;CorpusEnchanter;PERK
+225;Mage;Enchanting;Extra Effect;;Skyrim.esm;058F7F;ExtraEffect;PERK
+226;Mage;Illusion;Novice;;Skyrim.esm;0F2CA9;IllusionNovice00;PERK
+227;Mage;Illusion;Dual Casting;;Skyrim.esm;0153D0;IllusionDualCasting;PERK
+228;Mage;Illusion;Animage;;Skyrim.esm;0581E1;Animage;PERK
+229;Mage;Illusion;Apprentice;;Skyrim.esm;0C44C3;IllusionApprentice25;PERK
+230;Mage;Illusion;Hypnotic Gaze;;Skyrim.esm;059B77;HypnoticGaze;PERK
+231;Mage;Illusion;Kindred Mage;;Skyrim.esm;0581E2;KindredMage;PERK
+232;Mage;Illusion;Adept;;Skyrim.esm;0C44C4;IllusionAdept50;PERK
+233;Mage;Illusion;Aspect of Terror;;Skyrim.esm;059B78;AspectOfTerror;PERK
+234;Mage;Illusion;Quiet Casting;;Skyrim.esm;0581FD;QuietCasting;PERK
+235;Mage;Illusion;Rage;;Skyrim.esm;0C44B5;Rage;PERK
+236;Mage;Illusion;Expert;;Skyrim.esm;0C44C5;IllusionExpert75;PERK
+237;Mage;Illusion;Master of the Mind;;Skyrim.esm;059B76;MasterOfTheMind;PERK
+238;Mage;Illusion;Master;;Skyrim.esm;0C44C6;IllusionMaster100;PERK
+239;Mage;Restoration;Novice;;Skyrim.esm;0F2CAA;RestorationNovice00;PERK
+240;Mage;Restoration;Dual Casting;;Skyrim.esm;0153D1;RestorationDualCasting;PERK
+241;Mage;Restoration;Regeneration;;Skyrim.esm;0581F8;Regeneration;PERK
+242;Mage;Restoration;Apprentice;;Skyrim.esm;0C44C7;RestorationApprentice25;PERK
+243;Mage;Restoration;Recovery I;;Skyrim.esm;0581F4;Recovery30;PERK
+244;Mage;Restoration;Recovery II;;Skyrim.esm;0581F5;Recovery50;PERK
+245;Mage;Restoration;Respite;;Skyrim.esm;0581F9;Respite;PERK
+246;Mage;Restoration;Adept;;Skyrim.esm;0C44C8;RestorationAdept50;PERK
+247;Mage;Restoration;Ward Absorb;;Skyrim.esm;068BCC;wardAbsorb;PERK
+248;Mage;Restoration;Necromage;;Skyrim.esm;0581E4;Necromage;PERK
+249;Mage;Restoration;Expert;;Skyrim.esm;0C44C9;RestorationExpert75;PERK
+250;Mage;Restoration;Avoid Death;;Skyrim.esm;0A3F64;AvoidDeath;PERK
+251;Mage;Restoration;Master;;Skyrim.esm;0C44CA;RestorationMaster100;PERK
+252;Werewolf;;Bestial Strength I;Dawnguard;Dawnguard.esm;0059A4;DLC1BestialStrength25Perk;PERK
+253;Werewolf;;Bestial Strength II;Dawnguard;Dawnguard.esm;007A3F;DLC1BestialStrength50Perk;PERK
+254;Werewolf;;Bestial Strength III;Dawnguard;Dawnguard.esm;011CFA;DLC1BestialStrength75Perk;PERK
+255;Werewolf;;Bestial Strength IV;Dawnguard;Dawnguard.esm;011CFB;DLC1BestialStrength100Perk;PERK
+256;Werewolf;;Totem of Ice Brothers;Dawnguard;Dawnguard.esm;0059AA;DLC1TotemOfIceBrothersPerk;PERK
+257;Werewolf;;Totem of the Moon;Dawnguard;Dawnguard.esm;0059AB;DLC1TotemOfTheMoonPerk;PERK
+258;Werewolf;;Totem of the Predator;Dawnguard;Dawnguard.esm;0059A9;DLC1TotemPredatorPerk;PERK
+259;Werewolf;;Totem of Terror;Dawnguard;Dawnguard.esm;0059A8;DLC1TotemOfTerrorPerk;PERK
+260;Werewolf;;Animal Vigor;Dawnguard;Dawnguard.esm;0059A5;DLC1AnimalVigorPerk;PERK
+261;Werewolf;;Gorging;Dawnguard;Dawnguard.esm;0059A7;DLC1GorgingPerk;PERK
+262;Werewolf;;Savage Feeding;Dawnguard;Dawnguard.esm;0059A6;DLC1SavageFeedingPerk;PERK
+263;Vampire;;Power of the Grave;Dawnguard;Dawnguard.esm;005998;DLC1PowerOfTheGrave;PERK
+264;Vampire;;Detect All Creatures;Dawnguard;Dawnguard.esm;00599B;DLC1DetectLifePerk;PERK
+265;Vampire;;Mist Form;Dawnguard;Dawnguard.esm;00599C;DLC1MistFormPerk;PERK
+266;Vampire;;Supernatural Reflexes;Dawnguard;Dawnguard.esm;00599E;DLC1SupernaturalReflexesPerk;PERK
+267;Vampire;;Blood Healing;Dawnguard;Dawnguard.esm;005994;DLC1VampiricBite;PERK
+268;Vampire;;Unearthly Will;Dawnguard;Dawnguard.esm;005995;DLC1UnearthlyWill;PERK
+269;Vampire;;Poison Talons;Dawnguard;Dawnguard.esm;005996;DLC1PoisonTalons;PERK
+270;Vampire;;Night Cloak;Dawnguard;Dawnguard.esm;005997;DLC1NightCloakPerk;PERK
+271;Vampire;;Vampiric Grip;Dawnguard;Dawnguard.esm;00599A;DLC1VampiricGrip;PERK
+272;Vampire;;Summon Gargoyle;Dawnguard;Dawnguard.esm;016908;DLC1GargoylePerk;PERK
+273;Vampire;;Corpse Curse;Dawnguard;Dawnguard.esm;008A70;DLC1CorpseCursePerk;PERK
+274;Quest Perks;;Sinderion's Serendipity;;Skyrim.esm;10BF0A;NN01Perk;PERK
+275;Quest Perks;;Sailor's Repose;;Skyrim.esm;10CB92;dunFrostflowAbyssPerk;PERK
+276;Quest Perks;;Prowler's Profit;;Skyrim.esm;0F20BE;TGCrownProfit;SPEL
+277;Quest Perks;;Agent of Mara;;Skyrim.esm;0CC799;T02MaraReward;PERK
+278;Quest Perks;;Agent of Dibella;;Skyrim.esm;0727FB;T01DibellaReward;PERK
+279;Quest Perks;;Nightingale Armor;;Skyrim.esm;105874;TGNightingaleShadowPerk;PERK
+280;Quest Perks;;Ancient Knowledge;;Update.esm;0009D4;MS04AncientKnowledge;PERK
+281;Quest Perks;;Turn of the Seasons;AE;cctwbsse001-puzzledungeon.esm;0DF80D;ccTWBSSE001_SeasonsPerkz;PERK
+282;Quest Perks;;Dragon Infusion;Optional;Skyrim.esm;0F5FF9;MQBladesDragonInfusion;PERK

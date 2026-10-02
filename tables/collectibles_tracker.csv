@@ -1,0 +1,41 @@
+Order;Block;Name;Tags;Mode;Required;BaseKeys;BaseEditorIDs;PersistentRefs
+1;Paragons;Amethyst Paragon;Dawnguard;ANY;1;Dawnguard.esm:012F97;PortalGemPurpleKey;
+2;Paragons;Diamond Paragon;Dawnguard;ANY;1;Dawnguard.esm:012FC3;PortalGemWhiteKey;
+3;Paragons;Emerald Paragon;Dawnguard;ANY;1;Dawnguard.esm:019ABC;PortalGemGreenKey;
+4;Paragons;Ruby Paragon;Dawnguard;ANY;1;Dawnguard.esm:019ABD;PortalGemOrangeKey;
+5;Paragons;Sapphire Paragon;Dawnguard;ANY;1;Dawnguard.esm:019ABB;PortalGemBlueKey;
+6;Dragon Claws;Amethyst Claw, Left Half;Dragonborn;ANY;1;Dragonborn.esm:01CAC0;DLC2SV01HalfClawLeft;
+7;Dragon Claws;Amethyst Claw, Right Half;Dragonborn;ANY;1;Dragonborn.esm:01CAC1;DLC2SV01HalfClawRight;
+8;Dragon Claws;Coral Dragon Claw;;ANY;1;Skyrim.esm:0B634C;dunYngolBarrowCoralClaw;Skyrim.esm:0B634D
+9;Dragon Claws;Diamond Dragon Claw;;ANY;1;Skyrim.esm:0AB375;dunSkuldafnDiamondClaw;
+10;Dragon Claws;Ebony Dragon Claw;;ANY;1;Skyrim.esm:05AF48;dunKorvanjundEbonyDragonClaw;Skyrim.esm:05AF49
+11;Dragon Claws;Emerald Dragon Claw;;ANY;1;Skyrim.esm:0ED417;dunReachwaterRockEmeraldDragonClaw;Skyrim.esm:0ED444
+12;Dragon Claws;Glass Dragon Claw;;ANY;1;Skyrim.esm:07C260;dunForelhostGlassClaw;Skyrim.esm:07C25F
+13;Dragon Claws;Golden Dragon Claw;;ANY;1;Skyrim.esm:039647;MS13GoldenClaw;Skyrim.esm:0AC9B6
+14;Dragon Claws;Iron Dragon Claw;;ANY;1;Skyrim.esm:08CDFA;dunValthumeIronClaw;Skyrim.esm:0E390A
+15;Dragon Claws;Ivory Dragon Claw;;ANY;1;Skyrim.esm:0AB7BB;dunFolgunthurIvoryDragonClaw;
+16;Dragon Claws;Ruby Dragon Claw;;ANY;1;Skyrim.esm:04B56C;dunDeadMensRubyDragonClaw;Skyrim.esm:05D40A
+17;Dragon Claws;Sapphire Dragon Claw;;ANY;1;Skyrim.esm:0663D7;FFI01Claw;Skyrim.esm:000E51
+18;Dragon Priest Masks;Ahzidal;Dragonborn;ANY;1;Dragonborn.esm:0240FE;DLC2ArmorAcolyteMaskFire;
+19;Dragon Priest Masks;Dukaan;Dragonborn;ANY;1;Dragonborn.esm:0240FF;DLC2ArmorAcolyteMaskFrost;
+20;Dragon Priest Masks;Hevnoraak;;ANY;1;Skyrim.esm:061CC1;ArmorDragonPriestMaskIronHelmet;
+21;Dragon Priest Masks;Konahrik;;ANY;1;Skyrim.esm:061CD6;ArmorDragonPriestMaskUltraHelmet;
+22;Dragon Priest Masks;Krosis;;ANY;1;Skyrim.esm:061CB9;ArmorDragonPriestMaskBronzeHelmet;
+23;Dragon Priest Masks;Miraak;Dragonborn;ANY;1;Dragonborn.esm:029A62|Dragonborn.esm:039D2B|Dragonborn.esm:039D2E|Dragonborn.esm:039D2F|Dragonborn.esm:039FA1|Dragonborn.esm:039FA2|Dragonborn.esm:039FA3;DLC2MiraakMaskNew|DLC2MKMiraakMask1L|DLC2MKMiraakMask2L|DLC2MKMiraakMask3L|DLC2MKMiraakMask1H|DLC2MKMiraakMask2H|DLC2MKMiraakMask3H;
+24;Dragon Priest Masks;Morokei;;ANY;1;Skyrim.esm:061C8B;ArmorDragonPriestMaskMoonstoneHelmet;
+25;Dragon Priest Masks;Nahkriin;;ANY;1;Skyrim.esm:061CA5;ArmorDragonPriestMaskEbonyHelmet;
+26;Dragon Priest Masks;Otar;;ANY;1;Skyrim.esm:061CC2;ArmorDragonPriestMaskMarbleHelmet;
+27;Dragon Priest Masks;Rahgot;;ANY;1;Skyrim.esm:061CC0;ArmorDragonPriestMaskOrichalumHelmet;
+28;Dragon Priest Masks;Vokun;;ANY;1;Skyrim.esm:061CC9;ArmorDragonPriestMaskSteelHelmet;
+29;Dragon Priest Masks;Volsung;;ANY;1;Skyrim.esm:061CAB;ArmorDragonPriestMaskCorondrumHelmet;
+30;Dragon Priest Masks;Wooden Mask;;ANY;1;Skyrim.esm:061CCA;ArmorDragonPriestMaskWoodHelmet;Skyrim.esm:0F8466
+31;Dragon Priest Masks;Zahkriisos;Dragonborn;ANY;1;Dragonborn.esm:024037;DLC2ArmorAcolyteMaskShock;
+32;Bugs in a Jar;Bee in a Jar;;ANY;1;Skyrim.esm:0B08C7;dunUniqueBeeInJar;
+33;Bugs in a Jar;Bliss Bug in a Jar;AE;ANY;1;ccbgssse025-advdsgs.esm:12DD3A;ccBGSSSE025_dunUniqueBlissBugInJar;
+34;Bugs in a Jar;Butterfly in a Jar;;ANY;1;Skyrim.esm:0FBC3C;dunUniqueButterflyInJar;
+35;Bugs in a Jar;Dragonfly in a Jar;;ANY;1;Skyrim.esm:0FBC3B;dunUniqueDragonflyInJar;
+36;Bugs in a Jar;Green Butterfly in a Jar;AE;ANY;1;ccbgssse025-advdsgs.esm:12DD3B;ccBGSSSE025_dunUniqueGreenButterflyInJar;
+37;Bugs in a Jar;Moth in a Jar;;ANY;1;Skyrim.esm:0FBC3D;dunUniqueMothInJar;
+38;Bugs in a Jar;Purple Butterfly in a Jar;AE;ANY;1;ccbgssse025-advdsgs.esm:12DD3C;ccBGSSSE025_dunUniquePurpleButterflyInJar;
+39;Bugs in a Jar;Torchbug in a Jar;;ANY;1;Skyrim.esm:0FBC3A;dunUniqueFireflyInJar;
+40;Kagrumez Resonance Gems;Kagrumez Resonance Gem;Dragonborn;COUNT;5;Dragonborn.esm:02145A;DLC2DweKagrumezControlGemInv01;

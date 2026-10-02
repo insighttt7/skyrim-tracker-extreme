@@ -1,0 +1,433 @@
+Kind;House;Plugin;LocalID;EditorID;Name
+CELL;Bloodchill Cavern;Update.esm;002FD1;ccEEJSSE005Interior01;Bloodchill Cavern
+CELL;Hendraheim;Update.esm;002FD9;ccEEJSSE004Interior01;Hendraheim
+CELL;Breezehome;Skyrim.esm;0165A8;WhiterunBreezehome;Breezehome
+CELL;Proudspire Manor;Skyrim.esm;016A06;SolitudeProudspireManor;Proudspire Manor
+CELL;Honeyside;Skyrim.esm;016BDD;RiftenHoneyside;Honeyside
+CELL;Vlindrel Hall;Skyrim.esm;016DFA;MarkarthVlindrelHall;Vlindrel Hall
+CELL;Hjerim;Skyrim.esm;016778;WindhelmHjerim;Hjerim
+CELL;Severin Manor;Dragonborn.esm;017EBE;DLC2RRSeverinHouse;Severin Manor
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;075887;ccEEJSSE005_OreBarrel;Barrel
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;089F00;ccEEJSSE005_MiscSackLargeNRS;Large Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;089E7E;BYOHHouseUpperChest;Chest
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;089EFE;ccEEJSSE005_Barrel;Barrel
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;03882C;BYOHHouseNobleWardrobe01;Wardrobe
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;089F28;BYOHHouseNobleCupboard02;Cupboard
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;08F03A;BYOHHouseSatchel;Satchel
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;061335;ccEEJSSE005_BookCase01;Bookcase
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;056FCB;MiscSack02LargeFlat_NoRespawn;Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;0758B9;BYOHHouseNobleCupboard02;Cupboard
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;089EE1;BYOHHouseNobleCupboard02;Cupboard
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;0612AB;MiscSackLarge_NoRespawn;Large Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;056FD1;MiscSack02LargeFlat_NoRespawn;Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;042A72;BYOHHouseNobleWardrobe01;Wardrobe
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;038832;BYOHHouseUpperChest;Chest
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;089E6F;BYOHHouseNobleWardrobe01;Wardrobe
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;08F046;MiscSack02Small_NoRespawn;Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;038831;BYOHHouseKnapsack;Knapsack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;084D55;BYOHHouseSafewithLockPlayer;Safe
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;08F044;MiscSackLarge_NoRespawn;Large Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;056FCD;MiscSackLargeFlat02;Large Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;089EAD;BYOHHouseNobleCupboard02;Cupboard
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;089EE0;BYOHHouseNobleCupboard02;Cupboard
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;0758BD;ccEEJSSE005_MiscSackLargeNRS;Large Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;089F29;BYOHHouseNobleCupboard02;Cupboard
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;047BC7;MiscSackLargeFlat01_NoRespawn;Large Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;047BC6;MiscSack02Small_NoRespawn;Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;08F045;MiscSack02LargeFlat_NoRespawn;Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;042A59;BYOHHouseNobleNightTable01;End Table
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;03882F;BYOHHouseNobleNightTable01;End Table
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;07FC03;ccEEJSSE005_BookCase01;Bookcase
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;047BC8;MiscSackLargeFlat02_NoRespawn;Large Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;056FCE;MiscSackLarge_NoRespawn;Large Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;07FBEF;BYOHHouseStrongBox;Strong Box
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;047BC5;MiscSack02LargeFlat_NoRespawn;Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;089F0C;ccEEJSSE005_UrnLg;Urn
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;089F1B;BYOHHouseNobleCupboard02;Cupboard
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;07588C;ccEEJSSE005_MiscSackLargeFlat02NRS;Large Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;089E6E;BYOHHouseNobleCupboard01;Cupboard
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;03882D;BYOHHouseNobleCupboard02;Cupboard
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;056FA6;BYOHHouseNobleCupboard01;Cupboard
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;19180C;dunTreasMapTreasChest;Chest
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;0758B4;BYOHHouseUpperChest;Chest
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;089EFD;BYOHHouseUpperChest;Chest
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;06648F;MiscSackLargeFlat02_NoRespawn;Large Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;047BC9;MiscSack02Small_NoRespawn;Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;056FCA;MiscSack02LargeFlat_NoRespawn;Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;06648E;MiscSackLargeFlat01_NoRespawn;Large Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;056FC9;BarrelFood01_NoRespawn;Barrel
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;061334;ccEEJSSE005_BookCase01;Bookcase
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;084D57;BYOHHouseSatchel;Satchel
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;042A5A;BYOHHouseNobleNightTable01;End Table
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;061344;BYOHHouseBarrelFish01_NoRespawn;Fish Barrel
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;089EDE;ccEEJSSE005_Chest;Chest
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;061346;MiscSack02LargeFlat_NoRespawn;Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;08F047;ccEEJSSE005_UrnLg;Urn
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;038830;BYOHHouseNobleNightTable01;End Table
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;084D0B;ccEEJSSE005_BookCase01;Bookcase
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;042A70;BYOHHouseNobleWardrobe01;Wardrobe
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;06B653;ccEEJSSE005_Urn;Urn
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;056FB4;BYOHHouseUpperCupboard01;Cupboard
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;056FCC;MiscSack02LargeFlat_NoRespawn;Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;03882B;BYOHHouseNobleWardrobe01;Wardrobe
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;0612AC;MiscSack02LargeFlat_NoRespawn;Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;089F2E;BYOHHouseNobleNightTable01;End Table
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;056FCF;MiscSack02SmallFlat_NoRespawn;Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;05C1A9;WinterholdBookCase01;Bookcase
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;0758F3;BYOHHouseUpperChest;Chest
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;047BCA;BYOHHouseBarrelFish01_NoRespawn;Fish Barrel
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;07588B;ccEEJSSE005_MiscSackLargeNRS;Large Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;0758BA;BYOHHouseNobleCupboard02;Cupboard
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;089F07;BYOHHouseStrongBox;Strong Box
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;07589A;BYOHHouseStrongBox;Strong Box
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;057061;BYOHHouseUpperCupboard01;Cupboard
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;06B67C;BYOHHouseNobleCupboard02;Cupboard
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;06B67B;BYOHHouseNobleCupboard02;Cupboard
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;047BC2;BYOHHouseBarrelFish01_NoRespawn;Fish Barrel
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;075884;ccEEJSSE005_IngotChest;Chest
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;056FD2;MiscSack02SmallFlat_NoRespawn;Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;089EF9;ccEEJSSE005_Chest;Chest
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;089EFB;ccEEJSSE005_MiscSackLargeNRS;Large Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;05C1A8;ccEEJSSE005_BookCase01;Bookcase
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;056FD0;MiscSackLarge_NoRespawn;Large Sack
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;056FA7;BYOHHouseNobleCupboard01;Cupboard
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;084D59;ccEEJSSE005_UrnLg;Urn
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;06B671;BYOHHouseStrongBox;Strong Box
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;06131A;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;0612F4;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;06B618;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;061317;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;06B617;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;0612F7;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;0612D1;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Bloodchill Cavern;cceejsse005-cave.esm;0612CF;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Hendraheim;cceejsse004-hall.esl;00098C;MiscSack02SmallFlat_NoRespawn;Sack
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000D99;BarrelIngredientCommon01_NoRespawn;Barrel
+CONTAINER;Hendraheim;cceejsse004-hall.esl;00097A;ccEEJSSE004_NarrowDresser;Drawers
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000E87;MiscSackLargeFlat01_NoRespawn;Large Sack
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000922;BYOHHouseKnapsack;Knapsack
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000A66;BYOHHouseSatchel;Satchel
+CONTAINER;Hendraheim;cceejsse004-hall.esl;00085E;MiscSackLargeFlat01_NoRespawn;Large Sack
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000EC4;MiscSackLargeFlat01_NoRespawn;Large Sack
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000AA5;ccEEJSSE004_UrnBronze;Urn
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000A77;MiscSack02LargeFlat_NoRespawn;Sack
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000FE0;ccEEJSSE004_RuinsUrnEmpty;Burial Urn
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000E80;MiscSackLargeFlat01_NoRespawn;Large Sack
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000B96;MiscSack02LargeFlat_NoRespawn;Sack
+CONTAINER;Hendraheim;cceejsse004-hall.esl;00086C;ccEEJSSE004_Bookcase;Bookcase
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000A6F;BarrelFood01_NoRespawn;Barrel
+CONTAINER;Hendraheim;cceejsse004-hall.esl;0009CA;BarrelIngredientCommon01_NoRespawn;Barrel
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000A81;BYOHHouseUpperChest;Chest
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000946;MiscSack02LargeFlat_NoRespawn;Sack
+CONTAINER;Hendraheim;cceejsse004-hall.esl;0009BC;MiscSack02LargeFlat_NoRespawn;Sack
+CONTAINER;Hendraheim;cceejsse004-hall.esl;0009D4;MiscSackLargeFlat01_NoRespawn;Large Sack
+CONTAINER;Hendraheim;cceejsse004-hall.esl;0008E6;ccEEJSSE004_Urn;Urn
+CONTAINER;Hendraheim;cceejsse004-hall.esl;0008A5;ccEEJSSE004_NarrowDresser;Drawers
+CONTAINER;Hendraheim;cceejsse004-hall.esl;0008DE;BYOHHouseSafewithLockPlayer;Safe
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000FDA;MiscSackLargeFlat01_NoRespawn;Large Sack
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000955;ccEEJSSE004_Drawers;Drawers
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000E85;BarrelFood01_NoRespawn;Barrel
+CONTAINER;Hendraheim;cceejsse004-hall.esl;0009D0;BYOHHouseStrongBox;Strong Box
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000A72;MiscSack02LargeFlat_NoRespawn;Sack
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000A49;MiscSack02Small_NoRespawn;Sack
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000CF9;MiscSackLargeFlat02_NoRespawn;Large Sack
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000E86;MiscSack02LargeFlat_NoRespawn;Sack
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000E83;ccEEJSSE004_Urn;Urn
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000FB6;ccEEJSSE004_NarrowDresser;Drawers
+CONTAINER;Hendraheim;cceejsse004-hall.esl;00099B;MiscSack02Small_NoRespawn;Sack
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000EC2;MiscSackLargeFlat02_NoRespawn;Large Sack
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000881;ccEEJSSE004_NarrowDresser;Drawers
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000940;MiscSackLarge_NoRespawn;Large Sack
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000A7B;ccEEJSSE004_Urn;Urn
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000E7E;MiscSackLargeFlat01_NoRespawn;Large Sack
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000F82;ccEEJSSE004_Wardrobe;Wardrobe
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000FF2;BYOHHouseNobleWardrobe01;Wardrobe
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000D0F;MiscSackLargeFlat01_NoRespawn;Large Sack
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000A42;ccEEJSSE004_NarrowDresser;Drawers
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000E71;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000E49;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000EF4;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000E66;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000F16;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Hendraheim;cceejsse004-hall.esl;000F05;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Breezehome;Skyrim.esm;0CB42D;EndTable01;End Table
+CONTAINER;Breezehome;Skyrim.esm;0CB42E;EndTable01;End Table
+CONTAINER;Breezehome;Skyrim.esm;0CB432;Dresser01;Dresser
+CONTAINER;Breezehome;Skyrim.esm;0CB433;Dresser01;Dresser
+CONTAINER;Breezehome;Skyrim.esm;0CB435;EndTable01;End Table
+CONTAINER;Breezehome;Skyrim.esm;0CB437;NobleCupboard01;Cupboard
+CONTAINER;Breezehome;Skyrim.esm;0CB43A;NobleNightTable01;End Table
+CONTAINER;Breezehome;Skyrim.esm;0CB442;NobleCupboard01;Cupboard
+CONTAINER;Breezehome;Skyrim.esm;0CB45D;MiscSack02LargeFlat;Sack
+CONTAINER;Breezehome;Skyrim.esm;0CB45E;MiscSack02LargeFlat;Sack
+CONTAINER;Breezehome;Skyrim.esm;0CB46C;MiscSack02SmallFlat;Sack
+CONTAINER;Breezehome;Skyrim.esm;0CB46D;MiscSack02SmallFlat;Sack
+CONTAINER;Breezehome;Skyrim.esm;0CB4C9;MiscSack02LargeFlat;Sack
+CONTAINER;Breezehome;Skyrim.esm;03EE76;BarrelFood01;Barrel
+CONTAINER;Breezehome;Skyrim.esm;03EE69;Cupboard01;Cupboard
+CONTAINER;Breezehome;Skyrim.esm;0F3922;PlayerHouseChest;Chest
+CONTAINER;Breezehome;Skyrim.esm;109E0D;TreasAlchemySatchelRare;Apothecary's Satchel
+CONTAINER;Breezehome;Skyrim.esm;10EB84;PlayerHouseChest;Chest
+CONTAINER;Breezehome;Skyrim.esm;102A8F;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Breezehome;Skyrim.esm;102A81;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Breezehome;Skyrim.esm;102A6C;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Breezehome;Skyrim.esm;102A59;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Breezehome;HearthFires.esm;004271;TreasBanditChestEMPTY;Chest
+CONTAINER;Breezehome;HearthFires.esm;004265;PlayerHouseChest;Chest
+CONTAINER;Proudspire Manor;Skyrim.esm;0E300E;BarrelFood01;Barrel
+CONTAINER;Proudspire Manor;Skyrim.esm;0E25E5;BarrelFood01;Barrel
+CONTAINER;Proudspire Manor;Skyrim.esm;0E2627;NobleNightTable01;End Table
+CONTAINER;Proudspire Manor;Skyrim.esm;0E272C;BarrelFood01;Barrel
+CONTAINER;Proudspire Manor;Skyrim.esm;0E272D;BarrelFood01;Barrel
+CONTAINER;Proudspire Manor;Skyrim.esm;0E272E;BarrelFood01;Barrel
+CONTAINER;Proudspire Manor;Skyrim.esm;0E272F;BarrelFood01;Barrel
+CONTAINER;Proudspire Manor;Skyrim.esm;0E2730;MiscSackLarge;Large Sack
+CONTAINER;Proudspire Manor;Skyrim.esm;0E2731;MiscSackLargeFlat01;Large Sack
+CONTAINER;Proudspire Manor;Skyrim.esm;0E2749;MiscSackLarge;Large Sack
+CONTAINER;Proudspire Manor;Skyrim.esm;0E274A;MiscSackLarge;Large Sack
+CONTAINER;Proudspire Manor;Skyrim.esm;0E274B;MiscSackLarge;Large Sack
+CONTAINER;Proudspire Manor;Skyrim.esm;0E274C;BarrelFood01;Barrel
+CONTAINER;Proudspire Manor;Skyrim.esm;0E274D;BarrelFood01;Barrel
+CONTAINER;Proudspire Manor;Skyrim.esm;0D9B49;SafewithLock;Safe
+CONTAINER;Proudspire Manor;Skyrim.esm;0D8A55;NobleChestDrawers02;Wardrobe
+CONTAINER;Proudspire Manor;Skyrim.esm;0D8A1C;NobleCupboard01;Cupboard
+CONTAINER;Proudspire Manor;Skyrim.esm;0D8A0B;MiscSackLargeFlat02;Large Sack
+CONTAINER;Proudspire Manor;Skyrim.esm;0D89D5;NobleCupboard01;Cupboard
+CONTAINER;Proudspire Manor;Skyrim.esm;0D89BF;NobleChestDrawers01;Wardrobe
+CONTAINER;Proudspire Manor;Skyrim.esm;0D8AAA;NobleCupboard02;Cupboard
+CONTAINER;Proudspire Manor;Skyrim.esm;0D8ABA;UpperDresser01;Dresser
+CONTAINER;Proudspire Manor;Skyrim.esm;0D8ABB;UpperEndTable01;End Table
+CONTAINER;Proudspire Manor;Skyrim.esm;0D8AC4;MiscSackLargeFlat02;Large Sack
+CONTAINER;Proudspire Manor;Skyrim.esm;0D8AC8;MiscSackLarge;Large Sack
+CONTAINER;Proudspire Manor;Skyrim.esm;0D8AED;Cupboard01;Cupboard
+CONTAINER;Proudspire Manor;Skyrim.esm;0D8AFF;Cupboard01;Cupboard
+CONTAINER;Proudspire Manor;Skyrim.esm;0D8B00;MiscSackLarge;Large Sack
+CONTAINER;Proudspire Manor;Skyrim.esm;0D8B06;MiscSackLargeFlat02;Large Sack
+CONTAINER;Proudspire Manor;Skyrim.esm;0D8B2A;BarrelFood01;Barrel
+CONTAINER;Proudspire Manor;Skyrim.esm;0D8B33;MiscSackLarge;Large Sack
+CONTAINER;Proudspire Manor;Skyrim.esm;09DA07;PlayerHouseChest;Chest
+CONTAINER;Proudspire Manor;Skyrim.esm;102B6E;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Proudspire Manor;Skyrim.esm;102B60;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Proudspire Manor;Skyrim.esm;102B45;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Proudspire Manor;Skyrim.esm;102B37;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Proudspire Manor;Skyrim.esm;102B21;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Proudspire Manor;Skyrim.esm;102B13;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Proudspire Manor;Skyrim.esm;102ADE;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Proudspire Manor;Skyrim.esm;102AD0;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Proudspire Manor;Skyrim.esm;102ABB;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Proudspire Manor;Skyrim.esm;102AAD;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Proudspire Manor;HearthFires.esm;00413B;TreasAlchemySatchelCommon;Apothecary's Satchel
+CONTAINER;Proudspire Manor;HearthFires.esm;00415E;NobleWardrobe01;Wardrobe
+CONTAINER;Proudspire Manor;HearthFires.esm;004166;NobleChest01;Chest
+CONTAINER;Proudspire Manor;HearthFires.esm;004167;NobleChest01;Chest
+CONTAINER;Proudspire Manor;HearthFires.esm;004168;TreasUpperChest;Chest
+CONTAINER;Proudspire Manor;ccbgssse001-fish.esm;12C605;ccBGSSSE001_FishTankSmallChest;Small Fish Tank
+CONTAINER;Honeyside;Skyrim.esm;0D9251;Dresser01;Dresser
+CONTAINER;Honeyside;Skyrim.esm;0D9246;NobleNightTable01;End Table
+CONTAINER;Honeyside;Skyrim.esm;0D9245;UpperEndTable02;End Table
+CONTAINER;Honeyside;Skyrim.esm;0D9243;NobleNightTable01;End Table
+CONTAINER;Honeyside;Skyrim.esm;0D9278;NobleWardrobe01;Wardrobe
+CONTAINER;Honeyside;Skyrim.esm;0D71FD;EndTable01;End Table
+CONTAINER;Honeyside;Skyrim.esm;0D71FA;CommonWardrobe01;Wardrobe
+CONTAINER;Honeyside;Skyrim.esm;0D721E;PlayerHouseChest;Chest
+CONTAINER;Honeyside;Skyrim.esm;0D7227;NobleCupboard02;Cupboard
+CONTAINER;Honeyside;Skyrim.esm;08DEEC;BarrelMeat01;Barrel
+CONTAINER;Honeyside;Skyrim.esm;08DEEB;BarrelIngredientUncommon01;Barrel
+CONTAINER;Honeyside;Skyrim.esm;08DEEA;BarrelFood01;Barrel
+CONTAINER;Honeyside;Skyrim.esm;102BAB;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Honeyside;Skyrim.esm;102BC1;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Honeyside;Skyrim.esm;102BE9;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Honeyside;Skyrim.esm;102BFF;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Honeyside;HearthFires.esm;004247;NobleWardrobe01;Wardrobe
+CONTAINER;Honeyside;HearthFires.esm;004248;TreasUpperChestEMPTY;Chest
+CONTAINER;Vlindrel Hall;Skyrim.esm;0E3C8B;BarrelFood01;Barrel
+CONTAINER;Vlindrel Hall;Skyrim.esm;0E2ECE;UpperDresser01;Dresser
+CONTAINER;Vlindrel Hall;Skyrim.esm;0E2E9A;MiscSack02Small;Sack
+CONTAINER;Vlindrel Hall;Skyrim.esm;0E2E99;MiscSackLargeFlat01;Large Sack
+CONTAINER;Vlindrel Hall;Skyrim.esm;0E2E98;MiscSack02SmallFlat;Sack
+CONTAINER;Vlindrel Hall;Skyrim.esm;0E2E65;NobleCupboard01;Cupboard
+CONTAINER;Vlindrel Hall;Skyrim.esm;0E2E62;NobleCupboard01;Cupboard
+CONTAINER;Vlindrel Hall;Skyrim.esm;0E2E5D;NobleChestDrawers02;Wardrobe
+CONTAINER;Vlindrel Hall;Skyrim.esm;0E2E5C;NobleCupboard01;Cupboard
+CONTAINER;Vlindrel Hall;Skyrim.esm;0E2E5A;NobleWardrobe01;Wardrobe
+CONTAINER;Vlindrel Hall;Skyrim.esm;0E2E5B;NobleCupboard01;Cupboard
+CONTAINER;Vlindrel Hall;Skyrim.esm;0E2E30;TreasAlchemySatchelUncommon;Apothecary's Satchel
+CONTAINER;Vlindrel Hall;Skyrim.esm;0E2E2F;BarrelIngredientUncommon01;Barrel
+CONTAINER;Vlindrel Hall;Skyrim.esm;0E2DEC;MiscSack02LargeFlat;Sack
+CONTAINER;Vlindrel Hall;Skyrim.esm;0E157F;NobleCupboard01;Cupboard
+CONTAINER;Vlindrel Hall;Skyrim.esm;0E15AD;MiscSackLargeFlat02;Large Sack
+CONTAINER;Vlindrel Hall;Skyrim.esm;0E15AE;MiscSack02LargeFlat;Sack
+CONTAINER;Vlindrel Hall;Skyrim.esm;0E15AF;MeadBarrel02;Mead Barrel
+CONTAINER;Vlindrel Hall;Skyrim.esm;0E15C4;UpperEndTable01;End Table
+CONTAINER;Vlindrel Hall;Skyrim.esm;0DC6B2;MiscSackLargeFlat01;Large Sack
+CONTAINER;Vlindrel Hall;Skyrim.esm;0DC6B1;MiscSack02Large;Sack
+CONTAINER;Vlindrel Hall;Skyrim.esm;0DC6B0;MiscSack02LargeFlat;Sack
+CONTAINER;Vlindrel Hall;Skyrim.esm;0DC683;UpperDresser01;Dresser
+CONTAINER;Vlindrel Hall;Skyrim.esm;0DC67E;BarrelFood01;Barrel
+CONTAINER;Vlindrel Hall;Skyrim.esm;0DC678;UpperEndTable01;End Table
+CONTAINER;Vlindrel Hall;Skyrim.esm;0DC602;UpperDresser01;Dresser
+CONTAINER;Vlindrel Hall;Skyrim.esm;077CAB;PlayerHouseChest;Chest
+CONTAINER;Vlindrel Hall;Skyrim.esm;077CB3;BarrelFood01;Barrel
+CONTAINER;Vlindrel Hall;Skyrim.esm;077CC6;UpperCupboard01;Cupboard
+CONTAINER;Vlindrel Hall;Skyrim.esm;102C4E;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Vlindrel Hall;Skyrim.esm;102C64;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Vlindrel Hall;Skyrim.esm;102C7E;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Vlindrel Hall;Skyrim.esm;102C95;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Vlindrel Hall;Skyrim.esm;102CAB;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Vlindrel Hall;Skyrim.esm;102CC5;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Vlindrel Hall;Skyrim.esm;102CDC;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Vlindrel Hall;Skyrim.esm;102CF2;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Vlindrel Hall;Skyrim.esm;102D0C;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Vlindrel Hall;Skyrim.esm;0C6450;MerchantSpouseApothecaryChest;Chest
+CONTAINER;Vlindrel Hall;Skyrim.esm;0C6451;MerchantSpouseBlacksmithChest;Chest
+CONTAINER;Vlindrel Hall;Skyrim.esm;0C6452;MerchantSpouseInnkeeperChest;Chest
+CONTAINER;Vlindrel Hall;Skyrim.esm;0C6453;MerchantSpouseMiscVendorChest;Chest
+CONTAINER;Vlindrel Hall;Skyrim.esm;0C6454;MerchantSpouseSpellsChest;Chest
+CONTAINER;Vlindrel Hall;HearthFires.esm;0041EF;TreasSatchelEMPTY;Satchel
+CONTAINER;Vlindrel Hall;HearthFires.esm;0041FF;UpperEndTable01;End Table
+CONTAINER;Vlindrel Hall;HearthFires.esm;004200;UpperWardrobe01;Wardrobe
+CONTAINER;Vlindrel Hall;HearthFires.esm;004202;TreasUpperChestEMPTY;Chest
+CONTAINER;Hjerim;Skyrim.esm;0DF6E8;UpperEndTable01;End Table
+CONTAINER;Hjerim;Skyrim.esm;0DF4C9;MiscSack02LargeFlat;Sack
+CONTAINER;Hjerim;Skyrim.esm;0DF4C8;MiscSack02LargeFlat;Sack
+CONTAINER;Hjerim;Skyrim.esm;0DF4C7;MiscSack02LargeFlat;Sack
+CONTAINER;Hjerim;Skyrim.esm;0DF4C6;MiscSack02SmallFlat;Sack
+CONTAINER;Hjerim;Skyrim.esm;0DF4C5;MiscSack02SmallFlat;Sack
+CONTAINER;Hjerim;Skyrim.esm;0DF4C4;MiscSackLargeFlat01;Large Sack
+CONTAINER;Hjerim;Skyrim.esm;0DF4C3;MiscSackLargeFlat03;Large Sack
+CONTAINER;Hjerim;Skyrim.esm;0DF4C2;MiscSack02Large;Sack
+CONTAINER;Hjerim;Skyrim.esm;0DF4C1;MiscSackLarge;Large Sack
+CONTAINER;Hjerim;Skyrim.esm;0DF4A7;BarrelFood01;Barrel
+CONTAINER;Hjerim;Skyrim.esm;0DF49E;NobleChestDrawers01;Wardrobe
+CONTAINER;Hjerim;Skyrim.esm;0DF49D;NobleChestDrawers01;Wardrobe
+CONTAINER;Hjerim;Skyrim.esm;0DF49B;NobleChestDrawers02;Wardrobe
+CONTAINER;Hjerim;Skyrim.esm;0DF5AA;NobleWardrobe01;Wardrobe
+CONTAINER;Hjerim;Skyrim.esm;0DF5AC;PlayerHouseChest;Chest
+CONTAINER;Hjerim;Skyrim.esm;0DF5B5;NobleNightTable01;End Table
+CONTAINER;Hjerim;Skyrim.esm;0DF5B6;NobleNightTable01;End Table
+CONTAINER;Hjerim;Skyrim.esm;0DF5F8;MiscSack02LargeFlat;Sack
+CONTAINER;Hjerim;Skyrim.esm;0DF5F9;MiscSack02LargeFlat;Sack
+CONTAINER;Hjerim;Skyrim.esm;0DF5FA;MiscSack02LargeFlat;Sack
+CONTAINER;Hjerim;Skyrim.esm;0DF61B;UpperWardrobe01;Wardrobe
+CONTAINER;Hjerim;Skyrim.esm;0DF61E;UpperDresser01;Dresser
+CONTAINER;Hjerim;Skyrim.esm;0DF66C;MiscSackLargeFlat03;Large Sack
+CONTAINER;Hjerim;Skyrim.esm;0DF66D;MiscSack02Large;Sack
+CONTAINER;Hjerim;Skyrim.esm;0DF66E;MiscSackSmall;Small Sack
+CONTAINER;Hjerim;Skyrim.esm;0DF66F;MiscSackLargeFlat02;Large Sack
+CONTAINER;Hjerim;Skyrim.esm;0DF670;MiscSack02Small;Sack
+CONTAINER;Hjerim;Skyrim.esm;0DF671;MiscSack02LargeFlat;Sack
+CONTAINER;Hjerim;Skyrim.esm;0DF672;MiscSack02Large;Sack
+CONTAINER;Hjerim;Skyrim.esm;0DF673;MiscSack02Large;Sack
+CONTAINER;Hjerim;Skyrim.esm;10292B;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Hjerim;Skyrim.esm;102939;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Hjerim;Skyrim.esm;10294E;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Hjerim;Skyrim.esm;10295C;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Hjerim;Skyrim.esm;102970;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Hjerim;Skyrim.esm;10297E;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Hjerim;Skyrim.esm;102993;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Hjerim;Skyrim.esm;1029A1;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Hjerim;Skyrim.esm;1029B6;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Hjerim;Skyrim.esm;1029C4;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Hjerim;Skyrim.esm;1029FD;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Hjerim;Skyrim.esm;102A0B;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Hjerim;Skyrim.esm;0DF5A9;NobleWardrobe01;Wardrobe
+CONTAINER;Hjerim;Skyrim.esm;0E0E51;MS11ButcherChest;Chest
+CONTAINER;Hjerim;HearthFires.esm;0041BA;TreasSatchel;Satchel
+CONTAINER;Hjerim;HearthFires.esm;0041BF;NobleNightTable01;End Table
+CONTAINER;Hjerim;HearthFires.esm;0041C4;TreasUpperChestEMPTY;Chest
+CONTAINER;Hjerim;HearthFires.esm;0041BE;NobleChestDrawers02;Wardrobe
+CONTAINER;Severin Manor;Dragonborn.esm;0359BF;MiscSack02Small_NoRespawn;Sack
+CONTAINER;Severin Manor;Dragonborn.esm;0359C0;MiscSack02Small_NoRespawn;Sack
+CONTAINER;Severin Manor;Dragonborn.esm;0359C1;MiscSack02Small_NoRespawn;Sack
+CONTAINER;Severin Manor;Dragonborn.esm;036DB5;BarrelIngredientCommon01_NoRespawn;Barrel
+CONTAINER;Severin Manor;Dragonborn.esm;036DB6;BarrelIngredientUncommon01_NoRespawn;Barrel
+CONTAINER;Severin Manor;Dragonborn.esm;036DB7;BarrelIngredientCommon01_NoRespawn;Barrel
+CONTAINER;Severin Manor;Dragonborn.esm;036E03;MiscSackLargeFlat01_NoRespawn;Large Sack
+CONTAINER;Severin Manor;Dragonborn.esm;036E04;MiscSackLargeFlat01_NoRespawn;Large Sack
+CONTAINER;Severin Manor;Dragonborn.esm;036E4B;BarrelIngredientCommon01_NoRespawn;Barrel
+CONTAINER;Severin Manor;Dragonborn.esm;036E4C;BarrelIngredientCommon01_NoRespawn;Barrel
+CONTAINER;Severin Manor;Dragonborn.esm;036E95;BarrelMeat01_NoRespawn;Barrel
+CONTAINER;Severin Manor;Dragonborn.esm;036EB9;PersonalChestSmall_NoRespawn;Chest
+CONTAINER;Severin Manor;Dragonborn.esm;036EC4;BarrelFish01_NoRespawn;Fish Barrel
+CONTAINER;Severin Manor;Dragonborn.esm;036EC5;BarrelFish01_NoRespawn;Fish Barrel
+CONTAINER;Severin Manor;Dragonborn.esm;036EC6;BarrelFood01_NoRespawn;Barrel
+CONTAINER;Severin Manor;Dragonborn.esm;036EE5;BarrelFish01_NoRespawn;Fish Barrel
+CONTAINER;Severin Manor;Dragonborn.esm;036EF1;MiscSackLarge_NoRespawn;Large Sack
+CONTAINER;Severin Manor;Dragonborn.esm;036EF2;PersonalChestSmall_NoRespawn;Chest
+CONTAINER;Severin Manor;Dragonborn.esm;036EF3;PersonalChestSmall_NoRespawn;Chest
+CONTAINER;Severin Manor;Dragonborn.esm;036EF4;PersonalChestSmall_NoRespawn;Chest
+CONTAINER;Severin Manor;Dragonborn.esm;036EFF;PersonalChestSmall_NoRespawn;Chest
+CONTAINER;Severin Manor;Dragonborn.esm;036F01;BarrelFood01_NoRespawn;Barrel
+CONTAINER;Severin Manor;Dragonborn.esm;036F02;BarrelFood01_NoRespawn;Barrel
+CONTAINER;Severin Manor;Dragonborn.esm;036F03;BarrelFood01_NoRespawn;Barrel
+CONTAINER;Severin Manor;Dragonborn.esm;036F04;BarrelFish01_NoRespawn;Fish Barrel
+CONTAINER;Severin Manor;Dragonborn.esm;036F41;BarrelIngredientCommon01_NoRespawn;Barrel
+CONTAINER;Severin Manor;Dragonborn.esm;036F42;BarrelIngredientCommon01_NoRespawn;Barrel
+CONTAINER;Severin Manor;Dragonborn.esm;036F62;MiscSackLargeFlat01_NoRespawn;Large Sack
+CONTAINER;Severin Manor;Dragonborn.esm;036F63;MiscSackLargeFlat01_NoRespawn;Large Sack
+CONTAINER;Severin Manor;Dragonborn.esm;03AB77;DLC2DarkElfUrn01Food_NoRespawn;Urn
+CONTAINER;Severin Manor;Dragonborn.esm;03AB78;DLC2DarkElfUrn01Food_NoRespawn;Urn
+CONTAINER;Severin Manor;Dragonborn.esm;03AB79;DLC2DarkElfUrn01Ingredients_NoRespawn;Urn
+CONTAINER;Severin Manor;Dragonborn.esm;03AB7A;DLC2DarkElfUrn01Food_NoRespawn;Urn
+CONTAINER;Severin Manor;Dragonborn.esm;01F31D;DLC2RR02Safe;Severin Family Safe
+CONTAINER;Severin Manor;Dragonborn.esm;0395DE;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Severin Manor;Dragonborn.esm;039601;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Severin Manor;Dragonborn.esm;03961C;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Severin Manor;Dragonborn.esm;03962F;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Severin Manor;Dragonborn.esm;03964D;PlayerBookShelfContainer;Book Shelf
+CONTAINER;Severin Manor;Dragonborn.esm;03965B;PlayerBookShelfContainer;Book Shelf
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6F6;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6E1;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6CC;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6C9;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6ED;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6C0;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6CF;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6E7;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;089F18;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C702;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6E4;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6C6;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6FF;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6FC;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6EA;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6D5;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6D8;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6C3;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6DE;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6D2;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6F3;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6BD;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6DB;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6F0;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6BA;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Bloodchill Cavern;cceejsse005-cave.esm;18C6F9;BYOHHouseMannequin;Mannequin
+MANNEQUIN;Hendraheim;cceejsse004-hall.esl;000B34;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Hendraheim;cceejsse004-hall.esl;000EE1;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Hendraheim;cceejsse004-hall.esl;000C44;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Hendraheim;cceejsse004-hall.esl;000E41;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Hendraheim;cceejsse004-hall.esl;000B23;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Hendraheim;cceejsse004-hall.esl;000B62;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Hendraheim;cceejsse004-hall.esl;000B5E;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Hendraheim;cceejsse004-hall.esl;000C4A;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Hendraheim;cceejsse004-hall.esl;000B2D;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Hendraheim;cceejsse004-hall.esl;000B50;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Hendraheim;cceejsse004-hall.esl;000C47;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Hendraheim;cceejsse004-hall.esl;000F52;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Hendraheim;cceejsse004-hall.esl;000F28;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Hendraheim;cceejsse004-hall.esl;000B42;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Hendraheim;cceejsse004-hall.esl;000E70;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Hendraheim;cceejsse004-hall.esl;000C4D;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Hendraheim;cceejsse004-hall.esl;000B31;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Proudspire Manor;Skyrim.esm;102AEC;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Proudspire Manor;Skyrim.esm;102AE9;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Honeyside;Skyrim.esm;102BDF;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Honeyside;Skyrim.esm;102BE2;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Vlindrel Hall;Skyrim.esm;102D4C;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Hjerim;Skyrim.esm;102906;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Hjerim;Skyrim.esm;102902;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Hjerim;Skyrim.esm;1028FD;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Severin Manor;Dragonborn.esm;039670;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Severin Manor;Dragonborn.esm;03967C;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Severin Manor;Dragonborn.esm;039688;PlayerHouseMannequin;Mannequin
+MANNEQUIN;Severin Manor;Dragonborn.esm;039694;PlayerHouseMannequin;Mannequin

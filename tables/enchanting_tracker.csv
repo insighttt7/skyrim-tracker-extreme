@@ -1,0 +1,59 @@
+Order;Block;Name;Tags;Plugin;LocalID;EditorID
+1;All Enchanting Effects;Absorb Health;;Skyrim.esm;10FB91;EnchWeaponAbsorbHealthBase
+2;All Enchanting Effects;Absorb Magicka;;Skyrim.esm;10FB9D;EnchWeaponAbsorbMagickaBase
+3;All Enchanting Effects;Absorb Stamina;;Skyrim.esm;10FB92;EnchWeaponAbsorbStaminaBase
+4;All Enchanting Effects;Banish;;Skyrim.esm;10FB93;EnchWeaponBanishBase
+5;All Enchanting Effects;Chaos Damage;Dragonborn;Dragonborn.esm;02C46E;DLC2EnchWeaponChaosDamageBase
+6;All Enchanting Effects;Damage Stamina;;Skyrim.esm;10FB9B;EnchWeaponStaminaDamageBase
+7;All Enchanting Effects;Dark Moon;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;0008CC;ccVSVSSE003_ENCH_NecromancerHoodBase
+8;All Enchanting Effects;Empower Necromancy;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;00087E;ccVSVSSE003_ENCH_NecromancerRobesBase
+9;All Enchanting Effects;Fear;;Skyrim.esm;10FB94;EnchWeaponFearBase
+10;All Enchanting Effects;Fiery Soul Trap;;Skyrim.esm;040003;EnchFierySouls
+11;All Enchanting Effects;Fire Damage;;Skyrim.esm;10FB95;EnchWeaponFireDamageBase
+12;All Enchanting Effects;Fortify Alchemy;;Skyrim.esm;10FB70;EnchArmorFortifyAlchemyBase
+13;All Enchanting Effects;Fortify Alteration;;Skyrim.esm;10FB71;EnchArmorFortifyAlterationBase
+14;All Enchanting Effects;Fortify Alteration & Magicka Regen;;Skyrim.esm;10EAD1;EnchRobesAlterationBase
+15;All Enchanting Effects;Fortify Archery;;Skyrim.esm;10FB7E;EnchArmorFortifyMarksmanBase
+16;All Enchanting Effects;Fortify Barter;;Skyrim.esm;10FB84;EnchArmorFortifySpeechcraftBase
+17;All Enchanting Effects;Fortify Block;;Skyrim.esm;10FB72;EnchArmorFortifyBlockBase
+18;All Enchanting Effects;Fortify Carry Weight;;Skyrim.esm;10FB73;EnchArmorFortifyCarryBase
+19;All Enchanting Effects;Fortify Conjuration;;Skyrim.esm;10FB74;EnchArmorFortifyConjurationBase
+20;All Enchanting Effects;Fortify Conjuration & Magicka Regen;;Skyrim.esm;10EAD2;EnchRobesConjurationBase
+21;All Enchanting Effects;Fortify Destruction;;Skyrim.esm;10FB75;EnchArmorFortifyDestructionBase
+22;All Enchanting Effects;Fortify Destruction & Magicka Regen;;Skyrim.esm;10EAD3;EnchRobesDestructionBase
+23;All Enchanting Effects;Fortify Healing Rate;;Skyrim.esm;10FB76;EnchArmorFortifyHealRateBase
+24;All Enchanting Effects;Fortify Health;;Skyrim.esm;10FB77;EnchArmorFortifyHealthBase
+25;All Enchanting Effects;Fortify Heavy Armor;;Skyrim.esm;10FB78;EnchArmorFortifyHeavyArmorBase
+26;All Enchanting Effects;Fortify Illusion;;Skyrim.esm;10FB79;EnchArmorFortifyIllusionBase
+27;All Enchanting Effects;Fortify Illusion & Magicka Regen;;Skyrim.esm;10EAD4;EnchRobesIllusionBase
+28;All Enchanting Effects;Fortify Light Armor;;Skyrim.esm;10FB7A;EnchArmorFortifyLightArmorBase
+29;All Enchanting Effects;Fortify Lockpicking;;Skyrim.esm;10FB7B;EnchArmorFortifyLockpickingBase
+30;All Enchanting Effects;Fortify Magicka;;Skyrim.esm;10FB7C;EnchArmorFortifyMagickaBase
+31;All Enchanting Effects;Fortify Magicka Regen;;Skyrim.esm;10FB7D;EnchArmorFortifyMagickaRateBase
+32;All Enchanting Effects;Fortify One-Handed;;Skyrim.esm;10FB7F;EnchArmorFortifyOneHandedBase
+33;All Enchanting Effects;Fortify Pickpocket;;Skyrim.esm;10FB80;EnchArmorFortifyPickpocketBase
+34;All Enchanting Effects;Fortify Restoration;;Skyrim.esm;10FB81;EnchArmorFortifyRestorationBase
+35;All Enchanting Effects;Fortify Restoration & Magicka Regen;;Skyrim.esm;10EAD5;EnchRobesRestorationBase
+36;All Enchanting Effects;Fortify Smithing;;Skyrim.esm;10FB82;EnchArmorFortifySmithingBase
+37;All Enchanting Effects;Fortify Sneak;;Skyrim.esm;10FB83;EnchArmorFortifySneakBase
+38;All Enchanting Effects;Fortify Stamina;;Skyrim.esm;10FB85;EnchArmorFortifyStaminaBase
+39;All Enchanting Effects;Fortify Stamina Regen;;Skyrim.esm;10FB86;EnchArmorFortifyStaminaRateBase
+40;All Enchanting Effects;Fortify Two-Handed;;Skyrim.esm;10FB87;EnchArmorFortifyTwoHandedBase
+41;All Enchanting Effects;Fortify Unarmed;;Skyrim.esm;10FB88;EnchArmorFortifyUnarmedBase
+42;All Enchanting Effects;Frost Damage;;Skyrim.esm;10FB96;EnchWeaponFrostDamageBase
+43;All Enchanting Effects;Huntsman's Prowess;;Skyrim.esm;105830;dunHaltedStreamtAxeENCH
+44;All Enchanting Effects;Magicka Damage;;Skyrim.esm;10FB97;EnchWeaponMagickaDamageBase
+45;All Enchanting Effects;Muffle;;Skyrim.esm;10FB89;EnchArmorMuffleBase
+46;All Enchanting Effects;Paralyze;;Skyrim.esm;10FB98;EnchWeaponParalysisBase
+47;All Enchanting Effects;Resist Disease;;Skyrim.esm;10FB8A;EnchArmorResistDiseaseBase
+48;All Enchanting Effects;Resist Fire;;Skyrim.esm;10FB8B;EnchArmorResistFireBase
+49;All Enchanting Effects;Resist Frost;;Skyrim.esm;10FB8C;EnchArmorResistFrostBase
+50;All Enchanting Effects;Resist Magic;;Skyrim.esm;10FB8D;EnchArmorResistMagicBase
+51;All Enchanting Effects;Resist Poison;;Skyrim.esm;10FB8E;EnchArmorResistPoisonBase
+52;All Enchanting Effects;Resist Shock;;Skyrim.esm;10FB8F;EnchArmorResistShockBase
+53;All Enchanting Effects;Shock Damage;;Skyrim.esm;10FB99;EnchWeaponShockDamageBase
+54;All Enchanting Effects;Silent Moons Enchant;;Skyrim.esm;03B0B2;dunSilentMoonsEnchWeapon01
+55;All Enchanting Effects;Smithing Expertise;;Skyrim.esm;1019B0;dunVolunruudPickaxeEnch
+56;All Enchanting Effects;Soul Trap;;Skyrim.esm;10FB9A;EnchWeaponSoulTrapBase
+57;All Enchanting Effects;Turn Undead;;Skyrim.esm;10FB9C;EnchWeaponTurnUndeadBase
+58;All Enchanting Effects;Waterbreathing;;Skyrim.esm;10FB90;EnchArmorWaterbreathingBase
