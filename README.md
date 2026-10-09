@@ -142,4 +142,3 @@ The short rules:
 1. The code (the app, the save parser and the build scripts) was written together with Claude (Anthropic).
 2. Design of the tracker page: colours and backgrounds for both themes.
 3. Debugging and bug fixes.
-4. The preview image.
