@@ -10,7 +10,7 @@ memory at start-up. It
   - routes the "Choose .ess file" button (and "Choose another save" on the
     error card) to the native dialog instead of the browser file picker;
   - keeps theme / tab / compact rows / Mark ticks in data\\settings.json
-    instead of browser storage (Mark ticks are stored as row Order numbers);
+    instead of browser storage (Mark ticks are stored as row keys, data-key);
   - stops a file dropped on the window from replacing the page.
 
 Portable layout (everything lives next to the exe):
@@ -37,14 +37,15 @@ import webview
 import parse_ess
 
 APP_NAME = 'Skyrim Tracker Extreme'
-APP_VERSION = '1.0.0'
-HTML_FILE = 'Skyrim_Tracker_v12.html'
-SETTINGS_VERSION = 1
+APP_VERSION = '1.1.0'
+HTML_FILE = 'Skyrim_Tracker_v13.html'
+SETTINGS_VERSION = 2              # 2 = Mark ticks stored as row keys (1.1.0)
 DEFAULT_SIZE = (1280, 860)      # restored (not maximized) window size, logical px
 MIN_SIZE = (480, 600)
 # page background of each theme (body background in the tracker page); the
-# window starts in the colour of the theme that was last picked
-THEME_BACKGROUND = {'daedric': '#160408', 'parchment': '#d9c9a8'}
+# window starts in the colour of the theme that was last picked, or of the
+# light theme (the page default) when none was picked yet
+THEME_BACKGROUND = {'dark': '#0c1316', 'light': '#d8c59c'}
 STAGE_NAMES = ['Reading save', 'Decompressing', 'Plugins', 'Change forms', 'Quests',
                'Locations', 'Spells', 'Shouts', 'Enchanting', 'Ingredients', 'Perks',
                'Collectibles', 'Books', 'Building tracker']
@@ -145,6 +146,14 @@ def load_settings():
 
 
 SETTINGS = load_settings()
+# 1.0.0 stored the theme under its old internal names
+_OLD_THEME = {'daedric': 'dark', 'parchment': 'light'}
+if SETTINGS.get('theme') in _OLD_THEME:
+    SETTINGS['theme'] = _OLD_THEME[SETTINGS['theme']]
+# 1.0.0 (settings version 1) stored Mark ticks as row Order numbers; rows are
+# found by key now, so those numbers mean nothing and are dropped once
+if SETTINGS.get('version', 1) < 2:
+    SETTINGS.pop('marks', None)
 
 
 def save_settings():
@@ -202,25 +211,12 @@ SHIM_JS = r"""
     queue.splice(0).forEach(function(a){ send(a[0], a[1]); });
   });
 
-  // Mark ticks: the page keeps "EditorID|row name" ids, settings.json keeps row Orders
-  function markRows(){ return document.querySelectorAll('.q[data-mark-id][data-order]'); }
-  function idsToOrders(obj){
-    var byId = {}, out = {};
-    markRows().forEach(function(q){ (byId[q.dataset.markId] = byId[q.dataset.markId] || []).push(+q.dataset.order); });
+  // Mark ticks: the page and settings.json both keep row keys (data-key) per character
+  function cleanMarks(obj){
+    var out = {};
     Object.keys(obj || {}).forEach(function(owner){
-      var seen = {};
-      (obj[owner] || []).forEach(function(id){ (byId[id] || []).forEach(function(n){ seen[n] = 1; }); });
-      out[owner] = Object.keys(seen).map(Number).sort(function(a, b){ return a - b; });
-    });
-    return out;
-  }
-  function ordersToIds(obj){
-    var byOrder = {}, out = {};
-    markRows().forEach(function(q){ byOrder[q.dataset.order] = q.dataset.markId; });
-    Object.keys(obj || {}).forEach(function(owner){
-      var seen = {};
-      (obj[owner] || []).forEach(function(n){ var id = byOrder[String(n)]; if (id) seen[id] = 1; });
-      out[owner] = Object.keys(seen);
+      var list = (obj[owner] || []).filter(function(id){ return typeof id === 'string' && id; });
+      if (list.length) out[owner] = list;
     });
     return out;
   }
@@ -229,7 +225,7 @@ SHIM_JS = r"""
     getItem: function(k){
       k = String(k);
       if (KEYS[k]) { var v = S[KEYS[k]]; return (v === undefined || v === null) ? null : String(v); }
-      if (k === MARKS) return S.marks ? JSON.stringify(ordersToIds(S.marks)) : null;
+      if (k === MARKS) return S.marks ? JSON.stringify(cleanMarks(S.marks)) : null;
       return Object.prototype.hasOwnProperty.call(other, k) ? other[k] : null;
     },
     setItem: function(k, v){
@@ -237,7 +233,7 @@ SHIM_JS = r"""
       if (KEYS[k]) { S[KEYS[k]] = v; send(KEYS[k], v); return; }
       if (k === MARKS) {
         var parsed = {}; try { parsed = JSON.parse(v) || {}; } catch(e){}
-        S.marks = idsToOrders(parsed); send('marks', S.marks); return;
+        S.marks = cleanMarks(parsed); send('marks', S.marks); return;
       }
       other[k] = v;
     },
@@ -513,7 +509,7 @@ def main():
 
     # start-up colour = background of the saved theme; the environment variable
     # is the WebView2 way to avoid the grey flash before the page is painted
-    background = THEME_BACKGROUND.get(SETTINGS.get('theme'), THEME_BACKGROUND['daedric'])
+    background = THEME_BACKGROUND.get(SETTINGS.get('theme'), THEME_BACKGROUND['light'])
     os.environ['WEBVIEW2_DEFAULT_BACKGROUND_COLOR'] = 'FF' + background.lstrip('#').upper()
 
     size = SETTINGS.get('window') or {}

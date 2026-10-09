@@ -1,7 +1,7 @@
 # Skyrim Tracker Extreme
 
 A 100% completion tracker for **Skyrim Special Edition / Anniversary Edition**.
-It reads a `.ess` save and shows the progress over 2254 entries in 9 categories:
+It reads a `.ess` save and shows the progress over 2262 entries in 9 categories:
 quests, locations, spells, shouts, enchanting, ingredients, perks, collectibles and books.
 
 All rights reserved - see [LICENSE.txt](LICENSE.txt).
@@ -31,7 +31,7 @@ skyrim-tracker-extreme/
 │   ├── app.py              program window, settings, save picker
 │   └── parse_ess.py        reads a save and produces the tracker data
 ├── web/
-│   └── Skyrim_Tracker_v12.html   the tracker page (both themes)
+│   └── Skyrim_Tracker_v13.html   the tracker page (both themes)
 ├── tables/                 the 11 tracker tables (CSV)
 ├── assets/
 │   └── SkyrimTrackerExtreme.ico
@@ -74,7 +74,7 @@ Result:
 
 ```
 dist\Skyrim Tracker Extreme\Skyrim Tracker Extreme.exe   the ready program
-dist\Skyrim Tracker Extreme v1.0.0.zip                   the release archive
+dist\Skyrim Tracker Extreme v1.1.0.zip                   the release archive
 dist\SHA256.txt                                          checksums of the exe and the zip
 ```
 
@@ -123,8 +123,9 @@ See [tables/README.md](tables/README.md) for the format of every table.
 
 The short rules:
 - separator `;`, encoding UTF-8 without BOM, `|` separates several values inside one cell;
-- row order and names must match the tracker page exactly - rows are matched by their
-  `Order` number, not by name;
+- row order and names must match the tracker page exactly, and every row keeps a unique
+  key (EditorID etc., see [tables/README.md](tables/README.md)) - rows are matched by that
+  key, not by their `Order` number or name;
 - after any change, run the parser on a real save and check the result in the program.
 
 ## Releasing a new version

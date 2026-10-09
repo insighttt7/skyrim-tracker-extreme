@@ -53,7 +53,6 @@ Order;Block;Name;Tags;Plugin;LocalID;EditorID
 52;All Enchanting Effects;Resist Shock;;Skyrim.esm;10FB8F;EnchArmorResistShockBase
 53;All Enchanting Effects;Shock Damage;;Skyrim.esm;10FB99;EnchWeaponShockDamageBase
 54;All Enchanting Effects;Silent Moons Enchant;;Skyrim.esm;03B0B2;dunSilentMoonsEnchWeapon01
-55;All Enchanting Effects;Smithing Expertise;;Skyrim.esm;1019B0;dunVolunruudPickaxeEnch
-56;All Enchanting Effects;Soul Trap;;Skyrim.esm;10FB9A;EnchWeaponSoulTrapBase
-57;All Enchanting Effects;Turn Undead;;Skyrim.esm;10FB9C;EnchWeaponTurnUndeadBase
-58;All Enchanting Effects;Waterbreathing;;Skyrim.esm;10FB90;EnchArmorWaterbreathingBase
+55;All Enchanting Effects;Soul Trap;;Skyrim.esm;10FB9A;EnchWeaponSoulTrapBase
+56;All Enchanting Effects;Turn Undead;;Skyrim.esm;10FB9C;EnchWeaponTurnUndeadBase
+57;All Enchanting Effects;Waterbreathing;;Skyrim.esm;10FB90;EnchArmorWaterbreathingBase

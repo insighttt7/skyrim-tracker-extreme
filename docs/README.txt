@@ -1,6 +1,6 @@
 ==============================================================================
                           SKYRIM TRACKER EXTREME
-                                  v1.0.0
+                                  v1.1.0
                A 100% completion tracker for Skyrim SE / AE
 ==============================================================================
 
@@ -60,7 +60,7 @@ CONTENTS
 
 Skyrim Tracker Extreme reads your save file (.ess) and shows how far you are
 from 100% completion of Skyrim: quests, locations, spells, shouts,
-enchantments, ingredients, perks, collectibles and books - 2254 entries in
+enchantments, ingredients, perks, collectibles and books - 2262 entries in
 total, each one with its status taken straight from the save.
 
 You pick a save, the tracker reads it in a couple of seconds and fills every
@@ -142,8 +142,9 @@ but the save you see in the tracker is exactly the moment it was made.
 ==============================================================================
 
 Top bar
-  - Theme button: switches between the two themes, Daedric Space (dark) and
-    Stalhrim Parchment (light).
+  - Theme button: switches between the two themes, Dragonbone Parchment
+    (light, used on the first start) and Stalhrim Hollow (dark). The theme
+    you pick is remembered.
   - Choose .ess file: loads a save. After loading it shows the save's name.
   - SKYRIM title.
   - Search: searches every category at once by name or by FormID / Editor ID.
@@ -151,7 +152,7 @@ Top bar
 Player panel
   - Level ring with your character level and experience.
   - Location, character name, race, number of plugins and light plugins,
-    save number and save version, taken from the save. Location and game
+    save version, form version and save number, taken from the save. Location and game
     date are shown in the language of your game.
   - COMPLETION: your overall progress in percent. It is calculated over 8
     categories: Quests, Locations, Spells, Shouts, Enchanting, Ingredients,
@@ -173,7 +174,8 @@ Filter pills (under the tabs)
 Section tools (right side of each section title)
   - Collapse all / expand all blocks.
   - Compact rows: shows more rows on the screen.
-  - In the Skyrim tab: the TOWNSFOLK REQUESTS button (see chapter 8).
+  - In the Skyrim tab: the TOWNSFOLK REQUESTS and HIDDEN BOSSES buttons
+    (see chapter 8).
 
 Each block shows a progress bar and a "done / total" counter. The counter is
 in the theme colour at 0, yellow while in progress and green when complete.
@@ -236,24 +238,26 @@ up on UESP or in the game console.
 ==============================================================================
 
 ------------------------------------------------------------------------------
-QUESTS - 605 rows
+QUESTS - 611 rows
 ------------------------------------------------------------------------------
 
-  Skyrim tab            403 rows  (Main, Daedric, Divine, Dungeon and other
+  Skyrim tab            407 rows  (Main, Daedric, Divine, Dungeon and other
                                    global quests, Civil War, Factions,
                                    Regions, Anniversary Edition content)
   Dawnguard tab          39 rows
   Dragonborn tab         60 rows
   Townsfolk Requests    103 rows  (opened from the Skyrim tab)
+  Hidden Bosses           2 rows  (opened from the Skyrim tab)
 
 Most quests are read from the save: a quest counts as Done when the game
 marks it completed, or, for quests the game never marks as completed, when
 the save shows that its final stage was reached. Each rule was checked
 against the quest data and in the game.
 
-Optional quests (8) - not needed for 100%:
+Optional quests (10) - not needed for 100%:
   Paarthurnax, Season Unending, Rejoining the College, Rebuilding the
-  Blades, Dragon Hunting, Dragon Research, Reparations, Surgery.
+  Blades, Dragon Hunting, Dragon Research, Reparations, Honor Thy Family,
+  Vald's Debt, Surgery.
 
 Alternative lines - mutually exclusive paths:
   - Civil War: the Imperial Legion or the Stormcloaks.
@@ -275,10 +279,12 @@ load an earlier save and complete the quest.
 
 Black Books: "Waking Dreams" and "Epistolary Acumen" are the same quests as
 "The Temple of Miraak" and "The Path of Knowledge" in the Dragonborn main
-story. They are shown in both places but counted only once.
+story. They are shown in both places: the Black Books block counts all 7
+books, while the overall progress counts each of these quests only once.
 
-Rows with the Mark chip (56 in the quest tabs) and the whole Townsfolk
-Requests panel (103 rows) are ticked by hand - see chapter 9.
+Rows with the Mark chip (59 in the quest tabs) and the whole Townsfolk
+Requests (103 rows) and Hidden Bosses (2 rows) panels are ticked by hand -
+see chapter 9.
 
 TOWNSFOLK REQUESTS
   Opened with the TOWNSFOLK REQUESTS button in the Skyrim tab (next to the
@@ -290,6 +296,13 @@ TOWNSFOLK REQUESTS
   Every row here is a Mark row. Each block also has a "Mark all" button
   (double tick, shown when you point at the block title) that ticks or
   unticks the whole block at once.
+
+HIDDEN BOSSES
+  Opened with the HIDDEN BOSSES button in the Skyrim tab, right of the
+  TOWNSFOLK REQUESTS button; the same button brings you back. Bosses that
+  no quest leads you to: Vulthuryol in Blackreach and The Reaper in the
+  Soul Cairn. They are Mark rows and count in Quests and in the overall
+  progress.
 
 ------------------------------------------------------------------------------
 LOCATIONS - 419 map locations in 36 blocks
@@ -306,7 +319,14 @@ SPELLS - 167 spells
 
   Grouped by school. Includes the spells of Dawnguard, Dragonborn and the
   Creation Club (for example Necromantic Grimoire, Saints & Seducers, The
-  Cause). Optional: Heal Undead and Conjure Staada.
+  Cause). Optional (always last in their block): Master Transmute and
+  Conjure Staada.
+  Restoration ends with two blocks of spells that only one side of
+  Dawnguard can buy: Dawnguard (Stendarr's Aura, Sun Fire, Vampire's Bane)
+  and Vampire (Heal Undead). They follow the side you pick in the Dawnguard
+  quests: until then all four show Alternative line and all count; after it
+  the other side's spells show Alternative line and count only if you have
+  learned them anyway.
   Annotation: a spell counts once it is learned - read its Spell Tome or be
   taught it directly.
 
@@ -322,14 +342,14 @@ SHOUTS - 27 shouts, 81 Words of Power
   learning new words.
 
 ------------------------------------------------------------------------------
-ENCHANTING - 58 enchantment effects
+ENCHANTING - 57 enchantment effects
 ------------------------------------------------------------------------------
 
   Annotation: an effect counts only after you disenchant an item bearing it
   at an Arcane Enchanter. Finding or wearing the item is not enough.
 
 ------------------------------------------------------------------------------
-INGREDIENTS - 184 ingredients
+INGREDIENTS - 183 ingredients
 ------------------------------------------------------------------------------
 
   Each row has 4 flasks, one per effect of the ingredient in its game order.
@@ -350,12 +370,13 @@ PERKS - 282 rows
   finishing their quest.
 
 ------------------------------------------------------------------------------
-COLLECTIBLES - 40 rows in 5 blocks
+COLLECTIBLES - 40 rows in 5 blocks, 44 entries
 ------------------------------------------------------------------------------
 
   Paragons (5), Dragon Claws (12), Dragon Priest Masks (14), Bugs in a
   Jar (8), Kagrumez Resonance Gems (5 gems in one row, shown as 5 gem
-  icons).
+  icons; every gem counts on its own in Collectibles and in the overall
+  progress, so the category has 44 entries).
   Annotation - IMPORTANT: an item counts only when it is placed in one of
   the 8 tracked homes - on a display, in a container or on a mannequin:
       Breezehome, Proudspire Manor, Honeyside, Vlindrel Hall, Hjerim,
@@ -400,8 +421,11 @@ Why they cannot be read:
     trace of them (Thane of Whiterun, for example, is granted by the main
     story).
 
+  * Hidden bosses - Vulthuryol and The Reaper. No quest leads to them,
+    so there is no quest record to read.
+
   * A few single cases, such as Pain in the Necklace, which never ends, and
-    Hrodulf's House, which has only one stage.
+    Hrodulf's Madness, which has only one stage.
 
 How to use Mark:
 
@@ -489,7 +513,7 @@ Credits
     https://github.com/mdfairch/FallrimTools
   - Force67/recreation - save-format research used for the spell detection.
     https://github.com/Force67/recreation
-  - Fonts: Grenze, JetBrains Mono, Space Grotesk and Orbitron (SIL Open Font
+  - Fonts: Enriqueta, Barlow Semi Condensed and Crimson Text (SIL Open Font
     License 1.1).
   - Built with pywebview, Python and other open-source libraries.
   - Developed with the help of Claude (Anthropic).

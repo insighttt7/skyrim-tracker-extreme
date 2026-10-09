@@ -49,24 +49,21 @@ Force67/recreation
 The tracker page embeds the following fonts, all licensed under the SIL Open
 Font License, Version 1.1 (full text in section 5).
 
-Grenze
-  Copyright 2019, The Grenze Project Authors
-  (https://github.com/Omnibus-Type/Grenze)
+Barlow Semi Condensed
+  Copyright 2017 The Barlow Project Authors
+  (https://github.com/jpt/barlow)
 
-JetBrains Mono
-  Copyright 2020 The JetBrains Mono Project Authors
-  (https://github.com/JetBrains/JetBrainsMono)
+Crimson Text
+  Copyright 2010 The Crimson Text Project Authors
+  (https://github.com/googlefonts/Crimson)
 
-Space Grotesk
-  Copyright 2020 The Space Grotesk Project Authors
-  (https://github.com/floriankarsten/space-grotesk)
-
-Tracker Display (a modified version of Orbitron)
-  Copyright 2018 The Orbitron Project Authors
-  (https://github.com/theleagueof/orbitron),
-  with Reserved Font Name: "Orbitron".
-  The embedded font is a subset of Orbitron. As required by the license for a
-  Modified Version, it is renamed and does not use the Reserved Font Name.
+Tracker Title (a modified version of Enriqueta)
+  Copyright 2018 The Enriqueta Project Authors
+  (https://github.com/vv-monsalve/Enriqueta_2019),
+  Copyright (c) 2011, FontFuror (info@fontfuror.com),
+  with Reserved Font Names "Enriqueta" and "Enriqueta Pro".
+  The embedded font is a subset of Enriqueta. As required by the license for a
+  Modified Version, it is renamed and does not use the Reserved Font Names.
 
 The embedded fonts are subsets made for this tracker and remain licensed under
 the SIL Open Font License, Version 1.1.

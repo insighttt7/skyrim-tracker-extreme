@@ -10,25 +10,25 @@ Order;Block;Name;Tags;Plugin;LocalID;EditorID
 9;Alteration;Ironflesh;;Skyrim.esm;051B16;Ironflesh
 10;Alteration;Magelight;;Skyrim.esm;043323;Magelight
 11;Alteration;Mass Paralysis;;Skyrim.esm;0B62E6;MassParalysis
-12;Alteration;Master Transmute;AE;cckrtsse001_altar.esl;000CDF;ccKRTSSE001_TransmuteOreMineral
-13;Alteration;Oakflesh;;Skyrim.esm;05AD5C;Oakflesh
-14;Alteration;Paralysis Rune;AE;ccbgssse014-spellpack01.esl;000D64;ccBGSSSE014_ParalysisRune
-15;Alteration;Paralyze;;Skyrim.esm;05AD5F;Paralyze
-16;Alteration;Stoneflesh;;Skyrim.esm;05AD5D;Stoneflesh
-17;Alteration;Telekinesis;;Skyrim.esm;01A4CC;Telekinesis
-18;Alteration;Telekinesis Arrows;AE;ccbgssse002-exoticarrows.esl;000829;ccBGSSSE002_LesserPower_TelekinesisArrowLaunch
-19;Alteration;Teleport Pet: Arachnia;AE;ccvsvsse002-pets.esl;000921;ccVSVSSE002_SPELL_TeleportSpider
-20;Alteration;Teleport Pet: Bone Wolf;AE;ccbgssse036-petbwolf.esl;000806;ccBGSSE036_ConjureBoneWolfSpell
-21;Alteration;Teleport Pet: Demented Elytra Nymph;AE;ccbgssse025-advdsgs.esm;08BC17;ccBGSSSE025_TeleportElytraSpellDemented
-22;Alteration;Teleport Pet: Dwarven Mudcrab;AE;ccbgssse010-petdwarvenarmoredmudcrab.esl;000810;ccBGSSSE010_SummonMudcrabSpell
-23;Alteration;Teleport Pet: Hilda;AE;ccvsvsse002-pets.esl;00091F;ccVSVSSE002_SPELL_TeleportGoat
-24;Alteration;Teleport Pet: Manic Elytra Nymph;AE;ccbgssse025-advdsgs.esm;08BC16;ccBGSSSE025_TeleportElytraSpellManic
-25;Alteration;Teleport Pet: Nix-Hound;AE;ccbgssse035-petnhound.esl;000811;ccBGSSSE035_SummonPetSpell
-26;Alteration;Teleport Pet: Skritch;AE;ccvsvsse002-pets.esl;00091D;ccVSVSSE002_SPELL_TeleportSkeever
-27;Alteration;Teleport Pet: Sweet Roll;AE;ccvsvsse002-pets.esl;000920;ccVSVSSE002_SPELL_TeleportFox
-28;Alteration;Teleport Pet: Thistle;AE;ccvsvsse002-pets.esl;00091E;ccVSVSSE002_SPELL_TeleportRabbit
-29;Alteration;Transmute Mineral Ore;;Skyrim.esm;109111;TransmuteOreMineral
-30;Alteration;Waterbreathing;;Skyrim.esm;05D175;Waterbreathing
+12;Alteration;Oakflesh;;Skyrim.esm;05AD5C;Oakflesh
+13;Alteration;Paralysis Rune;AE;ccbgssse014-spellpack01.esl;000D64;ccBGSSSE014_ParalysisRune
+14;Alteration;Paralyze;;Skyrim.esm;05AD5F;Paralyze
+15;Alteration;Stoneflesh;;Skyrim.esm;05AD5D;Stoneflesh
+16;Alteration;Telekinesis;;Skyrim.esm;01A4CC;Telekinesis
+17;Alteration;Telekinesis Arrows;AE;ccbgssse002-exoticarrows.esl;000829;ccBGSSSE002_LesserPower_TelekinesisArrowLaunch
+18;Alteration;Teleport Pet: Arachnia;AE;ccvsvsse002-pets.esl;000921;ccVSVSSE002_SPELL_TeleportSpider
+19;Alteration;Teleport Pet: Bone Wolf;AE;ccbgssse036-petbwolf.esl;000806;ccBGSSE036_ConjureBoneWolfSpell
+20;Alteration;Teleport Pet: Demented Elytra Nymph;AE;ccbgssse025-advdsgs.esm;08BC17;ccBGSSSE025_TeleportElytraSpellDemented
+21;Alteration;Teleport Pet: Dwarven Mudcrab;AE;ccbgssse010-petdwarvenarmoredmudcrab.esl;000810;ccBGSSSE010_SummonMudcrabSpell
+22;Alteration;Teleport Pet: Hilda;AE;ccvsvsse002-pets.esl;00091F;ccVSVSSE002_SPELL_TeleportGoat
+23;Alteration;Teleport Pet: Manic Elytra Nymph;AE;ccbgssse025-advdsgs.esm;08BC16;ccBGSSSE025_TeleportElytraSpellManic
+24;Alteration;Teleport Pet: Nix-Hound;AE;ccbgssse035-petnhound.esl;000811;ccBGSSSE035_SummonPetSpell
+25;Alteration;Teleport Pet: Skritch;AE;ccvsvsse002-pets.esl;00091D;ccVSVSSE002_SPELL_TeleportSkeever
+26;Alteration;Teleport Pet: Sweet Roll;AE;ccvsvsse002-pets.esl;000920;ccVSVSSE002_SPELL_TeleportFox
+27;Alteration;Teleport Pet: Thistle;AE;ccvsvsse002-pets.esl;00091E;ccVSVSSE002_SPELL_TeleportRabbit
+28;Alteration;Transmute Mineral Ore;;Skyrim.esm;109111;TransmuteOreMineral
+29;Alteration;Waterbreathing;;Skyrim.esm;05D175;Waterbreathing
+30;Alteration;Master Transmute;Optional|AE;cckrtsse001_altar.esl;000CDF;ccKRTSSE001_TransmuteOreMineral
 31;Conjuration;Banish Daedra;;Skyrim.esm;06D22C;BanishDaedra
 32;Conjuration;Banish Undead;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;00086A;ccVSVSSE003_SPELL_BanishUndead
 33;Conjuration;Bound Battleaxe;;Skyrim.esm;0211EC;BoundBattleAxe
@@ -62,30 +62,30 @@ Order;Block;Name;Tags;Plugin;LocalID;EditorID
 61;Conjuration;Conjure Skeleton Marksman;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;000856;ccVSVSSE003_SPELL_SkeletonMarksman
 62;Conjuration;Conjure Skeleton Minion;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;00085B;ccVSVSSE003_SPELL_SkeletonMinion
 63;Conjuration;Conjure Skeleton Warlock;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;00084E;ccVSVSSE003_SPELL_SkeletonWarlock
-64;Conjuration;Conjure Staada;Optional|AE;ccbgssse025-advdsgs.esm;19D3FA;ccBGSSSE025_ConjureStaada
-65;Conjuration;Conjure Storm Atronach;;Skyrim.esm;0204C5;ConjureStormAtronach
-66;Conjuration;Conjure Tomb Guardian;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;000854;ccVSVSSE003_SPELL_TombGuardian
-67;Conjuration;Conjure Undying Ghost;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;00085E;ccVSVSSE003_SPELL_UndyingGhost
-68;Conjuration;Conjure Wrathman;Dawnguard;Dawnguard.esm;0045B3;DLC1ConjureWrathman
-69;Conjuration;Conjure Zombie;AE;ccbgssse003-zombies.esl;000804;ccBGSSSE003ConjureZombie
-70;Conjuration;Dead Thrall;;Skyrim.esm;07E8DF;DeadThrall
-71;Conjuration;Dread Zombie;;Skyrim.esm;096D95;DreadZombie
-72;Conjuration;Expel Daedra;;Skyrim.esm;06F952;ExpelDaedra
-73;Conjuration;Flame Thrall;;Skyrim.esm;07E5D5;FlameThrall
-74;Conjuration;Flaming Familiar;;Skyrim.esm;09CE26;dunHighGateSummonFlamingThrall
-75;Conjuration;Frost Thrall;;Skyrim.esm;07E5D6;FrostThrall
-76;Conjuration;Necromancer's Ritual;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;000869;ccVSVSSE003_SPELL_NecroRitual
-77;Conjuration;Pride of Hirstaang;AE;ccbgssse014-spellpack01.esl;000853;ccBGSSSE014_Oblivion_PrideOfHirstaang
-78;Conjuration;Raise Zombie;;Skyrim.esm;07E8E1;RaiseZombie
-79;Conjuration;Reanimate Corpse;;Skyrim.esm;065BD7;ReanimateCorpse
-80;Conjuration;Revenant;;Skyrim.esm;096D94;Revenant
-81;Conjuration;Soul Split;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;000874;ccVSVSSE003_SPELL_SoulSplit
-82;Conjuration;Soul Trap;;Skyrim.esm;04DBA4;SoulTrap
-83;Conjuration;Storm Thrall;;Skyrim.esm;07E5D7;StormThrall
-84;Conjuration;Summon Arniel's Shade;;Skyrim.esm;06A153;MGRSummonArniel
-85;Conjuration;Summon Arvak;Dawnguard;Dawnguard.esm;00C600;DLC01SummonSoulHorse
-86;Conjuration;Summon Daedric Horse;AE;ccbgssse067-daedinv.esm;000B62;ccBGSSSE067_SummonDaedricHorse
-87;Conjuration;Summon Unbound Dremora;;Skyrim.esm;099F39;MGRSummonDremora
+64;Conjuration;Conjure Storm Atronach;;Skyrim.esm;0204C5;ConjureStormAtronach
+65;Conjuration;Conjure Tomb Guardian;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;000854;ccVSVSSE003_SPELL_TombGuardian
+66;Conjuration;Conjure Undying Ghost;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;00085E;ccVSVSSE003_SPELL_UndyingGhost
+67;Conjuration;Conjure Wrathman;Dawnguard;Dawnguard.esm;0045B3;DLC1ConjureWrathman
+68;Conjuration;Conjure Zombie;AE;ccbgssse003-zombies.esl;000804;ccBGSSSE003ConjureZombie
+69;Conjuration;Dead Thrall;;Skyrim.esm;07E8DF;DeadThrall
+70;Conjuration;Dread Zombie;;Skyrim.esm;096D95;DreadZombie
+71;Conjuration;Expel Daedra;;Skyrim.esm;06F952;ExpelDaedra
+72;Conjuration;Flame Thrall;;Skyrim.esm;07E5D5;FlameThrall
+73;Conjuration;Flaming Familiar;;Skyrim.esm;09CE26;dunHighGateSummonFlamingThrall
+74;Conjuration;Frost Thrall;;Skyrim.esm;07E5D6;FrostThrall
+75;Conjuration;Necromancer's Ritual;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;000869;ccVSVSSE003_SPELL_NecroRitual
+76;Conjuration;Pride of Hirstaang;AE;ccbgssse014-spellpack01.esl;000853;ccBGSSSE014_Oblivion_PrideOfHirstaang
+77;Conjuration;Raise Zombie;;Skyrim.esm;07E8E1;RaiseZombie
+78;Conjuration;Reanimate Corpse;;Skyrim.esm;065BD7;ReanimateCorpse
+79;Conjuration;Revenant;;Skyrim.esm;096D94;Revenant
+80;Conjuration;Soul Split;AE|Necromantic Grimoire;ccvsvsse003-necroarts.esl;000874;ccVSVSSE003_SPELL_SoulSplit
+81;Conjuration;Soul Trap;;Skyrim.esm;04DBA4;SoulTrap
+82;Conjuration;Storm Thrall;;Skyrim.esm;07E5D7;StormThrall
+83;Conjuration;Summon Arniel's Shade;;Skyrim.esm;06A153;MGRSummonArniel
+84;Conjuration;Summon Arvak;Dawnguard;Dawnguard.esm;00C600;DLC01SummonSoulHorse
+85;Conjuration;Summon Daedric Horse;AE;ccbgssse067-daedinv.esm;000B62;ccBGSSSE067_SummonDaedricHorse
+86;Conjuration;Summon Unbound Dremora;;Skyrim.esm;099F39;MGRSummonDremora
+87;Conjuration;Conjure Staada;Optional|AE;ccbgssse025-advdsgs.esm;19D3FA;ccBGSSSE025_ConjureStaada
 88;Destruction;Arniel's Convection;;Skyrim.esm;06A104;MGRArnielSpell
 89;Destruction;Blizzard;;Skyrim.esm;07E8E4;Blizzard
 90;Destruction;Chain Lightning;;Skyrim.esm;045F9D;ChainLightning
@@ -159,10 +159,10 @@ Order;Block;Name;Tags;Plugin;LocalID;EditorID
 158;Restoration;Repel Lesser Undead;;Skyrim.esm;04D3F8;RepelLesserUndead
 159;Restoration;Repel Undead;;Skyrim.esm;05DD60;RepelUndead
 160;Restoration;Steadfast Ward;;Skyrim.esm;0211F1;WardSteadfast
-161;Restoration;Stendarr's Aura;Dawnguard;Dawnguard.esm;0038B5;DLC1StendarrsAura
-162;Restoration;Sun Fire;Dawnguard;Dawnguard.esm;003F52;DLC1SunFire
-163;Restoration;Turn Greater Undead;;Skyrim.esm;05DD5E;TurnGreaterUndead
-164;Restoration;Turn Lesser Undead;;Skyrim.esm;04B146;TurnLesserUndead
-165;Restoration;Turn Undead;;Skyrim.esm;05DD5D;TurnUndead
+161;Restoration;Turn Greater Undead;;Skyrim.esm;05DD5E;TurnGreaterUndead
+162;Restoration;Turn Lesser Undead;;Skyrim.esm;04B146;TurnLesserUndead
+163;Restoration;Turn Undead;;Skyrim.esm;05DD5D;TurnUndead
+164;Restoration;Stendarr's Aura;Dawnguard;Dawnguard.esm;0038B5;DLC1StendarrsAura
+165;Restoration;Sun Fire;Dawnguard;Dawnguard.esm;003F52;DLC1SunFire
 166;Restoration;Vampire's Bane;Dawnguard;Dawnguard.esm;0038B6;DLC1VampiresBane
-167;Restoration;Heal Undead;Optional|Dawnguard;Dawnguard.esm;00E8D4;DLC1HealUndead
+167;Restoration;Heal Undead;Dawnguard;Dawnguard.esm;00E8D4;DLC1HealUndead

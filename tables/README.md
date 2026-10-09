@@ -1,8 +1,13 @@
 # Tracker tables
 
 All files: separator `;`, UTF-8 without BOM, `|` between several values in one cell.
-`Order` = the row position on the tracker page (1, 2, 3 ...). Rows are matched by `Order`,
-so the order of the rows must stay the same as on the page.
+Rows are matched by their key, never by position or name: `EditorID` (spells, shouts,
+enchanting, ingredients, perks), `BaseEditorIDs` (collectibles, books), `Key` (quests:
+the EditorID, or `EditorID|Name` when several rows share one) and the first marker of
+`MarkerFormIDs` as `Plugin:LocalID` (locations). A key must be unique in its table -
+the parser stops with an error otherwise - and the page carries the same key in
+`data-key`. `Order` = the row position on the tracker page (1, 2, 3 ...); keep the rows
+in the same order as on the page, so a table and the page are easy to compare.
 
 | File | Columns |
 |---|---|
@@ -23,7 +28,8 @@ so the order of the rows must stay the same as on the page.
 - **flag** - done when the quest has its "completed" flag in the save;
 - **override** - done when the stage from `OverrideMap` is reached;
 - **handle** - never read from the save, ticked by hand with the Mark chip
-  (radiant and repeatable quests, thanes, Townsfolk Requests).
+  (radiant and repeatable quests, thanes, Townsfolk Requests, Hidden
+  Bosses).
 
 ## Tags
 

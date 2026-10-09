@@ -1559,21 +1559,54 @@ def out_base(path):
     return OUT_BASE or os.path.splitext(path)[0]
 
 
-TRACKER_JSON_FORMAT = 'skyrim-tracker/1'
+TRACKER_JSON_FORMAT = 'skyrim-tracker/2'
 
 
-def write_tracker_json(path, header, form_version, full_plugins, lite_plugins, finals):
+def row_key_map(cat, rows):
+    """{Order: row key} for one category, from its *_tracker.csv rows. The key
+    is what the page stores in data-key and what tracker.json lists, so a row
+    keeps its key when rows are added, removed or moved:
+      quests                                   - Key (unique; EditorID, or
+                                                 'EditorID|Name' for shared IDs)
+      spells/shouts/enchanting/ingredients/perks - EditorID
+      collectibles/books                       - BaseEditorIDs
+      locations                                - first marker 'Plugin:LocalID'
+                                                 (many markers have no EditorID)
+    An empty or repeated key is a table error, not a silent skip."""
+    out = {}
+    for r in rows:
+        if cat == 'quests':
+            order, key = r['order'], r['key']
+        elif cat == 'locations':
+            plugin, local_id = r['markers'][0]
+            order, key = r['order'], f'{plugin}:{local_id:06X}'
+        elif cat in ('collectibles', 'books'):
+            order, key = r['Order'], r['BaseEditorIDs']
+        else:
+            order, key = r['Order'], r['EditorID']
+        order, key = str(order).strip(), (key or '').strip()
+        if not key:
+            raise ValueError(f"{cat}: row Order={order} has no key")
+        if key in out.values():
+            raise ValueError(f"{cat}: key {key!r} (Order={order}) is not unique")
+        out[order] = key
+    return out
+
+
+def write_tracker_json(path, header, form_version, full_plugins, lite_plugins, finals, row_keys):
     """<save>.tracker.json - everything the tracker page needs for one save, built
-    from the *_final.csv files written in this run. Rows are addressed by Order
-    (= row order in the HTML), so the page never matches names.
+    from the *_final.csv files written in this run. Rows are addressed by their
+    key (row_key_map: EditorID etc., = data-key in the HTML), never by position
+    or name, so adding or moving a row does not shift anything.
 
     finals: {category: csv_path or None}; a category without a CSV this run is
     left out and the page shows it as empty.
       quests/locations/spells/shouts/enchanting/perks/collectibles/books:
-          {"done": [Order...], "unknown": [Order...]}
-      quests also: {"failed": [Order...]} (QUEST_FLAGS 0x40)
-      ingredients: {"known": {Order: "YYNY"}, "unknown": [...]}  (only rows with any Y)
-      collectibles also: {"counts": {Order: have}} for COUNT rows (Kagrumez 5/5)
+          {"done": [key...], "unknown": [key...]}
+      quests also: {"failed": [key...]} (QUEST_FLAGS 0x40)
+      ingredients: {"known": {key: "YYNY"}, "unknown": [...]}  (only rows with any Y)
+      collectibles also: {"counts": {key: have}} for COUNT rows (Kagrumez 5/5)
+    row_keys: {category: {Order: key}} from row_key_map().
     """
     import json
     done_words = {'DONE (flag)', 'DONE (stage override)', 'DISCOVERED', 'LEARNED', 'OBTAINED'}
@@ -1586,21 +1619,22 @@ def write_tracker_json(path, header, form_version, full_plugins, lite_plugins, f
         entry = {'done': [], 'unknown': []}
         if cat == 'ingredients':
             entry = {'known': {}, 'unknown': []}
+        keys = row_keys[cat]
         for r in rows:
-            order = int(r['Order'])
+            order = keys[r['Order'].strip()]          # KeyError = table/final CSV mismatch
             st = r['Status'].strip()
             if st == 'UNKNOWN':
                 entry['unknown'].append(order)
             if cat == 'ingredients':
                 if 'Y' in r.get('Known', ''):
-                    entry['known'][str(order)] = r['Known']
+                    entry['known'][order] = r['Known']
                 continue
             if st in done_words:
                 entry['done'].append(order)
             if cat == 'quests' and st == 'FAILED':
                 entry.setdefault('failed', []).append(order)
             if cat == 'collectibles' and r.get('Progress'):
-                entry.setdefault('counts', {})[str(order)] = int(r['Progress'].split('/')[0])
+                entry.setdefault('counts', {})[order] = int(r['Progress'].split('/')[0])
         cats[cat] = entry
     data = {
         'format': TRACKER_JSON_FORMAT,
@@ -1650,8 +1684,9 @@ def load_quest_tracker(path):
                          Requests and Untrackable: never looked up in the save,
                          marked done by hand on the page (status HANDLE)
       EditorIDs        - 'EDID|EDID2' (Dark Ancestor - two IDs)
-      Key              - data-key of the row in the HTML (Civil War only:
-                         CW03_imperial / CW03_stormcloak), otherwise empty
+      Key              - unique row key = data-key of the row in the HTML:
+                         the EditorID, 'EditorID|Name' when several rows share
+                         one (Favor jobs, Black Books), CW03_imperial / _stormcloak
       FormIDCandidates - 'Plugin:FormID=SubEDID|...'
       OverrideMap      - 'SubEDID:Stage|...'
     A row without a single candidate is a file error, not a silent skip."""
@@ -2801,6 +2836,12 @@ def main(path, tracker_path=None, always_visible_path=None, quest_tracker_path=N
         out.write('\n'.join(book_lines))
 
     _stage(13)
+    row_keys = {cat: row_key_map(cat, rows) for cat, rows in (
+        ('quests', quest_tracker), ('locations', tracker),
+        ('spells', spells_tracker_rows), ('shouts', shouts_tracker_rows),
+        ('enchanting', ench_tracker_rows), ('ingredients', ingr_tracker_rows),
+        ('perks', perks_tracker_rows), ('collectibles', coll_tracker_rows),
+        ('books', book_tracker_rows))}
     tracker_json_path = write_tracker_json(path, header, form_version, full_plugins, lite_plugins, {
         'quests': quests_final_csv_path if quest_tracker else None,
         'locations': final_csv_path if tracker else None,
@@ -2811,7 +2852,7 @@ def main(path, tracker_path=None, always_visible_path=None, quest_tracker_path=N
         'perks': perks_final_csv_path if perks_tracker_rows else None,
         'collectibles': coll_final_csv_path if coll_tracker_rows else None,
         'books': books_final_csv_path if book_tracker_rows else None,
-    })
+    }, row_keys)
 
     print(f"Done.")
     print(f"For the tracker: {tracker_json_path}")
