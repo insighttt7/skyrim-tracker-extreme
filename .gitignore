@@ -1,0 +1,19 @@
+# Build output
+target/
+dist/
+src-tauri/gen/
+src-tauri/gen-web/
+
+# Personal data - never commit
+data/
+*.ess
+*.skse
+*.tracker.json
+settings.json
+error.log
+
+# OS / editor
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
