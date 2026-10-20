@@ -5,19 +5,19 @@ Rows are matched by their key, never by position or name: `EditorID` (spells, sh
 enchanting, ingredients, perks), `BaseEditorIDs` (collectibles, books), `Key` (quests:
 the EditorID, or `EditorID|Name` when several rows share one) and the first marker of
 `MarkerFormIDs` as `Plugin:LocalID` (locations). A key must be unique in its table -
-the parser stops with an error otherwise - and the page carries the same key in
-`data-key`. `Order` = the row position on the tracker page (1, 2, 3 ...); keep the rows
-in the same order as on the page, so a table and the page are easy to compare.
+the parser stops with an error otherwise. The tracker page builds its rows from the
+tables, in table order (`Block` and `SubBlock` group them); `Order` numbers the rows
+1, 2, 3 ... The tables are built into the exe, so rebuild after any change.
 
 | File | Columns |
 |---|---|
-| `quests_tracker.csv` | `Order;Tab;Section;Block;SubBlock;Name;EditorIDs;Key;NoCount;FormIDCandidates;OverrideMap;Category` |
+| `quests_tracker.csv` | `Order;Tab;Section;Block;SubBlock;Name;EditorIDs;Key;NoCount;FormIDCandidates;OverrideMap;Category;ContentPlugin;Source` |
 | `locations_tracker.csv` | `Order;Block;Name;Tags;MarkerFormIDs` |
-| `MapMarkerExport.csv` | `FormID;Plugin;EditorID;MarkerName;MarkerType;AlwaysVisible;LinkedLocationEditorID;CellContext` - map markers exported from xEdit |
-| `spells_tracker.csv` | `Order;Block;Name;Tags;Plugin;LocalID;EditorID` |
+| `MapMarkerExport.csv` | `FormID;Plugin;EditorID;MarkerName;MarkerType;AlwaysVisible;LinkedLocationEditorID;CellContext;FNAMHex;CanTravelTo;...;Verdict` - map markers exported from xEdit |
+| `spells_tracker.csv` | `Order;Block;SubBlock;Name;Tags;Plugin;LocalID;EditorID` |
 | `shouts_tracker.csv` | `Order;Block;Name;Tags;Plugin;LocalID;EditorID` |
 | `enchanting_tracker.csv` | `Order;Block;Name;Tags;Plugin;LocalID;EditorID` |
-| `ingredients_tracker.csv` | `Order;Block;Name;Tags;Plugin;LocalID;EditorID;AltCandidates` |
+| `ingredients_tracker.csv` | `Order;Block;Name;Tags;Plugin;LocalID;EditorID;AltCandidates;ContentPlugin` |
 | `perks_tracker.csv` | `Order;Block;SubBlock;Name;Tags;Plugin;LocalID;EditorID;Source` |
 | `collectibles_tracker.csv` | `Order;Block;Name;Tags;Mode;Required;BaseKeys;BaseEditorIDs;PersistentRefs` |
 | `collectibles_houses.csv` | `Kind;House;Plugin;LocalID;EditorID;Name` - cells, containers and mannequins of the 8 tracked homes |
@@ -30,6 +30,15 @@ in the same order as on the page, so a table and the page are easy to compare.
 - **handle** - never read from the save, ticked by hand with the Mark chip
   (radiant and repeatable quests, thanes, Townsfolk Requests, Hidden
   Bosses).
+
+## Grouping and plugins
+
+- `SubBlock` - a nested block inside `Block` (empty = none).
+- `ContentPlugin` (quests, ingredients) - the plugin the content comes from, when it
+  is not the plugin of the record itself. Rows of a plugin that is not in the save are
+  hidden and not counted.
+- `Source` (quests) - shows a DLC chip, for example `Dawnguard`, on a row whose record
+  is in another plugin.
 
 ## Tags
 

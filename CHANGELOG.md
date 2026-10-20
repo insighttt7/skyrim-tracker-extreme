@@ -1,5 +1,31 @@
 # Changelog
 
+## v2.0.0 - 2026-10-20
+
+The program
+- Rewritten in Rust (Tauri 2) instead of Python and pywebview. One small exe, no libs folder; starts and reads a save several times faster and uses less memory. The results are the same as in 1.1.0.
+- The window appears only when the page is fully drawn, with the theme picture already in place.
+- The page zoom (Ctrl + mouse wheel, Ctrl + plus / minus) is remembered; a badge shows the zoom for a moment when it changes.
+- Ctrl+F jumps to the search field.
+- Loading a save after a save without some Creation Club content no longer leaves rows hidden.
+
+Player panel
+- New: Playtime ("191 h 37 min") and the in-game date ("Tirdas, 17th of Frostfall, 4E 205").
+- Cyrillic names (for example the location in a Russian game) are shown in the interface font.
+
+Look
+- New background pictures for both themes; the panels let the picture show through.
+- Dark theme: new colours; chips and filters in both themes are plain coloured words.
+- Hearthfire chip in wood tones, so it no longer looks like the Not chip.
+- New Hidden Bosses icon.
+- The interface is 5% larger on screens 1400 px wide and up (was 10%).
+- Blocks open and close instantly, so large blocks no longer stutter.
+- Fixes: the mini profile no longer jumps when the sticky bar appears; the Mark flash no longer replays when a tab is opened again; End and scrolling to the bottom keep the page length steady; the theme switch runs smoothly; annotation tooltips never end with a lone dot.
+
+Content - 2268 entries
+- Quests (617): new Townsfolk Requests rows Kill the Forsworn Leader and Kill the Dragon, and a new Some Light Theft block (Dengeir of Stuhn, Malur Seloth, Stands-In-Shallows); new Anniversary Edition quest Through a Glass, Darkly. If I had a Hammer, Swift as an Arrow and The Edge of Ruin now count by their final stage (the game does not mark them completed).
+- Locations (419): a location counts as Discovered when you can fast travel to it - a marker only shown on the map by a note or a quest no longer counts. Gallows Hall and Japhet's Folly removed (no lasting map marker); Chillwind Depths and Blackbone Isle added; The Chill now uses the USSEP map marker.
+
 ## v1.1.0 - 2026-10-10
 - New themes: Stalhrim Hollow (dark) and Dragonbone Parchment (light) replace Daedric Space and Stalhrim Parchment - new colours, chips, cursors and fonts (Enriqueta, Barlow Semi Condensed, Crimson Text, all hinted for sharp text on Windows).
 - New program icon to match the themes.

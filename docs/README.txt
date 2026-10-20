@@ -1,6 +1,6 @@
 ==============================================================================
                           SKYRIM TRACKER EXTREME
-                                  v1.1.0
+                                  v2.0.0
                A 100% completion tracker for Skyrim SE / AE
 ==============================================================================
 
@@ -60,7 +60,7 @@ CONTENTS
 
 Skyrim Tracker Extreme reads your save file (.ess) and shows how far you are
 from 100% completion of Skyrim: quests, locations, spells, shouts,
-enchantments, ingredients, perks, collectibles and books - 2262 entries in
+enchantments, ingredients, perks, collectibles and books - 2268 entries in
 total, each one with its status taken straight from the save.
 
 You pick a save, the tracker reads it in a couple of seconds and fills every
@@ -80,7 +80,7 @@ tracker.
 * Skyrim Special Edition or Anniversary Edition (Steam or GOG), any game
   language.
 * USSEP and USCCP installed in the game (see "Read this first").
-* Nothing else. Python and all libraries are already inside the program.
+* Nothing else. Everything the tracker needs is inside the program.
 
 
 ==============================================================================
@@ -90,17 +90,16 @@ tracker.
 1. Unpack the WHOLE archive into any folder, for example your Desktop or
    Documents. There is no installer.
 
-2. Keep the folder together:
+2. The folder holds:
 
       Skyrim Tracker Extreme\
         Skyrim Tracker Extreme.exe   - start the program with this
-        libs\                        - the program's own Python and libraries
         data\                        - your settings (created on first start)
         README.txt, LICENSE.txt, THIRD_PARTY_NOTICES.txt
 
-   The .exe cannot run without the "libs" folder next to it. Do not move the
-   .exe alone. To start it from the Desktop, make a shortcut instead:
-   right-click the .exe - Send to - Desktop (create shortcut).
+   The settings are kept in the "data" folder next to the .exe. To start it
+   from the Desktop, make a shortcut: right-click the .exe - Send to -
+   Desktop (create shortcut).
 
 3. Start "Skyrim Tracker Extreme.exe". The window opens maximized.
 
@@ -151,9 +150,9 @@ Top bar
 
 Player panel
   - Level ring with your character level and experience.
-  - Location, character name, race, number of plugins and light plugins,
-    save version, form version and save number, taken from the save. Location and game
-    date are shown in the language of your game.
+  - Location, playtime, character name, race, in-game date, number of
+    plugins and light plugins, save version, form version and save number,
+    taken from the save. The location is shown in the language of your game.
   - COMPLETION: your overall progress in percent. It is calculated over 8
     categories: Quests, Locations, Spells, Shouts, Enchanting, Ingredients,
     Perks and Collectibles. Books are shown separately and are not part of
@@ -190,13 +189,14 @@ Click one of the 8 small bars in the player panel to open that category.
 6. KEYBOARD SHORTCUTS
 ==============================================================================
 
+  Ctrl + F                Jump to the search field.
   Esc                     While typing in the search field: clears the
                           search and leaves the field.
   Page Up / Page Down     Scroll the page one screen up / down.
   Home / End              Jump to the top / bottom of the page.
   Arrow Up / Arrow Down   Scroll the page a little.
   Ctrl + mouse wheel      Zoom in / out. Ctrl + plus / Ctrl + minus do the
-                          same.
+                          same. The zoom is remembered.
   Ctrl + 0                Reset the zoom.
 
 Page Up, Page Down, Home, End and the arrows scroll the page when the search
@@ -238,15 +238,15 @@ up on UESP or in the game console.
 ==============================================================================
 
 ------------------------------------------------------------------------------
-QUESTS - 611 rows
+QUESTS - 617 rows
 ------------------------------------------------------------------------------
 
-  Skyrim tab            407 rows  (Main, Daedric, Divine, Dungeon and other
+  Skyrim tab            408 rows  (Main, Daedric, Divine, Dungeon and other
                                    global quests, Civil War, Factions,
                                    Regions, Anniversary Edition content)
   Dawnguard tab          39 rows
   Dragonborn tab         60 rows
-  Townsfolk Requests    103 rows  (opened from the Skyrim tab)
+  Townsfolk Requests    108 rows  (opened from the Skyrim tab)
   Hidden Bosses           2 rows  (opened from the Skyrim tab)
 
 Most quests are read from the save: a quest counts as Done when the game
@@ -283,13 +283,13 @@ story. They are shown in both places: the Black Books block counts all 7
 books, while the overall progress counts each of these quests only once.
 
 Rows with the Mark chip (59 in the quest tabs) and the whole Townsfolk
-Requests (103 rows) and Hidden Bosses (2 rows) panels are ticked by hand -
+Requests (108 rows) and Hidden Bosses (2 rows) panels are ticked by hand -
 see chapter 9.
 
 TOWNSFOLK REQUESTS
   Opened with the TOWNSFOLK REQUESTS button in the Skyrim tab (next to the
   collapse / expand buttons); the same button brings you back. The button
-  shows your progress, for example 12 / 103. The panel holds the small jobs
+  shows your progress, for example 12 / 108. The panel holds the small jobs
   and favours people across Skyrim ask of you: chopping wood, mining ore,
   gathering wheat, brawls, gifts to beggars and drunks, rare gifts,
   deliveries, dungeon delving, persuasion, the crafting tutorials and more.
@@ -308,7 +308,9 @@ HIDDEN BOSSES
 LOCATIONS - 419 map locations in 36 blocks
 ------------------------------------------------------------------------------
 
-  A location counts as Discovered when its marker is revealed on your map.
+  A location counts as Discovered when you have found it in the game - when
+  you can fast travel to it. A marker only shown on the map by a note or a
+  quest does not count yet.
   Annotation: travel within sight of the location to discover it. Locations
   that are shown on the map from the very start, like the big cities, count
   automatically.
@@ -459,7 +461,7 @@ on their own.
 Everything is stored in the "data" folder next to the program:
 
   data\settings.json   theme, last opened tab, compact rows, the last save
-                       folder, the window size and your Mark ticks
+                       folder, the window size, the zoom and your Mark ticks
   data\error.log       appears only if something went wrong
 
 The window always opens maximized. If you restore it to a smaller size, that
@@ -473,10 +475,6 @@ into the new version.
 ==============================================================================
 12. TROUBLESHOOTING
 ==============================================================================
-
-The program does not start, an error about "python314.dll" or "libs"
-  The .exe was separated from the "libs" folder. Unpack the whole archive
-  again and start the .exe inside the folder, or use a shortcut.
 
 "Windows protected your PC"
   Click "More info" - "Run anyway". See chapter 3.
@@ -514,10 +512,13 @@ Credits
   - Force67/recreation - save-format research used for the spell detection.
     https://github.com/Force67/recreation
   - Fonts: Enriqueta, Barlow Semi Condensed and Crimson Text (SIL Open Font
-    License 1.1).
-  - Built with pywebview, Python and other open-source libraries.
-  - Developed with the help of Claude (Anthropic).
+    License 1.1), Roboto Condensed for Cyrillic letters (Apache License 2.0).
+  - Built with Tauri, Rust and other open-source libraries.
   Full details and license texts: THIRD_PARTY_NOTICES.txt
+
+AI in this project
+  1. The code, written together with Claude (Anthropic).
+  2. The background art for both themes.
 
 Skyrim Tracker Extreme is an unofficial fan project and is not affiliated
 with or endorsed by Bethesda Softworks or ZeniMax Media. The Elder Scrolls

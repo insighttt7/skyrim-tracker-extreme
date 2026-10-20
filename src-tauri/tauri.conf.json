@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Skyrim Tracker Extreme",
+  "version": "2.0.0",
+  "identifier": "io.github.insighttt7.skyrimtrackerextreme",
+  "build": {
+    "frontendDist": "gen-web"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": false,
+    "icon": ["icons/icon.ico"],
+    "copyright": "(c) 2026 Alexey Insight"
+  }
+}

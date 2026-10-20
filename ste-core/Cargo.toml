@@ -1,0 +1,9 @@
+[package]
+name = "ste-core"
+version = "2.0.0"
+edition = "2024"
+description = "Skyrim Tracker Extreme - save parser (no dependencies)"
+license-file = "../LICENSE.txt"
+publish = false
+
+[dependencies]
