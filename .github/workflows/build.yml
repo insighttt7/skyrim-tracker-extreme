@@ -1,0 +1,26 @@
+name: Build
+
+# Builds the exe from the sources; run it by hand from the Actions tab.
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build
+        run: cargo build --release
+
+      - name: Collect
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force out | Out-Null
+          Copy-Item target/release/skyrim-tracker-extreme.exe "out/Skyrim Tracker Extreme.exe"
+          Copy-Item LICENSE.txt, docs/THIRD_PARTY_NOTICES.txt out/
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Skyrim-Tracker-Extreme
+          path: out/
