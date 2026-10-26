@@ -2815,7 +2815,7 @@ checksum = "33f4fe9184a62d842c9ef383018f3306d8ba224fd9d836f56d7288308847c256"
 
 [[package]]
 name = "skyrim-tracker-extreme"
-version = "2.0.0"
+version = "2.1.0"
 dependencies = [
  "serde_json",
  "ste-core",
@@ -2908,7 +2908,7 @@ checksum = "ff7589a1859b09232522bb9edf076ca7fcf14ded96685d3fa629db73023ffbb7"
 
 [[package]]
 name = "ste-core"
-version = "2.0.0"
+version = "2.1.0"
 
 [[package]]
 name = "string_cache"

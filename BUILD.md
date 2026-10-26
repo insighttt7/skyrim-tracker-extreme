@@ -28,3 +28,4 @@ several GB of small files into `target\`.
 The result:
 
     dist\Skyrim Tracker Extreme\Skyrim Tracker Extreme.exe
+    dist\Skyrim Tracker Extreme v2.1.0.zip   (the release archive, version from tauri.conf.json)

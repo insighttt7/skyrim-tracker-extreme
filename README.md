@@ -3,6 +3,8 @@
 A 100% completion tracker for **Skyrim Special Edition / Anniversary Edition**.
 It reads a `.ess` save and shows the progress over 2268 entries in 9 categories:
 quests, locations, spells, shouts, enchanting, ingredients, perks, collectibles and books.
+It also shows the statistics kept in the save, copies a row name or a quest Editor ID with one click,
+and shows the row names in other languages from language files in `lang\`.
 
 All rights reserved - see [LICENSE.txt](LICENSE.txt).
 The user manual that ships with the program is [docs/README.txt](docs/README.txt).
@@ -36,9 +38,10 @@ skyrim-tracker-extreme/
 │   ├── Skyrim_Tracker_v15.html   the tracker page (both themes)
 │   ├── fonts/
 │   └── bg/                   theme pictures
-├── tables/                   the 11 tracker tables (CSV)
+├── tables/                   the 12 tracker tables (CSV)
 ├── docs/
 │   ├── README.txt            user manual (goes into the release)
+│   ├── README_lang.txt       goes into the release, in lang\
 │   └── THIRD_PARTY_NOTICES.txt
 ├── .github/workflows/
 │   └── build.yml             build on GitHub
@@ -49,7 +52,7 @@ skyrim-tracker-extreme/
 ```
 
 The page, the fonts, the pictures and the tables are built into the exe;
-the program folder holds only the exe and its `data\` folder.
+the program folder holds only the exe, its `data\` folder and `lang\` for language files.
 
 ## Building
 

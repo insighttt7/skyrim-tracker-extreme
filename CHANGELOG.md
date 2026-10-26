@@ -1,5 +1,32 @@
 # Changelog
 
+## v2.1.0 - 2026-10-26
+
+New
+- Languages: entry names in German, Spanish, French, Italian, Japanese, Polish, Russian or Traditional Chinese. Each language is a separate download ("STE - DE.zip" and so on) that goes into the new lang folder; pick it with the language button next to the search. The interface stays in English. The search finds an entry by its translated and by its English name. The choice is remembered.
+- Statistics: a new page, opened with the chart button in the player panel. Your favourite weapon, spell, school of magic and shout, and the statistics the game keeps, grouped as General, Quest, Combat, Magic, Crafting, Crime and Other, plus Total Kills. Click STATISTICS to copy the whole list.
+- Click an entry name or a quest Editor ID to copy it; a COPIED badge shows what was copied.
+
+Look
+- Entry names use the title font; rows keep the same height in every language.
+- Shouts show each word with its meaning ("RAAN - Animal"), the dragon word in capitals.
+- The fi ligature is removed from the fonts, so "fi" no longer looks glued.
+- The Optional chip always comes first.
+- Light theme: the counter of the pressed Townsfolk Requests / Hidden Bosses button is now readable.
+- Light theme: the active tab no longer changes colour on hover.
+- A clicked filter shows its underline at once.
+- Switching the theme while the top bar and tabs stick to the top no longer flickers.
+- A double click on buttons, tabs and counters no longer highlights text.
+- The loading card moves faster, and its last step is fully drawn while the tracker builds.
+- The loading card frame turns green while a save is read; the error badge is drawn cleanly.
+- The Shouts icon has a solid triangle.
+- The page styles are rewritten: half the size, same look.
+
+Content
+- Dungeon Delving (Townsfolk Requests): rows show the item only, for example Hrolfdir's Shield and Helm of Winterhold.
+- Renamed: Liar's Retreat (was Lair's Retreat), Composure, Speed, and Precision, Amethyst Dragon Claw halves.
+- Quest Perks in alphabetical order.
+
 ## v2.0.0 - 2026-10-20
 
 The program
