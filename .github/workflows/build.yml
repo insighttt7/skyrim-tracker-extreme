@@ -18,7 +18,9 @@ jobs:
         run: |
           New-Item -ItemType Directory -Force out | Out-Null
           Copy-Item target/release/skyrim-tracker-extreme.exe "out/Skyrim Tracker Extreme.exe"
-          Copy-Item LICENSE.txt, docs/THIRD_PARTY_NOTICES.txt out/
+          Copy-Item LICENSE.txt, docs/README.txt, docs/THIRD_PARTY_NOTICES.txt out/
+          New-Item -ItemType Directory -Force out/lang | Out-Null
+          Copy-Item docs/README_lang.txt out/lang/
 
       - uses: actions/upload-artifact@v4
         with:
