@@ -66,7 +66,7 @@ Order;Tab;Section;Block;SubBlock;Name;EditorIDs;Key;NoCount;FormIDCandidates;Ove
 65;Skyrim;Skyrim;Dungeon Quests;;Folgunthur;dunFolgunthurQST;dunFolgunthurQST;;Skyrim.esm:04CEDE=dunFolgunthurQST;dunFolgunthurQST:10;override;;
 66;Skyrim;Skyrim;Dungeon Quests;;Robber's Gorge;dunRobbersGorgeQST;dunRobbersGorgeQST;;Skyrim.esm:0B8C9F=dunRobbersGorgeQST;dunRobbersGorgeQST:50;override;;
 67;Skyrim;Skyrim;Dungeon Quests;;Forgotten Names;dunMidden01QST;dunMidden01QST;;Skyrim.esm:055977=dunMidden01QST;dunMidden01QST:100;override;;
-68;Skyrim;Skyrim;Dungeon Quests;;Lair's Retreat;dunLiarsRetreatQST;dunLiarsRetreatQST;;Skyrim.esm:0AA5D6=dunLiarsRetreatQST;dunLiarsRetreatQST:100;override;;
+68;Skyrim;Skyrim;Dungeon Quests;;Liar's Retreat;dunLiarsRetreatQST;dunLiarsRetreatQST;;Skyrim.esm:0AA5D6=dunLiarsRetreatQST;dunLiarsRetreatQST:100;override;;
 69;Skyrim;Skyrim;Other Global Quests;;The Forgemaster's Fingers;FavorOrcsIntro;FavorOrcsIntro;;Skyrim.esm:076335=FavorOrcsIntro;FavorOrcsIntro:100;override;;
 70;Skyrim;Skyrim;Other Global Quests;;A Return To Your Roots;NN01;NN01;;Skyrim.esm:0C9BA0=NN01;;flag;;
 71;Skyrim;Skyrim;Other Global Quests;;Amulet of the Moon;FreeformCaravansA;FreeformCaravansA;;Skyrim.esm:0D9393=FreeformCaravansA;;flag;;
@@ -294,7 +294,7 @@ Order;Tab;Section;Block;SubBlock;Name;EditorIDs;Key;NoCount;FormIDCandidates;Ove
 293;Skyrim;Regions;Whiterun Hold;Miscellaneous Quests;Erik the Slayer;RoriksteadFreeform;RoriksteadFreeform;;Skyrim.esm:04EC52=RoriksteadFreeform;;flag;;
 294;Skyrim;Regions;Whiterun Hold;Miscellaneous Quests;Thane of Whiterun;Favor253;Favor253;;;;handle;;
 295;Skyrim;Regions;Falkreath Hold;;Dark Ancestor;FreeformFalkreathQuest03|FreeformFalkreathQuest03B;FreeformFalkreathQuest03|FreeformFalkreathQuest03B;;Skyrim.esm:0B83C3=FreeformFalkreathQuest03|Skyrim.esm:0D6986=FreeformFalkreathQuest03B;;flag;;
-296;Skyrim;Regions;Falkreath Hold;;Composure Speed and Precision;dunArcherQST;dunArcherQST;;Skyrim.esm:0CAB3C=dunArcherQST;dunArcherQST:100;override;;
+296;Skyrim;Regions;Falkreath Hold;;Composure, Speed, and Precision;dunArcherQST;dunArcherQST;;Skyrim.esm:0CAB3C=dunArcherQST;dunArcherQST:100;override;;
 297;Skyrim;Regions;Falkreath Hold;;Thane of Falkreath;Favor258;Favor258;;;;handle;;
 298;Skyrim;Regions;The Pale;;Salty Sea-Dogs;FreeformShipsDawnstar;FreeformShipsDawnstar;;Skyrim.esm:094152=FreeformShipsDawnstar;;flag;;
 299;Skyrim;Regions;The Pale;;Thane of the Pale;Favor256;Favor256;;;;handle;;
@@ -586,14 +586,14 @@ Order;Tab;Section;Block;SubBlock;Name;EditorIDs;Key;NoCount;FormIDCandidates;Ove
 585;Townsfolk Requests;Townsfolk Requests;Delivery;;Thadgeir;Favor001;Favor001|Thadgeir;;;;handle;;
 586;Townsfolk Requests;Townsfolk Requests;Delivery;;Hillevi Cruel-Sea;FreeformWindhelmA;FreeformWindhelmA;;;;handle;;
 587;Townsfolk Requests;Townsfolk Requests;Delivery;;Sorex Vinius;SolitudeFreeform04;SolitudeFreeform04;;;;handle;;
-588;Townsfolk Requests;Townsfolk Requests;Dungeon Delving;;Recover Hrolfdir's Shield;Favor157;Favor157;;;;handle;;
-589;Townsfolk Requests;Townsfolk Requests;Dungeon Delving;;Find the Helm of Winterhold;Favor158;Favor158;;;;handle;;
+588;Townsfolk Requests;Townsfolk Requests;Dungeon Delving;;Hrolfdir's Shield;Favor157;Favor157;;;;handle;;
+589;Townsfolk Requests;Townsfolk Requests;Dungeon Delving;;Helm of Winterhold;Favor158;Favor158;;;;handle;;
 590;Townsfolk Requests;Townsfolk Requests;Dungeon Delving;;Amren's Sword;Favor204;Favor204|Amren's Sword;;;;handle;;
 591;Townsfolk Requests;Townsfolk Requests;Dungeon Delving;;Shahvee's Amulet;Favor204;Favor204|Shahvee's Amulet;;;;handle;;
-592;Townsfolk Requests;Townsfolk Requests;Dungeon Delving;;Retrieve the Ring of Pure Mixtures;Favor205;Favor205|Retrieve the Ring of Pure Mixtures;;;;handle;;
-593;Townsfolk Requests;Townsfolk Requests;Dungeon Delving;;Find Runil's Journal;Favor205;Favor205|Find Runil's Journal;;;;handle;;
-594;Townsfolk Requests;Townsfolk Requests;Dungeon Delving;;Find Noster's Helmet;Favor205;Favor205|Find Noster's Helmet;;;;handle;;
-595;Townsfolk Requests;Townsfolk Requests;Dungeon Delving;;Find Roggi Knot-Beard's Ancestral Shield;Favor205;Favor205|Find Roggi Knot-Beard's Ancestral Shield;;;;handle;;
+592;Townsfolk Requests;Townsfolk Requests;Dungeon Delving;;Ring of Pure Mixtures;Favor205;Favor205|Retrieve the Ring of Pure Mixtures;;;;handle;;
+593;Townsfolk Requests;Townsfolk Requests;Dungeon Delving;;Runil's Journal;Favor205;Favor205|Find Runil's Journal;;;;handle;;
+594;Townsfolk Requests;Townsfolk Requests;Dungeon Delving;;Noster's Helmet;Favor205;Favor205|Find Noster's Helmet;;;;handle;;
+595;Townsfolk Requests;Townsfolk Requests;Dungeon Delving;;Roggi Knot-Beard's Ancestral Shield;Favor205;Favor205|Find Roggi Knot-Beard's Ancestral Shield;;;;handle;;
 596;Townsfolk Requests;Townsfolk Requests;Dungeon Delving;;Queen Freydis's Sword;Favor205;Favor205|Queen Freydis's Sword;;;;handle;;
 597;Townsfolk Requests;Townsfolk Requests;A Few Words with You;;Carlotta Valentia;Favor013;Favor013|Carlotta Valentia;;;;handle;;
 598;Townsfolk Requests;Townsfolk Requests;A Few Words with You;;Haran;Favor013;Favor013|Haran;;;;handle;;

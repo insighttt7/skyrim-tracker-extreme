@@ -32,7 +32,7 @@ const COLL_EXTRA_NOT_IN_WORLD: u8 = 0x1C;
 pub const TRACKER_JSON_FORMAT: &str = "skyrim-tracker/2";
 
 /// the tracker tables
-pub const CSV_ORDER: [&str; 11] = [
+pub const CSV_ORDER: [&str; 12] = [
     "locations_tracker.csv",
     "MapMarkerExport.csv",
     "quests_tracker.csv",
@@ -44,6 +44,7 @@ pub const CSV_ORDER: [&str; 11] = [
     "collectibles_tracker.csv",
     "collectibles_houses.csv",
     "books_tracker.csv",
+    "stats_forms.csv",
 ];
 
 /// loading stages, as the loader on the page shows them
@@ -1562,8 +1563,7 @@ fn category_json(cat: &str, rows: &[Final], keys: &[(String, String)]) -> Result
 // ---------------------------------------------------------------------------
 // main
 
-/// Reads a save and returns the tracker.json text.
-/// `file_name` is the save's file name; `progress` gets each stage as it starts.
+/// Reads a save and returns the tracker.json text; `progress` gets each stage as it starts.
 pub fn parse_save(
     raw: &[u8],
     file_name: &str,
@@ -1637,7 +1637,7 @@ pub fn parse_save(
         *v = tryst!(b.u32().map_err(e));
     }
     tryst!(b.read(15 * 4).map(|_| ()).map_err(e));
-    let [formid_array_count_offset, _unknown_table3_offset, table1_offset, _table2_offset, changeforms_offset, _table3_offset, table1_count, _table2_count, _table3_count, changeform_count] = flt;
+    let [formid_array_count_offset, _unknown_table3_offset, table1_offset, table2_offset, changeforms_offset, _table3_offset, table1_count, table2_count, _table3_count, changeform_count] = flt;
 
     let calendar = read_calendar(&body, table1_offset, table1_count, starting_offset);
 
@@ -2091,6 +2091,12 @@ pub fn parse_save(
     let xp = tryst!(pyjson::round_int(header.cur_xp as f64).ok_or_else(|| "cannot convert float NaN to integer".to_string()));
     let xp_max = tryst!(pyjson::round_int(header.needed_xp as f64).ok_or_else(|| "cannot convert float NaN to integer".to_string()));
 
+    // statistics: never stops the rest of the tracker
+    let stats = match read_table(tables, "stats_forms.csv", true) {
+        Ok(rows) => stats_json(&body, starting_offset, table1_offset, table1_count, table2_offset, table2_count, &pl, &load_stats_forms(&rows)),
+        Err(_) => "null".to_string(),
+    };
+
     let mut o = String::with_capacity(64 * 1024);
     o.push_str("{\"format\":");
     pyjson::string(&mut o, TRACKER_JSON_FORMAT);
@@ -2123,7 +2129,9 @@ pub fn parse_save(
         o.push(':');
         o.push_str(j);
     }
-    o.push_str("}}");
+    o.push_str("},\"stats\":");
+    o.push_str(&stats);
+    o.push('}');
     Ok(o)
 }
 
@@ -2149,4 +2157,183 @@ fn calendar_json(cal: Option<[f64; 5]>) -> String {
         pyjson::float_repr(pyjson::round6(c[3])),
         pyjson::float_repr(pyjson::round6(c[4]))
     )
+}
+
+// ---------------------------------------------------------------------------
+// statistics (Misc Stats and favourites)
+
+struct StatForm {
+    editor_id: String,
+    name: String,
+    school: String,
+}
+
+fn load_stats_forms(rows: &[Row]) -> HashMap<(String, i64), StatForm> {
+    let mut out = HashMap::new();
+    for r in rows {
+        let (Some(p), Some(id)) = (r.get("Plugin"), r.get("LocalID")) else { continue };
+        let Ok(local) = i64::from_str_radix(id.trim(), 16) else { continue };
+        out.insert(
+            (p.trim().to_lowercase(), local),
+            StatForm {
+                editor_id: r.get("EditorID").unwrap_or("").to_string(),
+                name: r.get("Name").unwrap_or("").to_string(),
+                school: r.get("School").unwrap_or("").to_string(),
+            },
+        );
+    }
+    out
+}
+
+/// one block of a global data table
+fn global_block<'b>(body: &'b [u8], offset: u32, count: u32, starting_offset: usize, wanted: u32) -> Option<&'b [u8]> {
+    let start = (offset as i64) - starting_offset as i64;
+    if start < 0 {
+        return None;
+    }
+    let mut t = Reader::new(body);
+    t.pos = start as usize;
+    for _ in 0..count {
+        let gtype = t.u32().ok()?;
+        let glen = t.u32().ok()? as usize;
+        if gtype == wanted {
+            return body.get(t.pos..t.pos.checked_add(glen)?);
+        }
+        t.pos = t.pos.checked_add(glen)?;
+    }
+    None
+}
+
+fn misc_stats_json(block: &[u8]) -> Option<String> {
+    let mut r = Reader::new(block);
+    let n = r.u32().ok()?;
+    let mut o = String::from("[");
+    for i in 0..n {
+        let name = r.wstring().ok()?;
+        let cat = r.u8().ok()?;
+        let value = r.i32().ok()?;
+        if i > 0 {
+            o.push(',');
+        }
+        o.push_str("{\"name\":");
+        pyjson::string(&mut o, &name);
+        o.push_str(&format!(",\"category\":{cat},\"value\":{value}}}"));
+    }
+    if r.pos != block.len() {
+        return None;
+    }
+    o.push(']');
+    Some(o)
+}
+
+/// the three lists of the last uses: weapons, spells (and scrolls), shouts
+fn usage_lists(block: &[u8]) -> Option<[Vec<u32>; 3]> {
+    let mut r = Reader::new(block);
+    let n = r.u32().ok()? as usize;
+    r.read(n.checked_mul(4)?).ok()?;
+    r.u8().ok()?;
+    let mut lists: [Vec<u32>; 3] = [Vec::new(), Vec::new(), Vec::new()];
+    for list in lists.iter_mut() {
+        let c = r.vsval().ok()?;
+        for _ in 0..c {
+            list.push(r.refid_raw().ok()?);
+        }
+    }
+    Some(lists)
+}
+
+/// the most used entry; a tie keeps the earlier leader
+fn most_used<K: PartialEq + Clone>(items: &[K]) -> Option<(K, usize)> {
+    let mut counts: Vec<(K, usize)> = Vec::new();
+    let mut leader: Option<usize> = None;
+    for k in items {
+        let i = match counts.iter().position(|(x, _)| x == k) {
+            Some(i) => {
+                counts[i].1 += 1;
+                i
+            }
+            None => {
+                counts.push((k.clone(), 1));
+                counts.len() - 1
+            }
+        };
+        if leader.map(|l| counts[i].1 > counts[l].1).unwrap_or(true) {
+            leader = Some(i);
+        }
+    }
+    leader.map(|l| counts[l].clone())
+}
+
+fn favourite_json(pl: &Plugins, forms: &HashMap<(String, i64), StatForm>, list: &[u32]) -> String {
+    let Some((raw, uses)) = most_used(list) else { return "null".into() };
+    let (p, local, kind) = pl.resolve(raw);
+    let mut o = String::from("{\"plugin\":");
+    match p {
+        Some(name) if kind != Kind::Created => pyjson::string(&mut o, name),
+        _ => o.push_str("null"),
+    }
+    o.push_str(&format!(",\"id\":\"{:06X}\"", local.max(0)));
+    let (lc, _, _) = pl.resolve_lc(raw);
+    match forms.get(&(lc.to_string(), local)).filter(|_| kind != Kind::Created) {
+        Some(f) => {
+            o.push_str(",\"editorId\":");
+            pyjson::string(&mut o, &f.editor_id);
+            o.push_str(",\"name\":");
+            pyjson::string(&mut o, &f.name);
+        }
+        None => o.push_str(",\"editorId\":null,\"name\":null"),
+    }
+    o.push_str(&format!(",\"uses\":{uses}}}"));
+    o
+}
+
+/// school with the most casts; spells without a school are left out
+fn favourite_school(pl: &Plugins, forms: &HashMap<(String, i64), StatForm>, list: &[u32]) -> String {
+    let mut schools = Vec::new();
+    for &raw in list {
+        let (lc, local, kind) = pl.resolve_lc(raw);
+        if kind == Kind::Created {
+            continue;
+        }
+        if let Some(f) = forms.get(&(lc.to_string(), local)) {
+            if !f.school.is_empty() {
+                schools.push(f.school.clone());
+            }
+        }
+    }
+    match most_used(&schools) {
+        Some((s, uses)) => {
+            let mut o = String::from("{\"name\":");
+            pyjson::string(&mut o, &s);
+            o.push_str(&format!(",\"uses\":{uses}}}"));
+            o
+        }
+        None => "null".into(),
+    }
+}
+
+fn stats_json(
+    body: &[u8],
+    starting_offset: usize,
+    t1_offset: u32,
+    t1_count: u32,
+    t2_offset: u32,
+    t2_count: u32,
+    pl: &Plugins,
+    forms: &HashMap<(String, i64), StatForm>,
+) -> String {
+    let misc = global_block(body, t1_offset, t1_count, starting_offset, 0)
+        .and_then(misc_stats_json)
+        .unwrap_or_else(|| "null".into());
+    let fav = match global_block(body, t2_offset, t2_count, starting_offset, 102).and_then(usage_lists) {
+        Some([w, s, h]) => format!(
+            "{{\"weapon\":{},\"spell\":{},\"school\":{},\"shout\":{}}}",
+            favourite_json(pl, forms, &w),
+            favourite_json(pl, forms, &s),
+            favourite_school(pl, forms, &s),
+            favourite_json(pl, forms, &h)
+        ),
+        None => "null".into(),
+    };
+    format!("{{\"misc\":{misc},\"favorites\":{fav}}}")
 }

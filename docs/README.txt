@@ -1,6 +1,6 @@
 ==============================================================================
                           SKYRIM TRACKER EXTREME
-                                  v2.0.0
+                                  v2.1.0
                A 100% completion tracker for Skyrim SE / AE
 ==============================================================================
 
@@ -49,9 +49,10 @@ CONTENTS
    8. The categories
    9. Mark - why some quests are ticked by hand
   10. Creation Club content
-  11. Settings and files
-  12. Troubleshooting
-  13. Credits, license and contact
+  11. Languages
+  12. Settings and files
+  13. Troubleshooting
+  14. Credits, license and contact
 
 
 ==============================================================================
@@ -95,6 +96,7 @@ tracker.
       Skyrim Tracker Extreme\
         Skyrim Tracker Extreme.exe   - start the program with this
         data\                        - your settings (created on first start)
+        lang\                        - language files (see chapter 11)
         README.txt, LICENSE.txt, THIRD_PARTY_NOTICES.txt
 
    The settings are kept in the "data" folder next to the .exe. To start it
@@ -147,6 +149,8 @@ Top bar
   - Choose .ess file: loads a save. After loading it shows the save's name.
   - SKYRIM title.
   - Search: searches every category at once by name or by FormID / Editor ID.
+  - Language button (next to the search): the language of the entry names
+    (see chapter 11).
 
 Player panel
   - Level ring with your character level and experience.
@@ -158,6 +162,8 @@ Player panel
     Perks and Collectibles. Books are shown separately and are not part of
     the percentage.
   - On the right: a small bar for each of those 8 categories.
+  - The chart button in the top right corner of the panel opens the
+    Statistics page; a second click returns to the tab you were on.
 
 Tabs
   - DAWNGUARD, SKYRIM, DRAGONBORN: the quest lists.
@@ -183,6 +189,17 @@ When you scroll down, a small profile with your level and percentage stays
 at the top of the window. Click it to jump back up.
 
 Click one of the 8 small bars in the player panel to open that category.
+
+Click an entry name, or the Editor ID of a quest, to copy it to the
+clipboard. A COPIED badge in the top right corner shows what was copied.
+
+Statistics page
+  - Your favourite weapon, spell, school of magic and shout, each with how
+    many of your last 100 uses it took.
+  - The statistics the game itself keeps (the General Stats menu in the
+    game), grouped as General, Quest, Combat, Magic, Crafting, Crime and
+    Other, plus Total Kills.
+  - Click the STATISTICS title to copy the whole list as text.
 
 
 ==============================================================================
@@ -455,13 +472,44 @@ on their own.
 
 
 ==============================================================================
-11. SETTINGS AND FILES
+11. LANGUAGES
+==============================================================================
+
+The tracker is in English. The names of the entries (quests, locations,
+spells, shouts, perks, items, books and so on) can be shown in the language
+of your game:
+
+  German, Spanish, French, Italian, Japanese, Polish, Russian and
+  Traditional Chinese.
+
+Each language is a separate download on the Nexus page, "STE - DE.zip",
+"STE - RU.zip" and so on. To install one:
+
+  1. Unpack the archive into the tracker folder, next to
+     Skyrim Tracker Extreme.exe. It holds a "lang" folder with one .json
+     file, which goes into the "lang" folder of the tracker.
+  2. Restart the tracker.
+  3. Click the language button next to the search box and pick the
+     language. Your choice is remembered.
+
+Only the entry names change; the rest of the interface stays in English.
+Names a language file does not translate stay in English. The search finds
+an entry by its translated name and by its English name, and by FormID /
+Editor ID as always. English is built in and needs no file.
+
+A language file that cannot be read is skipped, and the reason is written
+to data\error.log.
+
+
+==============================================================================
+12. SETTINGS AND FILES
 ==============================================================================
 
 Everything is stored in the "data" folder next to the program:
 
-  data\settings.json   theme, last opened tab, compact rows, the last save
-                       folder, the window size, the zoom and your Mark ticks
+  data\settings.json   theme, language, last opened tab, compact rows, the
+                       last save folder, the window size, the zoom and your
+                       Mark ticks
   data\error.log       appears only if something went wrong
 
 The window always opens maximized. If you restore it to a smaller size, that
@@ -473,7 +521,7 @@ into the new version.
 
 
 ==============================================================================
-12. TROUBLESHOOTING
+13. TROUBLESHOOTING
 ==============================================================================
 
 "Windows protected your PC"
@@ -498,7 +546,7 @@ A quest, word or item I have is not counted
 
 
 ==============================================================================
-13. CREDITS, LICENSE AND CONTACT
+14. CREDITS, LICENSE AND CONTACT
 ==============================================================================
 
 Skyrim Tracker Extreme - Copyright (c) 2026 Alexey Insight. All rights
@@ -511,8 +559,10 @@ Credits
     https://github.com/mdfairch/FallrimTools
   - Force67/recreation - save-format research used for the spell detection.
     https://github.com/Force67/recreation
-  - Fonts: Enriqueta, Barlow Semi Condensed and Crimson Text (SIL Open Font
-    License 1.1), Roboto Condensed for Cyrillic letters (Apache License 2.0).
+  - Fonts: Enriqueta, Barlow Semi Condensed, Crimson Text, Crimson Pro (for
+    Polish and other Latin Extended-A letters) and PT Serif (for Russian
+    entry names) - SIL Open Font License 1.1; Roboto Condensed for Cyrillic
+    letters of the interface (Apache License 2.0).
   - Built with Tauri, Rust and other open-source libraries.
   Full details and license texts: THIRD_PARTY_NOTICES.txt
 

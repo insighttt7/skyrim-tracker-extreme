@@ -57,6 +57,7 @@ Crimson Text
   Copyright 2010 The Crimson Text Project Authors
   (https://github.com/googlefonts/Crimson)
   SIL Open Font License, Version 1.1 (full text in section 4).
+  The fi and ffi ligatures are removed (the f joined the dot of the i).
 
 Tracker Title (a modified version of Enriqueta)
   Copyright 2018 The Enriqueta Project Authors
@@ -66,12 +67,27 @@ Tracker Title (a modified version of Enriqueta)
   SIL Open Font License, Version 1.1 (full text in section 4).
   The font is a subset of Enriqueta. As required by the license for a
   Modified Version, it is renamed and does not use the Reserved Font Names.
+  The fi ligature is removed.
 
 Roboto Condensed (Cyrillic letters only)
   Copyright 2011 Google Inc. All Rights Reserved.
   (https://github.com/googlefonts/roboto)
   Licensed under the Apache License, Version 2.0 (full text in section 4).
   Used for the Cyrillic letters of the interface font.
+
+Crimson Pro (Latin Extended-A letters only)
+  Copyright 2018 The Crimson Pro Project Authors
+  (https://github.com/Fonthausen/CrimsonPro)
+  SIL Open Font License, Version 1.1 (full text in section 4).
+  Used for the letters Crimson Text does not have (Polish and others).
+
+STE Cyrillic Serif (a modified version of PT Serif)
+  Copyright (c) 2010, ParaType Ltd. (http://www.paratype.com/public),
+  with Reserved Font Names "PT Sans", "PT Serif" and "ParaType".
+  SIL Open Font License, Version 1.1 (full text in section 4).
+  Used for row names in Russian. The font is a subset of PT Serif. As
+  required by the license for a Modified Version, it is renamed and does
+  not use the Reserved Font Names.
 
 
 Microsoft Edge WebView2

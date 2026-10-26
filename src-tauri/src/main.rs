@@ -27,7 +27,7 @@ fn theme_background(theme: Option<&str>) -> &'static str {
 }
 
 /// the tracker tables, built into the exe
-const TABLES: [(&str, &[u8]); 11] = [
+const TABLES: [(&str, &[u8]); 12] = [
     ("locations_tracker.csv", include_bytes!("../../tables/locations_tracker.csv")),
     ("MapMarkerExport.csv", include_bytes!("../../tables/MapMarkerExport.csv")),
     ("quests_tracker.csv", include_bytes!("../../tables/quests_tracker.csv")),
@@ -39,6 +39,7 @@ const TABLES: [(&str, &[u8]); 11] = [
     ("collectibles_tracker.csv", include_bytes!("../../tables/collectibles_tracker.csv")),
     ("collectibles_houses.csv", include_bytes!("../../tables/collectibles_houses.csv")),
     ("books_tracker.csv", include_bytes!("../../tables/books_tracker.csv")),
+    ("stats_forms.csv", include_bytes!("../../tables/stats_forms.csv")),
 ];
 
 fn tables() -> ste_core::Tables {
@@ -112,6 +113,82 @@ fn log_error(log: &Path, place: &str, details: &str) {
 }
 
 // ---------------------------------------------------------------------------
+// languages (lang\*.json next to the exe)
+
+const LANG_FORMAT: &str = "ste-lang/1";
+const LANG_SECTIONS: [&str; 9] =
+    ["quests", "locations", "spells", "shouts", "enchanting", "ingredients", "perks", "books", "collectibles"];
+
+/// one language file: code, name, row names (section -> key -> text)
+fn read_lang(path: &Path) -> Result<Value, String> {
+    let text = std::fs::read_to_string(path).map_err(|e| e.to_string())?;
+    let v: Value = serde_json::from_str(text.trim_start_matches('\u{feff}')).map_err(|e| e.to_string())?;
+    if v.get("format").and_then(Value::as_str) != Some(LANG_FORMAT) {
+        return Err(format!("\"format\" is not \"{LANG_FORMAT}\""));
+    }
+    let code = v.get("code").and_then(Value::as_str).unwrap_or("");
+    if code.len() != 2 || !code.bytes().all(|b| b.is_ascii_uppercase()) {
+        return Err("\"code\" must be two capital Latin letters".into());
+    }
+    if code == "EN" {
+        return Err("English is built in".into());
+    }
+    let name = v.get("name").and_then(Value::as_str).map(str::trim).unwrap_or("");
+    if name.is_empty() {
+        return Err("\"name\" is missing".into());
+    }
+    let src = v.get("rows").and_then(Value::as_object).ok_or("\"rows\" is missing")?;
+    // only the known sections and text values; anything else is left out
+    let mut rows = Map::new();
+    for sec in LANG_SECTIONS {
+        let mut out = Map::new();
+        if let Some(m) = src.get(sec).and_then(Value::as_object) {
+            for (k, t) in m {
+                if let Some(t) = t.as_str().map(str::trim).filter(|t| !t.is_empty()) {
+                    out.insert(k.clone(), Value::from(t));
+                }
+            }
+        }
+        rows.insert(sec.into(), Value::Object(out));
+    }
+    let mut lang = Map::new();
+    lang.insert("code".into(), Value::from(code));
+    lang.insert("name".into(), Value::from(name));
+    lang.insert("rows".into(), Value::Object(rows));
+    Ok(Value::Object(lang))
+}
+
+/// every language in lang\ (made if missing); bad files are skipped and logged
+fn load_langs(log: &Path) -> Vec<Value> {
+    let dir = app_dir().join("lang");
+    let _ = std::fs::create_dir_all(&dir);
+    let mut files: Vec<PathBuf> = match std::fs::read_dir(&dir) {
+        Ok(rd) => rd
+            .filter_map(|e| e.ok().map(|e| e.path()))
+            .filter(|p| p.is_file() && p.extension().is_some_and(|x| x.eq_ignore_ascii_case("json")))
+            .collect(),
+        Err(_) => return Vec::new(),
+    };
+    files.sort();
+    let mut langs: Vec<Value> = Vec::new();
+    for f in files {
+        let shown = format!("lang\\{}", f.file_name().map(|n| n.to_string_lossy()).unwrap_or_default());
+        match read_lang(&f) {
+            Ok(l) => {
+                let code = l["code"].as_str().unwrap_or("").to_string();
+                if langs.iter().any(|x| x["code"] == code.as_str()) {
+                    log_error(log, &format!("{shown} skipped"), &format!("another file already has the code {code}"));
+                } else {
+                    langs.push(l);
+                }
+            }
+            Err(e) => log_error(log, &format!("{shown} skipped"), &e),
+        }
+    }
+    langs
+}
+
+// ---------------------------------------------------------------------------
 // settings (data\settings.json)
 
 struct AppState {
@@ -173,7 +250,7 @@ impl AppState {
 
 #[tauri::command]
 fn set_setting(state: tauri::State<'_, AppState>, key: String, value: Value) -> bool {
-    if !["theme", "tab", "dense", "marks"].contains(&key.as_str()) {
+    if !["theme", "tab", "dense", "marks", "lang"].contains(&key.as_str()) {
         return false;
     }
     {
@@ -208,8 +285,7 @@ fn zoom_changed(window: WebviewWindow, state: tauri::State<'_, AppState>, ratio:
     true
 }
 
-/// The window starts hidden from view while the page paints itself;
-/// the page calls this when it is ready, and the finished page appears at once.
+/// the page calls this when it has painted; the window then appears at once
 #[tauri::command]
 fn page_ready(window: WebviewWindow) -> bool {
     show_window(&window);
@@ -459,7 +535,7 @@ fn main() {
             let (settings_js, size, zoom) = {
                 let s = state.settings.lock().unwrap();
                 let mut page = Map::new();
-                for k in ["theme", "tab", "dense", "marks"] {
+                for k in ["theme", "tab", "dense", "marks", "lang"] {
                     if let Some(v) = s.get(k) {
                         page.insert(k.to_string(), v.clone());
                     }
@@ -476,11 +552,13 @@ fn main() {
                     page_tables.insert(name.to_string(), Value::from(String::from_utf8_lossy(bytes).into_owned()));
                 }
             }
+            let langs = load_langs(&state.error_log);
             let scale = app.primary_monitor().ok().flatten().map(|m| m.scale_factor()).unwrap_or(1.0);
             let init = format!(
-                "window.__STE_SETTINGS__={settings_js};window.__STE_TABLES__={};\
+                "window.__STE_SETTINGS__={settings_js};window.__STE_TABLES__={};window.__STE_LANGS__={};\
                  window.__STE_SCALE__={scale};window.__STE_ZOOM__={};\n{SHIM_JS}",
                 Value::Object(page_tables),
+                Value::Array(langs),
                 zoom.unwrap_or(1.0)
             );
             let (r, g, b) = hex_color(background);

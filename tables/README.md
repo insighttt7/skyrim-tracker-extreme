@@ -22,6 +22,7 @@ tables, in table order (`Block` and `SubBlock` group them); `Order` numbers the 
 | `collectibles_tracker.csv` | `Order;Block;Name;Tags;Mode;Required;BaseKeys;BaseEditorIDs;PersistentRefs` |
 | `collectibles_houses.csv` | `Kind;House;Plugin;LocalID;EditorID;Name` - cells, containers and mannequins of the 8 tracked homes |
 | `books_tracker.csv` | `Order;Block;SubBlock;Name;Tags;BaseKeys;BaseEditorIDs;PersistentRefs` |
+| `stats_forms.csv` | `Signature;Plugin;LocalID;EditorID;Name;School` - weapons, shouts, spells and scrolls (Skyrim, DLC, Creation Club, with the USSEP and USCCP changes), used to name the favourites on the Statistics tab |
 
 ## Quests: how a quest counts (`Category`)
 
@@ -50,3 +51,11 @@ Several tags are separated by `|`, for example `Optional|AE`.
 
 A new location needs a map marker FormID from `MapMarkerExport.csv`.
 Several markers for one location are separated by `|` (any of them counts).
+
+## Statistics
+
+`stats_forms.csv` is not shown as rows. The save keeps the last 100 uses of weapons,
+spells (scrolls included) and shouts; the favourite is the most used one, looked up here
+by `Plugin` and `LocalID`. The favourite school is the school with the most casts in that
+list. A spell's `School` is the school of its half-cost perk, or else the skill of its
+most expensive effect; empty when it has none. Records not in the table show as `-`.

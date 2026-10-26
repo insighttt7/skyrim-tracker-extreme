@@ -4,8 +4,8 @@ Order;Block;Name;Tags;Mode;Required;BaseKeys;BaseEditorIDs;PersistentRefs
 3;Paragons;Emerald Paragon;Dawnguard;ANY;1;Dawnguard.esm:019ABC;PortalGemGreenKey;
 4;Paragons;Ruby Paragon;Dawnguard;ANY;1;Dawnguard.esm:019ABD;PortalGemOrangeKey;
 5;Paragons;Sapphire Paragon;Dawnguard;ANY;1;Dawnguard.esm:019ABB;PortalGemBlueKey;
-6;Dragon Claws;Amethyst Claw, Left Half;Dragonborn;ANY;1;Dragonborn.esm:01CAC0;DLC2SV01HalfClawLeft;
-7;Dragon Claws;Amethyst Claw, Right Half;Dragonborn;ANY;1;Dragonborn.esm:01CAC1;DLC2SV01HalfClawRight;
+6;Dragon Claws;Amethyst Dragon Claw, Left Half;Dragonborn;ANY;1;Dragonborn.esm:01CAC0;DLC2SV01HalfClawLeft;
+7;Dragon Claws;Amethyst Dragon Claw, Right Half;Dragonborn;ANY;1;Dragonborn.esm:01CAC1;DLC2SV01HalfClawRight;
 8;Dragon Claws;Coral Dragon Claw;;ANY;1;Skyrim.esm:0B634C;dunYngolBarrowCoralClaw;Skyrim.esm:0B634D
 9;Dragon Claws;Diamond Dragon Claw;;ANY;1;Skyrim.esm:0AB375;dunSkuldafnDiamondClaw;
 10;Dragon Claws;Ebony Dragon Claw;;ANY;1;Skyrim.esm:05AF48;dunKorvanjundEbonyDragonClaw;Skyrim.esm:05AF49

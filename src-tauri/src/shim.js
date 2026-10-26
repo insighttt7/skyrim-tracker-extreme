@@ -1,9 +1,10 @@
 // Connects the tracker page to the app; runs before the page's own scripts.
 // Settings go to data\settings.json, "Choose .ess file" opens the Windows dialog,
 // and the app is told when the page is ready to be shown.
+// The languages from lang\ come in __STE_LANGS__ (main.rs), the chosen one is the "lang" setting.
 (function(){
   var S = window.__STE_SETTINGS__ || {};
-  var KEYS = {'skyrim-tracker-theme':'theme','skyrim-tracker-tab':'tab','skyrim-tracker-dense':'dense'};
+  var KEYS = {'skyrim-tracker-theme':'theme','skyrim-tracker-tab':'tab','skyrim-tracker-dense':'dense','skyrim-tracker-lang':'lang'};
   var MARKS = 'skyrim-tracker-marks';
   var other = {};
 
