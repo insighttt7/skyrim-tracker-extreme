@@ -411,7 +411,6 @@ body:where(.theme-parchment) .xp2 .inr{display:block}
 .prog .bar i{
   position:absolute;
   inset:0 auto 0 0;
-  transition:width .6s cubic-bezier(.4,0,.2,1);
   background:linear-gradient(90deg,color-mix(in srgb,var(--c-opt) 55%,#000),var(--c-opt));
   box-shadow:none
 }
@@ -503,11 +502,11 @@ body:where(.theme-parchment) .x-tip{box-shadow:0 8px 22px rgba(90,60,25,.25)}
 .stat-val.stat-mid .done,.cat-m.color-mid .done{color:var(--c-opt)}
 .stat-val.stat-full .done,.cat-m.color-full .done{color:var(--c-done)}
 .sbar{grid-column:1 / -1;height:3px;position:relative;overflow:hidden}
-.sbar i{position:absolute;inset:0 auto 0 0;transition:width .35s cubic-bezier(.4,0,.2,1)}
+.sbar i{position:absolute;inset:0 auto 0 0}
 .sbar,.pbar{background:color-mix(in srgb,var(--nh-brz) 16%,transparent)}
 .sbar i,.pbar i{background:var(--nh-dim)}
 .pbar{width:88px;height:4px;position:relative;overflow:hidden;flex-shrink:0}
-.pbar i{position:absolute;inset:0 auto 0 0;transition:width .35s cubic-bezier(.4,0,.2,1)}
+.pbar i{position:absolute;inset:0 auto 0 0}
 .pbar.mid i,.sbar.mid i{background:linear-gradient(90deg,color-mix(in srgb,var(--c-opt) 55%,#000),var(--c-opt));box-shadow:none}
 .pbar.full i,.sbar.full i{background:linear-gradient(90deg,color-mix(in srgb,var(--c-done) 50%,#000),var(--c-done));box-shadow:none}
 @media(max-width:600px){
@@ -576,7 +575,6 @@ body:where(.theme-parchment) .mini-prof .mav{
   background:linear-gradient(90deg,color-mix(in srgb,var(--c-opt) 55%,#000),var(--c-opt));
   box-shadow:none
 }
-body:where(.theme-parchment) .mini-prof .mbar i{transition:none}
 .mini-prof .mpc{margin-left:8px}
 
 /* ==================== tabs ==================== */
@@ -610,12 +608,11 @@ body:where(.theme-parchment) .mini-prof .mbar i{transition:none}
 @media(max-width:400px){
   .tabs-center{flex-wrap:wrap;row-gap:5px}
 }
-.tab.active,.icon-pill.active,.pill.active{transition:box-shadow .22s cubic-bezier(.4,0,.2,1)}
+.icon-pill.active,.pill.active{transition:box-shadow .22s cubic-bezier(.4,0,.2,1)}
 .tab{
   text-transform:uppercase;
   cursor:var(--cur-hand);
   user-select:none;
-  transition:background-color .2s,color .2s,box-shadow .2s;
   position:relative;
   font-family:var(--f-title);
   font-weight:700;
