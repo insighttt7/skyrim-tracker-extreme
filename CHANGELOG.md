@@ -15,6 +15,7 @@ Look
 - Light theme: the counter of the pressed Townsfolk Requests / Hidden Bosses button is now readable.
 - Light theme: the active tab no longer changes colour on hover.
 - A clicked filter shows its underline at once.
+- Tabs switch and progress bars fill at once, with no animation.
 - Switching the theme while the top bar and tabs stick to the top no longer flickers.
 - A double click on buttons, tabs and counters no longer highlights text.
 - The loading card moves faster, and its last step is fully drawn while the tracker builds.
