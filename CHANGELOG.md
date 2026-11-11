@@ -1,6 +1,6 @@
 # Changelog
 
-## v2.1.1 - 2026-11-07
+## v2.1.1 - 2026-11-11
 
 New
 - Progress Changed: load another save of the same character and press F5 to see every entry that changed since the save loaded before it. A cross marks a quest that became failed, a tick what is new, a dashed circle what is no longer done. F5 shows and hides the box, Esc closes it.
