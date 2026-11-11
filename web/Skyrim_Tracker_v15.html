@@ -4,8 +4,7 @@
 <meta charset="UTF-8">
 <title>Skyrim Tracker Extreme</title>
 <style>
-/* ==================== fonts ==================== */
-/* Tracker Title: headings, row names; Barlow SC: interface; Crimson Text: notes and digits in row names. */
+/* fonts: Tracker Title - titles and row names, Barlow SC - interface, Crimson Text - notes and digits */
 /* STE Title Strut: only the space, so rows in every language keep one height. */
 @font-face{font-family:'Tracker Title';src:url(fonts/tracker-title-400.woff) format('woff');font-weight:400;font-display:block}
 @font-face{font-family:'Tracker Title';src:url(fonts/tracker-title-500.woff) format('woff');font-weight:500;font-display:block}
@@ -25,7 +24,7 @@
 @font-face{font-family:'STE Title Text';src:url(fonts/tracker-title-400.woff) format('woff');font-weight:400;font-display:block;size-adjust:89%;unicode-range:U+0000-002F,U+003A-10FFFF}
 @font-face{font-family:'STE Title Strut';src:url(fonts/tracker-title-400.woff) format('woff');font-weight:400;font-display:block;size-adjust:89%;unicode-range:U+0020}
 
-/* ==================== animations ==================== */
+/* animations */
 @keyframes preFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
 @keyframes preFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 @keyframes preShine{from{background-position:-60px 0}to{background-position:calc(100% + 60px) 0}}
@@ -35,9 +34,8 @@
 @keyframes nhWake{0%{box-shadow:inset 0 0 0 1px var(--nh-line)}40%{box-shadow:inset 0 0 0 1px var(--nh-gold-hi),0 0 16px color-mix(in srgb,var(--nh-gold) 35%,transparent)}100%{box-shadow:inset 0 0 0 1px var(--nh-line)}}
 @keyframes nhFlash{0%{background-color:color-mix(in srgb,var(--nh-gold) 14%,transparent)}100%{background-color:transparent}}
 
-/* ==================== page ==================== */
-/* Page frame, backgrounds, theme colours, cursors. */
-/* Light: body:where(.theme-parchment), dark: body:where(:not(.theme-parchment)) (no extra specificity). */
+/* page frame, backgrounds, theme colours, cursors */
+/* light: body:where(.theme-parchment), dark: body:where(:not(.theme-parchment)) */
 *{box-sizing:border-box;margin:0;padding:0}
 html{scrollbar-width:none}
 html::-webkit-scrollbar,body::-webkit-scrollbar{display:none;width:0;height:0}
@@ -82,6 +80,10 @@ body:where(:not(.theme-parchment)){
   --nh-line:color-mix(in srgb,var(--nh-brz) 28%,transparent);
   --nh-line2:color-mix(in srgb,var(--nh-gold) 62%,transparent);
   --nh-act:color-mix(in srgb,var(--nh-brz) 16%,transparent);
+  --lang-on:color-mix(in srgb,var(--nh-gold) 14%,transparent);
+  --pre-line:color-mix(in srgb,var(--nh-gold) 50%,transparent);
+  --pre-title:var(--nh-gold);
+  --hide-hi:color-mix(in srgb,var(--nh-gold) 80%,var(--bx-bg));
   --c-done:#5fd3a6;
   --c-not:#a9b6be;
   --c-opt:#dcae4e;
@@ -112,7 +114,7 @@ body:where(:not(.theme-parchment)){
   --nh-gold-lo:#4a6684;
   --nh-head:#d8e2ee;
   --c-hf:#d9b98f;
-  --bx-bg:rgb(14,20,27);
+  --bx-bg:#131a22;
   --bx-line:color-mix(in srgb,var(--nh-gold) 40%,var(--bx-bg));
   --bd-t:var(--nh-gold);
   --fr-band:color-mix(in srgb,var(--nh-brz) 24%,var(--nh-panel));
@@ -138,6 +140,10 @@ body:where(.theme-parchment){
   --nh-line:color-mix(in srgb,var(--nh-brz) 30%,transparent);
   --nh-line2:color-mix(in srgb,var(--nh-brz) 62%,transparent);
   --nh-act:color-mix(in srgb,var(--nh-gold) 10%,transparent);
+  --lang-on:var(--nh-act);
+  --pre-line:var(--nh-line2);
+  --pre-title:var(--nh-gold-hi);
+  --hide-hi:color-mix(in srgb,var(--nh-ink) 85%,var(--bx-bg));
   --nh-plate:#efe2c4;
   --nh-plate2:#ebdcbb;
   --c-done:#2f6b3a;
@@ -162,7 +168,7 @@ body:where(.theme-parchment){
 @media(max-width:760px){
   body{padding:16px}
 }
-/* with reduced motion every animation and transition ends at once (a layer, so its !important beats all) */
+/* reduced motion: every animation and transition ends at once */
 @layer reduce-motion{
   @media(prefers-reduced-motion: reduce){
     *,*::before,*::after{
@@ -177,8 +183,7 @@ body:where(.theme-parchment){
   .wrap{zoom:1.05}
 }
 
-/* ==================== top bar ==================== */
-/* Title, theme switch, Choose save button, search; sticks to the top on wide screens. */
+/* top bar: title, theme switch, Choose save button, search; sticks to the top on wide screens */
 .topbar{
   display:grid;
   align-items:center;
@@ -226,6 +231,7 @@ body.tabs-stuck .topbar{box-shadow:none}
   transition:background-color .2s,color .2s,box-shadow .2s
 }
 .theme-btn svg{width:24px;height:24px;color:currentColor}
+.theme-btn .icon-moon{display:block;width:24px;height:24px;background:currentColor;mask:url(data:image/png;base64,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) center/24px no-repeat}
 .topbar .theme-btn,.topbar .choose-btn,.topbar .search{
   background:color-mix(in srgb,var(--nh-panel) 70%,transparent);
   color:var(--nh-ink);
@@ -331,12 +337,10 @@ body:where(.theme-parchment) .title-row h1::first-letter{color:var(--nh-gold)}
   .title-row h1{font-size:32px;letter-spacing:.12em;margin-right:-.12em}
 }
 
-/* ==================== sticky header ==================== */
-/* The shell only groups the top bar, panel and tabs (display:contents); "stuck" shows the scroll buttons. */
+/* sticky header: the shell only groups the top bar, panel and tabs; "stuck" shows the scroll buttons */
 .sticky-shell{display:contents}
 
-/* ==================== player panel ==================== */
-/* Character name, race, level ring with XP, the progress bar and the XP tooltip. */
+/* player panel: character, level ring with XP, progress bar */
 .sticky-shell .player-panel{margin-bottom:16px}
 /* before a save only the loading card shows (!important: the script sets display on panels) */
 body.app-pre .player-panel,
@@ -450,8 +454,7 @@ body:where(.theme-parchment) .x-tip{box-shadow:0 8px 22px rgba(90,60,25,.25)}
 #plCap stop:nth-child(1){stop-color:#5a3418}
 #plCap stop:nth-child(2){stop-color:#2e1a0b}
 
-/* ==================== category counters ==================== */
-/* The counters on the right of the player panel, one per category, with a thin bar. */
+/* category counters on the right of the player panel */
 .stats{
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
@@ -491,7 +494,6 @@ body:where(.theme-parchment) .x-tip{box-shadow:0 8px 22px rgba(90,60,25,.25)}
   border-radius:2px
 }
 .stat:hover{background:var(--nh-hover);box-shadow:inset 0 0 0 1px var(--nh-line)}
-.stat:focus-visible{outline:1px solid var(--nh-gold)}
 .stat-name{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--nh-dim)}
 .stat:hover .stat-name{color:var(--nh-ink)}
 .stat-val{font-weight:700;flex-shrink:0}
@@ -516,8 +518,7 @@ body:where(.theme-parchment) .x-tip{box-shadow:0 8px 22px rgba(90,60,25,.25)}
   .pbar{width:36px}
 }
 
-/* ==================== mini profile in the sticky header ==================== */
-/* Level, name and XP bar shown in place of the title once the tabs stick. */
+/* mini profile: level, name and progress in place of the title once the tabs stick */
 body.tabs-stuck .mini-prof{opacity:1;pointer-events:auto;cursor:var(--cur-hand)}
 .mini-prof{
   user-select:none;
@@ -577,8 +578,7 @@ body:where(.theme-parchment) .mini-prof .mav{
 }
 .mini-prof .mpc{margin-left:8px}
 
-/* ==================== tabs ==================== */
-/* Main tabs, the sub-tab pills under them and the scroll buttons beside them. */
+/* tabs, the pills under them and the scroll buttons beside them */
 .sticky-shell .tabs-row{margin-bottom:0}
 .tabs-row{
   display:grid;
@@ -760,8 +760,8 @@ body:where(.theme-parchment) .tab:not(.active):hover{color:color-mix(in srgb,var
   opacity:.3
 }
 
-/* ==================== filters ==================== */
-/* status filters under the tabs: a coloured word each (--fc); hover draws a faint box, the active one is underlined */
+/* filters */
+/* status filters: a coloured word each (--fc), the active one underlined */
 .filters-row{display:flex;justify-content:center;margin-bottom:22px}
 .filters{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap;max-width:100%}
 .fbtn{
@@ -874,8 +874,7 @@ body .tf-cnt.full .d{color:var(--c-done)}
 
 body.stats-open #filters,body.stats-open #emptyState{display:none}
 
-/* ==================== section titles and tools ==================== */
-/* Section headings with their ornament lines and the tool buttons on the right. */
+/* section titles with their ornament lines and tool buttons */
 .sec.search-empty,.sec.filter-empty{display:none}
 .sec{margin-bottom:24px;position:relative}
 body.searching .sec-t,body.searching .sec-tools{display:none}
@@ -931,8 +930,7 @@ body:where(.theme-parchment) .title-line.right::after{
   .title-line{flex:0 0 36px}
 }
 
-/* ==================== blocks ==================== */
-/* Collapsible blocks (.cat) with nested blocks inside (.inner .cat). */
+/* collapsible blocks (.cat), nested inside (.inner .cat) */
 .cat{margin-bottom:10px;overflow:hidden;transition:border-color .2s cubic-bezier(.4,0,.2,1)}
 .inner .cat{margin-bottom:0}
 .cat:not(.open) > .cat-b > .inner > .cat{margin-bottom:0}
@@ -977,8 +975,7 @@ body.dense .inner .cat-h{padding-top:10px;padding-bottom:10px}
 body.dense .inner{padding-top:8px;padding-bottom:12px}
 .inner{padding:12px 17px 17px;background-color:transparent;display:flex;flex-direction:column;gap:6px}
 
-/* ==================== rows ==================== */
-/* One row per record: name, id, status chips; the row font depends on the language (lang on the name). */
+/* rows: name, id, chips; the font follows the language (lang on the name) */
 .inner .q{padding:8px 17px}
 .q.hidden{display:none}
 body.dense .inner .q,body.dense .q{padding-top:3px;padding-bottom:3px}
@@ -1002,17 +999,17 @@ body.dense .inner .q,body.dense .q{padding-top:3px;padding-bottom:3px}
 }
 .q .q-n:hover,.q .q-id .qp:hover{text-decoration-color:currentColor}
 /* row names: Latin languages in the title font; others in their own font with the title-font space */
-html .q .q-n:not([lang]),
-html .q .q-n:lang(de),
-html .q .q-n:lang(es),
-html .q .q-n:lang(fr),
-html .q .q-n:lang(it){
+html :is(.q .q-n,.pg-list .n):not([lang]),
+html :is(.q .q-n,.pg-list .n):lang(de),
+html :is(.q .q-n,.pg-list .n):lang(es),
+html :is(.q .q-n,.pg-list .n):lang(fr),
+html :is(.q .q-n,.pg-list .n):lang(it){
   font-family:'STE Title Text',var(--f-text);
   font-weight:400
 }
-html .q .q-n:lang(pl){font-family:'STE Title Strut',var(--f-text)}
-html .q .q-n:lang(ja),html .q .q-n:lang(zh-Hant){font-family:'STE Title Strut',var(--f-text);font-weight:500}
-html .q .q-n:lang(ru){font-family:'STE Title Strut','STE Cyrillic Serif',var(--f-text)}
+html :is(.q .q-n,.pg-list .n):lang(pl){font-family:'STE Title Strut',var(--f-text)}
+html :is(.q .q-n,.pg-list .n):lang(ja),html :is(.q .q-n,.pg-list .n):lang(zh-Hant){font-family:'STE Title Strut',var(--f-text);font-weight:500}
+html :is(.q .q-n,.pg-list .n):lang(ru){font-family:'STE Title Strut','STE Cyrillic Serif',var(--f-text)}
 /* the page is zoomed by 1.05 on wide screens: the text of rows and notes keeps 19px */
 @media(min-width:1400px){
   :is(.q-n,body.dense .q-n,body.dense .inner .q-n,.tip-body,.er-msg){font-size:calc(19px / 1.05)}
@@ -1021,11 +1018,12 @@ html .q .q-n:lang(ru){font-family:'STE Title Strut','STE Cyrillic Serif',var(--f
   :is(.q-n,body.dense .q-n,body.dense .inner .q-n,.tip-body,.er-msg){font-size:19px}
 }
 .q-id{margin-left:auto;font-family:var(--f-ui);font-size:14px;letter-spacing:.04em}
+body.no-eid .q-id{display:none}
 body.dense .q-id{font-size:12.5px}
 body:where(:not(.theme-parchment)) .q-id{color:color-mix(in srgb,var(--nh-faint) 60%,var(--nh-dim))}
 body:where(.theme-parchment) .q .q-id{color:#5a4730}
 /* dragon words in shouts */
-.q .q-n .dw{text-transform:uppercase;letter-spacing:.05em;font-family:'STE Title Text',var(--f-text);font-weight:400}
+:is(.q .q-n,.pg-list .n) .dw{text-transform:uppercase;letter-spacing:.05em;font-family:'STE Title Text',var(--f-text);font-weight:400}
 .ma svg{width:15px;height:15px}
 .cat-h:hover > .ma,.ma:focus-visible{opacity:1}
 .ma{
@@ -1054,8 +1052,7 @@ body:where(.theme-parchment) .ma.all{background-color:rgba(34,197,94,.24);color:
   .q .s{flex-wrap:wrap;row-gap:6px}
 }
 
-/* ==================== chips, flasks and gems ==================== */
-/* Status chips, flask (.retort) and gem widgets. --c: chip colour; --pl-*: fill, edge, text strength. */
+/* chips, flasks (.retort) and gems; --c: chip colour, --pl-*: fill, edge, text strength */
 .inner .chip .ic{flex:0 0 12px}
 .chip > span{display:block;line-height:1}
 .chip.m-toggle{
@@ -1225,8 +1222,7 @@ body:where(.theme-parchment) .part .rt.on .cork{fill:#92400e;stroke:#a16207}
 .gem-widget .gem{display:inline-block;flex:0 0 auto;width:14px;height:20px}
 .gem-widget .gem svg{display:block;width:100%;height:100%;overflow:visible}
 
-/* ==================== annotations ==================== */
-/* The (i) icon and its box with notes; the language box uses the same frame. */
+/* annotations: the (i) icon and its box; the language box uses the same frame */
 .tip-host{position:relative;display:inline-flex;align-items:center}
 @media(max-width:760px){
   .tip-host{position:static}
@@ -1241,6 +1237,7 @@ body:where(.theme-parchment) .part .rt.on .cork{fill:#92400e;stroke:#a16207}
   padding:0;
   background:transparent;
   border:none;
+  outline:none;
   cursor:var(--cur-hand);
   flex-shrink:0;
   transition:transform .25s ease,color .2s ease,filter .2s ease;
@@ -1269,8 +1266,7 @@ body:where(.theme-parchment) .part .rt.on .cork{fill:#92400e;stroke:#a16207}
 }
 .tip-host:hover .tip-box,.tip-host:focus-within .tip-box{opacity:1;visibility:visible;pointer-events:auto;transform:none}
 /* one frame for the annotation box and the language box */
-.tip-box,.lang-box{box-shadow:none;background:var(--bx-bg);border:1px solid var(--bx-line)}
-body:where(:not(.theme-parchment)) .tip-box{background:rgb(24,33,43)}
+.tip-box,.pg-box,.st-box{box-shadow:none;background:var(--bx-bg);border:1px solid var(--bx-line)}
 @media(max-width:760px){
   .tip-box{left:0;top:100%;width:min(340px,calc(100vw - 32px))}
 }
@@ -1278,19 +1274,21 @@ body:where(:not(.theme-parchment)) .tip-box{background:rgb(24,33,43)}
   .tip-box{width:380px}
 }
 @media(min-width:1400px){
-  .tip-box,.lang-box{border-width:calc(1px / 1.05)}
+  .tip-box{border-width:calc(1px / 1.05)}
+  /* the progress box sits outside the zoomed page: its title matches the other boxes' */
+  :is(.pg-box,.st-box) .tip-head{padding-top:calc(11px * 1.05);padding-bottom:calc(11.5px * 1.05)}
+  :is(.pg-box,.st-box) .tip-title{font-size:calc(18px * 1.05)}
 }
 .tip-head{
   display:flex;
   align-items:center;
   justify-content:center;
-  padding:12px 18px;
+  padding:11px 18px 11.5px;
   border-bottom:1px solid var(--nh-line);
   gap:10px
 }
-.lang-box .tip-head{padding:11px 0}
 .tip-title{display:inline-flex;align-items:center;gap:10px;text-transform:uppercase;line-height:1;font-family:var(--f-title)}
-.tip-title,.empty .t,.pre-card strong,.res-h .nm{font-size:18px}
+.tip-title,:is(.empty,.pg-empty) .t,.pre-card strong,.res-h .nm{font-size:18px}
 .tip-body{padding:12px 18px 16px;font-weight:400;font-family:var(--f-text);line-height:1.5;color:var(--nh-ink)}
 .tip-cat-icon svg{width:100%;height:100%;display:block;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .tip-cat-icon{display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;flex:0 0 16px;color:var(--nh-gold)}
@@ -1323,8 +1321,7 @@ body:where(:not(.theme-parchment)) .tip-box{background:rgb(24,33,43)}
 }
 .tip-body .chip-glue{white-space:nowrap}
 
-/* ==================== search results ==================== */
-/* Per-section result headers, the summary line, the empty state and highlighted matches. */
+/* search results: group headers, summary line, empty state, highlighted matches */
 .res-h{
   display:none;
   align-items:center;
@@ -1366,8 +1363,8 @@ body.searching .res-sum.has{display:block}
   border:1px dashed var(--nh-line2);
   background:color-mix(in srgb,var(--nh-panel) 55%,transparent)
 }
-.empty .ic{width:42px;height:42px;opacity:.85;color:var(--nh-gold)}
-.empty .t{text-transform:uppercase;font-family:var(--f-title);font-weight:600;letter-spacing:.14em;color:var(--nh-ink)}
+:is(.empty,.pg-empty) .ic{width:42px;height:42px;opacity:.85;color:var(--nh-gold)}
+:is(.empty,.pg-empty) .t{text-transform:uppercase;font-family:var(--f-title);font-weight:600;letter-spacing:.14em;color:var(--nh-ink)}
 body:where(.theme-parchment) .empty{background-color:rgba(221,203,162,.8)}
 .rt .hl{fill:none;stroke:#fff;stroke-width:1;stroke-linecap:round;opacity:0}
 .rt.on .hl{opacity:.75}
@@ -1380,8 +1377,7 @@ body:where(.theme-parchment) mark.hl{background:rgba(196,123,92,.28);box-shadow:
 .res-h:hover .go{opacity:1;transform:none}
 .res-h .go{font-size:12px;opacity:0;transform:translateX(-4px);transition:opacity .2s,transform .2s;color:var(--nh-dim)}
 
-/* ==================== statistics page ==================== */
-/* The statistics sheet: top tiles and the two-column list. */
+/* statistics page: top tiles and the two-column list */
 .stx{padding:4px 0 40px}
 .stx .sheet{background:var(--nh-panel)}
 .stx .top{margin:0 0 26px;text-align:center}
@@ -1469,45 +1465,8 @@ body:where(.theme-parchment) .stx .tile .n{color:#5a4730}
   border-bottom:1px solid color-mix(in srgb,var(--nh-dim) 40%,transparent)
 }
 
-/* ==================== language box ==================== */
-/* Language button and its menu. */
-.lang{position:relative;flex:none}
-.lang-btn{font-family:var(--f-ui);font-weight:600;font-size:14px;letter-spacing:.08em;line-height:1}
-.lang-box{
-  position:absolute;
-  top:0;
-  left:calc(100% + 10px);
-  width:170px;
-  z-index:120;
-  opacity:0;
-  visibility:hidden;
-  border-radius:2px;
-  transition:opacity .18s,visibility .18s
-}
-.lang.open .lang-box{opacity:1;visibility:visible}
-.lang.below .lang-box{top:calc(100% + 8px);left:auto;right:0}
-.lang-box ul{list-style:none;margin:0;padding:0}
-.lang-box li{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:12px;
-  padding:8px 14px;
-  cursor:var(--cur-hand,pointer);
-  user-select:none;
-  font-family:var(--f-title);
-  font-size:15px;
-  font-weight:500;
-  color:var(--nh-ink)
-}
-.lang-box li:hover{background:var(--nh-hover)}
-.lang-box li .c{font-family:var(--f-ui);font-weight:600;font-size:14px;letter-spacing:.08em;color:var(--nh-dim)}
-.lang-box li.on{background:var(--nh-act)}
-.lang-box li.on .c{color:var(--nh-gold)}
-body:where(:not(.theme-parchment)) .lang-box li:not(.on) .c{color:color-mix(in srgb,var(--nh-dim) 80%,var(--bx-bg))}
 
-/* ==================== zoom and copy badges ==================== */
-/* Badges in the top right corner: zoom level, and the copied id. */
+/* zoom and COPIED badges, top right */
 .zoom-badge.on{opacity:1;pointer-events:auto}
 .zoom-badge{
   position:fixed;
@@ -1570,8 +1529,107 @@ body:where(.theme-parchment) .zoom-badge .zb-v{color:var(--nh-ink)}
   color:var(--bd-t)
 }
 
-/* ==================== loading and error card ==================== */
-/* Card shown before a save is loaded: waiting, loading steps, error, done. */
+/* Progress Changed box, top left; Settings box, top right */
+.pg-box,.st-box{
+  position:fixed;
+  top:14px;
+  left:14px;
+  z-index:9998;
+  width:300px;
+  height:calc(100vh - 28px);
+  display:flex;
+  flex-direction:column;
+  transform-origin:top left;
+  opacity:0;
+  visibility:hidden;
+  transition:opacity .25s,visibility .25s
+}
+.st-box{left:auto;right:14px;transform-origin:top right}
+.pg-box.on,.st-box.on{opacity:1;visibility:visible}
+:is(.pg-box,.st-box) .tip-head{flex:none}
+.pg-empty{flex:1;display:none;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+.pg-box.empty-on .pg-list{display:none}
+.pg-box.empty-on .pg-empty{display:flex}
+.pg-list{flex:1;list-style:none;margin:0;padding:6px 0;overflow-y:auto;overscroll-behavior:contain;min-height:0;scrollbar-width:none}
+.pg-list::-webkit-scrollbar{display:none}
+.pg-list li{display:flex;align-items:center;gap:11px;padding:6px 16px;color:var(--c)}
+.pg-list li.failed{--c:var(--c-fail)}
+.pg-list li.done{--c:var(--c-done)}
+.pg-list li.not{--c:var(--c-not)}
+.pg-list li .ic{flex:none;width:15px;height:15px}
+.pg-list .t{display:flex;flex-direction:column;gap:2px;min-width:0}
+.pg-list .n{font-size:18px;color:var(--nh-ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pg-list .s{font-family:var(--f-ui);font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--nh-dim)}
+.pg-foot,.st-foot{flex:none;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:9px 16px;border-top:1px solid var(--nh-line)}
+.vs{display:flex;flex-direction:column;gap:3px;min-width:0;font-family:var(--f-ui)}
+.vs b{font-size:14px;font-weight:600;color:var(--nh-ink)}
+.vs span{font-size:13px;color:var(--nh-dim)}
+.pg-hide,.st-btn{
+  padding:5px 12px;
+  font-family:var(--f-ui);
+  font-size:12.5px;
+  font-weight:600;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--nh-dim);
+  background:none;
+  border:1px solid var(--bx-line);
+  border-radius:2px;
+  cursor:var(--cur-hand,pointer);
+  transition:color .15s,border-color .15s
+}
+.pg-hide:hover,.st-btn:hover{color:var(--nh-ink);border-color:var(--hide-hi)}
+
+/* Settings box (F6) */
+.st-body{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none;padding:2px 0 10px}
+.st-body::-webkit-scrollbar{display:none}
+.st-h{padding:16px 16px 7px;font-family:var(--f-ui);font-size:13.5px;font-weight:600;letter-spacing:.11em;text-transform:uppercase;color:var(--nh-dim)}
+.st-sec + .st-sec{border-top:1px solid var(--nh-line)}
+.st-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:6px 16px;min-height:34px}
+.st-row .t{display:flex;flex-direction:column;gap:2px;min-width:0}
+.st-row .n{font-family:var(--f-title);font-size:15px;font-weight:500;color:var(--nh-ink)}
+.st-row .d{font-family:var(--f-ui);font-size:13px;color:var(--nh-dim);overflow-wrap:anywhere}
+.st-btn{flex:none;padding:4px 10px;font-size:11.5px}
+.st-btn:disabled{opacity:.4;pointer-events:none}
+.st-btn.ask{color:var(--c-fail);border-color:var(--c-fail)}
+.st-lang{list-style:none;margin:0;padding:0}
+.st-lang li{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:6px 16px;cursor:var(--cur-hand,pointer);user-select:none;font-family:var(--f-title);font-size:15px;font-weight:500;color:var(--nh-ink)}
+.st-lang li:hover{background:var(--nh-hover)}
+.st-lang li .c{font-family:var(--f-ui);font-weight:600;font-size:14px;letter-spacing:.08em;color:var(--nh-dim)}
+.st-lang li.on{background:var(--lang-on)}
+.st-lang li.on .c{color:var(--nh-gold)}
+body:where(:not(.theme-parchment)) .st-lang li:not(.on) .c{color:color-mix(in srgb,var(--nh-dim) 80%,var(--bx-bg))}
+/* check box: empty square, a tick when on */
+.st-cb{flex:none;width:24px;height:24px;padding:0;display:flex;align-items:center;justify-content:center;border:1px solid var(--bx-line);background:none;color:var(--nh-gold);cursor:var(--cur-hand,pointer)}
+.st-cb svg{width:16px;height:16px;visibility:hidden}
+.st-cb.on svg{visibility:visible}
+.st-cb:hover{border-color:var(--hide-hi)}
+.st-foot .vs span{transition:color .2s}
+.st-foot .vs span.msg{color:var(--c-done)}
+.set-btn svg{width:22px;height:22px}
+
+/* plugin warning in the player card (USSEP / USCCP missing) */
+.ste-warn{
+  position:absolute;
+  top:-4px;
+  right:38px;
+  width:30px;
+  height:30px;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  font-family:var(--f-ui);
+  font-size:18px;
+  font-weight:700;
+  line-height:1;
+  color:var(--c-fail);
+  border:1px solid color-mix(in srgb,var(--c-fail) 70%,transparent);
+  user-select:none
+}
+.ste-warn.on{display:flex}
+.x-tip.wrap{white-space:normal;width:300px;line-height:1.45;background:var(--bx-bg);border-radius:0;transform:none}
+
+/* loading card: waiting, loading steps, error, done */
 body:not(.app-pre) .pre-card{display:none}
 .pre-card strong{
   display:block;
@@ -1582,7 +1640,7 @@ body:not(.app-pre) .pre-card{display:none}
   letter-spacing:.14em;
   color:var(--nh-gold-hi)
 }
-.pre-card[data-state="loading"],.pre-card[data-state="done"]{border-color:color-mix(in srgb,var(--c-done) 60%,transparent)}
+.pre-card[data-state="done"]{border-color:color-mix(in srgb,var(--c-done) 60%,transparent)}
 .pre-card[data-state="error"]{border-color:color-mix(in srgb,var(--c-fail) 60%,transparent)}
 .pre-card{
   color:var(--nh-dim);
@@ -1597,7 +1655,7 @@ body:not(.app-pre) .pre-card{display:none}
   flex-direction:column;
   align-items:center;
   justify-content:center;
-  border:1px dashed color-mix(in srgb,var(--nh-gold) 50%,transparent);
+  border:1px dashed var(--pre-line);
   box-shadow:none
 }
 body:where(:not(.theme-parchment)) .pre-card{background:color-mix(in srgb,var(--nh-panel) 60%,transparent)}
@@ -1678,6 +1736,7 @@ body:where(.theme-parchment) .pre-pct{letter-spacing:.5px}
 .pre-card[data-state="done"] .st-done{
   display:flex
 }
+.st-empty strong,.st-loading strong{color:var(--pre-title)}
 .st-error strong{color:var(--c-fail)}
 .st-done strong{color:var(--c-done)}
 body.has-save .er-keep{display:block}
@@ -1766,7 +1825,7 @@ body:not(.has-save) #erBack{display:none}
   <div class="topbar">
     <div class="left">
       <button class="theme-btn" id="themeBtn" title="Theme: Dragonbone Parchment">
-        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        <span class="icon-moon"></span>
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
       </button>
       <label class="choose-btn" id="chooseBtn">
@@ -1811,16 +1870,18 @@ body:not(.has-save) #erBack{display:none}
       </div>
       <!-- level and XP of the loaded save -->
       <div class="level-bar" id="levelBar" hidden data-level="" data-xp="0" data-xp-max="0"></div>
+      <!-- red "!" when the save lacks USSEP / USCCP (TrackerData.setPluginWarning) -->
+      <span class="ste-warn">!</span>
     </div>
     <div class="stats">
-      <div class="stat" tabindex="0" data-go="skyrim" title="Open Quests"><span class="stat-name">Quests</span><span class="stat-val" data-stat><span class="done">129</span><span class="sep">/</span><span class="total">241</span></span><span class="sbar"><i></i></span></div>
-      <div class="stat" tabindex="0" data-go="perks" title="Open Perks"><span class="stat-name">Perks</span><span class="stat-val" data-stat><span class="done">0</span><span class="sep">/</span><span class="total">281</span></span><span class="sbar"><i></i></span></div>
-      <div class="stat" tabindex="0" data-go="spells" title="Open Spells"><span class="stat-name">Spells</span><span class="stat-val" data-stat><span class="done">164</span><span class="sep">/</span><span class="total">167</span></span><span class="sbar"><i></i></span></div>
-      <div class="stat" tabindex="0" data-go="shouts" title="Open Shouts"><span class="stat-name">Shouts</span><span class="stat-val" data-stat><span class="done">3</span><span class="sep">/</span><span class="total">5</span></span><span class="sbar"><i></i></span></div>
-      <div class="stat" tabindex="0" data-go="enchanting" title="Open Enchanting"><span class="stat-name">Enchanting</span><span class="stat-val" data-stat><span class="done">3</span><span class="sep">/</span><span class="total">6</span></span><span class="sbar"><i></i></span></div>
-      <div class="stat" tabindex="0" data-go="collectibles" title="Open Collectibles"><span class="stat-name">Collectibles</span><span class="stat-val" data-stat><span class="done">0</span><span class="sep">/</span><span class="total">44</span></span><span class="sbar"><i></i></span></div>
-      <div class="stat" tabindex="0" data-go="locations" title="Open Locations"><span class="stat-name">Locations</span><span class="stat-val" data-stat><span class="done">59</span><span class="sep">/</span><span class="total">327</span></span><span class="sbar"><i></i></span></div>
-      <div class="stat" tabindex="0" data-go="reagents" title="Open Ingredients"><span class="stat-name">Ingredients</span><span class="stat-val" data-stat><span class="done">3</span><span class="sep">/</span><span class="total">5</span></span><span class="sbar"><i></i></span></div>
+      <div class="stat" data-go="skyrim" title="Open Quests"><span class="stat-name">Quests</span><span class="stat-val" data-stat><span class="done">129</span><span class="sep">/</span><span class="total">241</span></span><span class="sbar"><i></i></span></div>
+      <div class="stat" data-go="perks" title="Open Perks"><span class="stat-name">Perks</span><span class="stat-val" data-stat><span class="done">0</span><span class="sep">/</span><span class="total">281</span></span><span class="sbar"><i></i></span></div>
+      <div class="stat" data-go="spells" title="Open Spells"><span class="stat-name">Spells</span><span class="stat-val" data-stat><span class="done">164</span><span class="sep">/</span><span class="total">167</span></span><span class="sbar"><i></i></span></div>
+      <div class="stat" data-go="shouts" title="Open Shouts"><span class="stat-name">Shouts</span><span class="stat-val" data-stat><span class="done">3</span><span class="sep">/</span><span class="total">5</span></span><span class="sbar"><i></i></span></div>
+      <div class="stat" data-go="enchanting" title="Open Enchanting"><span class="stat-name">Enchanting</span><span class="stat-val" data-stat><span class="done">3</span><span class="sep">/</span><span class="total">6</span></span><span class="sbar"><i></i></span></div>
+      <div class="stat" data-go="collectibles" title="Open Collectibles"><span class="stat-name">Collectibles</span><span class="stat-val" data-stat><span class="done">0</span><span class="sep">/</span><span class="total">44</span></span><span class="sbar"><i></i></span></div>
+      <div class="stat" data-go="locations" title="Open Locations"><span class="stat-name">Locations</span><span class="stat-val" data-stat><span class="done">59</span><span class="sep">/</span><span class="total">327</span></span><span class="sbar"><i></i></span></div>
+      <div class="stat" data-go="reagents" title="Open Ingredients"><span class="stat-name">Ingredients</span><span class="stat-val" data-stat><span class="done">3</span><span class="sep">/</span><span class="total">5</span></span><span class="sbar"><i></i></span></div>
     </div>
   </div>
   <div class="tabs-row">
@@ -1847,7 +1908,7 @@ body:not(.has-save) #erBack{display:none}
 
 </div>
 
-<!-- ===================== PRELOADER (no save / loading / error) ===================== -->
+<!-- Preloader (no save / loading / error) -->
 <div class="pre-card" id="preCard" data-state="empty">
   <div class="pre-icon"><svg viewBox="0 0 100 100" fill="none"><defs><linearGradient id="plRollTop" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6b4423"/><stop offset="0.5" stop-color="#a06030"/><stop offset="1" stop-color="#4a2e15"/></linearGradient><linearGradient id="plRollBot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a2e15"/><stop offset="0.5" stop-color="#a06030"/><stop offset="1" stop-color="#6b4423"/></linearGradient><linearGradient id="plParch" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f5e6c8"/><stop offset="0.5" stop-color="#e8d3a8"/><stop offset="1" stop-color="#d4b98a"/></linearGradient><linearGradient id="plShadeL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a08050" stop-opacity="0.45"/><stop offset="1" stop-color="#a08050" stop-opacity="0"/></linearGradient><linearGradient id="plShadeR" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#a08050" stop-opacity="0.45"/><stop offset="1" stop-color="#a08050" stop-opacity="0"/></linearGradient><linearGradient id="plCap" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8b5a2b"/><stop offset="1" stop-color="#5c3a1e"/></linearGradient></defs><rect x="12" y="14" width="76" height="12" rx="6" fill="url(#plRollTop)"/><circle cx="14" cy="20" r="7" fill="url(#plCap)"/><circle cx="14" cy="20" r="3" fill="#a06030"/><circle cx="14" cy="20" r="1.5" fill="#d4a060"/><circle cx="86" cy="20" r="7" fill="url(#plCap)"/><circle cx="86" cy="20" r="3" fill="#a06030"/><circle cx="86" cy="20" r="1.5" fill="#d4a060"/><rect x="16" y="26" width="68" height="48" rx="2" fill="url(#plParch)"/><rect x="16" y="26" width="6" height="48" fill="url(#plShadeL)"/><rect x="78" y="26" width="6" height="48" fill="url(#plShadeR)"/><line x1="26" y1="36" x2="74" y2="36" stroke="#a08050" stroke-width="1.4" opacity="0.55"/><line x1="26" y1="44" x2="74" y2="44" stroke="#a08050" stroke-width="1.4" opacity="0.55"/><line x1="26" y1="52" x2="62" y2="52" stroke="#a08050" stroke-width="1.4" opacity="0.55"/><line x1="26" y1="60" x2="74" y2="60" stroke="#a08050" stroke-width="1.4" opacity="0.55"/><line x1="26" y1="68" x2="56" y2="68" stroke="#a08050" stroke-width="1.4" opacity="0.55"/><rect x="12" y="74" width="76" height="12" rx="6" fill="url(#plRollBot)"/><circle cx="14" cy="80" r="7" fill="url(#plCap)"/><circle cx="14" cy="80" r="3" fill="#a06030"/><circle cx="14" cy="80" r="1.5" fill="#d4a060"/><circle cx="86" cy="80" r="7" fill="url(#plCap)"/><circle cx="86" cy="80" r="3" fill="#a06030"/><circle cx="86" cy="80" r="1.5" fill="#d4a060"/></svg><span class="seal"><svg viewBox="0 0 34 34"><defs><radialGradient id="sealFill" cx="35%" cy="30%" r="75%"><stop offset="0" style="stop-color:color-mix(in srgb,var(--c-fail) 80%,#000)"/><stop offset="1" style="stop-color:color-mix(in srgb,var(--c-fail) 40%,#000)"/></radialGradient></defs><circle cx="17" cy="17" r="17" fill="url(#sealFill)"/><path d="M13.5 13.5l7 7m0-7l-7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" fill="none"/></svg></span></div>
   <div class="pre-st st-empty"><strong>No save loaded</strong>Choose a .ess file to see your progress</div>
@@ -1887,74 +1948,74 @@ body:not(.has-save) #erBack{display:none}
 <div class="filters-row">
   <div class="filters" id="filters"></div>
 </div>
-<!-- ===================== SKYRIM PANEL ===================== -->
+<!-- Skyrim panel -->
 <div class="panel active" data-panel="skyrim"></div>
-<!-- ===================== DAWNGUARD PANEL ===================== -->
+<!-- Dawnguard panel -->
 <div class="panel" data-panel="dawnguard"></div>
 
-<!-- ===================== DRAGONBORN PANEL ===================== -->
+<!-- Dragonborn panel -->
 <div class="panel" data-panel="dragonborn"></div>
-<!-- ===================== SPELLS ===================== -->
+<!-- Spells -->
 <div class="panel" data-panel="spells">
   <div class="sec"><div class="sec-t">SPELLS<span class="tip-host"><button class="tip-icon" aria-label="Annotation" type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="8" r="1" fill="currentColor" stroke="none"/></svg></button><div class="tip-box"><div class="tip-head"><span class="tip-title"><span class="tip-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg></span>Spells</span></div><div class="tip-body">A spell is bound to the mind through study, not chance - read a Spell Tome, or be taught it directly, to register it <span class="chip-glue">as <span class="chip-inline"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Obtained</span>.</span></div></div></span></div>
   </div>
 </div>
 
-<!-- ===================== ENCHANTING ===================== -->
+<!-- Enchanting -->
 <div class="panel" data-panel="enchanting">
   <div class="sec"><div class="sec-t">ENCHANTING EFFECTS<span class="tip-host"><button class="tip-icon" aria-label="Annotation" type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="8" r="1" fill="currentColor" stroke="none"/></svg></button><div class="tip-box"><div class="tip-head"><span class="tip-title"><span class="tip-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></svg></span>Enchanting Effects</span></div><div class="tip-body">Knowledge of an enchantment is earned through destruction, not discovery - disenchant an item bearing the effect at an Arcane Enchanter to register it <span class="chip-glue">as <span class="chip-inline"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Learned</span>.</span></div></div></span></div>
   </div>
 </div>
 
-<!-- ===================== BOOKS ===================== -->
+<!-- Books -->
 <div class="panel" data-panel="books">
   <div class="sec"><div class="sec-t">BOOKS<span class="tip-host"><button class="tip-icon" aria-label="Annotation" type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="8" r="1" fill="currentColor" stroke="none"/></svg></button><div class="tip-box"><div class="tip-head"><span class="tip-title"><span class="tip-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>Books</span></div><div class="tip-body">A library is proven by its shelf, not its reading - place the book in one of your tracked homes to register it <span class="chip-glue">as <span class="chip-inline"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Obtained</span>.</span></div></div></span></div>
   </div>
 </div>
 
-<!-- ===================== SHOUTS ===================== -->
+<!-- Shouts -->
 <div class="panel" data-panel="shouts">
   <div class="sec"><div class="sec-t">DRAGON SHOUTS<span class="tip-host"><button class="tip-icon" aria-label="Annotation" type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="8" r="1" fill="currentColor" stroke="none"/></svg></button><div class="tip-box"><div class="tip-head"><span class="tip-title"><span class="tip-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 8 12l-5 2.5z" fill="currentColor"/><path d="M11 8.5a5 5 0 0 1 0 7"/><path d="M14.5 5.5a9.5 9.5 0 0 1 0 13"/><path d="M18 2.5a13.5 13.5 0 0 1 0 19"/></svg></span>Dragon Shouts</span></div><div class="tip-body">A Word of Power only settles into memory once proven - learn it at a Word Wall, unlock it with a dragon soul, and shout it at least once to register it <span class="chip-glue">as <span class="chip-inline"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Learned</span>.</span></div></div></span></div>
   </div>
 </div>
 
-<!-- ===================== PERKS ===================== -->
+<!-- Perks -->
 <div class="panel" data-panel="perks">
   <div class="sec"><div class="sec-t">PERKS<span class="tip-host"><button class="tip-icon" aria-label="Annotation" type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="8" r="1" fill="currentColor" stroke="none"/></svg></button><div class="tip-box"><div class="tip-head"><span class="tip-title"><span class="tip-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke-width="1.5" d="M4.5 19.5 9.5 11l7.5 3.5L19.5 4.5"/><circle cx="4.5" cy="19.5" r="2.4" fill="currentColor" stroke="none"/><circle cx="9.5" cy="11" r="2.4" fill="currentColor" stroke="none"/><circle cx="17" cy="14.5" r="2.4" fill="currentColor" stroke="none"/><circle cx="19.5" cy="4.5" r="2.4" fill="currentColor" stroke="none"/></svg></span>Perks</span></div><div class="tip-body">Most perks demand a point spent once the skill is high enough, but a handful answer to deeds alone - the matching quest perk registers <span class="chip-glue">as <span class="chip-inline"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Obtained</span></span> simply by finishing its quest, no perk point required.</div></div></span></div>
   </div>
 </div>
 
-<!-- ===================== COLLECTIBLES ===================== -->
+<!-- Collectibles -->
 <div class="panel" data-panel="collectibles">
   <div class="sec"><div class="sec-t">COLLECTIBLE ITEMS<span class="tip-host"><button class="tip-icon" aria-label="Annotation" type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="8" r="1" fill="currentColor" stroke="none"/></svg></button><div class="tip-box"><div class="tip-head"><span class="tip-title"><span class="tip-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></span>Collectible Items</span></div><div class="tip-body">A collection is proven by its display, not its discovery - place the item in one of your tracked homes to register it <span class="chip-glue">as <span class="chip-inline"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Obtained</span>.</span></div></div></span></div>
   </div>
 </div>
 
-<!-- ===================== LOCATIONS ===================== -->
+<!-- Locations -->
 <div class="panel" data-panel="locations">
   <div class="sec"><div class="sec-t">LOCATIONS<span class="tip-host"><button class="tip-icon" aria-label="Annotation" type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="8" r="1" fill="currentColor" stroke="none"/></svg></button><div class="tip-box"><div class="tip-head"><span class="tip-title"><span class="tip-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>Locations</span></div><div class="tip-body">The map remembers only what you have seen - travel within sight of the location to register it <span class="chip-glue">as <span class="chip-inline"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Discovered</span>.</span></div></div></span></div>
   </div>
 </div>
-<!-- ===================== REAGENTS ===================== -->
+<!-- Ingredients -->
 <div class="panel" data-panel="reagents">
   <div class="sec"><div class="sec-t">INGREDIENTS<span class="tip-host"><button class="tip-icon" aria-label="Annotation" type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="8" r="1" fill="currentColor" stroke="none"/></svg></button><div class="tip-box"><div class="tip-head"><span class="tip-title"><span class="tip-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></span>Ingredients</span></div><div class="tip-body">Nature reveals her secrets one bite at a time - consume the ingredient raw or brew it into a potion to learn its properties, all 4 must be tasted before it registers <span class="chip-glue">as <span class="chip-inline"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Discovered</span>.</span></div></div></span></div>
   </div>
 </div>
 
-<!-- ===================== TOWNSFOLK REQUESTS ===================== -->
+<!-- Townsfolk Requests -->
 <div class="panel" data-panel="subquests"></div>
 
-<!-- ===================== HIDDEN BOSSES ===================== -->
+<!-- Hidden Bosses -->
 <div class="panel" data-panel="bosses"></div>
 
-<!-- ===================== STATISTICS ===================== -->
+<!-- Statistics -->
 <div class="panel" data-panel="stats"><div class="stx"></div></div>
 
 
 </div>
 
 <script>
-/* builds the rows of every tab from the tracker tables (window.__STE_TABLES__) before the other scripts run */
+/* builds every tab's rows from the tables (__STE_TABLES__) before the other scripts run */
 (function(){
   var T = window.__STE_TABLES__ || {};
 
@@ -2009,7 +2070,10 @@ body:not(.has-save) #erBack{display:none}
     + '<svg class="ic" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5.5" stroke="currentColor" '
     + 'stroke-width="1.6" stroke-dasharray="2 2"/></svg><span>Not discovered</span></span>';
   // plugins every game has: their rows are never hidden
-  var BASE = {'skyrim.esm':1, 'update.esm':1, 'dawnguard.esm':1, 'hearthfires.esm':1, 'dragonborn.esm':1, '_resourcepack.esl':1};
+  // (_ResourcePack.esl is not one: it came with 1.6.1130 - its rows show only when the save has it)
+  var BASE = {'skyrim.esm':1, 'update.esm':1, 'dawnguard.esm':1, 'hearthfires.esm':1, 'dragonborn.esm':1};
+  // Military Camps sub-blocks: the side a camp belongs to
+  var CAMP_SIDE = {'Imperial Legion':'imperial', 'Stormcloaks':'stormcloak'};
 
   function tags(r){ return (r.Tags || '').split('|').filter(Boolean); }
   // Optional first, then the status chip (if any), then the content chips
@@ -2057,7 +2121,7 @@ body:not(.has-save) #erBack{display:none}
     panel(name).querySelector('.sec').insertAdjacentHTML('beforeend', blocks(items));
   }
 
-  // ---- spells, enchanting, shouts, ingredients
+  // spells, enchanting, shouts, ingredients
   function byEditorId(name, file){
     fill(name, rows(file).map(function(r){
       var t = tags(r), a = [];
@@ -2072,14 +2136,14 @@ body:not(.has-save) #erBack{display:none}
   byEditorId('shouts', 'shouts_tracker.csv');
   byEditorId('reagents', 'ingredients_tracker.csv');
 
-  // ---- perks
+  // perks
   fill('perks', rows('perks_tracker.csv').map(function(r){
     var t = tags(r), a = [['data-perk', r.Plugin + ':' + r.LocalID]].concat(pluginAttr(r.Plugin));
     if (t.indexOf('Optional') >= 0) a.push(['data-optional', '1']);
     return [r.Block, r.SubBlock, row(r.EditorID, r.Name, chips(t), a)];
   }));
 
-  // ---- books, collectibles
+  // books, collectibles
   function items(name, file){
     fill(name, rows(file).map(function(r){
       var first = r.BaseKeys.split('|')[0];
@@ -2091,15 +2155,17 @@ body:not(.has-save) #erBack{display:none}
   items('books', 'books_tracker.csv');
   items('collectibles', 'collectibles_tracker.csv');
 
-  // ---- locations
+  // locations
   fill('locations', rows('locations_tracker.csv').map(function(r){
     var m = r.MarkerFormIDs.split('|')[0], i = m.indexOf(':'), p = m.slice(0, i);
     var id = (parseInt(m.slice(i + 1), 16) & 0xFFFFFF).toString(16).toUpperCase();
     while (id.length < 6) id = '0' + id;
-    return [r.Block, r.SubBlock, row(p + ':' + id, r.Name, chips(tags(r), NOT_DISCOVERED), pluginAttr(p))];
+    var a = pluginAttr(p);
+    if (CAMP_SIDE[r.SubBlock]) a.push(['data-side', CAMP_SIDE[r.SubBlock]]);   // Military Camps: the camp's side
+    return [r.Block, r.SubBlock, row(p + ':' + id, r.Name, chips(tags(r), NOT_DISCOVERED), a)];
   }));
 
-  // ---- quests: Tab -> panel, Section -> section
+  // quests: Tab -> panel, Section -> section
   var PANEL = {'Skyrim':'skyrim', 'Dawnguard':'dawnguard', 'Dragonborn':'dragonborn',
                'Townsfolk Requests':'subquests', 'Hidden Bosses':'bosses'};
   var SECTION_TITLE = {'AE': 'ANNIVERSARY EDITION'};
@@ -2140,7 +2206,6 @@ const ST={
 };
 /* the Optional chip always comes first: status chips go right after it */
 function afterOptional(sEl){const o=sEl.querySelector(':scope > .chip.opt');return o?o.nextSibling:sEl.firstChild}
-const SPELL_ST={necromantic:{label:'Necromantic Grimoire'},dragonborn:{label:'Dragonborn'},dawnguard:{label:'Dawnguard'}};
 const OBTAINED_ST={
   obtained:{label:'Obtained',icon:'<svg class="ic" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'},
   notobtained:{label:'Not obtained',icon:'<svg class="ic" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5.5" stroke="currentColor" stroke-width="1.6" stroke-dasharray="2 2"/></svg>'}
@@ -2157,11 +2222,13 @@ const QUEST_FAILED=new Set();
 const MARK_KEYS=new Set(['MGR01','MGR02','MGR30','MGR10','MGR11','MGR20','MGR20B','MGR21','DBrecurring','TGRNT','TGRBE','TGRGF','TGRSL','TGRFO','TGRDU','TGRHC','CR09','CR10','CR01','CR02','CR11','CR12','CR04','CR05','CR06','CR07','CR08','CR13','CR14','Favor254','Favor255','Favor252','Favor250','FreeformRiftenThane','Favor253','Favor258','Favor256','Favor257','ccBGSSSE001_Radiant_1','ccBGSSSE001_Radiant_2','ccBGSSSE001_Radiant_3','DLC1RH01','DLC1RH02','DLC1RH03','DLC1RH04','DLC1RH05','DLC1RH06','DLC1RH07','DLC1RH08','DLC1RV01','DLC1RV02','DLC1RV03','DLC1RV04','DLC1RV05','DLC1RV06','DLC1RV07','DLC2dunHrodulf','DLC2RRFavor05','DLC2TTR8','DLC2TTR2']);
 const MARK_DONE=new Set();
 
+/* the tabs that hold quests */
+const QUEST_PANELS=['skyrim','dawnguard','dragonborn','subquests','bosses'];
 /* row lists in page order, taken before any script moves or hides rows */
 const ORDER_ROWS={};
 (function(){
   const rows=p=>[...document.querySelectorAll('.panel[data-panel="'+p+'"] .q')];
-  ORDER_ROWS.quests=['skyrim','dawnguard','dragonborn','subquests','bosses'].flatMap(rows);
+  ORDER_ROWS.quests=QUEST_PANELS.flatMap(rows);
   [['locations','locations'],['spells','spells'],['shouts','shouts'],['enchanting','enchanting'],
    ['ingredients','reagents'],['perks','perks'],['collectibles','collectibles'],['books','books']]
    .forEach(([cat,panel])=>{ORDER_ROWS[cat]=rows(panel)});
@@ -2195,6 +2262,7 @@ function saveMarks(){
     if(MARK_DONE.size) all[markOwner]=[...MARK_DONE]; else delete all[markOwner];
     localStorage.setItem(MARKS_KEY,JSON.stringify(all));
   }catch(e){}
+  if(window.SettingsBox) window.SettingsBox.refresh();
 }
 loadMarks('-');
 
@@ -2202,7 +2270,8 @@ loadMarks('-');
 function renderQuestChips(){
   ORDER_ROWS.quests.forEach(q=>{
     const sEl=q.querySelector('.s');
-    if(!sEl)return;
+    // rows of plugins not in the save are taken out of the page: they get their chips on the next load
+    if(!sEl||!q.isConnected)return;
     sEl.querySelectorAll('.chip').forEach(c=>c.remove());
     const panelName=q.closest('.panel').dataset.panel;
     let parts=rawStatusParts(questKey(q));
@@ -2234,11 +2303,25 @@ function renderQuestChips(){
   });
 }
 
-/* ============================================================
-   LOCATIONS (rows by location name)
-   ============================================================ */
+/* locations */
 const DISCOVERED_LOCATIONS = new Set([]);   // row keys, filled by TrackerData.load()
 
+/* Civil War side from the quests: 'imperial', 'stormcloak' or null */
+function civilWarSide(){
+  const has=k=>QUEST_DONE.has(k);
+  if(has('CW02A')!==has('CW02B')) return has('CW02A')?'imperial':'stormcloak';
+  if(has('CW01A')!==has('CW01B')) return has('CW01A')?'imperial':'stormcloak';
+  return null;
+}
+/* Military Camps: until a side is joined all 16 are an Alternative line that counts as not discovered;
+   after it the player's own side stays an Alternative line and leaves the counter, and the camps
+   of the other side count as usual (all of them are enabled once the war is over) */
+function campIsAlt(q){
+  const side=civilWarSide();
+  return !side||side===q.dataset.side;
+}
+const locationIsCounted=q=>{const side=q.dataset.side&&civilWarSide();return !side||side!==q.dataset.side};
+const locationIsDone=q=>DISCOVERED_LOCATIONS.has(q.dataset.key)&&(!q.dataset.side||!campIsAlt(q));
 
 function renderLocations(){
   const panel = document.querySelector('.panel[data-panel="locations"]');
@@ -2249,8 +2332,16 @@ function renderLocations(){
     const sEl    = q.querySelector('.s');
     if(!nameEl || !sEl) return;
 
-    sEl.querySelectorAll('.chip.discovered, .chip.notdiscovered').forEach(c => c.remove());
+    sEl.querySelectorAll('.chip.discovered, .chip.notdiscovered, .chip.alt').forEach(c => c.remove());
 
+    // a camp on the Alternative line shows only that chip: it is not discovered for the tracker, whatever the save says
+    if(q.dataset.side && campIsAlt(q)){
+      const a = document.createElement('span');
+      a.className = 'chip alt'; a.dataset.role = 'status'; a.dataset.status = 'alt';
+      a.innerHTML = ST.alt.icon + '<span>' + ST.alt.label + '</span>';
+      sEl.insertBefore(a, afterOptional(sEl));
+      return;
+    }
     const isOpen = DISCOVERED_LOCATIONS.has(q.dataset.key);
     const chip = document.createElement('span');
     const key = isOpen ? 'discovered' : 'notdiscovered';
@@ -2265,15 +2356,15 @@ function renderLocations(){
   panel.querySelectorAll('.cat').forEach(cat => {
     const body = cat.querySelector(':scope > .cat-b');
     if(!body) return;
-    const qs = body.querySelectorAll('.q');
+    const qs = [...body.querySelectorAll('.q')];
     if(!qs.length) return;
 
+    const counted = qs.filter(locationIsCounted);
     let done = 0;
-    qs.forEach(q => {
-      const st = q.querySelector('.chip.discovered, .chip.notdiscovered');
-      if(st && st.dataset.status === 'discovered') done++;
+    counted.forEach(q => {
+      if(locationIsDone(q)) done++;
     });
-    const total = qs.length;
+    const total = counted.length;
 
     const meta = cat.querySelector(':scope > .cat-h .cat-m');
     if(meta){
@@ -2281,9 +2372,9 @@ function renderLocations(){
                      + '<span class="sep">/</span>'
                      + '<span class="total">' + total + '</span>';
       meta.classList.remove('color-low','color-mid','color-full');
-      if(done === 0)          meta.classList.add('color-low');
-      else if(done === total) meta.classList.add('color-full');
-      else                    meta.classList.add('color-mid');
+      if(total === 0 || done === total) meta.classList.add('color-full');
+      else if(done === 0)               meta.classList.add('color-low');
+      else                              meta.classList.add('color-mid');
     }
   });
 }
@@ -2399,9 +2490,7 @@ function updateTopSpellsStat(){
   });
 }
 
-/* ============================================================
-   PERKS - rows by data-perk "Plugin:LocalID" (names repeat across trees)
-   ============================================================ */
+/* perks: rows by data-perk "Plugin:LocalID" (names repeat across trees) */
 const OBTAINED_PERKS = new Set([]);
 
 function perkIsCounted(q){
@@ -2476,9 +2565,7 @@ function updateTopPerksStat(){
   });
 }
 
-/* ============================================================
-   COLLECTIBLES - found in the player's homes; Kagrumez gems count 0-5
-   ============================================================ */
+/* collectibles: found in the player's homes; Kagrumez gems count 0-5 */
 const OBTAINED_ITEMS = new Set([]);
 const GEM_SVG = '<svg viewBox="0 0 14 20"><path class="glass" d="M7 1 L11 5 L11 15 L7 19 L3 15 L3 5 Z"/><path class="liquid" d="M5.5 3 L8.5 3 L8.5 17 L5.5 17 Z"/></svg>';
 const COLLECTIBLE_COUNTS = {};
@@ -2583,9 +2670,7 @@ function updateTopCollectiblesStat(){
   });
 }
 
-/* ============================================================
-   BOOKS - found in the player's homes (reading or carrying does not count)
-   ============================================================ */
+/* books: found in the player's homes */
 const OBTAINED_BOOKS = new Set([]);
 
 function renderBooks(){
@@ -2781,9 +2866,7 @@ function updateTopEnchantingStat(){
   });
 }
 
-/* ============================================================
-   INGREDIENTS - status + flasks
-   ============================================================ */
+/* ingredients: status and flasks */
 // learned effects of each ingredient; filled when a save is loaded
 const INGREDIENT_MASKS = {};   // row key -> known effects (bits)
 
@@ -2875,12 +2958,9 @@ function updateTopIngredientsStat(){
   });
 }
 
-/* ============================================================
-   Filters
-   ============================================================ */
+/* filters */
 const QUEST_FILTERS=[{k:'all',l:'All'},{k:'done',l:'Done'},{k:'not',l:'Not done'},{k:'opt',l:'Optional'},{k:'alt',l:'Alternative line'}];
 const SIMPLE_FILTERS=[{k:'all',l:'All'},{k:'done',l:'Done'},{k:'not',l:'Not done'}];
-const ALL_ONLY_FILTERS=[{k:'all',l:'All'}];
 const FILTER_CONFIG={
   skyrim:QUEST_FILTERS,dawnguard:QUEST_FILTERS,
   // Dragonborn has no Optional quests: no Optional pill there
@@ -2891,7 +2971,7 @@ const FILTER_CONFIG={
   collectibles:[{k:'all',l:'All'},{k:'done',l:'Obtained'},{k:'not',l:'Not obtained'}],
   spells:[{k:'all',l:'All'},{k:'done',l:'Obtained'},{k:'not',l:'Not obtained'},{k:'opt',l:'Optional'},{k:'alt',l:'Alternative line'}],
   shouts:[{k:'all',l:'All'},{k:'done',l:'Learned'},{k:'not',l:'Not learned'}],
-  locations:[{k:'all',l:'All'},{k:'discovered',l:'Discovered'},{k:'notdiscovered',l:'Not discovered'}],
+  locations:[{k:'all',l:'All'},{k:'discovered',l:'Discovered'},{k:'notdiscovered',l:'Not discovered'},{k:'alt',l:'Alternative line'}],
   reagents:[{k:'all',l:'All'},{k:'done',l:'Discovered'},{k:'not',l:'Not discovered'}],
   perks:[{k:'all',l:'All'},{k:'done',l:'Obtained'},{k:'not',l:'Not obtained'},{k:'opt',l:'Optional'}],
   books:[{k:'all',l:'All'},{k:'done',l:'Obtained'},{k:'not',l:'Not obtained'}],
@@ -2899,6 +2979,10 @@ const FILTER_CONFIG={
 };
 
 const TAB_KEY='skyrim-tracker-tab';
+// the status filter last chosen on each tab, remembered
+const FILTER_KEY='skyrim-tracker-filters';
+function readFilters(){try{return JSON.parse(localStorage.getItem(FILTER_KEY)||'{}')||{}}catch(e){return {}}}
+function saveFilter(panel,key){const f=readFilters();if(key==='all')delete f[panel];else f[panel]=key;try{localStorage.setItem(FILTER_KEY,JSON.stringify(f))}catch(e){}}
 let currentFilter='all';
 let currentSearch='';
 // search covers every tab; clicking a result group opens that tab with the text kept
@@ -2926,7 +3010,10 @@ function filterConfig(panelName){
 }
 function buildFilters(panelName){
   const config=filterConfig(panelName);
-  if(!config.some(f=>f.k===currentFilter)) currentFilter='all';
+  // the tab's remembered filter, once the tab has that pill (Mark and Failed come with the save)
+  const want=globalSearch?null:readFilters()[panelName];
+  if(want&&config.some(f=>f.k===want)) currentFilter=want;
+  else if(!config.some(f=>f.k===currentFilter)) currentFilter='all';
   filtersEl.innerHTML='';
   config.forEach(f=>{
     const b=document.createElement('button');
@@ -2936,6 +3023,7 @@ function buildFilters(panelName){
     b.querySelector('.lbl').textContent=f.l;
     b.addEventListener('click',()=>{
       currentFilter=f.k;
+      if(!globalSearch) saveFilter(panelName,f.k);
       filtersEl.querySelectorAll('.fbtn').forEach(x=>x.classList.toggle('active',x.dataset.filter===f.k));
       applyAllFilters();
     });
@@ -3036,6 +3124,7 @@ function applyAllFilters(){
 
 function activateTab(name,opts){
   opts=opts||{};
+  const prev=document.querySelector('.panel.active');
   document.querySelectorAll('.tab,.pill').forEach(x=>{
     // Townsfolk Requests is part of the Skyrim tab: Skyrim stays lit
     x.classList.toggle('active',x.dataset.tab===name||(HIDDEN_PANELS.includes(name)&&x.dataset.tab==='skyrim'));
@@ -3057,7 +3146,6 @@ function activateTab(name,opts){
   buildFilters(name);
   applyAllFilters();
   updateCounts();
-  updateTechCounts();
   if(name==='locations') renderLocations();
   if(name==='spells') renderSpells();
   if(name==='shouts') renderShouts();
@@ -3066,6 +3154,14 @@ function activateTab(name,opts){
   if(name==='perks') renderPerks();
   if(name==='collectibles') renderCollectibles();
   if(name==='books') renderBooks();
+  // another tab opens at its start, with the tabs row still stuck
+  if(prev&&prev.dataset.panel!==name&&document.body.classList.contains('tabs-stuck')){
+    const tr=document.querySelector('.tabs-row'),stuck=parseFloat(getComputedStyle(tr).top)+tr.offsetHeight;
+    tr.style.position='static';
+    const flow=tr.getBoundingClientRect().bottom+window.scrollY;
+    tr.style.position='';
+    window.scrollTo(0,flow-stuck);
+  }
 }
 
 document.querySelectorAll('.tab,.pill,.icon-pill').forEach(el=>{
@@ -3081,9 +3177,7 @@ document.querySelectorAll('.cat-h').forEach(h=>{
   });
 });
 
-/* ============================================================
-   COUNTING ENGINE
-   ============================================================ */
+/* counting */
 const ALT_GROUPS=[
   { branches:[
       ['CW01A','CW02A','CW03_imperial','CWObj_imperial','CWMission03_imperial','CWMission04_imperial','CWMission07_imperial','CWFortSiegeFort_imperial','CWSiegeObj_imperial'],
@@ -3149,7 +3243,6 @@ function isQuestCounted(q,inBlock){
     const myBranch=info.group.branches[info.branchIndex];
     const myBranchDone=branchIsDone(myBranch);
     if(!myBranchDone){
-      const anyDone=info.group.branches.some(br=>branchIsDone(br));
       // untouched group -> both branches count; once a branch is chosen only it counts
       const otherBranchDone=info.group.branches.some((br,i)=>i!==info.branchIndex&&branchIsDone(br));
       if(otherBranchDone)return false;
@@ -3180,8 +3273,9 @@ function reorderOptionalQuests(){
   });
 }
 
+/* block counters of the quest tabs; the other categories count their own blocks (renderLocations and the like) */
 function updateCounts(){
-  const cats=[...document.querySelectorAll('.cat')].reverse();
+  const cats=[...document.querySelectorAll(QUEST_PANELS.map(n=>'.panel[data-panel="'+n+'"] .cat').join(','))].reverse();
   cats.forEach(cat=>{
     const body=cat.querySelector(':scope > .cat-b');
     if(!body)return;
@@ -3203,7 +3297,7 @@ function updateCounts(){
 }
 
 function updateTopQuestStat(){
-  const panels=[...document.querySelectorAll('.panel[data-panel="skyrim"], .panel[data-panel="dawnguard"], .panel[data-panel="dragonborn"], .panel[data-panel="subquests"], .panel[data-panel="bosses"]')];
+  const panels=QUEST_PANELS.map(n=>document.querySelector('.panel[data-panel="'+n+'"]')).filter(Boolean);
   let done=0, total=0;
   panels.forEach(panel=>{
     panel.querySelectorAll('.q').forEach(q=>{
@@ -3219,10 +3313,6 @@ function updateTopQuestStat(){
       if(val)val.innerHTML='<span class="done">'+done+'</span><span class="sep">/</span><span class="total">'+total+'</span>';
     }
   });
-}
-
-function updateTechCounts(){
-  /* nothing extra: Townsfolk rows count like other blocks */
 }
 
 function updateStatsColors(){
@@ -3244,10 +3334,9 @@ function updateTopLocationsStat(){
   if(!panel) return;
   let done=0, total=0;
   panel.querySelectorAll('.q').forEach(q=>{
-    const st = q.querySelector('.chip.discovered, .chip.notdiscovered');
-    if(!st) return;
+    if(!locationIsCounted(q)) return;
     total++;
-    if(st.dataset.status === 'discovered') done++;
+    if(locationIsDone(q)) done++;
   });
   document.querySelectorAll('.stat').forEach(stat=>{
     const nameEl = stat.querySelector('.stat-name');
@@ -3260,9 +3349,7 @@ function updateTopLocationsStat(){
   });
 }
 
-/* ============================================================
-   plugin filter: CC rows the save does not have are taken out, then emptied blocks
-   ============================================================ */
+/* plugin filter: CC rows the save does not have are taken out, then emptied blocks */
 let LOADED_PLUGINS = null;
 const PLUGIN_STASH = [];   // stack of [node, placeholder], restored in reverse
 
@@ -3302,7 +3389,6 @@ function applyPluginFilter(){
 
 function refreshAll(){
   updateCounts();
-  updateTechCounts();
   updateTopQuestStat();
   renderLocations();
   updateTopLocationsStat();
@@ -3344,9 +3430,24 @@ function clearSearch(){
 searchInput.addEventListener('keydown',e=>{
   if(e.key==='Escape'){clearSearch();searchInput.blur();}
 });
-/* Ctrl+F: go to the search field */
+/* Ctrl+F: go to the search field; F4: choose a save */
 document.addEventListener('keydown',e=>{
   if((e.ctrlKey||e.metaKey)&&!e.altKey&&!e.shiftKey&&e.code==='KeyF'){e.preventDefault();searchInput.focus();searchInput.select();}
+  if(e.key==='F4'&&!e.ctrlKey&&!e.altKey&&!e.shiftKey&&!e.repeat){e.preventDefault();essInput.click();}
+});
+/* F11: full screen on and off (the app's window; in a browser, the page) */
+document.addEventListener('keydown',e=>{
+  if(e.key!=='F11'||e.repeat) return;
+  e.preventDefault();
+  const core=window.__TAURI__&&window.__TAURI__.core;
+  if(core&&core.invoke){core.invoke('toggle_fullscreen').catch(()=>{});return}
+  if(document.fullscreenElement) document.exitFullscreen().catch(()=>{});
+  else document.documentElement.requestFullscreen().catch(()=>{});
+});
+/* a clicked button keeps no focus: no focus ring after a hotkey (annotation icons keep it) */
+document.addEventListener('mousedown',e=>{
+  const el=e.target.closest('button,label');
+  if(el&&!el.closest('.tip-host')) e.preventDefault();
 });
 /* a double click on empty space selects nothing */
 document.addEventListener('mousedown',e=>{
@@ -3390,8 +3491,7 @@ function applyThemeNow(theme){
   }
   document.dispatchEvent(new Event('themechange'));
 }
-/* theme switch: a cover in the new theme's colour fades in, the theme changes
-   behind it, the cover fades out. A click during it is applied right after. */
+/* theme switch under a cover in the new theme's colour; a click during it is applied right after */
 const THEME_BG={dark:'#141a20',light:'#d3bfa3'};
 /* both theme pictures are decoded at start; STE_BG_READY = both are ready */
 const BG_PICS={dark:document.querySelector('.bg-pic.dark'),light:document.querySelector('.bg-pic.light')};
@@ -3476,9 +3576,7 @@ window.TrackerPlugins = {
   }
 };
 
-/* ============================================================
-   save data -> page: TrackerData.load(json) fills every tab, rows found by key
-   ============================================================ */
+/* save data -> page: TrackerData.load(json) fills every tab, rows found by key */
 window.TrackerData=(function(){
   const RACES={ArgonianRace:'Argonian',BretonRace:'Breton',DarkElfRace:'Dark Elf',HighElfRace:'High Elf',ImperialRace:'Imperial',
     KhajiitRace:'Khajiit',NordRace:'Nord',OrcRace:'Orc',RedguardRace:'Redguard',WoodElfRace:'Wood Elf'};
@@ -3509,6 +3607,30 @@ window.TrackerData=(function(){
     if(!c||!MONTHS[c.month]||!(c.day>0)||!(c.daysPassed>=0)) return null;
     return WEEKDAYS[Math.floor(c.daysPassed)%7]+', '+ordinal(c.day)+' of '+MONTHS[c.month]+', 4E '+c.year;
   }
+  /* red "!" in the player panel: the save lacks USSEP, or USCCP while it has Anniversary Edition content */
+  const USSEP='unofficial skyrim special edition patch.esp',USCCP='unofficial skyrim creation club content patch.esl';
+  const CC=/^cc[a-z]{3}sse\d{3}/;   // Creation Club plugins: ccBGSSSE001-Fish.esm ...
+  // the four Creations every game has since 1.6: USSEP fixes them, USCCP is for the rest (Anniversary Edition)
+  const FREE=['ccbgssse001-fish.esm','ccqdrsse001-survivalmode.esl','ccbgssse037-curios.esl','ccbgssse025-advdsgs.esm'];
+  const warnEl=document.querySelector('.player-info .ste-warn');
+  const warnTip=document.createElement('div');warnTip.className='x-tip wrap';document.body.appendChild(warnTip);
+  // the text box opens under both buttons, its right edge on the Statistics button: the counters stay visible
+  warnEl.addEventListener('mouseenter',()=>{
+    const b=document.querySelector('.ste-st').getBoundingClientRect(),z=warnTip.currentCSSZoom||1;
+    warnTip.style.left=(b.right-warnTip.getBoundingClientRect().width)/z+'px';warnTip.style.top=(b.bottom+8)/z+'px';
+    warnTip.classList.add('show');
+  });
+  warnEl.addEventListener('mouseleave',()=>warnTip.classList.remove('show'));
+  function setPluginWarning(d){
+    const pl=d&&d.plugins?[...(d.plugins.full||[]),...(d.plugins.light||[])].map(p=>String(p).trim().toLowerCase()):null;
+    const miss=[];
+    if(pl&&!pl.includes(USSEP)) miss.push('<b>Unofficial Skyrim Special Edition Patch</b> is not in this save.');
+    if(pl&&pl.some(p=>CC.test(p)&&!FREE.includes(p))&&!pl.includes(USCCP))
+      miss.push('<b>Unofficial Skyrim Creation Club Content Patch</b> is not in this save, but it has Anniversary Edition content.');
+    warnTip.innerHTML=miss.join('<br>')+(miss.length?'<br>The tables are built for a game with '+(miss.length>1?'both patches':'this patch')+', so some entries may be counted wrong.':'');
+    warnEl.classList.toggle('on',miss.length>0);
+    if(!miss.length) warnTip.classList.remove('show');
+  }
   function setPlayer(d){
     const p=(d&&d.player)||{},sv=(d&&d.save)||{},pl=(d&&d.plugins)||{};
     const lvl=p.level!=null?String(p.level):'-';
@@ -3525,6 +3647,7 @@ window.TrackerData=(function(){
     setPV('','Form v:',sv.formVersion);
     const lb=document.getElementById('levelBar');
     lb.dataset.level=p.level!=null?p.level:'';lb.dataset.xp=p.xp||0;lb.dataset.xpMax=p.xpMax||0;
+    setPluginWarning(d);
   }
   function clearAll(){
     QUEST_DONE.clear();QUEST_FAILED.clear();DISCOVERED_LOCATIONS.clear();LEARNED_SPELLS.clear();LEARNED_SHOUT_WORDS.clear();
@@ -3534,14 +3657,49 @@ window.TrackerData=(function(){
   }
   /* Civil War side: from The Jagged Crown (CW02A / CW02B), or before it the join quest */
   function resolveCivilWar(){
-    const has=k=>QUEST_DONE.has(k);
-    let side=null;
-    if(has('CW02A')!==has('CW02B')) side=has('CW02A')?'imperial':'stormcloak';
-    else if(has('CW01A')!==has('CW01B')) side=has('CW01A')?'imperial':'stormcloak';
+    const side=civilWarSide();
     if(!side) return;
     const other=side==='imperial'?'stormcloak':'imperial';
     QUEST_DONE.delete(side==='imperial'?'CW01B':'CW01A');
     [...QUEST_DONE].forEach(k=>{if(k.endsWith('_'+other)) QUEST_DONE.delete(k)});
+  }
+  /* changes since the previous save of the same character (Mark rows are not in the save) */
+  function rowState(cat,q){
+    switch(cat){
+      case 'quests':{const k=questKey(q);return QUEST_FAILED.has(k)?-1:QUEST_DONE.has(k)?1:0}
+      case 'locations':return +locationIsDone(q);
+      case 'spells':return +LEARNED_SPELLS.has(q.dataset.key);
+      case 'shouts':return +LEARNED_SHOUT_WORDS.has(q.dataset.key);
+      case 'enchanting':return +LEARNED_ENCHANTMENTS.has(q.dataset.key);
+      case 'perks':return +OBTAINED_PERKS.has(q.dataset.perk);
+      case 'books':return +OBTAINED_BOOKS.has(q.dataset.item);
+      case 'collectibles':return (OBTAINED_ITEMS.has(q.dataset.item)?1000:0)+(COLLECTIBLE_COUNTS[q.dataset.item]||0);
+      case 'ingredients':return INGREDIENT_MASKS[q.dataset.key]||0;
+    }
+  }
+  function snapshot(){
+    const m=new Map();
+    Object.keys(ORDER_ROWS).forEach(cat=>ORDER_ROWS[cat].forEach(q=>{if(!q.dataset.mark) m.set(q,rowState(cat,q))}));
+    return m;
+  }
+  let prev=null;   // {name, number, rows}
+  function compare(d){
+    const name=d&&d.player&&d.player.name,num=d&&d.save&&d.save.number;
+    if(d&&prev&&prev.name===name&&prev.number!==num){
+      const items=[],seen=new Set();
+      Object.keys(ORDER_ROWS).forEach(cat=>ORDER_ROWS[cat].forEach(q=>{
+        if(q.dataset.mark) return;
+        const a=prev.rows.get(q),b=rowState(cat,q),id=cat+':'+q.dataset.key;
+        if(a===b||seen.has(id)) return;
+        seen.add(id);
+        // a quest that lost its progress shows as not done; failed only when it really failed
+        const kind=cat==='quests'?(b===1?'done':b===-1?'failed':'not'):cat==='ingredients'?((a&~b)?'not':'done'):(b>a?'done':'not');
+        items.push({q,kind});
+      }));
+      window.ProgressBox.show(items,prev.number);
+    }
+    else window.ProgressBox.clear();
+    prev=d?{name,number:num,rows:snapshot()}:null;
   }
   function each(cat,list,fn){
     (list||[]).forEach(k=>{const q=ROW_BY_KEY[cat].get(k);if(q) fn(q,k)});
@@ -3572,19 +3730,19 @@ window.TrackerData=(function(){
     });
     setPlayer(d);
     loadMarks(d&&d.player&&d.player.name);   // Mark ticks of this character
+    compare(d);
     renderQuestChips();
     const pl=d&&d.plugins?[...(d.plugins.full||[]),...(d.plugins.light||[])]:null;
     window.TrackerPlugins.set(pl);    // plugin filter, counters, filters and block heights
     rebuildFiltersKeep();             // Failed pill appears / disappears with the save
     if(window.syncMiniProfile) window.syncMiniProfile();
+    if(window.SettingsBox) window.SettingsBox.refresh();   // Mark ticks and Progress Changed of this save
   }
   function clear(){ load(null); }
   return {load,clear};
 })();
 
-/* ============================================================
-   Choose .ess - fixed width + file-loaded state
-   ============================================================ */
+/* Choose .ess button: fixed width, file-loaded state */
 const chooseBtn=document.getElementById('chooseBtn');
 const chooseLabel=document.getElementById('chooseLabel');
 const essInput=document.getElementById('essInput');
@@ -3610,9 +3768,7 @@ essInput.addEventListener('change',()=>{
   TrackerLoader.pick(f);
 });
 
-/* ============================================================
-   sticky-shell scroll buttons
-   ============================================================ */
+/* sticky-shell scroll buttons */
 document.getElementById('scrollTopBtn').addEventListener('click',()=>{
   window.scrollTo({top:0,behavior:scrollBehavior()});
 });
@@ -3624,9 +3780,7 @@ document.getElementById('scrollBottomBtn').addEventListener('click',()=>{
   if('onscrollend' in window) window.addEventListener('scrollend',()=>setTimeout(fix,30),{once:true}); else setTimeout(fix,900);
 });
 
-/* ============================================================
-   Search results, sticky header and tabs
-   ============================================================ */
+/* search results, sticky header and tabs */
 function initV4(){
   const wrap=document.querySelector('.panel').parentElement;
   // search results in tab order (hidden panels right after Skyrim)
@@ -3677,7 +3831,6 @@ function initV4(){
   document.querySelectorAll('.stat[data-go]').forEach(s=>{
     const go=()=>{activateTab(s.dataset.go);window.scrollTo({top:0,behavior:scrollBehavior()})};
     s.addEventListener('click',go);
-    s.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}});
   });
 
   // collapse / expand all, per section
@@ -3701,14 +3854,8 @@ function initV4(){
   }catch(e){applyAllFilters()}
 }
 
-/* ============================================================
-   loader API, used by the app:
-     start(fileName)          show the loading card
-     stage(index)             stage 0..13 started
-     done()                   everything read, open the tracker
-     fail(kind, index, what)  kind: 'not_save' | 'corrupt' | 'category' | 'unknown'
-   In a plain browser a picked .tracker.json is loaded into the page.
-   ============================================================ */
+/* loader API for the app: start(fileName), stage(0..13), done(), fail(kind, index, what);
+   kind: 'not_save' | 'corrupt' | 'category' | 'unknown'. In a browser a .tracker.json can be picked */
 const TrackerLoader=(function(){
   const STAGES=['Reading save','Decompressing','Plugins','Change forms','Quests','Locations','Spells','Shouts','Enchanting','Ingredients','Perks','Collectibles','Books','Building tracker'];
   // minimum time per stage
@@ -3887,8 +4034,9 @@ window.TrackerLoader=TrackerLoader;
   function setDense(on){
     document.body.classList.toggle('dense',on);
     document.querySelectorAll('.dn-btn').forEach(b=>{b.classList.toggle('on',on);b.title=on?'Normal rows':'Compact rows';b.setAttribute('aria-label',b.title)});
-    try{localStorage.setItem(KEY,on?'1':'0')}catch(e){}
+    try{if(on)localStorage.setItem(KEY,'1');else localStorage.removeItem(KEY)}catch(e){}
   }
+  window.setDense=setDense;
   document.querySelectorAll('.sec-tools').forEach(t=>{
     const b=document.createElement('button');b.className='icon-pill dn-btn';b.type='button';b.innerHTML=ROWS;
     b.addEventListener('click',()=>setDense(!document.body.classList.contains('dense')));t.appendChild(b);
@@ -3897,9 +4045,7 @@ window.TrackerLoader=TrackerLoader;
   setDense(on);
 })();
 
-/* ============================================================
-   Tooltips and the overall completion
-   ============================================================ */
+/* tooltips and the overall completion */
 (function(){
   const num=el=>{const x=parseInt((el&&el.textContent)||'0',10);return isNaN(x)?0:x};
   const fmt=n=>n.toLocaleString('en-US');
@@ -3933,7 +4079,7 @@ window.TrackerLoader=TrackerLoader;
   const xpP=()=>{const m=+lb.dataset.xpMax||0;return m?Math.min((+lb.dataset.xp||0)/m,1):0};
   const paintRing=()=>ring.querySelector('.arc').setAttribute('stroke-dashoffset',(C*(1-xpP())).toFixed(3));
   paintRing();new MutationObserver(paintRing).observe(lb,{attributes:true,attributeFilter:['data-xp','data-xp-max','data-level']});
-  tipOn(ring,()=>'Level <b>'+(lb.dataset.level||'')+'</b> &nbsp;·&nbsp; XP <b>'+fmt(+lb.dataset.xp||0)+'</b> / '+fmt(+lb.dataset.xpMax||0)+' &nbsp;·&nbsp; <b>'+Math.floor(xpP()*100)+'%</b> to next level');
+  tipOn(ring,()=>'Level <b>'+(lb.dataset.level||'')+'</b> &nbsp;·&nbsp; XP <b>'+fmt(+lb.dataset.xp||0)+'</b> / '+fmt(+lb.dataset.xpMax||0)+' &nbsp;·&nbsp; <b>'+fmt(Math.max(0,Math.ceil((+lb.dataset.xpMax||0)-(+lb.dataset.xp||0))))+' XP</b> to next level');
 
   /* completion bar in place of the level bar */
   const prog=document.createElement('div');prog.className='prog';
@@ -3965,9 +4111,7 @@ window.TrackerLoader=TrackerLoader;
   relayout();
 })();
 
-/* ============================================================
-   Mark chip: a click toggles Mark / Done on that row; saved per character
-   ============================================================ */
+/* Mark chip: a click toggles Mark / Done; saved per character */
 function rebuildFiltersKeep(){
   const a=document.querySelector('.panel.active');
   if(!a) return;
@@ -3990,9 +4134,7 @@ document.addEventListener('click',e=>{
   q.classList.remove('m-flash');void q.offsetWidth;q.classList.add('m-flash');
 });
 
-/* ============================================================
-   Townsfolk Requests and Hidden Bosses buttons: open the panel, again -> Skyrim
-   ============================================================ */
+/* Townsfolk Requests and Hidden Bosses buttons: open the panel, again -> Skyrim */
 (function(){
   const IC='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c.6-3.3 3-5 6-5s5.4 1.7 6 5"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.2c2.6-.2 4.5 1.3 5 4.3"/></svg>';
   const IC_BOSS='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5a8 8 0 0 1 16 0v3.6c0 .9-.6 1.6-1.4 2l-1.4.7v4.7H6.8v-4.7l-1.4-.7C4.6 15.7 4 15 4 14.1z"/><path d="M10.4 21.5v-2.4M13.6 21.5v-2.4"/><circle cx="8.8" cy="11.3" r="1.9" fill="currentColor" stroke="none"/><circle cx="15.2" cy="11.3" r="1.9" fill="currentColor" stroke="none"/></svg>';
@@ -4063,6 +4205,7 @@ document.addEventListener('click',e=>{
   const BASE0=(window.devicePixelRatio||1)/(window.__STE_ZOOM__||1);
   const base=()=>window.__STE_SCALE__||BASE0;
   let last=Math.round((window.__STE_ZOOM__||1)*100),timer=0;
+  window.zoomRatio=()=>(window.devicePixelRatio||1)/base();
   const snap=p=>STEPS.reduce((a,b)=>Math.abs(b-p)<Math.abs(a-p)?b:a);
   function show(p,r){
     val.textContent=p+'%';
@@ -4073,9 +4216,189 @@ document.addEventListener('click',e=>{
   }
   el.addEventListener('mouseleave',()=>{clearTimeout(timer);timer=setTimeout(()=>el.classList.remove('on'),800)});
   window.addEventListener('resize',()=>{
-    const r=(window.devicePixelRatio||1)/base(),p=snap(Math.round(r*100));
+    const r=window.zoomRatio(),p=snap(Math.round(r*100));
     if(p!==last){last=p;show(p,r)}
   });
+})();
+
+/* Progress Changed box (F5); keeps its size at any page zoom */
+window.ProgressBox=(function(){
+  const box=document.createElement('div');box.className='pg-box';
+  const ORDER={failed:0,done:1,not:2};   // a failed quest first: it needs attention
+  box.innerHTML='<div class="tip-head"><span class="tip-title">Progress changed</span></div>'
+    +'<ul class="pg-list"></ul><div class="pg-empty"><div class="t">Nothing found</div></div>'
+    +'<div class="pg-foot"><span class="vs"></span><button class="pg-hide" type="button">Hide</button></div>';
+  document.body.appendChild(box);
+  const list=box.querySelector('.pg-list'),vs=box.querySelector('.vs');
+  // the same magnifier as the page's "Nothing found"
+  box.querySelector('.pg-empty').prepend(document.querySelector('#emptyState .ic').cloneNode(true));
+  const tabName=q=>{const p=q.closest('.panel').dataset.panel,t=document.querySelector('.tab[data-tab="'+p+'"],.pill[data-tab="'+p+'"]');return t?t.textContent.trim():p};
+  let last=null;   // {items, from} of the last comparison
+  const fit=()=>{
+    const r=window.zoomRatio();
+    box.style.transform='scale('+(1/r)+')';
+    box.style.height='calc((100vh - 28px) * '+r+')';
+  };
+  function show(items,from){
+    last={items:items.sort((a,b)=>ORDER[a.kind]-ORDER[b.kind]),from};
+    render();fit();
+  }
+  // also called when the language changes: the names follow it
+  function render(){
+    if(!last) return;
+    const {items,from}=last;
+    list.innerHTML='';
+    items.forEach(({q,kind})=>{
+      const li=document.createElement('li');li.className=kind;
+      li.innerHTML=ST[kind].icon+'<span class="t"><span class="n"></span><span class="s"></span></span>';
+      // the row's name: same font and language, no search marks
+      const qn=q.querySelector('.q-n'),n=li.querySelector('.n');
+      n.innerHTML=qn.dataset.raw??qn.innerHTML;
+      if(qn.lang) n.lang=qn.lang;
+      li.querySelector('.s').textContent=tabName(q);
+      list.appendChild(li);
+    });
+    vs.innerHTML='<b>'+items.length+(items.length===1?' change':' changes')+'</b><span>Compared to save #'+from+'</span>';
+    box.classList.toggle('empty-on',!items.length);list.scrollTop=0;
+    // the full name on hover, only where it is cut short
+    list.querySelectorAll('.n').forEach(n=>{if(n.scrollWidth>n.clientWidth) n.title=n.textContent});
+  }
+  function clear(){last=null;box.classList.remove('on')}
+  const hide=()=>box.classList.remove('on');
+  box.querySelector('.pg-hide').addEventListener('click',hide);
+  // the wheel over the box never scrolls the page (Ctrl + wheel still zooms)
+  box.addEventListener('wheel',e=>{
+    if(e.ctrlKey) return;
+    if(!list.contains(e.target)||list.scrollHeight<=list.clientHeight) e.preventDefault();
+  },{passive:false});
+  window.addEventListener('resize',()=>{if(last) fit()});
+  // F5 shows and hides the box, Esc closes it
+  document.addEventListener('keydown',e=>{
+    if(e.key==='Escape'){box.classList.remove('on');return}
+    if(e.key!=='F5') return;
+    e.preventDefault();
+    if(last&&!e.repeat){fit();if(box.classList.toggle('on')) window.SettingsBox.hide()}
+  });
+  return {show,clear,render,hide,has:()=>!!last};
+})();
+
+/* Settings box (F6, gear button); the mirror of Progress Changed on the right */
+window.SettingsBox=(function(){
+  const GEAR='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'
+    +'<path d="M9.17 5.16L9.87 2.23L14.13 2.23L14.83 5.16L16.5 6.13L19.4 5.27L21.53 8.96L19.34 11.03L19.34 12.97L21.53 15.04L19.4 18.73L16.5 17.87L14.83 18.84L14.13 21.77L9.87 21.77L9.17 18.84L7.5 17.87L4.6 18.73L2.47 15.04L4.66 12.97L4.66 11.03L2.47 8.96L4.6 5.27L7.5 6.13Z"/><circle cx="12" cy="12" r="3.2"/></svg>';
+  const row=(id,name,desc,ctl)=>'<div class="st-row" data-r="'+id+'"><span class="t"><span class="n">'+name+'</span>'+(desc!=null?'<span class="d">'+desc+'</span>':'')+'</span>'+ctl+'</div>';
+  const btn=(a,l)=>'<button class="st-btn" type="button" data-a="'+a+'">'+l+'</button>';
+  const CHECK='<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg>';
+  const cb=a=>'<button class="st-cb" type="button" data-a="'+a+'">'+CHECK+'</button>';
+  const box=document.createElement('div');box.className='st-box';
+  box.innerHTML='<div class="tip-head"><span class="tip-title">Settings</span></div><div class="st-body">'
+    +'<div class="st-sec"><div class="st-h">Language</div><ul class="st-lang"></ul></div>'
+    +'<div class="st-sec"><div class="st-h">Mark</div>'+row('mark','Reset Mark ticks','',btn('mark','Reset'))+'</div>'
+    +'<div class="st-sec"><div class="st-h">View</div>'+row('eid','Show Editor IDs',null,cb('eid'))+'</div>'
+    +'<div class="st-sec"><div class="st-h">Tools</div>'
+      +row('data','Open data folder','Settings, error log',btn('data','Open'))
+      +row('pc','Reset Progress Changed','Clears the list of changes',btn('pc','Reset'))
+      +row('reset','Reset all settings','Except Mark ticks',btn('reset','Reset'))
+      +row('export','Export not done','Entries not done, as a CSV file',btn('export','Export'))+'</div>'
+    +'</div><div class="st-foot"><span class="vs"><b></b><span></span></span><button class="pg-hide" type="button">Hide</button></div>';
+  document.body.appendChild(box);
+  const R=id=>box.querySelector('.st-row[data-r="'+id+'"]'),A=a=>box.querySelector('[data-a="'+a+'"]');
+  const vb=box.querySelector('.vs b'),vs=box.querySelector('.vs span');
+  vb.textContent='STE'+(window.__STE_VERSION__?' v'+window.__STE_VERSION__:'');
+  const NOTE='Skyrim Tracker Extreme';vs.textContent=NOTE;
+  // a short result line in the footer, then the name again
+  let msgT=null;
+  function note(t){vs.textContent=t;vs.classList.add('msg');clearTimeout(msgT);msgT=setTimeout(()=>{vs.textContent=NOTE;vs.classList.remove('msg')},2600)}
+  // buttons that act at once ask first: the second click within 3 s does it
+  function confirmClick(b,fn){
+    if(b.classList.contains('ask')){b.classList.remove('ask');b.textContent=b.dataset.l;fn();return}
+    b.dataset.l=b.textContent;b.textContent='Sure?';b.classList.add('ask');
+    setTimeout(()=>{if(b.classList.contains('ask')){b.classList.remove('ask');b.textContent=b.dataset.l}},3000);
+  }
+  // the gear takes the place of the language button
+  const gear=document.createElement('button');gear.className='theme-btn set-btn';gear.type='button';gear.title='Settings (F6)';gear.innerHTML=GEAR;
+  document.querySelector('.topbar > .right').append(gear);
+  const fit=()=>{
+    const r=window.zoomRatio();
+    box.style.transform='scale('+(1/r)+')';
+    box.style.height='calc((100vh - 28px) * '+r+')';
+  };
+  const app=window.SteApp||{};
+  // View: Editor IDs on the right of the rows (search still finds them when hidden)
+  const EID_KEY='skyrim-tracker-eid';
+  const showEid=()=>!document.body.classList.contains('no-eid');
+  function setEid(on){
+    document.body.classList.toggle('no-eid',!on);
+    try{if(on)localStorage.removeItem(EID_KEY);else localStorage.setItem(EID_KEY,'0')}catch(e){}
+  }
+  try{if(localStorage.getItem(EID_KEY)==='0') document.body.classList.add('no-eid')}catch(e){}
+  function refresh(){
+    const n=markOwner==='-'?0:MARK_DONE.size;
+    R('mark').querySelector('.d').textContent=markOwner==='-'?'Load a save to check':markOwner+': '+n+(n===1?' tick':' ticks');
+    A('mark').disabled=!n;
+    A('pc').disabled=!window.ProgressBox.has();
+    A('eid').classList.toggle('on',showEid());
+  }
+  function show(){refresh();fit();box.classList.add('on');window.ProgressBox.hide()}
+  function hide(){box.classList.remove('on')}
+  gear.addEventListener('click',()=>{box.classList.contains('on')?hide():show();gear.blur()});
+  box.querySelector('.pg-hide').addEventListener('click',hide);
+  box.addEventListener('click',e=>{
+    const b=e.target.closest('[data-a]');if(!b) return;
+    switch(b.dataset.a){
+      case 'eid':setEid(!showEid());refresh();break;
+      case 'mark':confirmClick(b,()=>{
+        MARK_DONE.clear();saveMarks();renderQuestChips();refreshAll();applyAllFilters();
+        if(window.syncMiniProfile) window.syncMiniProfile();
+        refresh();note('Mark ticks reset');
+      });break;
+      case 'export':exportNotDone();break;
+      case 'data':if(app.openData){app.openData();note('Opened in Explorer')}break;
+      case 'pc':window.ProgressBox.clear();refresh();note('Progress Changed reset');break;
+      case 'reset':confirmClick(b,()=>{resetSettings();refresh();note('Settings reset')});break;
+    }
+  });
+  // the rows of the global "Not done" filter, one line per row, in tab order
+  function exportNotDone(){
+    const csv=v=>/[;"\r\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;
+    const lines=['Tab;Block;Name;ID'];
+    SEARCH_ORDER.forEach(p=>{
+      const panel=document.querySelector('.panel[data-panel="'+p+'"]');if(!panel) return;
+      const tab=(document.querySelector('.tab[data-tab="'+p+'"],.pill[data-tab="'+p+'"]')||{}).textContent||HIDDEN_LABELS[p]||p;
+      panel.querySelectorAll('.q').forEach(q=>{
+        if(!rowStatuses(q).some(s=>GLOBAL_NOT.includes(s))) return;
+        const blocks=[];let c=q.parentElement.closest('.cat');
+        while(c){blocks.unshift(c.querySelector(':scope > .cat-h .cat-t').textContent.replace('▶','').trim());c=c.parentElement.closest('.cat')}
+        const n=q.querySelector('.q-n'),id=q.querySelector('.q-id');
+        lines.push([tab.trim(),blocks.join(' / '),n?n.textContent.trim():'',id?id.textContent.trim():q.dataset.key||''].map(csv).join(';'));
+      });
+    });
+    const name='STE not done'+(markOwner!=='-'?' - '+markOwner:'')+'.csv';
+    if(app.exportCsv) app.exportCsv(name,'\ufeff'+lines.join('\r\n')+'\r\n').then(ok=>{if(ok) note((lines.length-1)+' entries exported')});
+  }
+  // theme, compact rows, language, filters and View; the open tab and Mark ticks stay
+  function resetSettings(){
+    if(!document.body.classList.contains('theme-parchment')) applyTheme('light');
+    try{localStorage.removeItem(THEME_KEY)}catch(e){}
+    window.setDense(false);
+    window.setLanguage('EN');
+    try{localStorage.removeItem(FILTER_KEY)}catch(e){}
+    rebuildFiltersKeep();
+    setEid(true);
+  }
+  addEventListener('resize',()=>{if(box.classList.contains('on')) fit()});
+  box.addEventListener('wheel',e=>{
+    if(e.ctrlKey) return;
+    const b=box.querySelector('.st-body');
+    if(!b.contains(e.target)||b.scrollHeight<=b.clientHeight) e.preventDefault();
+  },{passive:false});
+  document.addEventListener('keydown',e=>{
+    if(e.key==='Escape'){hide();return}
+    if(e.key!=='F6') return;
+    e.preventDefault();
+    if(!e.repeat) box.classList.contains('on')?hide():show();
+  });
+  return {show,hide,refresh,langList:box.querySelector('.st-lang')};
 })();
 </script>
 
@@ -4128,7 +4451,6 @@ document.addEventListener('click',e=>{
     queue=[];enqueue([...document.querySelectorAll('.panel')].filter(p=>!open.includes(p)),700);
   }
   function active(){measure(blocksOf(openPanels()))}
-  window.steMeasureBlocks=()=>measure(blocksOf([...document.querySelectorAll('.panel')]));   // for tests
   const T={};const later=(fn,ms)=>{clearTimeout(T[fn.name]);T[fn.name]=setTimeout(fn,ms)};
   // filters and search change the rows shown: measure the open tab again
   if(typeof applyAllFilters==='function'){const f=applyAllFilters;applyAllFilters=function(){const r=f.apply(this,arguments);later(active,150);return r}}
@@ -4160,13 +4482,11 @@ document.addEventListener('click',e=>{
 })();
 </script>
 <script>
-/* ============================================================
-   Statistics tab, one-click copy, languages
-   ============================================================ */
+/* statistics tab, one-click copy, languages */
 (function(){
   const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 
-  /* ---------- copy to the clipboard, with the COPIED badge ---------- */
+  /* copy to the clipboard, with the COPIED badge */
   function fallbackCopy(t){
     const ta=document.createElement('textarea');ta.value=t;ta.style.cssText='position:fixed;left:-9999px;top:0';
     document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}catch(e){}ta.remove();
@@ -4197,7 +4517,7 @@ document.addEventListener('click',e=>{
     copied(t.textContent.trim());
   });
 
-  /* ---------- Statistics ---------- */
+  /* Statistics */
   const CHART='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16v-4"/><path d="M11.5 16V8"/><path d="M16 16v-6"/><path d="M20.5 16V5"/></svg>';
   const S16='<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">';
   const IC={
@@ -4256,12 +4576,12 @@ document.addEventListener('click',e=>{
   function statsOpen(){const on=panel.classList.contains('active');document.body.classList.toggle('stats-open',on);btn.classList.toggle('on',on)}
   new MutationObserver(statsOpen).observe(panel,{attributes:true,attributeFilter:['class']});statsOpen();
 
-  /* ---------- languages ---------- */
+  /* languages */
   // the app passes the files from lang\ (main.rs); English is built in
   const LANG_KEY='skyrim-tracker-lang';
   const SECTION={skyrim:'quests',dawnguard:'quests',dragonborn:'quests',subquests:'quests',bosses:'quests',locations:'locations',
     spells:'spells',shouts:'shouts',enchanting:'enchanting',reagents:'ingredients',perks:'perks',books:'books',collectibles:'collectibles'};
-  // lang only on translated names, so JA / ZH get the right system font (page-wide it moves fallback glyphs)
+  // lang only on translated names: JA / ZH get their system font
   const HTML_LANG={JA:'ja',ZH:'zh-Hant',RU:'ru',PL:'pl',DE:'de',ES:'es',IT:'it',FR:'fr'};
   const langs=(Array.isArray(window.__STE_LANGS__)?window.__STE_LANGS__:[]).filter(l=>l&&/^[A-Z]{2}$/.test(l.code)&&l.code!=='EN'&&l.rows)
     .sort((a,b)=>String(a.name).localeCompare(String(b.name)));
@@ -4277,6 +4597,7 @@ document.addEventListener('click',e=>{
   }
   function applyLang(){
     const L=langs.find(l=>l.code===cur),rows=L?L.rows:{};
+    restorePluginNodes();   // rows hidden by the plugin filter get the language too
     document.querySelectorAll('.panel .q').forEach(q=>{
       const n=q.querySelector('.q-n'),sec=SECTION[q.closest('.panel').dataset.panel];
       if(!n||!sec) return;
@@ -4288,38 +4609,29 @@ document.addEventListener('click',e=>{
       if(sec==='shouts') shoutWord(n);
       if(t!==q.dataset.en&&HTML_LANG[cur]) n.lang=HTML_LANG[cur]; else n.removeAttribute('lang');
     });
+    applyPluginFilter();
     if(typeof applyAllFilters==='function') applyAllFilters();
+    if(window.ProgressBox) window.ProgressBox.render();
   }
 
-  const lang=document.createElement('div');lang.className='lang';
-  lang.innerHTML='<button class="theme-btn lang-btn" type="button" title="Language"></button><div class="lang-box"><div class="tip-head"><span class="tip-title">Language</span></div><ul></ul></div>';
-  document.querySelector('.topbar > .right').append(lang);
-  const lbtn=lang.querySelector('.lang-btn'),list=lang.querySelector('ul');
+  // the list lives in the Settings box
+  const list=window.SettingsBox.langList;
   function draw(){
     list.innerHTML=all.map(l=>'<li data-c="'+l.code+'"'+(l.code===cur?' class="on"':'')+'><span>'+esc(l.name)+'</span><span class="c">'+l.code+'</span></li>').join('');
-    lbtn.textContent=cur;
   }
-  function place(){
-    lang.classList.remove('below');
-    if(lang.querySelector('.lang-box').getBoundingClientRect().right>document.documentElement.clientWidth-8) lang.classList.add('below');
-  }
-  lbtn.addEventListener('click',e=>{e.stopPropagation();const on=!lang.classList.contains('open');if(on)place();lang.classList.toggle('open',on)});
-  addEventListener('resize',()=>{if(lang.classList.contains('open'))place()});
-  list.addEventListener('click',e=>{
-    const li=e.target.closest('li');if(!li) return;
-    lang.classList.remove('open');
-    if(li.dataset.c===cur) return;
-    cur=li.dataset.c;
+  function setLanguage(code){
+    if(code===cur||!all.some(l=>l.code===code)) return;
+    cur=code;
     try{if(cur==='EN')localStorage.removeItem(LANG_KEY);else localStorage.setItem(LANG_KEY,cur)}catch(e){}
     draw();applyLang();
-  });
-  document.addEventListener('click',e=>{if(!lang.contains(e.target))lang.classList.remove('open')});
-  // Esc closes the box and blurs the button (no focus frame)
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'){lang.classList.remove('open');if(document.activeElement===lbtn)lbtn.blur()}});
+  }
+  window.setLanguage=setLanguage;   // also Settings - Reset all settings
+  list.addEventListener('click',e=>{const li=e.target.closest('li');if(li) setLanguage(li.dataset.c)});
   draw();
   if(cur!=='EN') applyLang();
   document.querySelectorAll('.panel[data-panel="shouts"] .q .q-n').forEach(shoutWord);
 })();
 </script>
+
 </body>
 </html>

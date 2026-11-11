@@ -38,4 +38,6 @@ Order;Block;Name;Tags;Mode;Required;BaseKeys;BaseEditorIDs;PersistentRefs
 37;Bugs in a Jar;Moth in a Jar;;ANY;1;Skyrim.esm:0FBC3D;dunUniqueMothInJar;
 38;Bugs in a Jar;Purple Butterfly in a Jar;AE;ANY;1;ccbgssse025-advdsgs.esm:12DD3C;ccBGSSSE025_dunUniquePurpleButterflyInJar;
 39;Bugs in a Jar;Torchbug in a Jar;;ANY;1;Skyrim.esm:0FBC3A;dunUniqueFireflyInJar;
-40;Kagrumez Resonance Gems;Kagrumez Resonance Gem;Dragonborn;COUNT;5;Dragonborn.esm:02145A;DLC2DweKagrumezControlGemInv01;
+40;OTHER COLLECTIBLE ITEMS;Diadem of the Savant;;ANY;1;Skyrim.esm:0F9904;dunLabyrinthianMazeCircletReward;
+41;OTHER COLLECTIBLE ITEMS;Notched Pickaxe;;ANY;1;Skyrim.esm:1019D4;dunVolunruudPickaxe;
+42;OTHER COLLECTIBLE ITEMS;Kagrumez Resonance Gem;Dragonborn;COUNT;5;Dragonborn.esm:02145A;DLC2DweKagrumezControlGemInv01;

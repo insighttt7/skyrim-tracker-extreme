@@ -1,5 +1,36 @@
 # Changelog
 
+## v2.1.1 - 2026-11-07
+
+New
+- Progress Changed: load another save of the same character and press F5 to see every entry that changed since the save loaded before it. A cross marks a quest that became failed, a tick what is new, a dashed circle what is no longer done. F5 shows and hides the box, Esc closes it.
+- F4 opens the save dialog, F11 switches full screen.
+- Each tab remembers its status filter between starts, and always opens at its start.
+- The page's browser keys (reload, print, find bar and others) are off; Ctrl + plus, minus and 0 still zoom.
+- Settings: the gear button next to the search (or F6) opens a box on the right, the mirror of Progress Changed. Language (the language list moved here from the language button); Mark - reset the Mark ticks of the loaded character; View - show or hide the Editor IDs; Tools - open the data folder, reset Progress Changed, reset all settings except Mark ticks, and export every entry not done yet as a CSV file. The program version is shown at the bottom.
+- A red "!" in the player panel when the save was made without USSEP, or without USCCP while it has Anniversary Edition content (Creation Club beyond the four free Creations, which USSEP fixes); the tooltip names the missing patch.
+
+Look
+- The level ring tooltip shows the experience left to the next level ("1,885 XP to next level") instead of a percentage.
+- Dark theme: the annotations, the language list and the COPIED and zoom badges use the colour of the blocks; the chosen language is easier to see.
+- The moon of the theme button is drawn smoothly.
+- Loading card: the dashed frame stays in the theme colour while a save is read and turns green once it is loaded; in the light theme the frame is bronze; in the dark theme NO SAVE LOADED and READING YOUR SAVE are in the theme colour.
+- The line under an annotation title lines up with the line of the block behind it.
+- A clicked button no longer shows a focus frame when a key is pressed afterwards.
+
+Fixes
+- Rows hidden because their plugin was not in the save (for example Creation Club quests) kept the old language after the language was switched, and showed it once a save with that plugin was loaded.
+- When the save lacks a Creation Club plugin used by some quest rows (for example ALMSIVI), a Mark tick or Mark all did not change the counters, the filter pills and the percentage in any tab, and in Townsfolk Requests, Hidden Bosses, Dawnguard, Dragonborn and the later Skyrim blocks the tick itself did not show; the ticks were kept and appeared after the next save was loaded.
+- Search across all tabs: after another tab had been opened, the block counters of Locations, Spells, Shouts, Enchanting, Ingredients, Perks, Collectibles and Books showed 0 done (for example Cities 0/10); they now show the real progress.
+- Ingredients: Aloe Vera Leaves counted on games older than 1.6.1130, which do not have them (they came with _ResourcePack.esl in that update), so Ingredients could never reach 100%. The row now shows only when the save has _ResourcePack.esl.
+
+Content - 2281 entries
+- Locations: Riften Docks (Shadowfoot Sanctum Creation).
+- Locations: new Military Camps block with the 16 Civil War camps, 8 of the Imperial Legion and 8 of the Stormcloaks - 436 locations. They follow your side: until you join one all 16 are an Alternative line and count as not discovered; after it your side's camps stay an Alternative line and leave the counter, and the 8 camps of the other side count (the game keeps them on the map once the war is over).
+- Books: 412. Added The Legend of Red Eagle, A Kiss, Sweet Mother, Tamrielic Lore: Revised and Saints and Seducers. Removed 10 journals and notes (Discovering Ruunvald I-IV, Admonition Against Ebony, Crypt of the Heart - Draft, Decree of Monument, Midden Incident Report, Spider Experiment Notes, The Keepers of the Razor).
+- Books: 9 names follow USSEP, for example Death Blow of Ebernanit, The Nirnroot Missive and Where Were You When the Dragon Broke?
+- Collectibles: Diadem of the Savant and Notched Pickaxe, in the new OTHER COLLECTIBLE ITEMS block together with the Kagrumez gems - 46 entries.
+
 ## v2.1.0 - 2026-10-26
 
 New

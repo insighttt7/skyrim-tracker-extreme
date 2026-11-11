@@ -1,6 +1,6 @@
 ==============================================================================
                           SKYRIM TRACKER EXTREME
-                                  v2.1.0
+                                  v2.1.1
                A 100% completion tracker for Skyrim SE / AE
 ==============================================================================
 
@@ -31,8 +31,8 @@ READ THIS FIRST
 * Every category except Quests has an annotation - the small (i) icon next
   to the category title. PLEASE READ THEM. Each one explains the exact
   in-game action that makes an entry count, and some of them are not
-  obvious (for example, a shout counts only after you have used it once,
-  and books count only when placed in one of your homes).
+  obvious (for example, enchantments count only after disenchanting, and
+  books count only when placed in one of your homes).
 
 
 ------------------------------------------------------------------------------
@@ -61,7 +61,7 @@ CONTENTS
 
 Skyrim Tracker Extreme reads your save file (.ess) and shows how far you are
 from 100% completion of Skyrim: quests, locations, spells, shouts,
-enchantments, ingredients, perks, collectibles and books - 2268 entries in
+enchantments, ingredients, perks, collectibles and books - 2281 entries in
 total, each one with its status taken straight from the save.
 
 You pick a save, the tracker reads it in a couple of seconds and fills every
@@ -129,7 +129,16 @@ keeps working, with your settings.
   category. When it finishes, the tracker opens with your data.
 
 * The tracker does not follow the game live. After a new save in the game,
-  click "Choose .ess file" again and pick the new save.
+  click "Choose .ess file" again (or press F4) and pick the new save.
+
+* Progress Changed: after a second save of the same character is loaded,
+  press F5 to see what changed since the save loaded before it:
+      cross         a quest that became failed
+      tick          an entry that is new: done, learned, discovered...
+      dashed circle an entry that is no longer done (an older save)
+  Failed quests come first. The box sits in the top left corner; F5 or
+  Hide closes it, Esc too. Mark ticks are not part of it - they are not in
+  the save. The comparison lasts while the program is open.
 
 * If the file is not a Skyrim save, or the save is damaged or still being
   written by the game, the card says so and you can pick another file.
@@ -149,8 +158,8 @@ Top bar
   - Choose .ess file: loads a save. After loading it shows the save's name.
   - SKYRIM title.
   - Search: searches every category at once by name or by FormID / Editor ID.
-  - Language button (next to the search): the language of the entry names
-    (see chapter 11).
+  - Settings button (the gear next to the search, or F6): opens the
+    Settings box, see below.
 
 Player panel
   - Level ring with your character level and experience.
@@ -164,6 +173,12 @@ Player panel
   - On the right: a small bar for each of those 8 categories.
   - The chart button in the top right corner of the panel opens the
     Statistics page; a second click returns to the tab you were on.
+  - A red "!" next to it: the save was made without USSEP, or without
+    USCCP while it has Anniversary Edition content (Creation Club beyond
+    Fishing, Survival Mode, Rare Curios and Saints & Seducers, which
+    USSEP fixes). Point at it to see which patch is missing. The tables
+    are built for a game with these patches, so some entries may be
+    counted wrong without them (see chapter 2).
 
 Tabs
   - DAWNGUARD, SKYRIM, DRAGONBORN: the quest lists.
@@ -175,6 +190,8 @@ Filter pills (under the tabs)
     opposites, depending on the category), Optional, Alternative line,
     Failed, Mark. Each pill shows how many entries it holds. Pills appear
     only when the current tab has such entries.
+  - Each tab remembers the pill you picked, also after a restart.
+  - A tab always opens at its start, wherever you were on the last one.
 
 Section tools (right side of each section title)
   - Collapse all / expand all blocks.
@@ -193,6 +210,26 @@ Click one of the 8 small bars in the player panel to open that category.
 Click an entry name, or the Editor ID of a quest, to copy it to the
 clipboard. A COPIED badge in the top right corner shows what was copied.
 
+Settings box (gear button or F6)
+  It opens on the right side of the window, the mirror of Progress Changed;
+  only one of the two boxes is open at a time. F6, Hide or Esc closes it.
+  - LANGUAGE: the language of the entry names (see chapter 11).
+  - MARK - Reset Mark ticks: removes all Mark ticks of the character whose
+    save is loaded. The button asks "Sure?" first: click it again within
+    3 seconds.
+  - VIEW - Show Editor IDs: shows or hides the Editor ID / FormID on the
+    right of every row. The search still finds them when they are hidden.
+  - TOOLS
+      Open data folder        settings.json and error.log in Explorer.
+      Reset Progress Changed  clears the list of changes.
+      Reset all settings      theme, compact rows, language, the filter of
+                              each tab and Show Editor IDs go back to the
+                              start; Mark ticks stay. It asks "Sure?" first.
+      Export not done         saves every entry that is not done yet as a
+                              CSV file (Tab;Block;Name;ID) that Excel opens;
+                              the names are in the chosen language.
+  The program version is shown at the bottom of the box.
+
 Statistics page
   - Your favourite weapon, spell, school of magic and shout, each with how
     many of your last 100 uses it took.
@@ -207,7 +244,12 @@ Statistics page
 ==============================================================================
 
   Ctrl + F                Jump to the search field.
-  Esc                     While typing in the search field: clears the
+  F4                      Choose a save (the same as "Choose .ess file").
+  F5                      Show / hide Progress Changed (see chapter 4).
+  F6                      Show / hide the Settings box (see chapter 5).
+  F11                     Full screen on / off.
+  Esc                     Closes Progress Changed and the Settings box.
+                          While typing in the search field: clears the
                           search and leaves the field.
   Page Up / Page Down     Scroll the page one screen up / down.
   Home / End              Jump to the top / bottom of the page.
@@ -218,6 +260,9 @@ Statistics page
 
 Page Up, Page Down, Home, End and the arrows scroll the page when the search
 field is not active - press Esc first if you were typing in it.
+
+The usual browser keys (reload, print, find bar and so on) do nothing in the
+tracker.
 
 
 ==============================================================================
@@ -322,15 +367,39 @@ HIDDEN BOSSES
   progress.
 
 ------------------------------------------------------------------------------
-LOCATIONS - 419 map locations in 36 blocks
+LOCATIONS - 436 map locations in 37 blocks
 ------------------------------------------------------------------------------
 
   A location counts as Discovered when you have found it in the game - when
-  you can fast travel to it. A marker only shown on the map by a note or a
-  quest does not count yet.
-  Annotation: travel within sight of the location to discover it. Locations
-  that are shown on the map from the very start, like the big cities, count
-  automatically.
+  you can fast travel to it.
+  Annotation: travel within sight of the location to discover it. Helgen is
+  the only location that counts from the very start.
+
+  Military Camps: 8 camps of the Imperial Legion and 8 of the Stormcloaks.
+  The game gives every camp to one side of the Civil War, and when the war
+  is over it removes all the camps of the winning side from the map - only
+  the camps of the losing side stay open for fast travel. So the camps
+  follow your side:
+    - Before you join a side, all 16 camps show "Alternative line" and all
+      count as not discovered, even the ones you have already found.
+    - Once you join the Imperial Legion or the Stormcloaks, your side's
+      camps stay "Alternative line" and leave the counter; the 8 camps of
+      the other side count as usual, and the ones you have already found
+      show Discovered at once.
+  The counter is 436 before you join a side and 428 after.
+
+  IMPORTANT: when the Civil War and all other quests are completed, the map
+  has exactly 428 locations you can fast travel to - with USSEP (it adds the
+  map marker of The Chill) and all Anniversary Edition content. Without the
+  Anniversary Edition content it is 412. Not more, not less.
+  The "Locations Discovered" line in the game's General Stats can be higher
+  than the tracker. The game counts every location you have ever discovered
+  over the whole playthrough and never takes one back: once discovered, a
+  location stays in your save file and in that number forever, even if it
+  is no longer on your map and you can no longer fast travel to it. Camps
+  that disappear when the war ends are the usual example.
+  The tracker shows your real, current progress: the locations you can fast
+  travel to right now.
 
 ------------------------------------------------------------------------------
 SPELLS - 167 spells
@@ -355,10 +424,11 @@ SHOUTS - 27 shouts, 81 Words of Power
 
   Every word is its own row. The top bar counts shouts with all 3 words
   learned.
-  Annotation - IMPORTANT: the game writes a word into the save only after
-  you have used the shout. Learn the word at a Word Wall, unlock it with a
-  dragon soul AND shout it at least once. Use every shout once after
-  learning new words.
+  A word counts once it is learned at a Word Wall and unlocked with a
+  dragon soul. If a word you have learned and unlocked is still not
+  counted, use that shout once and save again - some words are written
+  into the save only after the shout has been used. Shouts that are
+  already counted do not need to be used.
 
 ------------------------------------------------------------------------------
 ENCHANTING - 57 enchantment effects
@@ -389,13 +459,14 @@ PERKS - 282 rows
   finishing their quest.
 
 ------------------------------------------------------------------------------
-COLLECTIBLES - 40 rows in 5 blocks, 44 entries
+COLLECTIBLES - 42 rows in 5 blocks, 46 entries
 ------------------------------------------------------------------------------
 
   Paragons (5), Dragon Claws (12), Dragon Priest Masks (14), Bugs in a
-  Jar (8), Kagrumez Resonance Gems (5 gems in one row, shown as 5 gem
-  icons; every gem counts on its own in Collectibles and in the overall
-  progress, so the category has 44 entries).
+  Jar (8), Other Collectible Items: Diadem of the Savant, Notched Pickaxe
+  and the Kagrumez Resonance Gems (5 gems in one row, shown as 5 gem icons;
+  every gem counts on its own in Collectibles and in the overall progress,
+  so the category has 46 entries).
   Annotation - IMPORTANT: an item counts only when it is placed in one of
   the 8 tracked homes - on a display, in a container or on a mannequin:
       Breezehome, Proudspire Manor, Honeyside, Vlindrel Hall, Hjerim,
@@ -403,7 +474,7 @@ COLLECTIBLES - 40 rows in 5 blocks, 44 entries
   Items you only carry in your inventory do not count.
 
 ------------------------------------------------------------------------------
-BOOKS - 418 books (90 skill books + 328 other books)
+BOOKS - 412 books (90 skill books + 322 other books)
 ------------------------------------------------------------------------------
 
   Skill books are grouped by skill, 5 per skill. Journals, notes, spell
@@ -469,6 +540,8 @@ percentage count only what your game actually has. With the full
 Anniversary Edition everything is shown; with Skyrim SE without Creation
 Club content, all AE entries (and the AE section of the Skyrim tab) disappear
 on their own.
+The same goes for Aloe Vera Leaves: they came with _ResourcePack.esl in game
+update 1.6.1130 and are hidden on older versions of the game.
 
 
 ==============================================================================
@@ -489,8 +562,8 @@ Each language is a separate download on the Nexus page, "STE - DE.zip",
      Skyrim Tracker Extreme.exe. It holds a "lang" folder with one .json
      file, which goes into the "lang" folder of the tracker.
   2. Restart the tracker.
-  3. Click the language button next to the search box and pick the
-     language. Your choice is remembered.
+  3. Open Settings (the gear next to the search box, or F6) and pick the
+     language under LANGUAGE. Your choice is remembered.
 
 Only the entry names change; the rest of the interface stays in English.
 Names a language file does not translate stay in English. The search finds
@@ -507,14 +580,16 @@ to data\error.log.
 
 Everything is stored in the "data" folder next to the program:
 
-  data\settings.json   theme, language, last opened tab, compact rows, the
-                       last save folder, the window size, the zoom and your
-                       Mark ticks
+  data\settings.json   theme, language, last opened tab, the filter of each
+                       tab, compact rows, Show Editor IDs, the last save
+                       folder, the window size, the zoom and your Mark ticks
   data\error.log       appears only if something went wrong
 
 The window always opens maximized. If you restore it to a smaller size, that
 size is remembered.
 
+Settings - Open data folder opens this folder. Settings - Reset all settings
+goes back to the start without touching your Mark ticks.
 To start from scratch, close the program and delete the "data" folder.
 To keep your Mark ticks when you update the program, copy the "data" folder
 into the new version.
@@ -536,8 +611,10 @@ The window stays empty
 
 A quest, word or item I have is not counted
   - Read the annotation of that category first - most cases are explained
-    there (shouts must be used once, books and collectibles must be in a
-    tracked home, enchantments must be disenchanted).
+    there (books and collectibles must be in a tracked home, enchantments
+    must be disenchanted).
+  - A learned and unlocked word that is not counted: use that shout once
+    and save again.
   - Make sure you loaded the newest save.
   - Check that USSEP and USCCP are installed and that no mod changes that
     content.

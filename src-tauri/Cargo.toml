@@ -1,6 +1,6 @@
 [package]
 name = "skyrim-tracker-extreme"
-version = "2.1.0"
+version = "2.1.1"
 edition = "2021"
 description = "Skyrim Tracker Extreme"
 license-file = "../LICENSE.txt"
@@ -18,3 +18,8 @@ ste-core = { path = "../ste-core" }
 tauri = { version = "2", features = ["custom-protocol"] }
 tauri-plugin-dialog = "2"
 serde_json = "1"
+
+# WebView2 settings the tracker sets itself (same versions as Tauri's own)
+[target.'cfg(windows)'.dependencies]
+webview2-com = "0.39"
+windows = "0.62"

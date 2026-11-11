@@ -1,420 +1,437 @@
-Order;Block;Name;Tags;MarkerFormIDs
-1;All-Maker Stones;Beast Stone;Dragonborn;Dragonborn.esm:020143E3
-2;All-Maker Stones;Earth Stone;Dragonborn;Dragonborn.esm:020143E4
-3;All-Maker Stones;Sun Stone;Dragonborn;Dragonborn.esm:020143E5
-4;All-Maker Stones;Water Stone;Dragonborn;Dragonborn.esm:020143E6
-5;All-Maker Stones;Wind Stone;Dragonborn;Dragonborn.esm:020143E7
-6;Camps;Bujold's Retreat;Dragonborn;Dragonborn.esm:020143D0
-7;Camps;Crowstooth's Camp;AE;ccbgssse059-ba_dragonplate.esl:0500085C
-8;Camps;Dragon Bridge Overlook;;Skyrim.esm:000B2393
-9;Camps;Druadach Redoubt;;Skyrim.esm:0001623C
-10;Camps;Haknir's Shoal;Dragonborn;Dragonborn.esm:020143D5
-11;Camps;Halted Stream Camp;;Skyrim.esm:00016261
-12;Camps;Karthspire;;Skyrim.esm:0001626C
-13;Camps;Karthspire Camp;;Skyrim.esm:000F6698
-14;Camps;Knifepoint Ridge;;Skyrim.esm:0008E03C
-15;Camps;Last Vigil;Dragonborn;Dragonborn.esm:0202C49B
-16;Camps;Robber's Gorge;;Skyrim.esm:000162A7
-17;Camps;Secunda's Kiss;;Skyrim.esm:000162A6
-18;Camps;Serpent's Bluff Redoubt;;Skyrim.esm:000162CC
-19;Castles;Blue Palace;;Skyrim.esm:000C44AB
-20;Castles;Castle Volkihar;Dawnguard;Dawnguard.esm:0200BA4D
-21;Castles;Castle Volkihar Balcony;Dawnguard;Dawnguard.esm:0200D165
-22;Castles;Dragonsreach;;Skyrim.esm:000C44AD
-23;Castles;Mistveil Keep;;Skyrim.esm:000C44B1
-24;Castles;Palace of the Kings;;Skyrim.esm:000C44B3
-25;Castles;Understone Keep;;Skyrim.esm:000C44AF
-26;Caves;Ashfall's Tear;AE;ccasvsse001-almsivi.esm:050BC826
-27;Caves;Benkongerike;Dragonborn;Dragonborn.esm:020143BE
-28;Caves;Blackbone Isle;AE;ccbgssse031-advcyrus.esm:05000F6B|ccbgssse031-advcyrus.esm:05000F74
-29;Caves;Bleakcoast Cave;;Skyrim.esm:0001620F
-30;Caves;Blind Cliff Cave;;Skyrim.esm:00016213
-31;Caves;Bloated Man's Grotto;;Skyrim.esm:00016215
-32;Caves;Bonechill Passage;;Skyrim.esm:000FDA48
-33;Caves;Boulderfall Cave;;Skyrim.esm:000F52D8
-34;Caves;Brinewater Grotto;;Skyrim.esm:0002C652
-35;Caves;Bristleback Cave;Dragonborn;Dragonborn.esm:0201BC48
-36;Caves;Broken Fang Cave;;Skyrim.esm:00016218
-37;Caves;Broken Helm Hollow;;Skyrim.esm:00016219
-38;Caves;Broken Oar Grotto;;Skyrim.esm:000B77C3
-39;Caves;Bronze Water Cave;;Skyrim.esm:00046BAB
-40;Caves;Brood Cavern;;Skyrim.esm:0001621B
-41;Caves;Bruca's Leap Redoubt;;Skyrim.esm:0001621C
-42;Caves;Castle Karstaag Caverns;Dragonborn;Dragonborn.esm:02018ED8
-43;Caves;Castle Karstaag Ruins;Dragonborn;Dragonborn.esm:020143C1
-44;Caves;Chillwind Depths;;Skyrim.esm:00016220
-45;Caves;Cragslane Cavern;;Skyrim.esm:00016226
-46;Caves;Cragwallow Slope;;Skyrim.esm:00016227
-47;Caves;Cronvangr Cave;;Skyrim.esm:00016228
-48;Caves;Crystaldrift Cave;;Skyrim.esm:00016229
-49;Caves;Darkfall Cave;Dawnguard;Dawnguard.esm:02004C0F
-50;Caves;Darkshade;;Skyrim.esm:000B6046
-51;Caves;Darkwater Pass;;Skyrim.esm:0001622C
-52;Caves;Dimhollow Crypt;Dawnguard;Dawnguard.esm:02002F6F
-53;Caves;Duskglow Crevice;;Skyrim.esm:0001623F
-54;Caves;Eldergleam Sanctuary;;Skyrim.esm:000162B7
-55;Caves;Fallowstone Cave;;Skyrim.esm:00016243
-56;Caves;Forebears' Holdout;Dawnguard;Dawnguard.esm:02003CFE
-57;Caves;Forsaken Cave;;Skyrim.esm:00016248
-58;Caves;Frossel;Dragonborn;Dragonborn.esm:020143C5
-59;Caves;Frostmoon Crag;Dragonborn;Dragonborn.esm:020143D1
-60;Caves;Frostroot Cave;AE;ccafdsse001-dwesanctuary.esm:05070E0A
-61;Caves;Glacial Cave;Dragonborn;Dragonborn.esm:020143D7
-62;Caves;Glenmoril Coven;;Skyrim.esm:00016257
-63;Caves;Gloomreach;;Skyrim.esm:00016258
-64;Caves;Graywinter Watch;;Skyrim.esm:00016259
-65;Caves;Greywater Grotto;;Skyrim.esm:0001625A
-66;Caves;Gromm's Pass;AE;ccbgssse040-advobgobs.esl:05000BDF
-67;Caves;Haemar's Shame;;Skyrim.esm:0001625D
-68;Caves;Halldir's Cairn;;Skyrim.esm:00016260
-69;Caves;Hob's Fall Cave;;Skyrim.esm:00016266
-70;Caves;Honeystrand Cave;;Skyrim.esm:00016267
-71;Caves;Hrothmund's Barrow;Dragonborn;Dragonborn.esm:02017BB0
-72;Caves;Liar's Retreat;;Skyrim.esm:00016270
-73;Caves;Lost Echo Cave;;Skyrim.esm:000AF89B
-74;Caves;Lost Knife Hideout;;Skyrim.esm:00016273
-75;Caves;Lower Steepfall Burrow;;Skyrim.esm:000F4FE7
-76;Caves;Moss Mother Cavern;;Skyrim.esm:00016289
-77;Caves;Movarth's Lair;;Skyrim.esm:00016256
-78;Caves;Nightingale Hall;;Skyrim.esm:00047D25
-79;Caves;North Brittleshin Pass;;Skyrim.esm:00016265
-80;Caves;North Cold Rock Pass;;Skyrim.esm:000F5EB1
-81;Caves;Orotheim;;Skyrim.esm:00016291
-82;Caves;Pinemoon Cave;;Skyrim.esm:00016293
-83;Caves;Pinepeak Cavern;;Skyrim.esm:00016294
-84;Caves;Purewater Run;;Skyrim.esm:00032875
-85;Caves;Ravenscar Hollow;;Skyrim.esm:0001629C
-86;Caves;Reachcliff Cave;;Skyrim.esm:0001629D
-87;Caves;Reachcliff Secret Entrance;;Skyrim.esm:0010B2C8
-88;Caves;Reachwater Rock;;Skyrim.esm:0001629E
-89;Caves;Rebel's Cairn;;Skyrim.esm:000B629F
-90;Caves;Red Eagle Redoubt;;Skyrim.esm:0001623D
-91;Caves;Red Scar Cavern;AE;ccbgssse067-daedinv.esm:051D67E3
-92;Caves;Redoran's Retreat;;Skyrim.esm:0001629F
-93;Caves;Redwater Den;Dawnguard;Dawnguard.esm:0200777E
-94;Caves;Rimerock Burrow;;Skyrim.esm:000162A1
-95;Caves;Runoff Cavern;AE;cctwbsse001-puzzledungeon.esm:050038D6
-96;Caves;Ruunvald;Dawnguard;Dawnguard.esm:02007B23
-97;Caves;Septimus Signus's Outpost;;Skyrim.esm:0002D511
-98;Caves;Shadowgreen Cavern;;Skyrim.esm:000162A8
-99;Caves;Shimmermist Cave;;Skyrim.esm:000162A9
-100;Caves;Sightless Pit;;Skyrim.esm:000162B3
-101;Caves;Snapleg Cave;;Skyrim.esm:00068094
-102;Caves;Soljund's Sinkhole;;Skyrim.esm:000162BB
-103;Caves;South Brittleshin Pass;;Skyrim.esm:00082213
-104;Caves;South Cold Rock Pass;;Skyrim.esm:000F5EAF
-105;Caves;Southfringe Sanctum;;Skyrim.esm:00016217
-106;Caves;Steepfall Burrow;;Skyrim.esm:000162BF
-107;Caves;Stillborn Cave;;Skyrim.esm:000162C0
-108;Caves;Stony Creek Cave;;Skyrim.esm:00080F13
-109;Caves;Sunderstone Gorge;;Skyrim.esm:000F5EA8
-110;Caves;Swindler's Den;;Skyrim.esm:00015D4D
-111;Caves;The Chill;;unofficial skyrim special edition patch.esp:0A028852
-112;Caves;Tolvald's Cave;;Skyrim.esm:000162C5
-113;Caves;Uttering Hills Cave;;Skyrim.esm:000162C8
-114;Caves;Varlais Cavern;AE;ccbgssse067-daedinv.esm:051D67E4
-115;Caves;White River Watch;;Skyrim.esm:000162CD
-116;Caves;Wolfskull Cave;;Skyrim.esm:000162D1
-117;Caves;Yngvild;;Skyrim.esm:000162D3
-118;Cities;Dawnstar;;Skyrim.esm:0001773A
-119;Cities;Falkreath;;Skyrim.esm:00017760
-120;Cities;Markarth;;Skyrim.esm:0001C38A
-121;Cities;Morthal;;Skyrim.esm:000177B0
-122;Cities;Raven Rock;Dragonborn;Dragonborn.esm:020143DC
-123;Cities;Riften;;Skyrim.esm:0001C390
-124;Cities;Solitude;;Skyrim.esm:0004D0F4
-125;Cities;Whiterun;;Skyrim.esm:000162CE
-126;Cities;Windhelm;;Skyrim.esm:00038436
-127;Cities;Winterhold;;Skyrim.esm:000177EF
-128;Clearings;Autumnshade Clearing;;Skyrim.esm:0001620C
-129;Clearings;Clearpine Pond;;Skyrim.esm:00016222
-130;Clearings;Clearspring Tarn;;Skyrim.esm:00016223
-131;Clearings;Headwaters of Harstrad;Dragonborn;Dragonborn.esm:02039F96
-132;Clearings;Mara's Eye Pond;;Skyrim.esm:000ECF51
-133;Daedric Shrines;Sacellum of Boethiah;;Skyrim.esm:0004D8DA
-134;Daedric Shrines;Shrine of Azura;;Skyrim.esm:00092496
-135;Daedric Shrines;Shrine of Mehrunes Dagon;;Skyrim.esm:000246A5
-136;Daedric Shrines;Shrine to Peryite;;Skyrim.esm:000AD066
-137;Daedric Shrines;Statue to Meridia;;Skyrim.esm:0001626D
-138;Docks;East Empire Company Warehouse;;Skyrim.esm:0004FEF2
-139;Docks;Icewater Jetty;Dawnguard;Dawnguard.esm:02008E41
-140;Docks;Northshore Landing;Dragonborn;Dragonborn.esm:020143DA
-141;Dragon Lairs;Ancient's Ascent;;Skyrim.esm:00016231
-142;Dragon Lairs;Autumnwatch Tower;;Skyrim.esm:00016233
-143;Dragon Lairs;Bonestrewn Crest;;Skyrim.esm:000162B6
-144;Dragon Lairs;Dragontooth Crater;;Skyrim.esm:00016230
-145;Dragon Lairs;Eldersblood Peak;;Skyrim.esm:00016238
-146;Dragon Lairs;Lost Tongue Overlook;;Skyrim.esm:00016235
-147;Dragon Lairs;Mount Anthor;;Skyrim.esm:0001628A
-148;Dragon Lairs;Northwind Summit;;Skyrim.esm:00016234
-149;Dragon Lairs;Saering's Watch;Dragonborn;Dragonborn.esm:02019D1C
-150;Dragon Lairs;Shearpoint;;Skyrim.esm:00016237
-151;Dragon Lairs;Skyborn Altar;;Skyrim.esm:00016239
-152;Dwarven Ruins;Alftand;;Skyrim.esm:00015D4A
-153;Dwarven Ruins;Arkngthamz;Dawnguard;Dawnguard.esm:02008257
-154;Dwarven Ruins;Avanchnzel;;Skyrim.esm:0001620D
-155;Dwarven Ruins;Bthardamz;;Skyrim.esm:0001621D
-156;Dwarven Ruins;Fahlbtharz;Dragonborn;Dragonborn.esm:020143C2
-157;Dwarven Ruins;Great Lift at Alftand;;Skyrim.esm:000F81DB
-158;Dwarven Ruins;Great Lift at Mzinchaleft;;Skyrim.esm:000F81DA
-159;Dwarven Ruins;Great Lift at Raldbthar;;Skyrim.esm:000F81D9
-160;Dwarven Ruins;Irkngthand;;Skyrim.esm:0001626B
-161;Dwarven Ruins;Kagrenzel;;Skyrim.esm:00080E56
-162;Dwarven Ruins;Kagrumez;Dragonborn;Dragonborn.esm:020143C3
-163;Dwarven Ruins;Mzinchaleft;;Skyrim.esm:0001628B
-164;Dwarven Ruins;Mzulft;;Skyrim.esm:0001628C
-165;Dwarven Ruins;Nchardak;Dragonborn;Dragonborn.esm:020143C9
-166;Dwarven Ruins;Raldbthar;;Skyrim.esm:00090595
-167;Dwarven Ruins;Ruins of Rkund;;Skyrim.esm:000D3939
-168;Dwarven Ruins;Tower of Mzark;;Skyrim.esm:000D30DA
-169;Farms;Brandy-Mug Farm;;Skyrim.esm:00016339
-170;Farms;Goldenhills Plantation;AE;ccvsvsse004-beafarmer.esl:05000B63
-171;Farms;Hlaalu Farm;;Skyrim.esm:00016355
-172;Farms;Hollyfrost Farm;;Skyrim.esm:00016358
-173;Farms;Katla's Farm;;Skyrim.esm:0001635E
-174;Farms;Merryfair Farm;;Skyrim.esm:000268FF
-175;Farms;Old Attius Farm;Dragonborn;Dragonborn.esm:0201A562
-176;Forts;Ashfallow Citadel;Dragonborn;Dragonborn.esm:020143D8
-177;Forts;Fort Frostmoth;Dragonborn;Dragonborn.esm:020143C4
-178;Forts;Highpoint Tower;Dragonborn;Dragonborn.esm:020143D9
-179;Giant Camps;Bleakwind Basin;;Skyrim.esm:00016211
-180;Giant Camps;Blizzard Rest;;Skyrim.esm:00016214
-181;Giant Camps;Broken Limb Camp;;Skyrim.esm:000ECF86
-182;Giant Camps;Cradlecrush Rock;;Skyrim.esm:00016225
-183;Giant Camps;Guldun Rock;;Skyrim.esm:0001625C
-184;Giant Camps;Red Road Pass;;Skyrim.esm:000162A0
-185;Giant Camps;Sleeping Tree Camp;;Skyrim.esm:000162B8
-186;Giant Camps;Steamcrag Camp;;Skyrim.esm:0001623A
-187;Giant Camps;Stonehill Bluff;;Skyrim.esm:000162C1
-188;Giant Camps;Talking Stone Camp;;Skyrim.esm:000162C3
-189;Giant Camps;Tumble Arch Pass;;Skyrim.esm:000162C7
-190;Groves;Ancestor Glade;Dawnguard;Dawnguard.esm:02004BA5
-191;Groves;Evergreen Grove;;Skyrim.esm:00016241
-192;Groves;Giant's Grove;;Skyrim.esm:000D28B7
-193;Groves;Greenspring Hollow;;Skyrim.esm:00016269
-194;Groves;Shrouded Grove;;Skyrim.esm:000162B1
-195;Groves;Witchmist Grove;;Skyrim.esm:000E1B80
-196;Guild Halls;College of Winterhold;;Skyrim.esm:00046BDF
-197;Guild Halls;Dark Brotherhood Sanctuary;;Skyrim.esm:0001C3B0
-198;Guild Halls;Dawnstar Sanctuary;;Skyrim.esm:0005E0A6
-199;Guild Halls;Sky Haven Temple;;Skyrim.esm:0001637C
-200;Guild Halls;Thieves Guild;;Skyrim.esm:00105F3A
-201;Imperial Towers;Abandoned Prison;;Skyrim.esm:000ECF49
-202;Imperial Towers;Falkreath Watchtower;;Skyrim.esm:0004788C
-203;Imperial Towers;Pinefrost Tower;;Skyrim.esm:000EF0BA
-204;Imperial Towers;Refugees' Rest;;Skyrim.esm:000EF570
-205;Imperial Towers;Rift Watchtower;;Skyrim.esm:000D3930
-206;Imperial Towers;Shor's Watchtower;;Skyrim.esm:000D3934
-207;Imperial Towers;Snowpoint Beacon;;Skyrim.esm:000C2EF6
-208;Imperial Towers;Stendarr's Beacon;;Skyrim.esm:00108A58
-209;Imperial Towers;Whitewatch Tower;;Skyrim.esm:000DD99A
-210;Imperial Towers;Widow's Watch Ruins;;Skyrim.esm:000EF0A7
-211;Inns;Nightgate Inn;;Skyrim.esm:00017785
-212;Inns;Old Hroldan Inn;;Skyrim.esm:000177C3
-213;Landmarks;Altar of Thrond;Dragonborn;Dragonborn.esm:020143BD
-214;Landmarks;Bard's Leap Summit;;Skyrim.esm:0001620E
-215;Landmarks;Brodir Grove;Dragonborn;Dragonborn.esm:020143C0
-216;Landmarks;Deep Folk Crossing;;Skyrim.esm:000B238F
-217;Landmarks;Frykte Peak;Dragonborn;Dragonborn.esm:0203A2CB
-218;Landmarks;Gjukar's Monument;;Skyrim.esm:000DED8E
-219;Landmarks;Horker Island;Dragonborn;Dragonborn.esm:020143C7
-220;Landmarks;Hvitkald Peak;Dragonborn;Dragonborn.esm:020365F1
-221;Landmarks;Mortrag Peak;Dragonborn;Dragonborn.esm:0203A2C9
-222;Landmarks;Mount Moesring;Dragonborn;Dragonborn.esm:0203A2C7
-223;Landmarks;Orphan Rock;;Skyrim.esm:00016292
-224;Landmarks;Reachwind Eyrie;;Skyrim.esm:000B23A3|Skyrim.esm:000F5FDE
-225;Landmarks;Ruins of Bthalft;;Skyrim.esm:000D393C
-226;Landmarks;Stalhrim Source;Dragonborn;Dragonborn.esm:020296E0
-227;Landmarks;Throat of the World;;Skyrim.esm:000162C4
-228;Landmarks;Weynon Stones;;Skyrim.esm:000BC0AA
-229;Lighthouses;Frostflow Lighthouse;;Skyrim.esm:00016253
-230;Lighthouses;Solitude Lighthouse;;Skyrim.esm:000C016D
-231;Military Forts;Bloodlet Throne;;Skyrim.esm:00016EB2
-232;Military Forts;Broken Tower Redoubt;;Skyrim.esm:0001621A
-233;Military Forts;Cracked Tusk Keep;;Skyrim.esm:0001625B
-234;Military Forts;Darklight Tower;;Skyrim.esm:0001622A
-235;Military Forts;Driftshade Refuge;;Skyrim.esm:0001623B
-236;Military Forts;Faldar's Tooth;;Skyrim.esm:00016242
-237;Military Forts;Fellglow Keep;;Skyrim.esm:00016244
-238;Military Forts;Fort Amol;;Skyrim.esm:00016249
-239;Military Forts;Fort Dawnguard;Dawnguard;Dawnguard.esm:00013F21|Dawnguard.esm:0000FC6C
-240;Military Forts;Fort Dunstad;;Skyrim.esm:0001624B
-241;Military Forts;Fort Fellhammer;;Skyrim.esm:0001624C
-242;Military Forts;Fort Greenwall;;Skyrim.esm:0001624D
-243;Military Forts;Fort Greymoor;;Skyrim.esm:0001624A
-244;Military Forts;Fort Hraggstad;;Skyrim.esm:0003F510
-245;Military Forts;Fort Kastav;;Skyrim.esm:0001624F
-246;Military Forts;Fort Neugrad;;Skyrim.esm:00016250
-247;Military Forts;Fort Snowhawk;;Skyrim.esm:00016251
-248;Military Forts;Fort Sungard;;Skyrim.esm:00016252
-249;Military Forts;Gallows Rock;;Skyrim.esm:00016254
-250;Military Forts;Harmugstahl;;Skyrim.esm:00016262
-251;Military Forts;High Hrothgar;;Skyrim.esm:00016352
-252;Military Forts;Ilinalta's Deep;;Skyrim.esm:0001626A
-253;Military Forts;Mistwatch;;Skyrim.esm:00016286
-254;Military Forts;Morvunskar;;Skyrim.esm:00016288
-255;Military Forts;Nightcaller Temple;;Skyrim.esm:00017082
-256;Military Forts;Northwatch Keep;;Skyrim.esm:00016290
-257;Military Forts;Treva's Watch;;Skyrim.esm:000162C6
-258;Military Forts;Western Watchtower;;Skyrim.esm:000DB889
-259;Mines;Bilegulch Mine;;Skyrim.esm:00016275
-260;Mines;Broken Tusk Mine;Dragonborn;Dragonborn.esm:020143D4
-261;Mines;Damphall Mine;Dragonborn;Dragonborn.esm:020296DE
-262;Mines;Embershard Mine;;Skyrim.esm:000B6CDF
-263;Mines;Gloombound Mine;;Skyrim.esm:00016349
-264;Mines;Kolskeggr Mine;;Skyrim.esm:0002051D
-265;Mines;Left Hand Mine;;Skyrim.esm:00016364
-266;Mines;Lost Prospect Mine;;Skyrim.esm:000D3938
-267;Mines;Northwind Mine;;Skyrim.esm:000FDBDE
-268;Mines;Whistling Mine;;Skyrim.esm:00016385
-269;Nordic Ruins;Angarvunde;;Skyrim.esm:00015D51
-270;Nordic Ruins;Ansilvund;;Skyrim.esm:00015D56
-271;Nordic Ruins;Arcwind Point;;Skyrim.esm:000F5FEF
-272;Nordic Ruins;Bleak Falls Barrow;;Skyrim.esm:00016232
-273;Nordic Ruins;Bloodskal Barrow;Dragonborn;Dragonborn.esm:020143BF
-274;Nordic Ruins;Champion's Rest;AE;ccbgssse016-umbra.esm:0200CD93
-275;Nordic Ruins;Dead Men's Respite;;Skyrim.esm:0001622E
-276;Nordic Ruins;Deepwood Redoubt;;Skyrim.esm:0001622F
-277;Nordic Ruins;Dustman's Cairn;;Skyrim.esm:000F5B8D
-278;Nordic Ruins;Folgunthur;;Skyrim.esm:00016246
-279;Nordic Ruins;Forelhost;;Skyrim.esm:00016247
-280;Nordic Ruins;Frostmere Crypt;;Skyrim.esm:000162C2
-281;Nordic Ruins;Geirmund's Hall;;Skyrim.esm:00016255
-282;Nordic Ruins;Gyldenhul Barrow;Dragonborn;Dragonborn.esm:020143C6
-283;Nordic Ruins;Hag Rock Redoubt;;Skyrim.esm:0001625E
-284;Nordic Ruins;Hag's End;;Skyrim.esm:0001625F
-285;Nordic Ruins;High Gate Ruins;;Skyrim.esm:00016263
-286;Nordic Ruins;Hillgrund's Tomb;;Skyrim.esm:000162CB
-287;Nordic Ruins;Ironbind Barrow;;Skyrim.esm:0003F076
-288;Nordic Ruins;Kolbjorn Barrow;Dragonborn;Dragonborn.esm:020143CC
-289;Nordic Ruins;Korvanjund;;Skyrim.esm:00016224
-290;Nordic Ruins;Labyrinthian;;Skyrim.esm:0001626E
-291;Nordic Ruins;Lost Valley Redoubt;;Skyrim.esm:00016274
-292;Nordic Ruins;Moldering Ruins;Dawnguard;Dawnguard.esm:0200D0AE
-293;Nordic Ruins;North Shriekwind Bastion;;Skyrim.esm:000A0E46
-294;Nordic Ruins;Ragnvald;;Skyrim.esm:0001629A
-295;Nordic Ruins;Rannveig's Fast;;Skyrim.esm:0001629B
-296;Nordic Ruins;Saarthal;;Skyrim.esm:000162A5
-297;Nordic Ruins;Shroud Hearth Barrow;;Skyrim.esm:0006CCC8
-298;Nordic Ruins;Silent Moons Camp;;Skyrim.esm:000162B4
-299;Nordic Ruins;Silverdrift Lair;;Skyrim.esm:000162B5
-300;Nordic Ruins;Sivdur's Respite;AE;ccbgssse005-goldbrand.esl:03000B86
-301;Nordic Ruins;Snow Veil Sanctum;;Skyrim.esm:0002DDD1
-302;Nordic Ruins;South Shriekwind Bastion;;Skyrim.esm:000B83C8
-303;Nordic Ruins;Twilight Sepulcher;;Skyrim.esm:00016216
-304;Nordic Ruins;Ustengrav;;Skyrim.esm:0001621F
-305;Nordic Ruins;Vahlok's Tomb;Dragonborn;Dragonborn.esm:020143CB
-306;Nordic Ruins;Valthume;;Skyrim.esm:0008D5D6
-307;Nordic Ruins;Volskygge;;Skyrim.esm:000162CA
-308;Nordic Ruins;Volunruud;;Skyrim.esm:00016264
-309;Nordic Ruins;White Ridge Barrow;Dragonborn;Dragonborn.esm:020143CD
-310;Nordic Ruins;Yngol Barrow;;Skyrim.esm:00016271
-311;Nordic Ruins;Ysgramor's Tomb;;Skyrim.esm:000162D2
-312;Nordic Towers;Bannermist Tower;;Skyrim.esm:0004781E
-313;Nordic Towers;Bleakwind Bluff;;Skyrim.esm:000BB47C
-314;Nordic Towers;Cradle Stone Tower;;Skyrim.esm:000B23A1
-315;Nordic Towers;Dead Crone Rock;;Skyrim.esm:0001622D
-316;Nordic Towers;Nilheim;;Skyrim.esm:0001628F
-317;Nordic Towers;Peak's Shade Tower;;Skyrim.esm:00047880
-318;Nordic Towers;Sundered Towers;;Skyrim.esm:000B6295
-319;Nordic Towers;Valtheim Towers;;Skyrim.esm:000162C9
-320;Orc Strongholds;Dushnikh Yal;;Skyrim.esm:0001623E
-321;Orc Strongholds;Largashbur;;Skyrim.esm:0001626F
-322;Orc Strongholds;Mor Khazgur;;Skyrim.esm:00016287
-323;Orc Strongholds;Narzulbur;;Skyrim.esm:0001628D
-324;Passes;Forgotten Vale;Dawnguard;Dawnguard.esm:020088E0
-325;Passes;Moesring Pass;Dragonborn;Dragonborn.esm:020143CE
-326;Passes;Wayward Pass;;Skyrim.esm:000C2EFA
-327;Player Housing;Bloodchill Cavern;AE;cceejsse005-cave.esm:05127259
-328;Player Housing;Heljarchen Hall;Hearthfire;HearthFires.esm:02010DE8
-329;Player Housing;Hendraheim;AE;cceejsse004-hall.esl:05000AFF
-330;Player Housing;Lakeview Manor;Hearthfire;HearthFires.esm:020030AA
-331;Player Housing;Myrwatch;AE;cceejsse002-tower.esl:05000FA2
-332;Player Housing;Tundra Homestead;AE;cceejsse001-hstead.esm:05000B8A
-333;Player Housing;Windstad Manor;Hearthfire;HearthFires.esm:0200B8B0
-334;Ruins;Four Skull Lookout;;Skyrim.esm:000B23A7
-335;Ruins;Hamvir's Rest;;Skyrim.esm:000EE79C
-336;Ruins;Journeyman's Nook;;Skyrim.esm:000EF549
-337;Ruins;Kjenstag Ruins;;Skyrim.esm:000C2EEF
-338;Ruins;Lost Valkygg;;Skyrim.esm:000EAA63
-339;Ruins;North Skybound Watch;;Skyrim.esm:0004B6EB
-340;Ruins;Roadside Ruins;;Skyrim.esm:00047875
-341;Ruins;Skytemple Ruins;;Skyrim.esm:000EF0AE
-342;Ruins;Snowclad Ruins;Dragonborn;Dragonborn.esm:020247C8
-343;Ruins;South Skybound Watch;;Skyrim.esm:000479BB
-344;Ruins;Windward Ruins;;Skyrim.esm:000C2EEC
-345;Ruins;Yorgrim Overlook;;Skyrim.esm:000C33FF
-346;Settlements;Black-Briar Lodge;;Skyrim.esm:000A7CE5
-347;Settlements;Darkwater Crossing;;Skyrim.esm:00017732
-348;Settlements;Goldenglow Estate;;Skyrim.esm:0001A710
-349;Settlements;Honningbrew Meadery;;Skyrim.esm:00038593
-350;Settlements;Kynesgrove;;Skyrim.esm:000177A1
-351;Settlements;Stonehills;;Skyrim.esm:000177E4
-352;Settlements;Thalmor Embassy;;Skyrim.esm:00033E45
-353;Settlements;Thirsk Mead Hall;Dragonborn;Dragonborn.esm:020143E9
-354;Shacks;Abandoned Lodge;Dragonborn;Dragonborn.esm:02017B68
-355;Shacks;Abandoned Shack;;Skyrim.esm:0005254D
-356;Shacks;Alchemist's Shack;;Skyrim.esm:000D3931
-357;Shacks;Angi's Camp;;Skyrim.esm:000CF27D
-358;Shacks;Anise's Cabin;;Skyrim.esm:000D9531
-359;Shacks;Cliffside Retreat;;Skyrim.esm:000B238B
-360;Shacks;Crabber's Shanty;;Skyrim.esm:000E66A7
-361;Shacks;Drelas' Cottage;;Skyrim.esm:000E66AD
-362;Shacks;Froki's Shack;;Skyrim.esm:000D392D
-363;Shacks;Hall of the Vigilant;;Skyrim.esm:000C342A
-364;Shacks;Hrodulf's House;Dragonborn;Dragonborn.esm:020143D6
-365;Shacks;Hunter's Rest;;Skyrim.esm:000F52B2
-366;Shacks;Ironback Hideout;;Skyrim.esm:000EF543
-367;Shacks;Lund's Hut;;Skyrim.esm:000E66A3
-368;Shacks;Meeko's Shack;;Skyrim.esm:000F6F11
-369;Shacks;Pinewatch;;Skyrim.esm:00016295
-370;Shacks;Ramshackle Trading Post;Dragonborn;Dragonborn.esm:02034EE4
-371;Shacks;Riverside Shack;;Skyrim.esm:000ECF4F
-372;Shacks;Traitor's Post;;Skyrim.esm:000C2EE9
-373;Shipwrecks;Dainty Sload;;Skyrim.esm:0007BC2D
-374;Shipwrecks;Hela's Folly;;Skyrim.esm:000162AC
-375;Shipwrecks;Orphan's Tear;;Skyrim.esm:000162B0
-376;Shipwrecks;Pilgrim's Trench;;Skyrim.esm:000162AD
-377;Shipwrecks;The Katariah;;Skyrim.esm:000C4D20
-378;Shipwrecks;Wreck Of The Brinehammer;;Skyrim.esm:000162AB
-379;Shipwrecks;Wreck of the Icerunner;;Skyrim.esm:000162AA
-380;Shipwrecks;Wreck of The Pride of Tel Vos;;Skyrim.esm:000162AE
-381;Shipwrecks;Wreck of the Strident Squall;Dragonborn;Dragonborn.esm:020143CF
-382;Shipwrecks;Wreck of the Winter War;;Skyrim.esm:000162AF
-383;Stables;Markarth Stables;;Skyrim.esm:000E962F
-384;Stables;Riften Stables;;Skyrim.esm:00096A46
-385;Stables;Whiterun Stables;;Skyrim.esm:00072879
-386;Stables;Windhelm Stables;;Skyrim.esm:0009846F
-387;Standing Stones;The Apprentice Stone;;Skyrim.esm:0001BAB9
-388;Standing Stones;The Atronach Stone;;Skyrim.esm:000E0F4C
-389;Standing Stones;The Guardian Stones;;Skyrim.esm:0001BABD
-390;Standing Stones;The Lady Stone;;Skyrim.esm:000DED90
-391;Standing Stones;The Lord Stone;;Skyrim.esm:000E0F47
-392;Standing Stones;The Lover Stone;;Skyrim.esm:0001BABB
-393;Standing Stones;The Ritual Stone;;Skyrim.esm:000DD9D5
-394;Standing Stones;The Serpent Stone;;Skyrim.esm:000E0F69
-395;Standing Stones;The Shadow Stone;;Skyrim.esm:000D3935
-396;Standing Stones;The Steed Stone;;Skyrim.esm:0001BAC0
-397;Standing Stones;The Tower Stone;;Skyrim.esm:000E0ED5
-398;Temples;Temple of Miraak;Dragonborn;Dragonborn.esm:020143CA
-399;Towns;Dragon Bridge;;Skyrim.esm:00017753
-400;Towns;Helgen;;Skyrim.esm:00017780
-401;Towns;Ivarstead;;Skyrim.esm:00017791
-402;Towns;Karthwasten;;Skyrim.esm:0001779A
-403;Towns;Riverwood;;Skyrim.esm:000162A4
-404;Towns;Rorikstead;;Skyrim.esm:000177CC
-405;Towns;Shor's Stone;;Skyrim.esm:000177D7
-406;Towns;Skaal Village;Dragonborn;Dragonborn.esm:020143E2
-407;Towns;Tel Mithryn;Dragonborn;Dragonborn.esm:020143E8
-408;Wheat Mills;Battle-Born Farm;;Skyrim.esm:00016332
-409;Wheat Mills;Chillfurrow Farm;;Skyrim.esm:0001633C
-410;Wheat Mills;Loreius Farm;;Skyrim.esm:00016367
-411;Wheat Mills;Pelagia Farm;;Skyrim.esm:00016373
-412;Wheat Mills;Salvius Farm;;Skyrim.esm:00016376
-413;Wheat Mills;Sarethi Farm;;Skyrim.esm:00016379
-414;Wheat Mills;Snow-Shod Farm;;Skyrim.esm:0001634C
-415;Wood Mills;Anga's Mill;;Skyrim.esm:000162D6
-416;Wood Mills;Half-Moon Mill;;Skyrim.esm:00016370
-417;Wood Mills;Heartwood Mill;;Skyrim.esm:0001634F
-418;Wood Mills;Mixwater Mill;;Skyrim.esm:0001636D
-419;Wood Mills;Solitude Sawmill;;Skyrim.esm:00016382
+Order;Block;SubBlock;Name;Tags;MarkerFormIDs
+1;All-Maker Stones;;Beast Stone;Dragonborn;Dragonborn.esm:020143E3
+2;All-Maker Stones;;Earth Stone;Dragonborn;Dragonborn.esm:020143E4
+3;All-Maker Stones;;Sun Stone;Dragonborn;Dragonborn.esm:020143E5
+4;All-Maker Stones;;Water Stone;Dragonborn;Dragonborn.esm:020143E6
+5;All-Maker Stones;;Wind Stone;Dragonborn;Dragonborn.esm:020143E7
+6;Camps;;Bujold's Retreat;Dragonborn;Dragonborn.esm:020143D0
+7;Camps;;Crowstooth's Camp;AE;ccbgssse059-ba_dragonplate.esl:0500085C
+8;Camps;;Dragon Bridge Overlook;;Skyrim.esm:000B2393
+9;Camps;;Druadach Redoubt;;Skyrim.esm:0001623C
+10;Camps;;Haknir's Shoal;Dragonborn;Dragonborn.esm:020143D5
+11;Camps;;Halted Stream Camp;;Skyrim.esm:00016261
+12;Camps;;Karthspire;;Skyrim.esm:0001626C
+13;Camps;;Karthspire Camp;;Skyrim.esm:000F6698
+14;Camps;;Knifepoint Ridge;;Skyrim.esm:0008E03C
+15;Camps;;Last Vigil;Dragonborn;Dragonborn.esm:0202C49B
+16;Camps;;Robber's Gorge;;Skyrim.esm:000162A7
+17;Camps;;Secunda's Kiss;;Skyrim.esm:000162A6
+18;Camps;;Serpent's Bluff Redoubt;;Skyrim.esm:000162CC
+19;Castles;;Blue Palace;;Skyrim.esm:000C44AB
+20;Castles;;Castle Volkihar;Dawnguard;Dawnguard.esm:0200BA4D
+21;Castles;;Castle Volkihar Balcony;Dawnguard;Dawnguard.esm:0200D165
+22;Castles;;Dragonsreach;;Skyrim.esm:000C44AD
+23;Castles;;Mistveil Keep;;Skyrim.esm:000C44B1
+24;Castles;;Palace of the Kings;;Skyrim.esm:000C44B3
+25;Castles;;Understone Keep;;Skyrim.esm:000C44AF
+26;Caves;;Ashfall's Tear;AE;ccasvsse001-almsivi.esm:050BC826
+27;Caves;;Benkongerike;Dragonborn;Dragonborn.esm:020143BE
+28;Caves;;Blackbone Isle;AE;ccbgssse031-advcyrus.esm:05000F6B|ccbgssse031-advcyrus.esm:05000F74
+29;Caves;;Bleakcoast Cave;;Skyrim.esm:0001620F
+30;Caves;;Blind Cliff Cave;;Skyrim.esm:00016213
+31;Caves;;Bloated Man's Grotto;;Skyrim.esm:00016215
+32;Caves;;Bonechill Passage;;Skyrim.esm:000FDA48
+33;Caves;;Boulderfall Cave;;Skyrim.esm:000F52D8
+34;Caves;;Brinewater Grotto;;Skyrim.esm:0002C652
+35;Caves;;Bristleback Cave;Dragonborn;Dragonborn.esm:0201BC48
+36;Caves;;Broken Fang Cave;;Skyrim.esm:00016218
+37;Caves;;Broken Helm Hollow;;Skyrim.esm:00016219
+38;Caves;;Broken Oar Grotto;;Skyrim.esm:000B77C3
+39;Caves;;Bronze Water Cave;;Skyrim.esm:00046BAB
+40;Caves;;Brood Cavern;;Skyrim.esm:0001621B
+41;Caves;;Bruca's Leap Redoubt;;Skyrim.esm:0001621C
+42;Caves;;Castle Karstaag Caverns;Dragonborn;Dragonborn.esm:02018ED8
+43;Caves;;Castle Karstaag Ruins;Dragonborn;Dragonborn.esm:020143C1
+44;Caves;;Chillwind Depths;;Skyrim.esm:00016220
+45;Caves;;Cragslane Cavern;;Skyrim.esm:00016226
+46;Caves;;Cragwallow Slope;;Skyrim.esm:00016227
+47;Caves;;Cronvangr Cave;;Skyrim.esm:00016228
+48;Caves;;Crystaldrift Cave;;Skyrim.esm:00016229
+49;Caves;;Darkfall Cave;Dawnguard;Dawnguard.esm:02004C0F
+50;Caves;;Darkshade;;Skyrim.esm:000B6046
+51;Caves;;Darkwater Pass;;Skyrim.esm:0001622C
+52;Caves;;Dimhollow Crypt;Dawnguard;Dawnguard.esm:02002F6F
+53;Caves;;Duskglow Crevice;;Skyrim.esm:0001623F
+54;Caves;;Eldergleam Sanctuary;;Skyrim.esm:000162B7
+55;Caves;;Fallowstone Cave;;Skyrim.esm:00016243
+56;Caves;;Forebears' Holdout;Dawnguard;Dawnguard.esm:02003CFE
+57;Caves;;Forsaken Cave;;Skyrim.esm:00016248
+58;Caves;;Frossel;Dragonborn;Dragonborn.esm:020143C5
+59;Caves;;Frostmoon Crag;Dragonborn;Dragonborn.esm:020143D1
+60;Caves;;Frostroot Cave;AE;ccafdsse001-dwesanctuary.esm:05070E0A
+61;Caves;;Glacial Cave;Dragonborn;Dragonborn.esm:020143D7
+62;Caves;;Glenmoril Coven;;Skyrim.esm:00016257
+63;Caves;;Gloomreach;;Skyrim.esm:00016258
+64;Caves;;Graywinter Watch;;Skyrim.esm:00016259
+65;Caves;;Greywater Grotto;;Skyrim.esm:0001625A
+66;Caves;;Gromm's Pass;AE;ccbgssse040-advobgobs.esl:05000BDF
+67;Caves;;Haemar's Shame;;Skyrim.esm:0001625D
+68;Caves;;Halldir's Cairn;;Skyrim.esm:00016260
+69;Caves;;Hob's Fall Cave;;Skyrim.esm:00016266
+70;Caves;;Honeystrand Cave;;Skyrim.esm:00016267
+71;Caves;;Hrothmund's Barrow;Dragonborn;Dragonborn.esm:02017BB0
+72;Caves;;Liar's Retreat;;Skyrim.esm:00016270
+73;Caves;;Lost Echo Cave;;Skyrim.esm:000AF89B
+74;Caves;;Lost Knife Hideout;;Skyrim.esm:00016273
+75;Caves;;Lower Steepfall Burrow;;Skyrim.esm:000F4FE7
+76;Caves;;Moss Mother Cavern;;Skyrim.esm:00016289
+77;Caves;;Movarth's Lair;;Skyrim.esm:00016256
+78;Caves;;Nightingale Hall;;Skyrim.esm:00047D25
+79;Caves;;North Brittleshin Pass;;Skyrim.esm:00016265
+80;Caves;;North Cold Rock Pass;;Skyrim.esm:000F5EB1
+81;Caves;;Orotheim;;Skyrim.esm:00016291
+82;Caves;;Pinemoon Cave;;Skyrim.esm:00016293
+83;Caves;;Pinepeak Cavern;;Skyrim.esm:00016294
+84;Caves;;Purewater Run;;Skyrim.esm:00032875
+85;Caves;;Ravenscar Hollow;;Skyrim.esm:0001629C
+86;Caves;;Reachcliff Cave;;Skyrim.esm:0001629D
+87;Caves;;Reachcliff Secret Entrance;;Skyrim.esm:0010B2C8
+88;Caves;;Reachwater Rock;;Skyrim.esm:0001629E
+89;Caves;;Rebel's Cairn;;Skyrim.esm:000B629F
+90;Caves;;Red Eagle Redoubt;;Skyrim.esm:0001623D
+91;Caves;;Red Scar Cavern;AE;ccbgssse067-daedinv.esm:051D67E3
+92;Caves;;Redoran's Retreat;;Skyrim.esm:0001629F
+93;Caves;;Redwater Den;Dawnguard;Dawnguard.esm:0200777E
+94;Caves;;Rimerock Burrow;;Skyrim.esm:000162A1
+95;Caves;;Runoff Cavern;AE;cctwbsse001-puzzledungeon.esm:050038D6
+96;Caves;;Ruunvald;Dawnguard;Dawnguard.esm:02007B23
+97;Caves;;Septimus Signus's Outpost;;Skyrim.esm:0002D511
+98;Caves;;Shadowgreen Cavern;;Skyrim.esm:000162A8
+99;Caves;;Shimmermist Cave;;Skyrim.esm:000162A9
+100;Caves;;Sightless Pit;;Skyrim.esm:000162B3
+101;Caves;;Snapleg Cave;;Skyrim.esm:00068094
+102;Caves;;Soljund's Sinkhole;;Skyrim.esm:000162BB
+103;Caves;;South Brittleshin Pass;;Skyrim.esm:00082213
+104;Caves;;South Cold Rock Pass;;Skyrim.esm:000F5EAF
+105;Caves;;Southfringe Sanctum;;Skyrim.esm:00016217
+106;Caves;;Steepfall Burrow;;Skyrim.esm:000162BF
+107;Caves;;Stillborn Cave;;Skyrim.esm:000162C0
+108;Caves;;Stony Creek Cave;;Skyrim.esm:00080F13
+109;Caves;;Sunderstone Gorge;;Skyrim.esm:000F5EA8
+110;Caves;;Swindler's Den;;Skyrim.esm:00015D4D
+111;Caves;;The Chill;;unofficial skyrim special edition patch.esp:0A028852
+112;Caves;;Tolvald's Cave;;Skyrim.esm:000162C5
+113;Caves;;Uttering Hills Cave;;Skyrim.esm:000162C8
+114;Caves;;Varlais Cavern;AE;ccbgssse067-daedinv.esm:051D67E4
+115;Caves;;White River Watch;;Skyrim.esm:000162CD
+116;Caves;;Wolfskull Cave;;Skyrim.esm:000162D1
+117;Caves;;Yngvild;;Skyrim.esm:000162D3
+118;Cities;;Dawnstar;;Skyrim.esm:0001773A
+119;Cities;;Falkreath;;Skyrim.esm:00017760
+120;Cities;;Markarth;;Skyrim.esm:0001C38A
+121;Cities;;Morthal;;Skyrim.esm:000177B0
+122;Cities;;Raven Rock;Dragonborn;Dragonborn.esm:020143DC
+123;Cities;;Riften;;Skyrim.esm:0001C390
+124;Cities;;Solitude;;Skyrim.esm:0004D0F4
+125;Cities;;Whiterun;;Skyrim.esm:000162CE
+126;Cities;;Windhelm;;Skyrim.esm:00038436
+127;Cities;;Winterhold;;Skyrim.esm:000177EF
+128;Clearings;;Autumnshade Clearing;;Skyrim.esm:0001620C
+129;Clearings;;Clearpine Pond;;Skyrim.esm:00016222
+130;Clearings;;Clearspring Tarn;;Skyrim.esm:00016223
+131;Clearings;;Headwaters of Harstrad;Dragonborn;Dragonborn.esm:02039F96
+132;Clearings;;Mara's Eye Pond;;Skyrim.esm:000ECF51
+133;Daedric Shrines;;Sacellum of Boethiah;;Skyrim.esm:0004D8DA
+134;Daedric Shrines;;Shrine of Azura;;Skyrim.esm:00092496
+135;Daedric Shrines;;Shrine of Mehrunes Dagon;;Skyrim.esm:000246A5
+136;Daedric Shrines;;Shrine to Peryite;;Skyrim.esm:000AD066
+137;Daedric Shrines;;Statue to Meridia;;Skyrim.esm:0001626D
+138;Docks;;East Empire Company Warehouse;;Skyrim.esm:0004FEF2
+139;Docks;;Icewater Jetty;Dawnguard;Dawnguard.esm:02008E41
+140;Docks;;Northshore Landing;Dragonborn;Dragonborn.esm:020143DA
+141;Docks;;Riften Docks;AE;cceejsse003-hollow.esl:05000F72
+142;Dragon Lairs;;Ancient's Ascent;;Skyrim.esm:00016231
+143;Dragon Lairs;;Autumnwatch Tower;;Skyrim.esm:00016233
+144;Dragon Lairs;;Bonestrewn Crest;;Skyrim.esm:000162B6
+145;Dragon Lairs;;Dragontooth Crater;;Skyrim.esm:00016230
+146;Dragon Lairs;;Eldersblood Peak;;Skyrim.esm:00016238
+147;Dragon Lairs;;Lost Tongue Overlook;;Skyrim.esm:00016235
+148;Dragon Lairs;;Mount Anthor;;Skyrim.esm:0001628A
+149;Dragon Lairs;;Northwind Summit;;Skyrim.esm:00016234
+150;Dragon Lairs;;Saering's Watch;Dragonborn;Dragonborn.esm:02019D1C
+151;Dragon Lairs;;Shearpoint;;Skyrim.esm:00016237
+152;Dragon Lairs;;Skyborn Altar;;Skyrim.esm:00016239
+153;Dwarven Ruins;;Alftand;;Skyrim.esm:00015D4A
+154;Dwarven Ruins;;Arkngthamz;Dawnguard;Dawnguard.esm:02008257
+155;Dwarven Ruins;;Avanchnzel;;Skyrim.esm:0001620D
+156;Dwarven Ruins;;Bthardamz;;Skyrim.esm:0001621D
+157;Dwarven Ruins;;Fahlbtharz;Dragonborn;Dragonborn.esm:020143C2
+158;Dwarven Ruins;;Great Lift at Alftand;;Skyrim.esm:000F81DB
+159;Dwarven Ruins;;Great Lift at Mzinchaleft;;Skyrim.esm:000F81DA
+160;Dwarven Ruins;;Great Lift at Raldbthar;;Skyrim.esm:000F81D9
+161;Dwarven Ruins;;Irkngthand;;Skyrim.esm:0001626B
+162;Dwarven Ruins;;Kagrenzel;;Skyrim.esm:00080E56
+163;Dwarven Ruins;;Kagrumez;Dragonborn;Dragonborn.esm:020143C3
+164;Dwarven Ruins;;Mzinchaleft;;Skyrim.esm:0001628B
+165;Dwarven Ruins;;Mzulft;;Skyrim.esm:0001628C
+166;Dwarven Ruins;;Nchardak;Dragonborn;Dragonborn.esm:020143C9
+167;Dwarven Ruins;;Raldbthar;;Skyrim.esm:00090595
+168;Dwarven Ruins;;Ruins of Rkund;;Skyrim.esm:000D3939
+169;Dwarven Ruins;;Tower of Mzark;;Skyrim.esm:000D30DA
+170;Farms;;Brandy-Mug Farm;;Skyrim.esm:00016339
+171;Farms;;Goldenhills Plantation;AE;ccvsvsse004-beafarmer.esl:05000B63
+172;Farms;;Hlaalu Farm;;Skyrim.esm:00016355
+173;Farms;;Hollyfrost Farm;;Skyrim.esm:00016358
+174;Farms;;Katla's Farm;;Skyrim.esm:0001635E
+175;Farms;;Merryfair Farm;;Skyrim.esm:000268FF
+176;Farms;;Old Attius Farm;Dragonborn;Dragonborn.esm:0201A562
+177;Forts;;Ashfallow Citadel;Dragonborn;Dragonborn.esm:020143D8
+178;Forts;;Fort Frostmoth;Dragonborn;Dragonborn.esm:020143C4
+179;Forts;;Highpoint Tower;Dragonborn;Dragonborn.esm:020143D9
+180;Giant Camps;;Bleakwind Basin;;Skyrim.esm:00016211
+181;Giant Camps;;Blizzard Rest;;Skyrim.esm:00016214
+182;Giant Camps;;Broken Limb Camp;;Skyrim.esm:000ECF86
+183;Giant Camps;;Cradlecrush Rock;;Skyrim.esm:00016225
+184;Giant Camps;;Guldun Rock;;Skyrim.esm:0001625C
+185;Giant Camps;;Red Road Pass;;Skyrim.esm:000162A0
+186;Giant Camps;;Sleeping Tree Camp;;Skyrim.esm:000162B8
+187;Giant Camps;;Steamcrag Camp;;Skyrim.esm:0001623A
+188;Giant Camps;;Stonehill Bluff;;Skyrim.esm:000162C1
+189;Giant Camps;;Talking Stone Camp;;Skyrim.esm:000162C3
+190;Giant Camps;;Tumble Arch Pass;;Skyrim.esm:000162C7
+191;Groves;;Ancestor Glade;Dawnguard;Dawnguard.esm:02004BA5
+192;Groves;;Evergreen Grove;;Skyrim.esm:00016241
+193;Groves;;Giant's Grove;;Skyrim.esm:000D28B7
+194;Groves;;Greenspring Hollow;;Skyrim.esm:00016269
+195;Groves;;Shrouded Grove;;Skyrim.esm:000162B1
+196;Groves;;Witchmist Grove;;Skyrim.esm:000E1B80
+197;Guild Halls;;College of Winterhold;;Skyrim.esm:00046BDF
+198;Guild Halls;;Dark Brotherhood Sanctuary;;Skyrim.esm:0001C3B0
+199;Guild Halls;;Dawnstar Sanctuary;;Skyrim.esm:0005E0A6
+200;Guild Halls;;Sky Haven Temple;;Skyrim.esm:0001637C
+201;Guild Halls;;Thieves Guild;;Skyrim.esm:00105F3A
+202;Imperial Towers;;Abandoned Prison;;Skyrim.esm:000ECF49
+203;Imperial Towers;;Falkreath Watchtower;;Skyrim.esm:0004788C
+204;Imperial Towers;;Pinefrost Tower;;Skyrim.esm:000EF0BA
+205;Imperial Towers;;Refugees' Rest;;Skyrim.esm:000EF570
+206;Imperial Towers;;Rift Watchtower;;Skyrim.esm:000D3930
+207;Imperial Towers;;Shor's Watchtower;;Skyrim.esm:000D3934
+208;Imperial Towers;;Snowpoint Beacon;;Skyrim.esm:000C2EF6
+209;Imperial Towers;;Stendarr's Beacon;;Skyrim.esm:00108A58
+210;Imperial Towers;;Whitewatch Tower;;Skyrim.esm:000DD99A
+211;Imperial Towers;;Widow's Watch Ruins;;Skyrim.esm:000EF0A7
+212;Inns;;Nightgate Inn;;Skyrim.esm:00017785
+213;Inns;;Old Hroldan Inn;;Skyrim.esm:000177C3
+214;Landmarks;;Altar of Thrond;Dragonborn;Dragonborn.esm:020143BD
+215;Landmarks;;Bard's Leap Summit;;Skyrim.esm:0001620E
+216;Landmarks;;Brodir Grove;Dragonborn;Dragonborn.esm:020143C0
+217;Landmarks;;Deep Folk Crossing;;Skyrim.esm:000B238F
+218;Landmarks;;Frykte Peak;Dragonborn;Dragonborn.esm:0203A2CB
+219;Landmarks;;Gjukar's Monument;;Skyrim.esm:000DED8E
+220;Landmarks;;Horker Island;Dragonborn;Dragonborn.esm:020143C7
+221;Landmarks;;Hvitkald Peak;Dragonborn;Dragonborn.esm:020365F1
+222;Landmarks;;Mortrag Peak;Dragonborn;Dragonborn.esm:0203A2C9
+223;Landmarks;;Mount Moesring;Dragonborn;Dragonborn.esm:0203A2C7
+224;Landmarks;;Orphan Rock;;Skyrim.esm:00016292
+225;Landmarks;;Reachwind Eyrie;;Skyrim.esm:000B23A3|Skyrim.esm:000F5FDE
+226;Landmarks;;Ruins of Bthalft;;Skyrim.esm:000D393C
+227;Landmarks;;Stalhrim Source;Dragonborn;Dragonborn.esm:020296E0
+228;Landmarks;;Throat of the World;;Skyrim.esm:000162C4
+229;Landmarks;;Weynon Stones;;Skyrim.esm:000BC0AA
+230;Lighthouses;;Frostflow Lighthouse;;Skyrim.esm:00016253
+231;Lighthouses;;Solitude Lighthouse;;Skyrim.esm:000C016D
+232;Military Camps;Imperial Legion;Eastmarch Imperial Camp;;Skyrim.esm:00095A08
+233;Military Camps;Imperial Legion;Falkreath Imperial Camp;;Skyrim.esm:00016283
+234;Military Camps;Imperial Legion;Hjaalmarch Imperial Camp;;Skyrim.esm:00016279
+235;Military Camps;Imperial Legion;Pale Imperial Camp;;Skyrim.esm:0001627B
+236;Military Camps;Imperial Legion;Reach Imperial Camp;;Skyrim.esm:00016277
+237;Military Camps;Imperial Legion;Rift Imperial Camp;;Skyrim.esm:00016281
+238;Military Camps;Imperial Legion;Whiterun Imperial Camp;;Skyrim.esm:00016284
+239;Military Camps;Imperial Legion;Winterhold Imperial Camp;;Skyrim.esm:0001627D
+240;Military Camps;Stormcloaks;Falkreath Stormcloak Camp;;Skyrim.esm:00016282
+241;Military Camps;Stormcloaks;Haafingar Stormcloak Camp;;Skyrim.esm:00094F96
+242;Military Camps;Stormcloaks;Hjaalmarch Stormcloak Camp;;Skyrim.esm:0001627A
+243;Military Camps;Stormcloaks;Pale Stormcloak Camp;;Skyrim.esm:0001627C
+244;Military Camps;Stormcloaks;Reach Stormcloak Camp;;Skyrim.esm:00016276
+245;Military Camps;Stormcloaks;Rift Stormcloak Camp;;Skyrim.esm:00016280
+246;Military Camps;Stormcloaks;Whiterun Stormcloak Camp;;Skyrim.esm:00095885
+247;Military Camps;Stormcloaks;Winterhold Stormcloak Camp;;Skyrim.esm:0001627E
+248;Military Forts;;Bloodlet Throne;;Skyrim.esm:00016EB2
+249;Military Forts;;Broken Tower Redoubt;;Skyrim.esm:0001621A
+250;Military Forts;;Cracked Tusk Keep;;Skyrim.esm:0001625B
+251;Military Forts;;Darklight Tower;;Skyrim.esm:0001622A
+252;Military Forts;;Driftshade Refuge;;Skyrim.esm:0001623B
+253;Military Forts;;Faldar's Tooth;;Skyrim.esm:00016242
+254;Military Forts;;Fellglow Keep;;Skyrim.esm:00016244
+255;Military Forts;;Fort Amol;;Skyrim.esm:00016249
+256;Military Forts;;Fort Dawnguard;Dawnguard;Dawnguard.esm:00013F21|Dawnguard.esm:0000FC6C
+257;Military Forts;;Fort Dunstad;;Skyrim.esm:0001624B
+258;Military Forts;;Fort Fellhammer;;Skyrim.esm:0001624C
+259;Military Forts;;Fort Greenwall;;Skyrim.esm:0001624D
+260;Military Forts;;Fort Greymoor;;Skyrim.esm:0001624A
+261;Military Forts;;Fort Hraggstad;;Skyrim.esm:0003F510
+262;Military Forts;;Fort Kastav;;Skyrim.esm:0001624F
+263;Military Forts;;Fort Neugrad;;Skyrim.esm:00016250
+264;Military Forts;;Fort Snowhawk;;Skyrim.esm:00016251
+265;Military Forts;;Fort Sungard;;Skyrim.esm:00016252
+266;Military Forts;;Gallows Rock;;Skyrim.esm:00016254
+267;Military Forts;;Harmugstahl;;Skyrim.esm:00016262
+268;Military Forts;;High Hrothgar;;Skyrim.esm:00016352
+269;Military Forts;;Ilinalta's Deep;;Skyrim.esm:0001626A
+270;Military Forts;;Mistwatch;;Skyrim.esm:00016286
+271;Military Forts;;Morvunskar;;Skyrim.esm:00016288
+272;Military Forts;;Nightcaller Temple;;Skyrim.esm:00017082
+273;Military Forts;;Northwatch Keep;;Skyrim.esm:00016290
+274;Military Forts;;Treva's Watch;;Skyrim.esm:000162C6
+275;Military Forts;;Western Watchtower;;Skyrim.esm:000DB889
+276;Mines;;Bilegulch Mine;;Skyrim.esm:00016275
+277;Mines;;Broken Tusk Mine;Dragonborn;Dragonborn.esm:020143D4
+278;Mines;;Damphall Mine;Dragonborn;Dragonborn.esm:020296DE
+279;Mines;;Embershard Mine;;Skyrim.esm:000B6CDF
+280;Mines;;Gloombound Mine;;Skyrim.esm:00016349
+281;Mines;;Kolskeggr Mine;;Skyrim.esm:0002051D
+282;Mines;;Left Hand Mine;;Skyrim.esm:00016364
+283;Mines;;Lost Prospect Mine;;Skyrim.esm:000D3938
+284;Mines;;Northwind Mine;;Skyrim.esm:000FDBDE
+285;Mines;;Whistling Mine;;Skyrim.esm:00016385
+286;Nordic Ruins;;Angarvunde;;Skyrim.esm:00015D51
+287;Nordic Ruins;;Ansilvund;;Skyrim.esm:00015D56
+288;Nordic Ruins;;Arcwind Point;;Skyrim.esm:000F5FEF
+289;Nordic Ruins;;Bleak Falls Barrow;;Skyrim.esm:00016232
+290;Nordic Ruins;;Bloodskal Barrow;Dragonborn;Dragonborn.esm:020143BF
+291;Nordic Ruins;;Champion's Rest;AE;ccbgssse016-umbra.esm:0200CD93
+292;Nordic Ruins;;Dead Men's Respite;;Skyrim.esm:0001622E
+293;Nordic Ruins;;Deepwood Redoubt;;Skyrim.esm:0001622F
+294;Nordic Ruins;;Dustman's Cairn;;Skyrim.esm:000F5B8D
+295;Nordic Ruins;;Folgunthur;;Skyrim.esm:00016246
+296;Nordic Ruins;;Forelhost;;Skyrim.esm:00016247
+297;Nordic Ruins;;Frostmere Crypt;;Skyrim.esm:000162C2
+298;Nordic Ruins;;Geirmund's Hall;;Skyrim.esm:00016255
+299;Nordic Ruins;;Gyldenhul Barrow;Dragonborn;Dragonborn.esm:020143C6
+300;Nordic Ruins;;Hag Rock Redoubt;;Skyrim.esm:0001625E
+301;Nordic Ruins;;Hag's End;;Skyrim.esm:0001625F
+302;Nordic Ruins;;High Gate Ruins;;Skyrim.esm:00016263
+303;Nordic Ruins;;Hillgrund's Tomb;;Skyrim.esm:000162CB
+304;Nordic Ruins;;Ironbind Barrow;;Skyrim.esm:0003F076
+305;Nordic Ruins;;Kolbjorn Barrow;Dragonborn;Dragonborn.esm:020143CC
+306;Nordic Ruins;;Korvanjund;;Skyrim.esm:00016224
+307;Nordic Ruins;;Labyrinthian;;Skyrim.esm:0001626E
+308;Nordic Ruins;;Lost Valley Redoubt;;Skyrim.esm:00016274
+309;Nordic Ruins;;Moldering Ruins;Dawnguard;Dawnguard.esm:0200D0AE
+310;Nordic Ruins;;North Shriekwind Bastion;;Skyrim.esm:000A0E46
+311;Nordic Ruins;;Ragnvald;;Skyrim.esm:0001629A
+312;Nordic Ruins;;Rannveig's Fast;;Skyrim.esm:0001629B
+313;Nordic Ruins;;Saarthal;;Skyrim.esm:000162A5
+314;Nordic Ruins;;Shroud Hearth Barrow;;Skyrim.esm:0006CCC8
+315;Nordic Ruins;;Silent Moons Camp;;Skyrim.esm:000162B4
+316;Nordic Ruins;;Silverdrift Lair;;Skyrim.esm:000162B5
+317;Nordic Ruins;;Sivdur's Respite;AE;ccbgssse005-goldbrand.esl:03000B86
+318;Nordic Ruins;;Snow Veil Sanctum;;Skyrim.esm:0002DDD1
+319;Nordic Ruins;;South Shriekwind Bastion;;Skyrim.esm:000B83C8
+320;Nordic Ruins;;Twilight Sepulcher;;Skyrim.esm:00016216
+321;Nordic Ruins;;Ustengrav;;Skyrim.esm:0001621F
+322;Nordic Ruins;;Vahlok's Tomb;Dragonborn;Dragonborn.esm:020143CB
+323;Nordic Ruins;;Valthume;;Skyrim.esm:0008D5D6
+324;Nordic Ruins;;Volskygge;;Skyrim.esm:000162CA
+325;Nordic Ruins;;Volunruud;;Skyrim.esm:00016264
+326;Nordic Ruins;;White Ridge Barrow;Dragonborn;Dragonborn.esm:020143CD
+327;Nordic Ruins;;Yngol Barrow;;Skyrim.esm:00016271
+328;Nordic Ruins;;Ysgramor's Tomb;;Skyrim.esm:000162D2
+329;Nordic Towers;;Bannermist Tower;;Skyrim.esm:0004781E
+330;Nordic Towers;;Bleakwind Bluff;;Skyrim.esm:000BB47C
+331;Nordic Towers;;Cradle Stone Tower;;Skyrim.esm:000B23A1
+332;Nordic Towers;;Dead Crone Rock;;Skyrim.esm:0001622D
+333;Nordic Towers;;Nilheim;;Skyrim.esm:0001628F
+334;Nordic Towers;;Peak's Shade Tower;;Skyrim.esm:00047880
+335;Nordic Towers;;Sundered Towers;;Skyrim.esm:000B6295
+336;Nordic Towers;;Valtheim Towers;;Skyrim.esm:000162C9
+337;Orc Strongholds;;Dushnikh Yal;;Skyrim.esm:0001623E
+338;Orc Strongholds;;Largashbur;;Skyrim.esm:0001626F
+339;Orc Strongholds;;Mor Khazgur;;Skyrim.esm:00016287
+340;Orc Strongholds;;Narzulbur;;Skyrim.esm:0001628D
+341;Passes;;Forgotten Vale;Dawnguard;Dawnguard.esm:020088E0
+342;Passes;;Moesring Pass;Dragonborn;Dragonborn.esm:020143CE
+343;Passes;;Wayward Pass;;Skyrim.esm:000C2EFA
+344;Player Housing;;Bloodchill Cavern;AE;cceejsse005-cave.esm:05127259
+345;Player Housing;;Heljarchen Hall;Hearthfire;HearthFires.esm:02010DE8
+346;Player Housing;;Hendraheim;AE;cceejsse004-hall.esl:05000AFF
+347;Player Housing;;Lakeview Manor;Hearthfire;HearthFires.esm:020030AA
+348;Player Housing;;Myrwatch;AE;cceejsse002-tower.esl:05000FA2
+349;Player Housing;;Tundra Homestead;AE;cceejsse001-hstead.esm:05000B8A
+350;Player Housing;;Windstad Manor;Hearthfire;HearthFires.esm:0200B8B0
+351;Ruins;;Four Skull Lookout;;Skyrim.esm:000B23A7
+352;Ruins;;Hamvir's Rest;;Skyrim.esm:000EE79C
+353;Ruins;;Journeyman's Nook;;Skyrim.esm:000EF549
+354;Ruins;;Kjenstag Ruins;;Skyrim.esm:000C2EEF
+355;Ruins;;Lost Valkygg;;Skyrim.esm:000EAA63
+356;Ruins;;North Skybound Watch;;Skyrim.esm:0004B6EB
+357;Ruins;;Roadside Ruins;;Skyrim.esm:00047875
+358;Ruins;;Skytemple Ruins;;Skyrim.esm:000EF0AE
+359;Ruins;;Snowclad Ruins;Dragonborn;Dragonborn.esm:020247C8
+360;Ruins;;South Skybound Watch;;Skyrim.esm:000479BB
+361;Ruins;;Windward Ruins;;Skyrim.esm:000C2EEC
+362;Ruins;;Yorgrim Overlook;;Skyrim.esm:000C33FF
+363;Settlements;;Black-Briar Lodge;;Skyrim.esm:000A7CE5
+364;Settlements;;Darkwater Crossing;;Skyrim.esm:00017732
+365;Settlements;;Goldenglow Estate;;Skyrim.esm:0001A710
+366;Settlements;;Honningbrew Meadery;;Skyrim.esm:00038593
+367;Settlements;;Kynesgrove;;Skyrim.esm:000177A1
+368;Settlements;;Stonehills;;Skyrim.esm:000177E4
+369;Settlements;;Thalmor Embassy;;Skyrim.esm:00033E45
+370;Settlements;;Thirsk Mead Hall;Dragonborn;Dragonborn.esm:020143E9
+371;Shacks;;Abandoned Lodge;Dragonborn;Dragonborn.esm:02017B68
+372;Shacks;;Abandoned Shack;;Skyrim.esm:0005254D
+373;Shacks;;Alchemist's Shack;;Skyrim.esm:000D3931
+374;Shacks;;Angi's Camp;;Skyrim.esm:000CF27D
+375;Shacks;;Anise's Cabin;;Skyrim.esm:000D9531
+376;Shacks;;Cliffside Retreat;;Skyrim.esm:000B238B
+377;Shacks;;Crabber's Shanty;;Skyrim.esm:000E66A7
+378;Shacks;;Drelas' Cottage;;Skyrim.esm:000E66AD
+379;Shacks;;Froki's Shack;;Skyrim.esm:000D392D
+380;Shacks;;Hall of the Vigilant;;Skyrim.esm:000C342A
+381;Shacks;;Hrodulf's House;Dragonborn;Dragonborn.esm:020143D6
+382;Shacks;;Hunter's Rest;;Skyrim.esm:000F52B2
+383;Shacks;;Ironback Hideout;;Skyrim.esm:000EF543
+384;Shacks;;Lund's Hut;;Skyrim.esm:000E66A3
+385;Shacks;;Meeko's Shack;;Skyrim.esm:000F6F11
+386;Shacks;;Pinewatch;;Skyrim.esm:00016295
+387;Shacks;;Ramshackle Trading Post;Dragonborn;Dragonborn.esm:02034EE4
+388;Shacks;;Riverside Shack;;Skyrim.esm:000ECF4F
+389;Shacks;;Traitor's Post;;Skyrim.esm:000C2EE9
+390;Shipwrecks;;Dainty Sload;;Skyrim.esm:0007BC2D
+391;Shipwrecks;;Hela's Folly;;Skyrim.esm:000162AC
+392;Shipwrecks;;Orphan's Tear;;Skyrim.esm:000162B0
+393;Shipwrecks;;Pilgrim's Trench;;Skyrim.esm:000162AD
+394;Shipwrecks;;The Katariah;;Skyrim.esm:000C4D20
+395;Shipwrecks;;Wreck Of The Brinehammer;;Skyrim.esm:000162AB
+396;Shipwrecks;;Wreck of the Icerunner;;Skyrim.esm:000162AA
+397;Shipwrecks;;Wreck of The Pride of Tel Vos;;Skyrim.esm:000162AE
+398;Shipwrecks;;Wreck of the Strident Squall;Dragonborn;Dragonborn.esm:020143CF
+399;Shipwrecks;;Wreck of the Winter War;;Skyrim.esm:000162AF
+400;Stables;;Markarth Stables;;Skyrim.esm:000E962F
+401;Stables;;Riften Stables;;Skyrim.esm:00096A46
+402;Stables;;Whiterun Stables;;Skyrim.esm:00072879
+403;Stables;;Windhelm Stables;;Skyrim.esm:0009846F
+404;Standing Stones;;The Apprentice Stone;;Skyrim.esm:0001BAB9
+405;Standing Stones;;The Atronach Stone;;Skyrim.esm:000E0F4C
+406;Standing Stones;;The Guardian Stones;;Skyrim.esm:0001BABD
+407;Standing Stones;;The Lady Stone;;Skyrim.esm:000DED90
+408;Standing Stones;;The Lord Stone;;Skyrim.esm:000E0F47
+409;Standing Stones;;The Lover Stone;;Skyrim.esm:0001BABB
+410;Standing Stones;;The Ritual Stone;;Skyrim.esm:000DD9D5
+411;Standing Stones;;The Serpent Stone;;Skyrim.esm:000E0F69
+412;Standing Stones;;The Shadow Stone;;Skyrim.esm:000D3935
+413;Standing Stones;;The Steed Stone;;Skyrim.esm:0001BAC0
+414;Standing Stones;;The Tower Stone;;Skyrim.esm:000E0ED5
+415;Temples;;Temple of Miraak;Dragonborn;Dragonborn.esm:020143CA
+416;Towns;;Dragon Bridge;;Skyrim.esm:00017753
+417;Towns;;Helgen;;Skyrim.esm:00017780
+418;Towns;;Ivarstead;;Skyrim.esm:00017791
+419;Towns;;Karthwasten;;Skyrim.esm:0001779A
+420;Towns;;Riverwood;;Skyrim.esm:000162A4
+421;Towns;;Rorikstead;;Skyrim.esm:000177CC
+422;Towns;;Shor's Stone;;Skyrim.esm:000177D7
+423;Towns;;Skaal Village;Dragonborn;Dragonborn.esm:020143E2
+424;Towns;;Tel Mithryn;Dragonborn;Dragonborn.esm:020143E8
+425;Wheat Mills;;Battle-Born Farm;;Skyrim.esm:00016332
+426;Wheat Mills;;Chillfurrow Farm;;Skyrim.esm:0001633C
+427;Wheat Mills;;Loreius Farm;;Skyrim.esm:00016367
+428;Wheat Mills;;Pelagia Farm;;Skyrim.esm:00016373
+429;Wheat Mills;;Salvius Farm;;Skyrim.esm:00016376
+430;Wheat Mills;;Sarethi Farm;;Skyrim.esm:00016379
+431;Wheat Mills;;Snow-Shod Farm;;Skyrim.esm:0001634C
+432;Wood Mills;;Anga's Mill;;Skyrim.esm:000162D6
+433;Wood Mills;;Half-Moon Mill;;Skyrim.esm:00016370
+434;Wood Mills;;Heartwood Mill;;Skyrim.esm:0001634F
+435;Wood Mills;;Mixwater Mill;;Skyrim.esm:0001636D
+436;Wood Mills;;Solitude Sawmill;;Skyrim.esm:00016382

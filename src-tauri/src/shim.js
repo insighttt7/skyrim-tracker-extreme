@@ -1,11 +1,13 @@
 // Connects the tracker page to the app; runs before the page's own scripts.
-// Settings go to data\settings.json, "Choose .ess file" opens the Windows dialog,
-// and the app is told when the page is ready to be shown.
+// Settings go to data\settings.json, "Choose .ess file" opens the Windows dialog, SteApp serves the
+// Settings box tools, and the app is told when the page is ready to be shown.
 // The languages from lang\ come in __STE_LANGS__ (main.rs), the chosen one is the "lang" setting.
 (function(){
   var S = window.__STE_SETTINGS__ || {};
-  var KEYS = {'skyrim-tracker-theme':'theme','skyrim-tracker-tab':'tab','skyrim-tracker-dense':'dense','skyrim-tracker-lang':'lang'};
+  var KEYS = {'skyrim-tracker-theme':'theme','skyrim-tracker-tab':'tab','skyrim-tracker-dense':'dense','skyrim-tracker-lang':'lang',
+              'skyrim-tracker-eid':'eid'};
   var MARKS = 'skyrim-tracker-marks';
+  var FILTERS = 'skyrim-tracker-filters';
   var other = {};
 
   // Tauri may not be ready on the very first calls: wait a moment and try again
@@ -35,6 +37,7 @@
       k = String(k);
       if (KEYS[k]) { var v = S[KEYS[k]]; return (v === undefined || v === null) ? null : String(v); }
       if (k === MARKS) return S.marks ? JSON.stringify(cleanMarks(S.marks)) : null;
+      if (k === FILTERS) return S.filters ? JSON.stringify(S.filters) : null;
       return Object.prototype.hasOwnProperty.call(other, k) ? other[k] : null;
     },
     setItem: function(k, v){
@@ -44,12 +47,17 @@
         var parsed = {}; try { parsed = JSON.parse(v) || {}; } catch(e){}
         S.marks = cleanMarks(parsed); send('marks', S.marks); return;
       }
+      if (k === FILTERS) {
+        var f = {}; try { f = JSON.parse(v) || {}; } catch(e){}
+        S.filters = f; send('filters', Object.keys(f).length ? f : null); return;
+      }
       other[k] = v;
     },
     removeItem: function(k){
       k = String(k);
       if (KEYS[k]) { delete S[KEYS[k]]; send(KEYS[k], null); return; }
       if (k === MARKS) { delete S.marks; send('marks', null); return; }
+      if (k === FILTERS) { delete S.filters; send('filters', null); return; }
       delete other[k];
     },
     clear: function(){ other = {}; },
@@ -57,6 +65,18 @@
     get length(){ return Object.keys(other).length; }
   };
   try { Object.defineProperty(window, 'localStorage', {value: store, configurable: true}); } catch(e){}
+
+  // Settings - Tools: the data folder in Explorer; the CSV export asks where to save (the answer comes back
+  // through exported(), see export_csv in main.rs)
+  var exportDone = null;
+  window.SteApp = {
+    openData: function(){ invoke('open_data_folder'); },
+    exportCsv: function(name, text){
+      if (exportDone) return Promise.resolve(false);
+      return new Promise(function(r){ exportDone = r; invoke('export_csv', {name: name, text: text}); });
+    },
+    exported: function(ok){ var r = exportDone; exportDone = null; if (r) r(!!ok); }
+  };
 
   // "Choose .ess file" opens the Windows dialog
   document.addEventListener('click', function(e){
@@ -125,6 +145,18 @@
   window.addEventListener('resize', function(){
     var r = window.devicePixelRatio || 1;
     if (r !== lastRatio) { lastRatio = r; invoke('zoom_changed', {ratio: r}); }
+  });
+  // Ctrl +/-/0 by hand: the browser's own keys are off; same steps as the browser
+  var STEPS = [0.25, 0.33, 0.5, 0.67, 0.75, 0.8, 0.9, 1, 1.1, 1.25, 1.5, 1.75, 2, 2.5, 3, 4, 5];
+  document.addEventListener('keydown', function(e){
+    if (!(e.ctrlKey || e.metaKey) || e.altKey || !window.__TAURI__) return;
+    var k = e.code, dir = (k === 'Equal' || k === 'NumpadAdd') ? 1 : (k === 'Minus' || k === 'NumpadSubtract') ? -1 : (k === 'Digit0' || k === 'Numpad0') ? 0 : null;
+    if (dir === null) return;
+    e.preventDefault();
+    var z = (window.devicePixelRatio || 1) / (window.__STE_SCALE__ || 1), next = 1;
+    if (dir > 0) next = STEPS.find(function(s){ return s > z + 0.005; }) || 5;
+    if (dir < 0) next = STEPS.slice().reverse().find(function(s){ return s < z - 0.005; }) || 0.25;
+    invoke('set_zoom', {zoom: next});
   });
 
   // no browser context menu

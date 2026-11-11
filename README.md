@@ -1,9 +1,11 @@
 # Skyrim Tracker Extreme
 
 A 100% completion tracker for **Skyrim Special Edition / Anniversary Edition**.
-It reads a `.ess` save and shows the progress over 2268 entries in 9 categories:
+It reads a `.ess` save and shows the progress over 2281 entries in 9 categories:
 quests, locations, spells, shouts, enchanting, ingredients, perks, collectibles and books.
-It also shows the statistics kept in the save, copies a row name or a quest Editor ID with one click,
+It also shows the statistics kept in the save, what changed since the previous save (F5),
+copies a row name or a quest Editor ID with one click,
+has a Settings box (F6) with a CSV export of everything not done yet,
 and shows the row names in other languages from language files in `lang\`.
 
 All rights reserved - see [LICENSE.txt](LICENSE.txt).

@@ -46,7 +46,6 @@ fn tables() -> ste_core::Tables {
     TABLES.iter().map(|(n, b)| (n.to_string(), b.to_vec())).collect()
 }
 
-// ---------------------------------------------------------------------------
 // folders and error log
 
 fn app_dir() -> PathBuf {
@@ -112,7 +111,6 @@ fn log_error(log: &Path, place: &str, details: &str) {
     }
 }
 
-// ---------------------------------------------------------------------------
 // languages (lang\*.json next to the exe)
 
 const LANG_FORMAT: &str = "ste-lang/1";
@@ -188,7 +186,6 @@ fn load_langs(log: &Path) -> Vec<Value> {
     langs
 }
 
-// ---------------------------------------------------------------------------
 // settings (data\settings.json)
 
 struct AppState {
@@ -245,13 +242,20 @@ impl AppState {
     }
 }
 
-// ---------------------------------------------------------------------------
 // commands called from the page (shim.js)
 
+/// settings the page reads and writes
+const PAGE_KEYS: [&str; 7] = ["theme", "tab", "dense", "marks", "lang", "filters", "eid"];
+
 #[tauri::command]
-fn set_setting(state: tauri::State<'_, AppState>, key: String, value: Value) -> bool {
-    if !["theme", "tab", "dense", "marks", "lang"].contains(&key.as_str()) {
+fn set_setting(window: WebviewWindow, state: tauri::State<'_, AppState>, key: String, value: Value) -> bool {
+    if !PAGE_KEYS.contains(&key.as_str()) {
         return false;
+    }
+    // the window behind the page follows the theme: no strip of the old theme when the window grows
+    if key == "theme" {
+        let (r, g, b) = hex_color(theme_background(value.as_str()));
+        let _ = window.set_background_color(Some(tauri::utils::config::Color(r, g, b, 255)));
     }
     {
         let mut s = state.settings.lock().unwrap();
@@ -263,6 +267,19 @@ fn set_setting(state: tauri::State<'_, AppState>, key: String, value: Value) -> 
     }
     state.save();
     true
+}
+
+/// F11: full screen on and off (borderless, over the whole monitor)
+#[tauri::command]
+fn toggle_fullscreen(window: WebviewWindow) -> bool {
+    let on = window.is_fullscreen().unwrap_or(false);
+    window.set_fullscreen(!on).is_ok()
+}
+
+/// Ctrl +/-/0 from the page: the browser's own keys are off
+#[tauri::command]
+fn set_zoom(window: WebviewWindow, zoom: f64) -> bool {
+    zoom.is_finite() && (0.25..=5.0).contains(&zoom) && window.set_zoom(zoom).is_ok()
 }
 
 /// remembers the page zoom (ratio = zoom x display scale)
@@ -423,6 +440,61 @@ fn pick_and_load(window: &WebviewWindow) {
     load(window, &path);
 }
 
+// Settings - Tools
+
+/// "Open data folder": settings.json and error.log in Explorer
+#[tauri::command]
+fn open_data_folder(state: tauri::State<'_, AppState>) -> bool {
+    let Some(dir) = state.settings_path.parent() else { return false };
+    #[cfg(windows)]
+    {
+        if let Err(e) = std::process::Command::new("explorer").arg(dir).spawn() {
+            log_error(&state.error_log, "data folder could not be opened", &e.to_string());
+            return false;
+        }
+    }
+    #[cfg(not(windows))]
+    let _ = dir;
+    true
+}
+
+/// "Export not done": the page's CSV, saved where the user picks; the page hears the result
+/// through SteApp.exported(true / false)
+#[tauri::command]
+fn export_csv(window: WebviewWindow, name: String, text: String) -> bool {
+    // the dialog waits for the user, so it runs on its own thread
+    std::thread::spawn(move || {
+        let state = window.state::<AppState>();
+        if state.busy.swap(true, Ordering::SeqCst) {
+            js(&window, "SteApp.exported(false)");
+            return;
+        }
+        let mut dialog = window
+            .dialog()
+            .file()
+            .set_parent(&window)
+            .set_file_name(&name)
+            .add_filter("CSV file (*.csv)", &["csv"]);
+        if let Ok(docs) = window.path().document_dir() {
+            dialog = dialog.set_directory(docs);
+        }
+        let path = dialog.blocking_save_file().and_then(|p| p.as_path().map(Path::to_path_buf));
+        let ok = match path {
+            Some(p) => match std::fs::write(&p, text.as_bytes()) {
+                Ok(()) => true,
+                Err(e) => {
+                    log_error(&state.error_log, "CSV could not be written", &format!("{}\n{e}", p.display()));
+                    false
+                }
+            },
+            None => false,
+        };
+        state.busy.store(false, Ordering::SeqCst);
+        js(&window, &format!("SteApp.exported({ok})"));
+    });
+    true
+}
+
 fn looks_like_save(path: &Path) -> bool {
     use std::io::Read;
     let mut magic = [0u8; 13];
@@ -490,7 +562,6 @@ fn load(window: &WebviewWindow, path: &Path) {
     }
 }
 
-// ---------------------------------------------------------------------------
 // window
 
 fn hex_color(c: &str) -> (u8, u8, u8) {
@@ -529,13 +600,15 @@ fn main() {
     let app = tauri::Builder::default()
         .plugin(tauri_plugin_dialog::init())
         .manage(state)
-        .invoke_handler(tauri::generate_handler![set_setting, choose_save, zoom_changed, page_ready])
+        .invoke_handler(tauri::generate_handler![
+            set_setting, choose_save, zoom_changed, set_zoom, page_ready, toggle_fullscreen, open_data_folder, export_csv
+        ])
         .setup(move |app| {
             let state = app.state::<AppState>();
             let (settings_js, size, zoom) = {
                 let s = state.settings.lock().unwrap();
                 let mut page = Map::new();
-                for k in ["theme", "tab", "dense", "marks", "lang"] {
+                for k in PAGE_KEYS {
                     if let Some(v) = s.get(k) {
                         page.insert(k.to_string(), v.clone());
                     }
@@ -556,7 +629,7 @@ fn main() {
             let scale = app.primary_monitor().ok().flatten().map(|m| m.scale_factor()).unwrap_or(1.0);
             let init = format!(
                 "window.__STE_SETTINGS__={settings_js};window.__STE_TABLES__={};window.__STE_LANGS__={};\
-                 window.__STE_SCALE__={scale};window.__STE_ZOOM__={};\n{SHIM_JS}",
+                 window.__STE_SCALE__={scale};window.__STE_ZOOM__={};window.__STE_VERSION__=\"{APP_VERSION}\";\n{SHIM_JS}",
                 Value::Object(page_tables),
                 Value::Array(langs),
                 zoom.unwrap_or(1.0)
@@ -579,6 +652,17 @@ fn main() {
                     "--disable-features=msWebOOUI,msPdfOOUI,msSmartScreenProtection,CalculateNativeWinOcclusion",
                 )
                 .build()?;
+            // only the tracker's own keys: no reload, print, find bar, caret browsing...
+            #[cfg(windows)]
+            let _ = window.with_webview(|wv| unsafe {
+                use webview2_com::Microsoft::Web::WebView2::Win32::ICoreWebView2Settings3;
+                use windows::core::Interface;
+                if let Ok(s) = wv.controller().CoreWebView2().and_then(|c| c.Settings()) {
+                    if let Ok(s3) = s.cast::<ICoreWebView2Settings3>() {
+                        let _ = s3.SetAreBrowserAcceleratorKeysEnabled(false);
+                    }
+                }
+            });
             // hidden from view until the page is ready
             if let Ok(h) = window.hwnd() {
                 cloak::set(h.0 as *mut core::ffi::c_void, true);

@@ -1,7 +1,7 @@
 Skyrim Tracker Extreme - languages
 
 Put language files (*.json) into this folder, then restart the tracker.
-The new language appears in the language list next to the search box.
+The new language appears in the language list in Settings (F6).
 
 A language archive ("STE - RU.zip" and the like) already holds a lang folder:
 unpack it into the tracker folder, next to Skyrim Tracker Extreme.exe.

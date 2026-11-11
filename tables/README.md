@@ -12,7 +12,7 @@ tables, in table order (`Block` and `SubBlock` group them); `Order` numbers the 
 | File | Columns |
 |---|---|
 | `quests_tracker.csv` | `Order;Tab;Section;Block;SubBlock;Name;EditorIDs;Key;NoCount;FormIDCandidates;OverrideMap;Category;ContentPlugin;Source` |
-| `locations_tracker.csv` | `Order;Block;Name;Tags;MarkerFormIDs` |
+| `locations_tracker.csv` | `Order;Block;SubBlock;Name;Tags;MarkerFormIDs` |
 | `MapMarkerExport.csv` | `FormID;Plugin;EditorID;MarkerName;MarkerType;AlwaysVisible;LinkedLocationEditorID;CellContext;FNAMHex;CanTravelTo;...;Verdict` - map markers exported from xEdit |
 | `spells_tracker.csv` | `Order;Block;SubBlock;Name;Tags;Plugin;LocalID;EditorID` |
 | `shouts_tracker.csv` | `Order;Block;Name;Tags;Plugin;LocalID;EditorID` |
@@ -51,6 +51,11 @@ Several tags are separated by `|`, for example `Optional|AE`.
 
 A new location needs a map marker FormID from `MapMarkerExport.csv`.
 Several markers for one location are separated by `|` (any of them counts).
+
+Military Camps: `SubBlock` is the side of the camp, `Imperial Legion` or `Stormcloaks`.
+Until the player joins a side (CW01A / CW01B) all camps are an Alternative line; after
+that the camps of the player's side stay an Alternative line and the 8 camps of the other
+side count. When the war is over the game enables every camp of the losing side.
 
 ## Statistics
 

@@ -8,7 +8,6 @@ use crate::pycsv::{decode_utf8_sig, dict_reader, py_int10, py_int16, Row};
 use crate::pyjson;
 use crate::reader::{Eof, Reader};
 
-// ---------------------------------------------------------------------------
 // constants
 const QUST_TYPE_CODE: u8 = 8;
 const REFR_TYPE_CODE: u8 = 0;
@@ -69,7 +68,6 @@ impl std::fmt::Display for ParseError {
 /// file name -> contents
 pub type Tables = HashMap<String, Vec<u8>>;
 
-// ---------------------------------------------------------------------------
 // errors used while walking a change form (the text is for debugging)
 #[allow(dead_code)]
 enum PErr {
@@ -82,7 +80,6 @@ impl From<Eof> for PErr {
     }
 }
 
-// ---------------------------------------------------------------------------
 // header
 struct Header {
     starting_offset: usize,
@@ -165,7 +162,6 @@ fn decompress_body(f: &mut Reader, comp_type: u16) -> Result<Vec<u8>, String> {
     }
 }
 
-// ---------------------------------------------------------------------------
 // RefID resolution
 #[derive(Clone, Copy, PartialEq, Eq, Debug)]
 enum Kind {
@@ -287,7 +283,6 @@ impl PKSet {
     }
 }
 
-// ---------------------------------------------------------------------------
 // change forms
 struct ChangeForm<'a> {
     refid: u32,
@@ -311,7 +306,7 @@ fn has_bit(flags: u32, n: u32) -> bool {
     (flags >> n) & 1 == 1
 }
 
-// --- QUST
+// QUST
 struct QustResult {
     quest_flags: Option<u16>,
     stage_status: Vec<(i16, u8)>,
@@ -344,7 +339,7 @@ fn parse_qust_changeform(data: &[u8], change_flags: u32) -> Option<QustResult> {
     res.ok()
 }
 
-// --- ExtraData
+// ExtraData
 fn read_vs_count_skip(r: &mut Reader, size: usize) -> Result<(), PErr> {
     let count = r.vsval()? as usize;
     r.read(size * count)?;
@@ -734,7 +729,7 @@ fn read_initial(r: &mut Reader, it: u8) -> Result<(Option<u32>, Option<u32>), Eo
     Ok((cell, base))
 }
 
-// --- locations
+// locations
 #[derive(Clone, Copy, PartialEq)]
 enum LocStatus {
     Discovered,
@@ -783,7 +778,7 @@ fn parse_location_marker_changeform(payload: &[u8], cf: u32, kind: Kind) -> LocS
     res.unwrap_or(LocStatus::Unknown)
 }
 
-// --- spells
+// spells
 fn read_spell_array_raw(block: &[u8], at: usize) -> Option<Vec<u32>> {
     if block.len() - at < 4 {
         return None;
@@ -946,7 +941,7 @@ fn parse_npc_base_spells(payload: &[u8], cf: u32) -> Vec<u32> {
     res.unwrap_or_default()
 }
 
-// --- perks
+// perks
 fn vsval_at(d: &[u8], p: usize) -> Option<(u32, usize)> {
     if p >= d.len() {
         return None;
@@ -1015,7 +1010,7 @@ fn find_perk_block(payload: &[u8]) -> Vec<Vec<u32>> {
     (0..payload.len()).filter_map(|i| read_perk_block(payload, i)).collect()
 }
 
-// --- collectibles / books
+// collectibles / books
 struct CollParsed {
     cell: Option<u32>,
     base: Option<u32>,
@@ -1256,7 +1251,6 @@ fn stored_items_scan(
     (found, unknown)
 }
 
-// ---------------------------------------------------------------------------
 // calendar
 fn read_calendar(body: &[u8], table1_offset: u32, table1_count: u32, starting_offset: usize) -> Option<[f64; 5]> {
     let start = (table1_offset as i64) - starting_offset as i64;
@@ -1301,7 +1295,6 @@ fn read_calendar(body: &[u8], table1_offset: u32, table1_count: u32, starting_of
     Some(out)
 }
 
-// ---------------------------------------------------------------------------
 // tables
 fn table<'t>(tables: &'t Tables, name: &str) -> Result<&'t [u8], String> {
     tables.get(name).map(|v| v.as_slice()).ok_or_else(|| format!("table {name} missing"))
@@ -1444,7 +1437,6 @@ fn row_key_map(cat: &str, pairs: Vec<(String, Option<String>)>) -> Result<Vec<(S
     Ok(out)
 }
 
-// ---------------------------------------------------------------------------
 // tracker.json assembly (write_tracker_json)
 
 /// one tracker row with its result
@@ -1560,7 +1552,6 @@ fn category_json(cat: &str, rows: &[Final], keys: &[(String, String)]) -> Result
     Ok(s)
 }
 
-// ---------------------------------------------------------------------------
 // main
 
 /// Reads a save and returns the tracker.json text; `progress` gets each stage as it starts.
@@ -1723,7 +1714,7 @@ pub fn parse_save(
         }
     }
 
-    // ------------------------------------------------------------------ QUST
+    // QUST
     st!(4);
     struct QStat {
         bit1: Option<bool>,
@@ -1781,7 +1772,7 @@ pub fn parse_save(
         quest_final.push(fin(&qt.order, final_status));
     }
 
-    // ------------------------------------------------------------- locations
+    // locations
     st!(5);
     let mut per_marker: PKMap<LocStatus> = PKMap::new();
     for cf in &location_forms {
@@ -1820,7 +1811,7 @@ pub fn parse_save(
         loc_final.push(fin(&loc.order, s));
     }
 
-    // ---------------------------------------------------------------- spells
+    // spells
     st!(6);
     let spells_rows = tryst!(read_table(tables, "spells_tracker.csv", false));
     let mut learned = PKSet::new();
@@ -1861,7 +1852,7 @@ pub fn parse_save(
     };
     let spells_final = tryst!(simple_final(&spells_rows, &learned, "LEARNED", "NOT_LEARNED"));
 
-    // ---------------------------------------------------------------- shouts
+    // shouts
     st!(7);
     let shouts_rows = tryst!(read_table(tables, "shouts_tracker.csv", false));
     let mut shout_keys = PKSet::new();
@@ -1874,7 +1865,7 @@ pub fn parse_save(
     }
     let shouts_final = tryst!(simple_final(&shouts_rows, &shout_keys, "LEARNED", "NOT_LEARNED"));
 
-    // ------------------------------------------------------------ enchanting
+    // enchanting
     st!(8);
     let ench_rows = tryst!(read_table(tables, "enchanting_tracker.csv", false));
     let mut ench_keys = PKSet::new();
@@ -1887,7 +1878,7 @@ pub fn parse_save(
     }
     let ench_final = tryst!(simple_final(&ench_rows, &ench_keys, "LEARNED", "NOT_LEARNED"));
 
-    // ----------------------------------------------------------- ingredients
+    // ingredients
     st!(9);
     let ingr_rows = tryst!(read_table(tables, "ingredients_tracker.csv", false));
     let mut masks: PKMap<Option<u32>> = PKMap::new();
@@ -1936,7 +1927,7 @@ pub fn parse_save(
         Ok(out)
     })());
 
-    // ----------------------------------------------------------------- perks
+    // perks
     st!(10);
     let perks_rows = tryst!(read_table(tables, "perks_tracker.csv", false));
     let mut perk_keys: Option<PKSet> = None;
@@ -1982,7 +1973,7 @@ pub fn parse_save(
         Ok(out)
     })());
 
-    // ---------------------------------------------------------- collectibles
+    // collectibles
     st!(11);
     let coll_rows_raw = tryst!(read_table(tables, "collectibles_tracker.csv", false));
     let coll_rows = tryst!(load_collectibles_tracker(&coll_rows_raw));
@@ -2022,7 +2013,7 @@ pub fn parse_save(
         Ok(out)
     })());
 
-    // ----------------------------------------------------------------- books
+    // books
     st!(12);
     let book_rows_raw = tryst!(read_table(tables, "books_tracker.csv", false));
     let book_rows = tryst!(load_collectibles_tracker(&book_rows_raw));
@@ -2043,7 +2034,7 @@ pub fn parse_save(
         Ok(out)
     })());
 
-    // ----------------------------------------------------- tracker.json
+    // tracker.json
     st!(13);
     let rk = |cat: &str, rows: &[Row], col: &str| -> Result<Vec<(String, String)>, String> {
         let mut pairs = Vec::new();
@@ -2159,7 +2150,6 @@ fn calendar_json(cal: Option<[f64; 5]>) -> String {
     )
 }
 
-// ---------------------------------------------------------------------------
 // statistics (Misc Stats and favourites)
 
 struct StatForm {
